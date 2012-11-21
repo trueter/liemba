@@ -46,6 +46,8 @@ Branches kosten nichts. Ihr könnt ruhig für jedes neue Feature einen neuen Branc
 
 Wie in dem Artikel beschrieben, solltet ihr beim Mergen die Option _No Fast-Forward_ (`--no-ff`) benutzen, damit die historische Information über den Feature Branch nicht verloren geht.
 
+**Tipp:** Achtet darauf in den entsprechenden Remote-Feature-Branch zu pushen!
+
 ---------------
 ## Probleme
 
