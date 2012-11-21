@@ -32,7 +32,8 @@ git Repositories können beliebig viele Branches enthalten. Aktuell enthält euer 
 
 * `master`: Source-Code-Branch für lauffähigen, stabilen Source-Code
 * `development`: Source-Code-Branch / Entwicklungs-Branch mit aktuellster Version des Source-Codes
-* `project_data`: Für Dokumentationen, Manuels, Berichte, Release-Executables, Recherche-Paper, etc.
+* `project_data`: Für Dokumentationen, Berichte, Release-Executables, Recherche-Paper, etc.
+ * Bitte beachtet: binäre Dateien können das Repository immens vergrößern und jede Version einer binären Datei bleibt in der History erhalten. **Überlegt euch also gut, welche binären Dateien ihr dem Repository hinzufügt!! Wir bitten euch, nur so viel Speicherplatz zu verbrauchen wie nötig.**
 
 Im Sinne eurer Teammitglieder solltet ihr **keinen nicht-kompilierbaren Code** in `master` und `development` **committen**. Erstellt euch dafür am Besten, wie unten beschrieben, Feature Branches.
 
