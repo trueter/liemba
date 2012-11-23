@@ -20,7 +20,7 @@ Repositories in git sind technisch gesehen gleichwertig, egal ob sie auf einem S
 
 * **Branch**: Ein Entwicklungs-Zweig innerhalb des Repositories
 * **Tag**: Referenz auf eine bestimmten Zeitpunkt (revision / commit) innerhalb der Historie
-* `clone`: Klonen eines Remote-Repositories in eine lokales Repository
+* `clone`: Klonen eines Remote-Repositories in ein lokales Repository
 * `commit`: Übertragung der Veränderungen aus dem Arbeitsbereich in das lokale Repository (Hinzufügen einer neuen "Version" in die Historie)
 * `push`: Übertragung aller committeten Daten (des aktuellen Branches) aus dem lokalen Repository in das Remote-Repository
 * `fetch`: Übertragung aller neuen Daten (des aktuellen Branches)  aus dem Remote-Repository in das lokale Repository (ohne Zusammenführung)
