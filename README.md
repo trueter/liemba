@@ -6,11 +6,11 @@ Euer Projekttitel
 
 [git](http://git-scm.com/) ist ein verteiltes Version Control System, welches ihr nutzen könnt um kollaborativ an Source-Code zu arbeiten und eure Daten auf unserem Server zu sichern. 
 
-* [Tutorials](http://sixrevisions.com/resources/git-tutorials-beginners/)
+* [Tutorials](http://sixrevisions.com/resources/git-tutorials-beginners/) und [Videos](http://git-scm.com/videos)
 * [GUI-Tools](http://delicious.com/matthew.mccullough/git+gui?link_view=compact) (unsortierte Liste)
 
 
-Die **Gitlab**-Webplattform (ein Klon der [GitHub](https://github.com/)-Plattform), auf der ihr euch gerade befindet, bietet euch darüber hinaus einen **Bugtracker** und eine **Wiki** und ermöglicht euch zudem das gesamte Repository zu durchstöbern.
+Die **GitLab**-Webplattform (ein Klon der [GitHub](https://github.com/)-Plattform), auf der ihr euch gerade befindet, bietet euch darüber hinaus einen **Bugtracker** und eine **Wiki** und ermöglicht euch zudem das gesamte Repository zu durchstöbern.
 
 ### Begriffe und Commands
 
@@ -39,7 +39,7 @@ Um euch mit dem Repository zu verbinden, müsst ihr einen SSH-Key verwenden, welc
 * Informationen in der [GitHub-Hilfe](https://help.github.com/articles/generating-ssh-keys)
 * Key-Paar-Erzeugung unter Windows z. B. mit [PuTTYgen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
-### Anmeldung mit Gitlab-Benutzerdaten (über `HTTP`)
+### Anmeldung mit GitLab-Benutzerdaten (über `HTTP`)
 
 * siehe [GitHub-Hilfe](https://help.github.com/articles/set-up-git)
 
@@ -59,9 +59,11 @@ Wie aus der Struktur ersichtlich, müssen Branches nicht kontextuell miteinander 
 
 ### README.md
 
-Jeder Branch (eigentlich sogar jeder Ordner) innerhalb des Repositories kann eine Datei mit dem Namen `README.md` enthalten, welche in Gitlab direkt formatiert angezeigt wird. Aktuell schaut ihr euch beispielsweise die `README.md` des `master`-Branches an.
+Jeder Branch (eigentlich sogar jeder Ordner) innerhalb des Repositories kann eine Datei mit dem Namen `README.md` enthalten, welche in GitLab direkt formatiert angezeigt wird. Aktuell schaut ihr euch beispielsweise die `README.md` des `master`-Branches an.
 
 Überarbeitet bitte eure `README.md`, sodass sie Informationen über euer Projekt enthält. Den Großteil der aktuellen Infos hier zu Struktur des Repositories und Ähnlichem könnt ihr löschen (auch wenn ein Backup sicherlich sinnvoll ist). Ganz unten befinden sich der "Build- & Deployment-Sheet" sowie die Bedienungsanleitung, welche beide neben euren Projektinformationen in der `README.md` enthalten bleiben sollen.
+
+* [Syntax-Guide von GitLab flavored Markdown](/help/markdown)
 
 ### Feature Branches
 
@@ -82,7 +84,7 @@ Das schließt unter Anderem Build-Ordner (z. B. von C++-Projekten) und Java `clas
 
 Benutzt dafür `.gitignore`-Dateien, innerhalb derer ihr spezielle Regeln zum Ignorieren von Dateien anlegen könnt. Ein Beispiel ist in der [GitHub-Hilfe](https://help.github.com/articles/ignoring-files) zu finden. Vom globalen `.gitignore` raten wir eher ab, da die Regeln darin lokal auf dem Rechner gespeichert sind und von den anderen Team-Mitgliedern somit nicht genutzt werden. Zusätzlich gibt es auch eine [Sammlung hilfreicher .gitignore Templates](https://github.com/github/gitignore).
 
-Um binäre Dateien, die nicht zum Source-Code gehören (Release-Executables, PDFs aus Recherchen, Dependencies, Berichte etc.), zu sichern, könnt ihr einfach den Branch `project_data` benutzen oder sie in Gitlab direkt als Anhang von einer Wiki-Seite oder einem Bug hochladen.
+Um binäre Dateien, die nicht zum Source-Code gehören (Release-Executables, PDFs aus Recherchen, Dependencies, Berichte etc.), zu sichern, könnt ihr einfach den Branch `project_data` benutzen oder sie in GitLab direkt als Anhang von einer Wiki-Seite oder einem Bug hochladen.
 
 ### Zeilenenden
 
@@ -99,14 +101,20 @@ Wenn ihr schon ein Repository habt, dann löscht einfach die Remote-Branches, wel
 
 Sofern nicht anders ausgemacht, sollte das Repository am Ende des Projektes folgende Daten enthalten:
 
-* kommentierter Source-Code (doh!)
-* ausführbare Version / Executable (am besten in einem einzelnen Schritt ausführbar) - in `project_data`
+* kommentierter Source-Code
+* ausführbare Version / Executable / Package (Android APK, iOS IPA) - in `project_data`
+ * am Besten in nur einem Schritt ausführbar
 * Abschlussbericht - in `project_data`
- * Anhang: Build- und Deployment-Sheet (siehe unten)
- * Anhang: Bedienungsanleitung für die Applikation
+ * Abstract
+ * Visuelle Elemente: Grafiken, Screenshots
+ * nur ausgewählter, dem Verständnis dienender Quellcode
+* Build- und Deployment-Sheet (siehe unten) - in `README.md` von `master` & im Anhang des Abschlussberichts
+* Bedienungsanleitung für die Applikation - in `README.md` von `master` & im Anhang des Abschlussberichts
 * Präsentationsmaterial & Medien - in `project_data`
- * Screenshots / Videos
- * Flyer / Abstract für Print und Web
+ * Grafiken / Screenshots (z. B. aus dem Projektbericht)
+ * _optional_: Videos / Screencasts (z. B. als Alternative zur Bedienungsanleitung)
+ * _optional_: Flyer / Abstract für Print und Web
+* _optional_: Exposé
 
 --------
 ```ruby
