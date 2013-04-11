@@ -30,7 +30,7 @@ Repositories in git sind technisch gesehen gleichwertig, egal ob sie auf einem S
 ---------------
 ## Zugriff auf das Repository
 
-Ihr könnt sowohl über `SSH`, als auch per `HTTP` auf das Remote-Repository zugreifen - je nachdem über welche URL ihr das Repository klont. Der Zugriff ist authentifiziert.
+Ihr könnt sowohl über `SSH`, als auch per `HTTP` auf das Remote-Repository zugreifen - je nachdem über welche URL ihr das Repository klont. Die URLs findet ihr auf der Startseite eures Projekts. Der Zugriff ist authentifiziert.
 
 ### Anmeldung mit SSH
 
