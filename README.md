@@ -43,6 +43,12 @@ Um euch mit dem Repository zu verbinden, müsst ihr einen SSH-Key verwenden, welc
 
 * siehe [GitHub-Hilfe](https://help.github.com/articles/set-up-git)
 
+### Kommentar Torsten
+
+Für mich lief dieser Schritt folgendermaßen ab:
+Im Verzeichnis ~/.shh hatte ich bereits aus voriger Arbeit mit GIT einen id_rsa.pub Schlüssel. 
+Dessen Inhalt habe ich unter [Benutzereinstellungen](/keys) hinzugefügt. Danach konnte ich `git clone` ausführen.
+
 ---------------
 ## Struktur des Repositories
 
