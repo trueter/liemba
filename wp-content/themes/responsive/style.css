@@ -3224,5 +3224,13 @@ ul.menu > li:not(.page_item){
 	display: none;
 }
 
+.wpcf7 form input { /* Contact Form */
+	width: 300px;
+}
+
+.wpcf7 form textarea { /* Contact Form */
+	width: 500px;
+}
+
 
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
