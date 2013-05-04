@@ -3215,4 +3215,14 @@ BDO[DIR="rtl"] {
 	}
 }
 
+/* OVERRIDES */
+
+.post-meta, .breadcrumb-list{
+	display : none;
+}
+ul.menu > li:not(.page_item){
+	display: none;
+}
+
+
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
