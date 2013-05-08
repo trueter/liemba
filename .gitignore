@@ -7,3 +7,6 @@
 ehthumbs.db
 Thumbs.db
 *.sublime*
+
+# Protect Database Variables
+environment_variables.php
