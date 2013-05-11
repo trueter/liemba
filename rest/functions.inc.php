@@ -2,69 +2,134 @@
 
 
 function indexAction(){
-    
-	$db = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'].';charset=utf8', $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
-
-    $statement = $db->query('SELECT * FROM hotspots');
-	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-    
-    print_r(json_encode($results));    
+    die(json_encode(getAllHotspots()));    
 }
 
 function showAction ($id) {
-    
-	$db = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'].';charset=utf8', $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
-	
-    $statement = $db->query('SELECT * FROM hotspots WHERE ID='.$id);
-	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-    
-    print_r(json_encode($results));  
-
+    die(json_encode(getHotspot($id)));  
 }
 
 function createAction() {
+	
+	
+	// Check for required missing parameters
+	$errStack = array();
+	if(!isset( $_POST['name'] )){
+		array_push($errStack, "Name missing");
+	}
+	if(!isset( $_POST['xOff'] )){
+		array_push($errStack, "xOff missing");
+	}
+	if(!isset( $_POST['yOff'] )){
+		array_push($errStack, "yOff missing");
+	}
+	if(count($errStack) > 0){
+		die(json_encode(array("errors" => $errStack)));	
+	}
+	
+	// Set default values for missing optinal parameters
+	// $var = isset($_POST['var'])?$_POST['var']:"default";
 
-/* Buggy
-	$db = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'].';charset=utf8', $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
+	try {
+		$db = getConnection();
+		$statement = $db->prepare("INSERT INTO ".$_ENV['DATABASE_TABLE']." (name,xOff,yOff) VALUES (:name,:xOff,:yOff)");
+		$statement->execute(array(':name'=>$_POST['name'],
+				                  ':xOff'=>$_POST['xOff'],
+				                  ':yOff'=>$_POST['yOff']
+				                  )
+					);
+		$success = $statement->rowCount();
 
-	$stmt = $db->prepare("INSERT INTO hotspots(name,xOff,yOff) VALUES('a','b','c')");
-	$stmt->execute();#array(':field1' => $_GET['name'], ':field2' => $_GET['xOff'], ':field3' => $_GET['yOff']));
-	$affected_rows = $stmt->rowCount();
-	die("affected rows : ".$affected_rows);
-	*/
-	echo "Hotspots#create";
+		if( $success ){
+			echo(json_encode(getHotspot($db->lastInsertId())));
+		}else{
+			echo(json_encode(array("error" => 'No rows affected')));	
+		}
+	} catch(PDOException $e) {
+ 		echo(json_encode(array("error" => $e->getMessage())));
+    }
+
 }
 
 function updateAction($id) {
-    echo "Hotspots#update:".$id;
+	$success = updateHotspot($id, $_POST);
+
+	if( $success ){
+		die(json_encode(getHotspot($id)));
+	}else{
+		die(json_encode(array("errors" => 'No rows affected')));	
+	}
+
 }
 
 function deleteAction($id) {
-    echo "Hotspots#delete:".$id;
+	try{
+	    $db = getConnection();
+
+	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
+		$statement->fetchAll(PDO::FETCH_ASSOC);
+
+		$success = $statement->rowCount();
+	} catch(PDOException $e) {
+ 		die(json_encode(array("error" => $e->getMessage())));
+    }
+
+	if( $success ){
+		die(json_encode(array("success")));	
+	}else{
+		die(json_encode(array("errors" => 'No rows affected')));	
+	}
 }
 
 function rootAction() {
     echo "Slim Server running";
 }
 
-function prepareMysql (){
-/*
-	$link = mysql_connect($_ENV['DATABASE_SERVER'], $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
-	if (!$link) {
-	    die('Verbindung zur Datenbank schlug fehl: ' . mysql_error());
-	}
+function getAllHotspots(){
+	try{
+		$db = getConnection();
 
-
-	$db_selected = mysql_select_db($_ENV['DATABASE_NAME'], $link);
-	if (!$db_selected) {
-    	die ('Kann '.$ENV['DATABASE_NAME'].' nicht benutzen : ' . mysql_error());
-	}
-*/
-
-	
-
-
-	return $link;	
+	    $statement = $db->query('SELECT * FROM hotspots');
+		$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+	} catch(PDOException $e) {
+ 		die(json_encode(array("error" => $e->getMessage())));
+    }
+	return $results;
 }
 
+function getHotspot($id){
+	try{
+		$db = getConnection();
+
+	    $statement = $db->query('SELECT * FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
+		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+	} catch(PDOException $e) {
+ 		die(json_encode(array("error" => $e->getMessage())));
+    }
+
+	return $result;
+}
+
+function updateHotspot($id, $values){
+	
+	try{
+		$db = getConnection();
+	    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_TABLE'] .' SET name=:name,
+	    															   xOff=:xOff,
+	    															   yOff=:yOff WHERE id='.$id);
+		$statement->execute(array(':name'=>$values['name'],
+				                  ':xOff'=>$values['xOff'],
+				                  ':yOff'=>$values['yOff']
+				                  ));
+	} catch(PDOException $e) {
+ 		die(json_encode(array("error" => $e->getMessage())));
+    }
+	return $statement->rowCount();
+}
+
+function getConnection() {
+    $dbh = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'].';charset=utf8', $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    return $dbh;
+}
 ?>

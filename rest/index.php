@@ -12,7 +12,10 @@ $app->get('/', 'rootAction');
 
 $app->get('/hotspots', 'indexAction');
 $app->get('/hotspots/:id', 'showAction');
+
 $app->post('/hotspots', 'createAction');
+$app->post('/hotspots/:id', 'updateAction');
+
 $app->delete('/hotspots/:id', 'deleteAction');
 
 

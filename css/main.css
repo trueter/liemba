@@ -60,6 +60,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#map-wrapper{
+    position: relative;
+}
+
+#map-image{
+    position: absolute;
+    z-index: 5;
+}
+
+.map-hotspot-anchor{
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
 
 
 
