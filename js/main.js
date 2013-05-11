@@ -61,6 +61,9 @@ window.htw.interactiveMap = {
 		}).always(function(){
 			console.log("removeHotspot:always");
 		});
+	}, 
+	showHotspotDetails : function (){
+
 	}
 }
 
