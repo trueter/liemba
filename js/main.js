@@ -30,7 +30,7 @@ window.htw.interactiveMap = {
 		
 		$.post('./rest/hotspots', _formdata ).success(function(feedback){
 
-		var hotspot = JSON.parse(feedback)[0];
+		var hotspot = feedback;
 		var id = hotspot.id;
 		var name = hotspot.name;
 		var top = hotspot.yOff;
@@ -49,6 +49,13 @@ window.htw.interactiveMap = {
 			console.log("addHotspot:fail");
 		}).always(function(){
 			console.log("addHotspot:always");
+		}).error(function (xhr, ajaxOptions, thrownError){
+
+            alert(xhr.status);
+            alert(thrownError);
+       
+
+
 		});
 	},
 	removeHotspot : function (id){
@@ -74,7 +81,7 @@ $(function() {
 	$.get('./rest/hotspots', function(data) {
 		response = data;
 	}).success(function(){
-		htw.interactiveMap.init(JSON.parse(response));
+		htw.interactiveMap.init(response);
 	}).fail(function(){
 		console.log("initial request failed");
 	});

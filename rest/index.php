@@ -30,9 +30,12 @@ $app->get('/hotspots', function() use ($app){
 
 	if($result[0] == 200){
     	$res->write(json_encode($result[1])); 
+	}else{
+		$res->write("{error: ".$status."}");
 	}
 
 });
+
 
 # GET /hotspots/id
 $app->get('/hotspots/:id', function($id) use ($app){
@@ -45,11 +48,14 @@ $app->get('/hotspots/:id', function($id) use ($app){
 	
 
 	$app->response()->status($result[0]);
-	if($result[0] ==  200){
+	if($result[0] == 200){
     	$res->write(json_encode($result[1])); 
+	}else{
+		$res->write("{error: ".$result[0]."}");
 	}
 
 });
+
 
 # POST /hotspots
 $app->post('/hotspots', function() use ($app){
@@ -61,6 +67,14 @@ $app->post('/hotspots', function() use ($app){
 	$status = createHotspot($_POST);
 
 	$app->response()->status($status);
+	
+	if($status == 200){
+		$hotspot = array('name'=>$_POST['name'], 'xOff'=>$_POST['xOff'], 'yOff'=>$_POST['yOff']);
+
+		$res->write(json_encode($hotspot));
+	}else{
+		$res->write("{error: ".$status."}");
+	}
 
 });
 
@@ -76,6 +90,14 @@ $app->post('/hotspots/:id', function($id) use ($app){
 
 	$app->response()->status($status);
 
+	if($status == 200){
+		$hotspot = array('name'=>$_POST['name'], 'xOff'=>$_POST['xOff'], 'yOff'=>$_POST['yOff']);
+
+		$res->write(json_encode($hotspot));
+	}else{
+		$res->write("{error: ".$status."}");
+	}
+
 });
 
 
@@ -89,6 +111,13 @@ $app->delete('/hotspots/:id', function($id) use ($app){
 	$status = deleteHotspot($id);
 
 	$app->response()->status($status);
+
+
+	if($status == 200){
+		$res->write("{succes}");
+	}else{
+		$res->write("{error: ".$status."}");
+	}
 
 });
 
