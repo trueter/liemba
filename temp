@@ -1,0 +1,68 @@
+diff --git a/js/main.js b/js/main.js
+index 3ace589..d6c6634 100644
+--- a/js/main.js
++++ b/js/main.js
+@@ -1,9 +1,6 @@
+ window.htw = {};
+ window.htw.interactiveMap = {
+ 
+-	hotspots: {},
+-	map : null,
+-
+ 	init : function (_hotspots){
+ 		map = $('#map-wrapper');
+ 
+@@ -15,11 +12,9 @@ window.htw.interactiveMap = {
+ 			var left = currentHotspot.xOff;
+ 			var top = currentHotspot.yOff;
+ 
+-			var e = $('<div/>', {'class': 'map-hotspot-anchor',
+-										  'id' : 'hotspot-'+id,
+-										  'style': 'top:'+top+'px;left:'+left+'px',
+-										  'data-id' : id,
+-										  'data-name' : name});
++			var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name, 
++								 'class': 'map-hotspot-anchor',
++								 'style': 'top:'+top+'px;left:'+left+'px' });
+ 
+ 			map.append(e);
+ 
+@@ -37,18 +32,14 @@ window.htw.interactiveMap = {
+ 		var left = hotspot.xOff;
+ 
+ 		
+-		var e = $('<div/>', {'class': 'map-hotspot-anchor',
+-									  'id' : 'hotspot-'+id,
+-									  'style': 'top:'+top+'px;left:'+left+'px',
+-									  'data-id' : id,
+-									  'data-name' : name});
++		var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name,
++						  	 'class': 'map-hotspot-anchor',
++						  	 'style': 'top:'+top+'px;left:'+left+'px' });
+ 
+ 		map.append(e);
+ 
+ 		}).fail(function(){
+ 			console.log("addHotspot:fail");
+-		}).always(function(){
+-			console.log("addHotspot:always");
+ 		}).error(function (xhr, ajaxOptions, thrownError){
+ 
+             alert(xhr.status);
+@@ -65,8 +56,6 @@ window.htw.interactiveMap = {
+ 
+ 		}).fail(function(){
+ 			console.log("removeHotspot:fail");
+-		}).always(function(){
+-			console.log("removeHotspot:always");
+ 		});
+ 	}, 
+ 	showHotspotDetails : function (){
+@@ -91,6 +80,4 @@ $(function() {
+ 		htw.interactiveMap.addHotspot($(this).serialize());
+ 		return false;
+ 	});
+-
+-
+ });
+\ No newline at end of file
