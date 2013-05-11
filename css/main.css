@@ -60,8 +60,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* ######## Map ######## */
 #map-wrapper{
     position: relative;
+    display: inline-block;
 }
 
 #map-image{
@@ -79,6 +82,19 @@ textarea {
 
 
 
+/* ######## Form ######## */
+
+#add-hotspot-dummy{
+    display: inline-block;
+}
+
+#add-hotspot-form{
+    
+    margin: 20px;
+}
+#add-hotspot-form label, input{
+    display: block;
+}
 
 
 

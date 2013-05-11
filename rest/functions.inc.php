@@ -102,7 +102,7 @@ function getHotspot($id){
 		$db = getConnection();
 
 	    $statement = $db->query('SELECT * FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
-		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+		$result = $statement->fetchAll(PDO::FETCH_OBJ);
 	} catch(PDOException $e) {
  		die(json_encode(array("error" => $e->getMessage())));
     }

@@ -4,22 +4,26 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+     <?php require("partials/header.php"); ?>
     </head>
     <body>
 
         
         <div id="map-wrapper">
             <img id="#map-image" src="img/map1.jpg">
+        </div>
+        <div id="add-hotspot-dummy">
+            <form id="add-hotspot-form" action="#">
+                <fieldset>
+                    <label>Name</label>
+                    <input value="A" name="name" type="text" required>
+                    <label>xOff</label>
+                    <input value="1" name="xOff" type="number" required>
+                    <label>yOff</label>
+                    <input value="2" name="yOff" type="number" required>
+                </fieldset>
+                <input type="submit" value="create hotspot">
+            </form>
         </div>
 
 
