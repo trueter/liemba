@@ -1,68 +1,237 @@
 diff --git a/js/main.js b/js/main.js
-index 3ace589..d6c6634 100644
+index d6c6634..7f91220 100644
 --- a/js/main.js
 +++ b/js/main.js
-@@ -1,9 +1,6 @@
+@@ -1,83 +1,79 @@
  window.htw = {};
- window.htw.interactiveMap = {
- 
--	hotspots: {},
--	map : null,
+-window.htw.interactiveMap = {
 -
- 	init : function (_hotspots){
- 		map = $('#map-wrapper');
- 
-@@ -15,11 +12,9 @@ window.htw.interactiveMap = {
- 			var left = currentHotspot.xOff;
- 			var top = currentHotspot.yOff;
- 
--			var e = $('<div/>', {'class': 'map-hotspot-anchor',
--										  'id' : 'hotspot-'+id,
--										  'style': 'top:'+top+'px;left:'+left+'px',
--										  'data-id' : id,
--										  'data-name' : name});
-+			var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name, 
-+								 'class': 'map-hotspot-anchor',
-+								 'style': 'top:'+top+'px;left:'+left+'px' });
- 
- 			map.append(e);
- 
-@@ -37,18 +32,14 @@ window.htw.interactiveMap = {
- 		var left = hotspot.xOff;
- 
- 		
--		var e = $('<div/>', {'class': 'map-hotspot-anchor',
--									  'id' : 'hotspot-'+id,
--									  'style': 'top:'+top+'px;left:'+left+'px',
--									  'data-id' : id,
--									  'data-name' : name});
-+		var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name,
-+						  	 'class': 'map-hotspot-anchor',
-+						  	 'style': 'top:'+top+'px;left:'+left+'px' });
- 
- 		map.append(e);
- 
- 		}).fail(function(){
- 			console.log("addHotspot:fail");
--		}).always(function(){
--			console.log("addHotspot:always");
- 		}).error(function (xhr, ajaxOptions, thrownError){
- 
-             alert(xhr.status);
-@@ -65,8 +56,6 @@ window.htw.interactiveMap = {
- 
- 		}).fail(function(){
- 			console.log("removeHotspot:fail");
--		}).always(function(){
--			console.log("removeHotspot:always");
- 		});
- 	}, 
- 	showHotspotDetails : function (){
-@@ -91,6 +80,4 @@ $(function() {
- 		htw.interactiveMap.addHotspot($(this).serialize());
- 		return false;
- 	});
+-	init : function (_hotspots){
+-		map = $('#map-wrapper');
+-
+-		var currentHotspot
+-		$(_hotspots).each(function (){
+-			var currentHotspot = $(this)[0];
+-			var id = currentHotspot.id;
+-			var name = currentHotspot.name;
+-			var left = currentHotspot.xOff;
+-			var top = currentHotspot.yOff;
+-
+-			var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name, 
+-								 'class': 'map-hotspot-anchor',
+-								 'style': 'top:'+top+'px;left:'+left+'px' });
+-
+-			map.append(e);
 -
 -
+-		});
+-	},
+-	addHotspot : function (_formdata) {
+-		
+-		$.post('./rest/hotspots', _formdata ).success(function(feedback){
+-
+-		var hotspot = feedback;
+-		var id = hotspot.id;
+-		var name = hotspot.name;
+-		var top = hotspot.yOff;
+-		var left = hotspot.xOff;
+-
+-		
+-		var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name,
+-						  	 'class': 'map-hotspot-anchor',
+-						  	 'style': 'top:'+top+'px;left:'+left+'px' });
+-
+-		map.append(e);
+-
+-		}).fail(function(){
+-			console.log("addHotspot:fail");
+-		}).error(function (xhr, ajaxOptions, thrownError){
+-
+-            alert(xhr.status);
+-            alert(thrownError);
+-       
+-
+-
+-		});
+-	},
+-	removeHotspot : function (id){
+-		$.ajax('./rest/hotspots/'+id, {type: 'DELETE'}).success(function(feedback){
+-
+-			$('#hotspot-'+id).remove();
+-
+-		}).fail(function(){
+-			console.log("removeHotspot:fail");
+-		});
+-	}, 
+-	showHotspotDetails : function (){
+-
+-	}
+-}
++window.htw.interactiveMap = function () {
++
++  var map = null;
++  return {
++
++    init : function (hotspots) {
++      map = $('#map-wrapper');
++
++      $(hotspots).each(function () {
++        var currentHotspot = $(this)[0],
++            id = currentHotspot.id,
++            name = currentHotspot.name,
++            left = currentHotspot.xOff,
++            top = currentHotspot.yOff,
++            e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name, 
++                   'class': 'map-hotspot-anchor',
++                   'style': 'top:' + top + 'px;left:' + left + 'px' });
++
++        map.append(e);
++
++      });
++    },
++    addHotspot : function (formdata) {
++      
++      $.post('./rest/hotspots', formdata ).success(function(feedback){
++
++      var hotspot = feedback,
++          id = hotspot.id,
++          name = hotspot.name,
++          top = hotspot.yOff,
++          left = hotspot.xOff,
++          e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name,
++                   'class': 'map-hotspot-anchor',
++                   'style': 'top:' + top + 'px;left:' + left + 'px' });
++
++      map.append(e);
++
++      }).fail(function(){
++        console.log("addHotspot:fail");
++      }).error(function (xhr, ajaxOptions, thrownError){
++        alert(xhr.status);
++        alert(thrownError);
++      });
++    },
++    removeHotspot : function (id){
++      $.ajax('./rest/hotspots/'+id, {type: 'DELETE'}).success(function(feedback){
++
++        $('#hotspot-'+id).remove();
++
++      }).fail(function(){
++        console.log("removeHotspot:fail");
++      });
++    }, 
++    showHotspotDetails : function (){
++
++    }
++
++  } // return
++}();
+ 
+ $(function() {
+-	
+-	// Init Hotspots
+-	var response;
+-	$.get('./rest/hotspots', function(data) {
+-		response = data;
+-	}).success(function(){
+-		htw.interactiveMap.init(response);
+-	}).fail(function(){
+-		console.log("initial request failed");
+-	});
+-
+-	// Init Events
+-	$('#add-hotspot-form').submit(function(){
+-		htw.interactiveMap.addHotspot($(this).serialize());
+-		return false;
+-	});
++  
++  // Init Hotspots
++  var response;
++  $.get('./rest/hotspots', function(data) {
++    response = data;
++  }).success(function(){
++    htw.interactiveMap.init(response);
++  }).fail(function(){
++    console.log("initial request failed");
++  });
++
++  // Init Events
++  $('#add-hotspot-form').submit(function(){
++    htw.interactiveMap.addHotspot($(this).serialize());
++    return false;
++  });
  });
 \ No newline at end of file
+diff --git a/temp b/temp
+index 374905b..c980881 100644
+--- a/temp
++++ b/temp
+@@ -1,68 +0,0 @@
+-diff --git a/js/main.js b/js/main.js
+-index 3ace589..d6c6634 100644
+---- a/js/main.js
+-+++ b/js/main.js
+-@@ -1,9 +1,6 @@
+- window.htw = {};
+- window.htw.interactiveMap = {
+- 
+--	hotspots: {},
+--	map : null,
+--
+- 	init : function (_hotspots){
+- 		map = $('#map-wrapper');
+- 
+-@@ -15,11 +12,9 @@ window.htw.interactiveMap = {
+- 			var left = currentHotspot.xOff;
+- 			var top = currentHotspot.yOff;
+- 
+--			var e = $('<div/>', {'class': 'map-hotspot-anchor',
+--										  'id' : 'hotspot-'+id,
+--										  'style': 'top:'+top+'px;left:'+left+'px',
+--										  'data-id' : id,
+--										  'data-name' : name});
+-+			var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name, 
+-+								 'class': 'map-hotspot-anchor',
+-+								 'style': 'top:'+top+'px;left:'+left+'px' });
+- 
+- 			map.append(e);
+- 
+-@@ -37,18 +32,14 @@ window.htw.interactiveMap = {
+- 		var left = hotspot.xOff;
+- 
+- 		
+--		var e = $('<div/>', {'class': 'map-hotspot-anchor',
+--									  'id' : 'hotspot-'+id,
+--									  'style': 'top:'+top+'px;left:'+left+'px',
+--									  'data-id' : id,
+--									  'data-name' : name});
+-+		var e = $('<div/>', {'id' : 'hotspot-'+id, 'data-id' : id, 'data-name' : name,
+-+						  	 'class': 'map-hotspot-anchor',
+-+						  	 'style': 'top:'+top+'px;left:'+left+'px' });
+- 
+- 		map.append(e);
+- 
+- 		}).fail(function(){
+- 			console.log("addHotspot:fail");
+--		}).always(function(){
+--			console.log("addHotspot:always");
+- 		}).error(function (xhr, ajaxOptions, thrownError){
+- 
+-             alert(xhr.status);
+-@@ -65,8 +56,6 @@ window.htw.interactiveMap = {
+- 
+- 		}).fail(function(){
+- 			console.log("removeHotspot:fail");
+--		}).always(function(){
+--			console.log("removeHotspot:always");
+- 		});
+- 	}, 
+- 	showHotspotDetails : function (){
+-@@ -91,6 +80,4 @@ $(function() {
+- 		htw.interactiveMap.addHotspot($(this).serialize());
+- 		return false;
+- 	});
+--
+--
+- });
+-\ No newline at end of file
