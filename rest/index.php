@@ -64,16 +64,16 @@ $app->post('/hotspots', function() use ($app){
 	$res['Content-Type'] = 'application/json';
 	$res['X-Powered-By'] = 'Slim';
 
-	$status = createHotspot($_POST);
+	$result = createHotspot($_POST);
 
-	$app->response()->status($status);
+	$app->response()->status($result[0]);
 	
-	if($status == 200){
-		$hotspot = array('name'=>$_POST['name'], 'xOff'=>$_POST['xOff'], 'yOff'=>$_POST['yOff']);
+	if($result[0] == 200){
+		$hotspot = array('id'=>$result[1], 'name'=>$_POST['name'], 'xOff'=>$_POST['xOff'], 'yOff'=>$_POST['yOff'],);
 
 		$res->write(json_encode($hotspot));
 	}else{
-		$res->write("{error: ".$status."}");
+		$res->write("{error: ".$result[0]."}");
 	}
 
 });

@@ -2,6 +2,8 @@ window.htw = {};
 window.htw.interactiveMap = function () {
 
   var map = null;
+  var debug = false;
+  
   return {
 
     init : function (hotspots) {
@@ -34,26 +36,34 @@ window.htw.interactiveMap = function () {
                    'class': 'map-hotspot-anchor',
                    'style': 'top:' + top + 'px;left:' + left + 'px' });
 
-      map.append(e);
+        map.append(e);
+      
 
       }).fail(function(){
-        console.log("addHotspot:fail");
+        if(debug)console.log("addHotspot:fail");
+      
       }).error(function (xhr, ajaxOptions, thrownError){
         alert(xhr.status);
         alert(thrownError);
       });
+
+      
     },
     removeHotspot : function (id){
       $.ajax('./rest/hotspots/'+id, {type: 'DELETE'}).success(function(){
 
         $('#hotspot-'+id).remove();
-        console.log("removeHotspot:success");
+        if(debug)console.log("removeHotspot:success");
+      
       }).fail(function(){
-        console.log("removeHotspot:fail");
+        if(debug)console.log("removeHotspot:fail");
+      
       }).error(function (xhr, ajaxOptions, thrownError){
-        console.log("xhr status" +xhr.status);
-        console.log("thrown error" +thrownError);
+        if(debug)console.log("xhr status" +xhr.status);
+        if(debug)console.log("thrown error" +thrownError);
+      
       });
+      
     }, 
     showHotspotDetails : function (){
 
@@ -71,7 +81,7 @@ $(function() {
   }).success(function(){
     htw.interactiveMap.init(response);
   }).fail(function(){
-    console.log("initial request failed");
+    if(debug)console.log("initial request failed");
   });
 
   // Init Events
