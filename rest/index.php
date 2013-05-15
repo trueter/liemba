@@ -73,7 +73,7 @@ $app->post('/hotspots', function() use ($app){
 
 		$res->write(json_encode($hotspot));
 	}else{
-		$res->write("{error: ".$result[0]."}");
+		$res->write("{error: ".$result[0]."}\n");
 	}
 
 });
