@@ -10,4 +10,3 @@ Thumbs.db
 temp
 
 # Protect Database Variables
-environment_variables.php
