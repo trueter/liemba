@@ -1,0 +1,52 @@
+#sequence {
+  position: relative;
+  min-height: 600px;
+  max-width: 1400px;
+  min-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url(../images/bg-sky.png) repeat-x #65b7f1;
+  color: white;
+  font-family: "Play", sans-serif;
+}
+#sequence > .sequence-canvas {
+  height: 100%;
+  width: 100%;
+}
+#sequence > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#sequence > .sequence-canvas li > * {
+  position: absolute;
+  transition-timing-function: ease-in-out;
+}
+#sequence .sequence-next,
+#sequence .sequence-prev {
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.4;
+  top: 280px;
+  height: 41px;
+  width: 39px;
+  z-index: 20;
+  transition-duration: 0.4s;
+}
+#sequence .sequence-prev {
+  left: 40px;
+}
+#sequence .sequence-next {
+  right: 40px;
+}
+#sequence .sequence-next:hover,
+#sequence .sequence-prev:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
