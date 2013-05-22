@@ -2,31 +2,44 @@
 
 /* TEXT ELEMENTS */
 
-#sequence h2 {
-  font-size: 1.5em;
-  line-height: 1.2em;
+#sequence{
+
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+
+  .info {
+    color: black;
+    font-size: 1em;
+    right: 150%;
+    line-height: 1.2em;
+    top: 270px;
+    width: 25%;
+    z-index: 10;
+    vertical-align: middle;
+    transition-duration: @slideTransitionTime;
+    transition-property: right;
+
+  }
 }
 
-#sequence .info {
-  color: black;
-  font-size: 1em;
-  right: 150%;
-  line-height: 1.2em;
-  top: 270px;
-  width: 25%;
-  z-index: 10;
-  vertical-align: middle;
-  transition-duration: @slideTransitionTime;
-  transition-property: right;
+
+/* info movement */
+#sequence{
+  .info{
+    right: -150%;
+  }
+
+  .animate-in .info{
+    right: 20%;
+  }
+
+  .animate-out .info{
+    right: 150%;
+  }
 }
-#sequence .animate-in .info {
-  right: 15%;
-  transition-duration: @slideTransitionTime;
-}
-#sequence .animate-out .info {
-  right: -150%;
-  transition-duration: @slideTransitionTime;
-}
+/* ! info movement */
 
 /* Images */
 
@@ -40,36 +53,30 @@
   z-index: 6;
   transition-duration: @slideTransitionTime;
   transform-origin: 100%;
-  transition-property: left top transform;
+  transition-property: left bottom transform;
 }
 
 #sequence .animate-in .ship {
   z-index: 4;
   opacity: 1;
   
-  &.step0{
-    left: 15%;
-    
-  }
   &.step1{
-    left: 20%;
+    left: 25%;
   }
-  
+    
 }
 #sequence .animate-out .ship {
   z-index: 2;
   opacity : 0;
+
   &.step0{
-    left: 20%;
-    
-  }
-  &.step1{
     left: 25%;
-  }
+  } 
+
 }
 
 #sequence .sequence-fallback .animate-in .ship {
-  left: 20%;
+  left: 15%;
   top: 200px;
 }
 
