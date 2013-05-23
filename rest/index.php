@@ -9,7 +9,8 @@ $app = new \Slim\Slim();
 
 
 function getConnection(){
-	// I NEED TO BE RESTORED ASAP
+	$db = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'], $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
+	return $db;
 }
 
 $app->get('/foo', function () use ($app) {
@@ -167,8 +168,7 @@ $app->get('/categories/:id', function($id) use ($app){
 	$res['Content-Type'] = 'application/json';
 	$res['X-Powered-By'] = 'Slim';
 
-	$result = getHotspot($id);
-	
+	$result = getCategory($id);
 
 	$app->response()->status($result[0]);
 	if($result[0] == 200){
@@ -187,7 +187,7 @@ $app->post('/categories', function() use ($app){
 	$res['Content-Type'] = 'application/json';
 	$res['X-Powered-By'] = 'Slim';
 
-	$result = createHotspot($_POST);
+	$result = createCategory($_POST);
 
 	$app->response()->status($result[0]);
 	
@@ -209,7 +209,7 @@ $app->post('/categories/:id', function($id) use ($app){
 	$res['Content-Type'] = 'application/json';
 	$res['X-Powered-By'] = 'Slim';
 
-	$status = updateHotspot($id, $_POST);
+	$status = updateCategory($id, $_POST);
 
 	$app->response()->status($status);
 
@@ -231,7 +231,7 @@ $app->delete('/categories/:id', function($id) use ($app){
 	$res['Content-Type'] = 'application/json';
 	$res['X-Powered-By'] = 'Slim';
 
-	$status = deleteHotspot($id);
+	$status = deleteCategory($id);
 
 	$app->response()->status($status);
 
