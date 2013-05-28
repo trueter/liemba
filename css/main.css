@@ -1,0 +1,69 @@
+#offsetHelper{
+	position:fixed;
+	top: 50px;
+	left: 50px;
+	z-index:10;
+	color: white;
+	font-size: 16px;
+}
+
+#offsetHelper:before{
+	content:"yOff: ";
+	color: white;
+}
+
+#skollr-menu-wrapper{
+	position: fixed;
+	top: 80px;
+	left: 50px;
+}
+
+#skollr-menu-wrapper a{
+	color: white;
+}
+
+.background{
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+
+.always-on-top{
+	z-index: 100;
+}
+
+#railroadBackground{
+	background: url(img/railroad.jpg);
+}
+
+#railroadTrain{
+	background: url(img/train.png);
+	width: 285px;
+	height: 92px;	
+}
+
+#oceanBackground{
+	background: url(img/water.jpg);
+	opacity: 0;
+}
+
+#oceanShip{
+	background: url(img/ship.png);
+	width: 443px;
+	height: 119px;
+	top: 558px;
+}
+
+.historyText{
+	top: 15%;
+	width: 400px;
+	height: auto;
+	color: white;
+}
+
+.historyText h1{
+	margin-bottom: 5px;
+}
+.historyText h2{
+	margin-bottom: 5px;
+}

@@ -52,6 +52,7 @@
 		for(var stylesheetIndex = 0; stylesheetIndex < stylesheets.length; stylesheetIndex++) {
 			var sheet = stylesheets[stylesheetIndex];
 
+
 			if(sheet.tagName === 'LINK') {
 				if(sheet.getAttribute('data-skrollr-stylesheet') === null) {
 					continue;
@@ -86,6 +87,7 @@
 		var selectors = [];
 
 		//Now parse all stylesheets.
+
 		for(var contentIndex = 0; contentIndex < contents.length; contentIndex++) {
 			content = contents[contentIndex];
 
@@ -95,11 +97,13 @@
 		}
 
 		//Apply the keyframes to the elements.
+
 		applyKeyframes(animations, selectors);
 	};
 
 	//Finds animation declarations and puts them into the output map.
 	var parseDeclarations = function(input, output) {
+
 		rxAnimation.lastIndex = 0;
 
 		var animation;
