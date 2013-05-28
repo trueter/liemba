@@ -1,0 +1,128 @@
+body{
+	font-family: Helvetica, Times;
+}
+
+#nav {
+	width: 626px;
+	height: 44px;
+	height: 44px;
+	width: 626px;
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	cursor: not-allowed;
+	background: url(../img/navigation_placeholder.png);
+}
+#offsetHelper{
+	position:fixed;
+	top: 50px;
+	left: 50px;
+	z-index:10;
+	color: white;
+	font-size: 16px;
+	
+	&:before{
+		content:"yOff: ";
+		color: white;
+	}
+}
+
+#instruction-circle{
+	position: fixed;
+	height: 120px;
+	width: 120px;
+	padding: 50px;
+	background-color: #e74c3c;
+	border-radius: 300px;
+	left: 50%;
+	bottom: 200px;
+	
+	p{
+		display: block;
+		margin: 10px auto;
+		color: #FFFFFF;
+		text-align: center;
+	}
+}
+
+#skollr-menu-wrapper{
+	position: fixed;
+	top: 80px;
+	left: 50px;
+	padding: 5px;
+	background: #333;
+
+	li{
+		border-bottom: 1px solid white;
+		color: #FFF;
+		&:last-child{
+			border: 0;
+		}
+
+		&:hover{
+			background: #FFF;
+			color: #000;
+		}
+	}
+
+	a{
+		padding: 10px 15px;
+		display: block;
+		cursor: pointer;
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+
+.background{
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+
+.always-on-top{
+	z-index: 1000;
+}
+
+.historyText{
+	top: 15%;
+	width: 400px;
+	height: auto;
+	color: white;
+	h1{
+		margin-bottom: 5px;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+}
+
+#railroadBackground{
+	background: url(../img/railroad.jpg);
+}
+
+#railroadTrain{
+	background: url(../img/train.png);
+	width: 285px;
+	height: 92px;	
+    transition: margin 0.25s ease-out;
+	
+	&:hover{
+		cursor:pointer;
+	    margin-top: -10px;
+	}
+}
+
+
+#oceanBackground{
+	background: url(../img/water.jpg);
+	opacity: 0;
+}
+
+#oceanShip{
+	background: url(../img/ship.png);
+	width: 443px;
+	height: 119px;
+	top: 558px;
+}

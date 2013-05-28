@@ -125,7 +125,7 @@
 			while((keyframe = rxSingleKeyframe.exec(rawKeyframes[1])) !== null) {
 				//Put all keyframes inside the animation using the keyframe (like botttom-top, or 100) as key
 				//and the properties as value (just the raw string, newline stripped).
-				curAnimation[keyframe[1]] = keyframe[2].replace(/[\n\r\t]/g, '');
+				curAnimation[keyframe[1]] = keyframe[2].replace(/[\n\r\t]/g, '').replace(/\s/g, '');
 			}
 		}
 	};
