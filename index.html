@@ -7,27 +7,49 @@
 
 	<title>Liemba meets Skrollr</title>
 
-	<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
-	<link href="main.css" rel="stylesheet" type="text/css" />
-	<link href="element-keyframes.css" rel="stylesheet" type="text/css" />
+	<link href="fixed-positioning.css" rel="stylesheet" type="text/css">
+	<link href="element-keyframes.css" rel="stylesheet" type="text/css">
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet/less" type="text/css" href="main.less">
+	<script src="less.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 </head>
 
 <body>
-	<div id="desertBackground" class="background"  data-1000="opacity: 0"></div>
-	<div id="waterBackground" class="background" data-1000="opacity: 1" data-1000="opacity: 0"></div>
 
-	<!--<div style="position:fixed;top: 400px;left: 600px;" id="yIndicator"></div>
+	<div style="position:fixed;top: 100px;left: 100px;z-index:10; color: white" id="yIndicator">0</div>
 	<script type="text/javascript">
 		$(function() {
-   
-			$('body').scroll(function(){
-				$('#yIndicator').html(window.pageYOffset || document.documentElement.scrollTop);
+   			$(document).scroll(function(){
+				
+				var doc = document.documentElement, body = document.body;
+				var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0);
+
+				$('#yIndicator').html(top);
 			});
 		});
 		
 	</script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
--->
+
+	<!-- desert scene -->
+	<div id="railroadBackground" class="background" data-0="opacity: 1" data-1700="opacity: 0"></div>
+	<div id="train" data-0="left: -5%" data-100="left:5%; top: 510px" data-900="left: 120%; top: 550px"></div>
+	<div id="railroadText" class="historyText" data-50="left: 100%" data-100="left: 30%" data-700="left: 30%" data-900="left: -45%">
+		<h1>Erste Überlegung</h1>
+		<h2>Juni 1910</h2>
+		<p>Erste Überlegungen zum Bau eines größeren Dampfschiffes auf dem Tanganjika-See gab es allerdings bereits im Juni 1910, als die Kolonialverwaltung sich bei der Eisenbahnverwaltung in Tabora über die Ausmaße britischer Dampfer auf dem Viktoria-See erkundigte und um nähere Informationen über sinnvolle Größen entsprechender Einheiten auf dem Tanganjika-See bat.</p>
+	</div>
+
+	<!-- water scene -->
+	<div id="waterBackground" class="background" data-0="opacity: 0" data-1700="opacity: 1" ></div>
+	<div id="ship" data-0="left: -100%" data-1000="left:5%" data-2500="left:50%; top: 558px" data-3000="top: 100%"></div>
+	<div id="railroadText" class="historyText" data-800="left: 100%" data-1000="left: 30%" data-1850="left: 30%" data-2050="left: -45%">
+		<h1>Zweite Überlegung</h1>
+		<h2>März 1911</h2>
+		<p>Hierbei wurde zunächst der Dieselantrieb als zukunftsweisende Technologie bevorzugt, speziell vor dem Hintergrund vielversprechender Versuche der Treibstoffgewinnung aus verschiedenen in der Kolonie vorhandenen Pflanzen bzw. deren Früchten, wie z. B. der Palme oder der Erdnußpflanze.</p>
+	</div>
+	
+
 
 	
 	<p>push</p><p>push</p><p>push</p><p>push</p><p>push</p><p>push</p><p>push</p><p>push</p><p>push</p><p>push</p>

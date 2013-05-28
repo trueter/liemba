@@ -1,0 +1,64 @@
+body{
+	width: 1024px;
+}
+.background{
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+
+#railroadBackground{
+	background: url(images/railroad.jpg);
+	opacity: 1;
+}
+
+#waterBackground{
+	background: url(images/water.jpg);
+	opacity: 0;
+}
+
+#ship{
+	background: url(images/ship.png);
+	width: 443px;
+	height: 119px;
+	top: 558px;
+	-skrollr-animation-name : animation1;
+}
+
+#train{
+	background: url(images/train.png);
+	width: 285px;
+	height: 92px;	
+}
+
+.historyText{
+	top: 15%;
+	width: 400px;
+	height: auto;
+	color: white;
+
+	h1{
+		margin-bottom: 5px;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+}
+
+@-skrollr-keyframes animation1 {
+    0 {
+        left:100%;
+    }
+
+    2000 {
+        left:0%;
+    }
+
+    top {
+        color:rgb(0,0,0);
+    }
+
+    bottom {
+        color:rgb(255,0,0);
+    }
+}
