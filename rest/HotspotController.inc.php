@@ -70,8 +70,9 @@ function createHotspot($formData) {
 		try {
 			$db = getConnection();
 			
-			$statement = $db->prepare("INSERT INTO ".$_ENV['DATABASE_HOTSPOT_TSABLE']." (name,xOff,yOff) VALUES (:name,:xOff,:yOff)");
+			$statement = $db->prepare("INSERT INTO ".$_ENV['DATABASE_HOTSPOT_TABLE']." (name,xOff,yOff) VALUES (:name,:xOff,:yOff)");			
 			$statement->execute(array(':name'=>$formData['name'], ':xOff'=>$formData['xOff'], ':yOff'=>$formData['yOff']));
+
 			$newId = $db->lastInsertId();
 
 			if( !$newId ){

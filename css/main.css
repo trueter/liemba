@@ -60,6 +60,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    background: url('../img/background_1400.jpg');
+    height: 2395px;
+}
+
 
 /* ######## Map ######## */
 #map-wrapper{
@@ -70,6 +75,14 @@ textarea {
 #map-image{
     position: absolute;
     z-index: 5;
+}
+
+#restdummy{
+    visibility: hidden;
+    margin: 50px;
+    padding: 20px;
+    background: #FFF;
+    display: inline-block;
 }
 
 .map-hotspot-anchor{
