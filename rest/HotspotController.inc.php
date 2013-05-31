@@ -30,7 +30,9 @@ function getHotspot($id){
 	try{
 		$db = getConnection();
 
-	    $statement = $db->query('SELECT * FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
+		
+
+	    $statement = $db->query('SELECT * FROM '. $_ENV['DATABASE_HOTSPOTS_TABLE'] .' WHERE ID='.$id);
 
 		$result = $statement->fetchAll(PDO::FETCH_OBJ);
 	} catch(PDOException $e) {
@@ -68,7 +70,7 @@ function createHotspot($formData) {
 		try {
 			$db = getConnection();
 			
-			$statement = $db->prepare("INSERT INTO ".$_ENV['DATABASE_TABLE']." (name,xOff,yOff) VALUES (:name,:xOff,:yOff)");
+			$statement = $db->prepare("INSERT INTO ".$_ENV['DATABASE_HOTSPOT_TSABLE']." (name,xOff,yOff) VALUES (:name,:xOff,:yOff)");
 			$statement->execute(array(':name'=>$formData['name'], ':xOff'=>$formData['xOff'], ':yOff'=>$formData['yOff']));
 			$newId = $db->lastInsertId();
 
@@ -102,7 +104,7 @@ function updateHotspot($id, $formData){
 	if($status != 400){
 		try{
 			$db = getConnection();
-		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_TABLE'] .' SET name=:name,xOff=:xOff,yOff=:yOff WHERE id='.$id);
+		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_HOTSPOTS_TABLE'] .' SET name=:name,xOff=:xOff,yOff=:yOff WHERE id='.$id);
 			$statement->execute(array(':name'=>$formData['name'], ':xOff'=>$formData['xOff'], ':yOff'=>$formData['yOff']));
 
 			if( $statement->rowCount() != 1 ){
@@ -126,7 +128,7 @@ function deleteHotspot($id) {
 	try{
 	    $db = getConnection();
 
-	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
+	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_HOTSPOTS_TABLE'] .' WHERE ID='.$id);
 		
 		if($statement->rowCount() != 1){
 			$status = 500;
@@ -141,14 +143,5 @@ function deleteHotspot($id) {
 }
 
 # GET /
-function rootAction() {
-    echo "Root called";
-}
 
-
-function getConnection() {
-    $dbh = new PDO('mysql:host='.$_ENV['DATABASE_SERVER'].';dbname='.$_ENV['DATABASE_NAME'].';charset=utf8', $_ENV['DATABASE_USER'], $_ENV['DATABASE_PASSWORD']);
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    return $dbh;
-}
 ?>
