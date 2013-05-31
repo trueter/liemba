@@ -13,9 +13,7 @@
 <body>
 	<div id="nav" class="always-on-top"></div>
 	<div id="offsetHelper" class="always-on-top">0</div>
-	<div id="instruction-circle" class="always-on-top">
-		<p>Scrollen sie hinunter, um die Reise zu starten</p>
-		<p>Scroll down to start the journey</p></div>
+		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
 			<li><a href="#railroadText" data-menu-top="200">Railroad</a></li>
@@ -23,24 +21,12 @@
 		</ul>
 	</div>
 
-	<!-- railroad scene -->
-	<div id="railroadBackground" class="background"></div>
-	<div id="railroadTrain"></div>
-	<div id="railroadText" class="historyText">
-		<h1>Erste Überlegung</h1>
-		<h2>Juni 1910</h2>
-		<p>Erste Überlegungen zum Bau eines größeren Dampfschiffes auf dem Tanganjika-See gab es allerdings bereits im Juni 1910, als die Kolonialverwaltung sich bei der Eisenbahnverwaltung in Tabora über die Ausmaße britischer Dampfer auf dem Viktoria-See erkundigte und um nähere Informationen über sinnvolle Größen entsprechender Einheiten auf dem Tanganjika-See bat.</p>
+	<div id="instruction-circle" class="always-on-top">
+		<p>Scrollen sie hinunter, um die Reise zu starten</p>
+		<p>Scroll down to start the journey</p>
 	</div>
 
-	<!-- ocean scene -->
-	<div id="oceanBackground" class="background"></div>
-	<div id="oceanShip"></div>
-	<div id="oceanText" class="historyText">
-		<h1>Zweite Überlegung</h1>
-		<h2>März 1911</h2>
-		<p>Hierbei wurde zunächst der Dieselantrieb als zukunftsweisende Technologie bevorzugt, speziell vor dem Hintergrund vielversprechender Versuche der Treibstoffgewinnung aus verschiedenen in der Kolonie vorhandenen Pflanzen bzw. deren Früchten, wie z. B. der Palme oder der Erdnußpflanze.</p>
-	</div>
-	
+	<?php require("scenes.inc.php"); ?>
 	
 	<script type="text/javascript" src="js/vendor/less-1.3.3.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
