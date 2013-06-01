@@ -5,7 +5,7 @@ $_ENV['DATABASE_NAME'] = "liemba_map";
 $_ENV['DATABASE_TABLE'] = "hotspots";
 $_ENV['DATABASE_USER'] = "root";
 <<<<<<< HEAD
-$_ENV['DATABASE_PASSWORD'] = "Demon2k";
+$_ENV['DATABASE_PASSWORD'] = "ascent";
 
 =======
 $_ENV['DATABASE_PASSWORD'] = "";
