@@ -1,5 +1,6 @@
 body{
 	font-family: Helvetica, Times;
+	background-color:#000000;
 }
 
 #nav {
@@ -32,7 +33,7 @@ body{
 	height: 120px;
 	width: 120px;
 	padding: 50px;
-	background-color: #e74c3c;
+	background-color: white;
 	border-radius: 300px;
 	left: 50%;
 	bottom: 200px;
@@ -40,7 +41,7 @@ body{
 	p{
 		display: block;
 		margin: 10px auto;
-		color: #FFFFFF;
+		color: #000000;
 		text-align: center;
 	}
 }
@@ -86,10 +87,10 @@ body{
 }
 
 .historyText{
-	top: 15%;
+	top: 30%;
 	width: 400px;
 	height: auto;
-	color: white;
+	color: black;
 	h1{
 		margin-bottom: 5px;
 	}
@@ -99,7 +100,11 @@ body{
 }
 
 #railroadBackground{
-	background: url(../img/railroad.jpg);
+	background: url(../img/background.jpg);
+	background-repeat:no-repeat;
+
+  	background-position: 50% 50%;
+
 }
 
 #railroadTrain{
@@ -116,13 +121,41 @@ body{
 
 
 #oceanBackground{
-	background: url(../img/water.jpg);
-	opacity: 0;
+	background: url(../img/background.jpg);
+	background-repeat:no-repeat;
+
+  	background-position: 50% 50%;
+	
 }
 
 #oceanShip{
 	background: url(../img/ship.png);
 	width: 443px;
-	height: 119px;
-	top: 558px;
+	height: 226px;
+	top: 367px;
 }
+
+#water{
+	background: url(../img/water.png);
+	width: 2000px;
+	height: 70px;
+	top: 480px;
+}
+
+#bombs{
+	background: url(../img/bombs.png);
+	width: 133px;
+	height: 95px;
+	top: 0%;
+	left: 100%;
+}
+
+#clouds{
+	background: url(../img/clouds.png);
+	width: 1000px;
+	height: 261px;
+	top: 25%;
+	left: 100%;
+
+}
+
