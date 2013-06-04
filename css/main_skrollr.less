@@ -1,0 +1,42 @@
+body{
+	font-family: Helvetica, Times;
+}
+
+#offsetHelper{
+	position:fixed;
+	top: 50px;
+	left: 50px;
+	z-index:10;
+	color: white;
+	font-size: 16px;
+	
+	&:before{
+		content:"yOff: ";
+		color: white;
+	}
+}
+/*
+.background{
+	height: 75%;
+	width: 75%;
+	z-index: 5;
+}
+*/
+.always-on-top{
+	z-index: 1000;
+}
+
+/* ######## Map ######## */
+#map_bg_img{
+    background: url(../img/background_1400.jpg);
+	height: 350%;    
+	width: 140%;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+#ship_bg_img{
+    background: url(../img/ship_to_bot.png);
+    height: 50px;
+    width: 20px;
+    top:300px;
+}

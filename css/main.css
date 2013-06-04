@@ -60,13 +60,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body{
-    background: url('../img/background_1400.jpg');
-    height: 2395px;
-}
 
 
-/* ######## Map ######## */
+
+/*######## Add new Hotspots ######## */
 #map-wrapper{
     position: relative;
     display: inline-block;

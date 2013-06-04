@@ -1,68 +1,21 @@
-#instruction-circle{
-    -skrollr-animation-name:instructionCircleAni;
+#map_bg_img{
+    -skrollr-animation-name:seaAni;
 }
-@-skrollr-keyframes instructionCircleAni {
-       
-    100{ opacity: 1; }
-    200{ opacity: 0; }
-}   
-    
-/* RAILROAD */
-#railroadBackground{
-    -skrollr-animation-name:railroadBackgroundAni;
-}
-@-skrollr-keyframes railroadBackgroundAni {
-       0{ opacity: 1;  }
-     850{ opacity: 0.7;}
-     900{ opacity: 0;  }
+@-skrollr-keyframes seaAni {
+      0 { left: -10%; top: -10%; }
+    100 { left:  -5%; top: -25%; }
+   1000 { left:   0%; top: -40%; }
+   3000 { left:   0%; top: -150%; }
 }
 
-#railroadText {
-    -skrollr-animation-name: railroadTextAni;
+#ship_bg_img{
+    -skrollr-animation-name:shipAni;
 }
-@-skrollr-keyframes railroadTextAni {
-      50{ left: 100%; } 
-     100{ left:  30%; }
-     700{ left:  30%; }
-     900{ left: -45%; }
-}
-
-#railroadTrain{
-    -skrollr-animation-name:railroadTrainAni;
-}
-@-skrollr-keyframes railroadTrainAni {
-      0 { left: -5% }
-    100 { left:   5%; top: 510px; }
-   1000 { left: 120%; top: 550px; }
-}
-
-/* OCEAN */
-#oceanBackground{
-    -skrollr-animation-name:oceanBackgroundAni;
-}
-@-skrollr-keyframes oceanBackgroundAni {
-       0 { opacity: 0; }
-    1400 { opacity: 0.5; }
-    1500 { opacity: 1; }
-}
-
-#oceanText{
-    -skrollr-animation-name:oceanTextAni;
-}
-@-skrollr-keyframes oceanTextAni {
-     800{ left: 100%; } 
-    1000{ left:  30%; } 
-    1850{ left:  30%; } 
-    2050{ left: -45%; }
-}
-
-#oceanShip{
-    -skrollr-animation-name:oceanShipAni;
-}
-@-skrollr-keyframes oceanShipAni {
-       0 { left:-100%; }
-    1000 { left:   5%; }
-    2500 { left:  50%; top:  70%; }
-    2750 { left:  45%; top:  85%; }
+@-skrollr-keyframes shipAni {
+       0 { left:  50%; top:   5%; }
+    1000 { left:  50%; top:  20%;}
+    2500 { left:  50%; top:  40%; }
+    2750 { left:  45%; top:  75%; }
     3000 { left:  55%; top: 100%; }
 }
+
