@@ -13,6 +13,17 @@
 <body>
 	<div id="nav" class="always-on-top"></div>
 	<div id="offsetHelper" class="always-on-top">0</div>
+	
+
+	<div id="head">
+		<img id="spiral" src="img/spiral05.png">
+	</div>
+
+	<div id="background">
+		<img id="paper" src="img/paper03.png">
+	</div>
+
+	<div id="bookmarks" class="footer"</div>
 		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
