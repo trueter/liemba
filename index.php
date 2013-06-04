@@ -27,8 +27,8 @@
 		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
-			<li><a href="#railroadText" data-menu-top="200">Railroad</a></li>
-			<li><a href="#oceanText" data-menu-top="1400">Ocean</a></li>
+			<li><a href="#railroadText" data-menu-top="200">Fliegerbomben</a></li>
+			<li><a href="#oceanText" data-menu-top="1400">Versenkung</a></li>
 		</ul>
 	</div>
 

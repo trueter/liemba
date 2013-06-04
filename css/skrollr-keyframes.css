@@ -22,9 +22,9 @@
 }
 @-skrollr-keyframes railroadTextAni {
       50{ left: 100%; } 
-     100{ left:  30%; }
-     700{ left:  30%; }
-     900{ left: -45%; }
+     1000{ left:  25%; }
+     1500{ left:  25%; }
+     1700{ left: -45%; }
 }
 
 #railroadTrain{
@@ -51,31 +51,30 @@
     -skrollr-animation-name:oceanTextAni;
 }
 @-skrollr-keyframes oceanTextAni {
-     800{ left: 100%; } 
-    1000{ left:  30%; } 
-    1400{ left:  30%; } 
-    2000{ left: -45%; }
+    1600{ left: 100%; } 
+    2000{ left:  25%; } 
+    2600{ left:  25%; } 
+    2800{ left: -45%; }
 }
 
 #oceanShip{
     -skrollr-animation-name:oceanShipAni;
 }
 @-skrollr-keyframes oceanShipAni {
-       0 { left:-100%; }
-    1000 { left:   5%; }   
-    1200 { left:  30%; }
-
-    2200 { left:  35%; }
-
-    3000 { left:  100%; }
+       0 { left:-100%; bottom: 260px;}
+    1000 { left:  10%; bottom: 260px;}   
+    2000 { left:  30%; bottom: 260px;}
+    2500 { left:  40%; bottom: 200px;}
 }
 
 #water{
     -skrollr-animation-name:waterAni;
 }
 @-skrollr-keyframes waterAni {
-    250 { left: 0%; }
-    3000 { left:-50%; }
+    250 { left: 0%; bottom: 200px;}
+    2000 { left:-50%; bottom: 200px;}
+    2500 { left:-60%; bottom: 260px;}
+    3000 { left:-70%; bottom: 260px;}
 }
 
 #bombs{
@@ -83,9 +82,9 @@
 }
 @-skrollr-keyframes bombsAni {
 
-    1100 {left:80%; top: 20%; opacity: 1;}
-    1650 {left:45%; top: 50%; opacity: 1;}
-    1700 {left:45%; top: 50%; opacity: 0;}
+    1100 {left:70%; bottom: 1000px; opacity: 1;}
+    1650 {left:40%; bottom: 250px; opacity: 1;}
+    1700 {left:40%; bottom: 250px; opacity: 0;}
    
 }
 
@@ -94,8 +93,19 @@
 }
 @-skrollr-keyframes cloudsAni {
 
-    250 {left:10%; }
-    3000 { left: 0%; }
+    0 {left:0%; }
+    3000 { left: -10%; }
+}
+
+#bild{
+    -skrollr-animation-name:bildAni;
+}
+@-skrollr-keyframes bildAni {
+    
+    1600{ left: 100%; } 
+    2000{ left:  70%; } 
+    2600{ left:  70%; } 
+    2800{ left: -45%; }
 }
 
 
