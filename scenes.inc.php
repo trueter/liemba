@@ -16,11 +16,14 @@ aæ ß ...
 
 <!-- ocean scene -->
 <div id="oceanBackground" class="background"></div>
+<div id="clouds"></div>
+<div id="bombs"></div>
 <div id="oceanShip"></div>
+<div id="water"></div>
 <div id="oceanText" class="historyText">
-	<h1>Zweite Überlegung</h1>
-	<h2>März 1911</h2>
-	<p>Hierbei wurde zunächst der Dieselantrieb als zukunftsweisende Technologie bevorzugt, speziell vor dem Hintergrund vielversprechender Versuche der Treibstoffgewinnung aus verschiedenen in der Kolonie vorhandenen Pflanzen bzw. deren Früchten, wie z. B. der Palme oder der Erdnußpflanze.</p>
+	<h1>Bombenangriff</h1>
+	<h2>10. Juni 1916</h2>
+	<p>Am 10. Juni 1916 flogen vier belgische Wasserflugzeuge einen ersten Bombenangriff gegen das DS „Goetzen“, das zu diesem Zeitpunkt im Hafen von Kigoma lag.</p>
 </div>
 
 <!-- template scene --> 

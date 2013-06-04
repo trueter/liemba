@@ -21,28 +21,12 @@
 		</ul>
 	</div>
 
-<<<<<<< HEAD:index.html
-	
-	<!-- ocean scene -->
-	<div id="oceanBackground" class="background"></div>
-	<div id="clouds"></div>
-	<div id="bombs"></div>
-	<div id="oceanShip"></div>
-	<div id="water"></div>
-	<div id="oceanText" class="historyText">
-		<h1>Bombenangriff</h1>
-		<h2>10. Juni 1916</h2>
-		<p>Am 10. Juni 1916 flogen vier belgische Wasserflugzeuge einen ersten Bombenangriff gegen das DS „Goetzen“, das zu diesem Zeitpunkt im Hafen von Kigoma lag.</p>
-	</div>
-	
-=======
 	<div id="instruction-circle" class="always-on-top">
 		<p>Scrollen sie hinunter, um die Reise zu starten</p>
 		<p>Scroll down to start the journey</p>
 	</div>
-
+	
 	<?php require("scenes.inc.php"); ?>
->>>>>>> e277c18919da4f194a171464cb78dffd33896c43:index.php
 	
 	<script type="text/javascript" src="js/vendor/less-1.3.3.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
