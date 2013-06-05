@@ -2,26 +2,29 @@
     -skrollr-animation-name:seaAni;
 }
 @-skrollr-keyframes seaAni {
-      0 { left: -20%; top: -20%; }
-    100 { left: -15%; top: -65%; }
-    500 { left: -10%; top: -100%; }
-    800 { left:   0%; top: -150%; }
-   1000 { left:   0%; top: -200%; }
-   1400 { left:   0%; top: -300%; }
-   3000 { left:   0%; top: -350%; }
+      0 { left:   0%; top: -20%; }
+     52 { left:   0%; top: -55%; }
+    120 { left:   0%; top: -75%; }
+    250 { left:   0%; top: -90%; }
+    300 { left:  -5%; top: -90%; }
+    800 { left:  -5%; top: -130%; }
+   1000 { left:  -5%; top: -200%; }
+   1400 { left:  -5%; top: -300%; }
 }
 
 #ship_bg_img{
     -skrollr-animation-name:shipAni;
 }
 @-skrollr-keyframes shipAni {
-       0 { left:  30%; top:  30%; }
-     100 { left:  30%; top:  20%; }
-     400 { left:  30%; top:  50%; }
-     650 { left:  35%; top:  70%; }
-     800 { left:  35%; top:  80%; }
-    1000 { left:  35%; top:  90%; }
-    1400 { left:  35%; top: 100%; }
-    3000 { left:  35%; top: 100%; }
+       0 { left:  37%; top:  30%; transform: rotate(0deg);}
+       5 { left:  37%; top:  35%; transform: rotate(0deg);}
+      17 { left:  37%; top:  40%; transform: rotate(-35deg);}
+      40 { left:  45%; top:  50%; transform: rotate(-35deg);}
+      80 { left:  45%; top:  50%; transform: rotate(15deg);}
+     120 { left:  45%; top:  50%; transform: rotate(15deg);}
+     250 { left:  45%; top:  50%; transform: rotate(-70deg);}
+     420 { left:  45%; top:  50%; transform: rotate(30deg);}
+    1000 { left:  45%; top:  50%; transform: rotate(0deg);}
+    1400 { left:  45%; top:  50%; transform: rotate(0deg);}
 }
 
