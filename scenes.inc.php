@@ -5,8 +5,11 @@ HTML SPECIAL CHARS
 aæ ß ...
 -->
 
+<div id="scroll-instruction">
+	<img src="img/scroll.png" alt="bla">
+</div>
+
 <!-- fliegerbomben scene -->
-<div id="scroll"></div>
 <div id="clouds"></div>
 <div id="oceanShip"></div>
 <div id="water"></div>

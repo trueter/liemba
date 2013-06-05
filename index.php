@@ -9,25 +9,19 @@
 	<link href="css/skrollr-keyframes.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
 	<link href="css/main.less" rel="stylesheet/less" type="text/css" data-skrollr-stylesheet>
 </head>
-
 <body>
-	<div id="nav" class="always-on-top"></div>
 	<div id="offsetHelper" class="always-on-top">0</div>
-	
 
-	<div id="head">
-		<img id="spiral" src="img/spiral05.png">
+    <div id="notepad-wrapper">
+        <img id="spiral" src="img/spiral05.png">
+
+        <img id="paperstack" src="img/nav.png" alt="">
+    </div>
+
+	
 	</div>
 
 
-
-	<div id="background">
-		<img id="paper" src="img/paper03.png">
-	</div>
-
-	
-	
-	<div id="bookmarks" class="footer"</div>
 		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
@@ -36,10 +30,9 @@
 		</ul>
 	</div>
 
-	
-
-	
-	<?php require("scenes.inc.php"); ?>
+    <div id="scenes-wrapper">
+	   <?php require("scenes.inc.php"); ?>
+    </div>
 	
 	<script type="text/javascript" src="js/vendor/less-1.3.3.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
