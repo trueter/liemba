@@ -1,21 +1,27 @@
-#map_bg_img{
+#map_bg_img {
     -skrollr-animation-name:seaAni;
 }
 @-skrollr-keyframes seaAni {
-      0 { left: -10%; top: -10%; }
-    100 { left:  -5%; top: -25%; }
-    500 { left:   0%; top: -40%; }
-    800 { left:  10%; top: -100%; }
+      0 { left: -20%; top: -20%; }
+    100 { left: -15%; top: -65%; }
+    500 { left: -10%; top: -100%; }
+    800 { left:   0%; top: -150%; }
+   1000 { left:   0%; top: -200%; }
+   1400 { left:   0%; top: -300%; }
+   3000 { left:   0%; top: -350%; }
 }
 
 #ship_bg_img{
     -skrollr-animation-name:shipAni;
 }
 @-skrollr-keyframes shipAni {
-       0 { left:  50%; top:   5%; }
-     100 { left:  50%; top:  20%; }
-     400 { left:  50%; top:  40%; }
-     650 { left:  45%; top:  75%; }
-     800 { left:  55%; top: 100%; }
+       0 { left:  30%; top:  30%; }
+     100 { left:  30%; top:  20%; }
+     400 { left:  30%; top:  50%; }
+     650 { left:  35%; top:  70%; }
+     800 { left:  35%; top:  80%; }
+    1000 { left:  35%; top:  90%; }
+    1400 { left:  35%; top: 100%; }
+    3000 { left:  35%; top: 100%; }
 }
 

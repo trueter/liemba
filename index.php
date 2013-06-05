@@ -23,7 +23,7 @@
     <body>
         <div id="offsetHelper" class="always-on-top">0</div>
         <div id="map_bg_wrapper">
-            <img src="img/background_1400.jpg">
+            <img id="map_bg_img" src="img/background_1400.jpg">
         </div>
         <div id="ship_bg_img"></div>
         <!--
