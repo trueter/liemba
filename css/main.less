@@ -19,7 +19,7 @@ body{
 
 	position:fixed;
 	bottom: 20px;
-	left: 50px;
+	left: 500px;
 	z-index:999;
 	color: white;
 	font-size: 16px;
@@ -30,29 +30,25 @@ body{
 	}
 }
 
-#instruction-circle{
-	position: fixed;
-	height: 120px;
-	width: 120px;
-	padding: 50px;
-	background-color: white;
-	border-radius: 300px;
+#scroll{
+	background: url(../img/scroll.png);
+	background-repeat: no-repeat;
+	top: 50%;
 	left: 50%;
-	bottom: 200px;
-	
-	p{
-		display: block;
-		margin: 10px auto;
-		color: #000000;
-		text-align: center;
-	}
+	width: 367px;
+	height: 216px;
+	position: fixed;
+	z-index: 1000;
+	margin-top: -108px;
+	margin-left: -183px;
 }
+
 
 
 #skollr-menu-wrapper{
 
 	position: fixed;
-	bottom: 110px;
+	bottom: 20px;
 	left: 50px;
 	padding: 5px;
 	background: #333;
@@ -86,7 +82,7 @@ body{
 
 
 
-.head{
+#head{
 	height: 107px;
 	width: 100%;
 	position: fixed;
@@ -123,7 +119,7 @@ body{
 
 #bookmarks {
 	width: 100%;
-	height: 200px;
+	height: 120px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -136,7 +132,7 @@ body{
 }
 
 .historyText{
-	top: 120px;
+	top: 130px;
 	width: 400px;
 	height: auto;
 	color: black;
@@ -206,5 +202,12 @@ body{
 	height: 237px;
 	top: 130px;
 	left: 100%;
+
+	&:hover{
+	width: 400px;
+	height: 352px;
+	background: url(../img/bild_groß.png);
+
+	}
 }
 

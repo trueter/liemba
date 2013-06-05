@@ -64,7 +64,7 @@
        0 { left:-100%; bottom: 260px;}
     1000 { left:  10%; bottom: 260px;}   
     2000 { left:  30%; bottom: 260px;}
-    2500 { left:  40%; bottom: 200px;}
+    2500 { left:  40%; bottom: 180px;}
 }
 
 #water{
@@ -107,5 +107,16 @@
     2600{ left:  70%; } 
     2800{ left: -45%; }
 }
+
+#scroll{
+    -skrollr-animation-name:scrollAni;
+}
+@-skrollr-keyframes scrollAni {
+    
+    0{opacity: 1;}
+    200{opacity: 0;}
+}
+
+
 
 

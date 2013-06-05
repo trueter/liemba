@@ -6,6 +6,7 @@ aæ ß ...
 -->
 
 <!-- fliegerbomben scene -->
+<div id="scroll"></div>
 <div id="clouds"></div>
 <div id="oceanShip"></div>
 <div id="water"></div>
@@ -21,7 +22,7 @@ aæ ß ...
 		Nach dem Angriff entsandten die Belgier Aufklärungsflugzeuge, 
 		um sich einen genaueren Überblick über die erzielten Beschädigungen 
 		zu verschaffen. Nach ihrer Rückkehr berichteten die belgischen Piloten, 
-		daß sie eine Rauchwolke aus dem Achterdeck des Schiffes hatten aufsteigen sehen....</p>
+		daß sie eine Rauchwolke aus dem Achterdeck des Schiffes....</p>
 </div>
 
 <!-- versenkung scene -->
@@ -38,7 +39,7 @@ aæ ß ...
 		Zimmer den Befehl, sie zu versenken. Ausführen sollten diesen Befehl ausgerechnet die 
 		drei Papenburger Schiffbauer, die all die Strapazen und Entbehrungen auf sich genommen hatten, 
 		daß Schiff vor mehr als zwei Jahren an den Tanganjika-See zu bringen und 
-		anschließend dort zusammenzubauen....
+		anschließend dort....
 </p>
 </div>
 

@@ -19,23 +19,25 @@
 		<img id="spiral" src="img/spiral05.png">
 	</div>
 
+
+
 	<div id="background">
 		<img id="paper" src="img/paper03.png">
 	</div>
 
+	
+	
 	<div id="bookmarks" class="footer"</div>
 		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
-			<li><a href="#railroadText" data-menu-top="200">Fliegerbomben</a></li>
-			<li><a href="#oceanText" data-menu-top="1400">Versenkung</a></li>
+			<li><a href="#railroadText" data-menu-top="1400">Fliegerbomben</a></li>
+			<li><a href="#oceanText" data-menu-top="2000">Versenkung</a></li>
 		</ul>
 	</div>
 
-	<div id="instruction-circle" class="always-on-top">
-		<p>Scrollen sie hinunter, um die Reise zu starten</p>
-		<p>Scroll down to start the journey</p>
-	</div>
+	
+
 	
 	<?php require("scenes.inc.php"); ?>
 	
