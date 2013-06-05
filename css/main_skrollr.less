@@ -6,7 +6,6 @@ body{
 	position:fixed;
 	top: 50px;
 	left: 50px;
-	z-index:10;
 	color: white;
 	font-size: 16px;
 	
@@ -27,15 +26,19 @@ body{
 }
 
 /* ######## Map ######## */
-#map_bg_img{
-    background: url(../img/background_1400.jpg);
-	height: 350%;    
-	width: 140%;
-	background-size: auto;
-	background-repeat: no-repeat;
+#map_bg_wrapper{
+	width: 100%;
+	
+	img {
+		width: 100%;	
+	}
 }
 #ship_bg_img{
+    /* 
     background: url(../img/ship_to_bot.png);
+    */
+    background: red;
+    
     height: 50px;
     width: 20px;
     top:300px;
