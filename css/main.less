@@ -1,0 +1,83 @@
+@mapHeight : 800px;
+@splitHeight : 200px;
+
+body{
+	font-family: Helvetica, Times;
+}
+
+#offsetHelper{
+	position:fixed;
+	top: 50px;
+	left: 50px;
+	color: black;
+	font-size: 28px;
+	z-index: 100000;
+	
+	&:before{
+		content:"yOff: ";
+		color: black;
+	}
+}
+
+.split-holder{
+	position: absolute;
+	overflow: hidden;
+	height: @splitHeight;
+	width: 100%;
+	background: url(../img/retina_wood.png);
+
+	h1{
+		line-height: 100px;
+		margin: 60px auto;
+		text-align: center;
+	}
+}
+
+#minimap{
+	position: fixed;
+	top: 75px;
+	right: 75px;
+	height: 300px;
+	width: 150px;
+	z-index: 101;
+	background-color: red;
+}
+
+.ships{
+	position: absolute;
+	background: blue;
+}
+
+#ship-1{
+	height: 180px;
+	width: 70px;
+}
+
+#ship-2{
+	height: 40px;
+	width: 20px;
+}
+
+.map-holder{
+	width: 100%;
+	height: @mapHeight;
+	outline: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+#map-1{
+	background: url(../img/grey_wash_wall.png);
+}
+
+#map-2{
+	background: url(../img/mochaGrunge.png);
+}
+
+#split-1{
+	top: @mapHeight - @splitHeight/2;
+}
+
+#split-2{
+	top: 2*@mapHeight - @splitHeight/2;
+}

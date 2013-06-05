@@ -1,30 +1,42 @@
-#map_bg_img {
-    -skrollr-animation-name:seaAni;
+#ship-1 {
+    -skrollr-animation-name: ship1;
 }
-@-skrollr-keyframes seaAni {
-      0 { left:   0%; top: -20%; }
-     52 { left:   0%; top: -55%; }
-    120 { left:   0%; top: -75%; }
-    250 { left:   0%; top: -90%; }
-    300 { left:  -5%; top: -90%; }
-    800 { left:  -5%; top: -130%; }
-   1000 { left:  -5%; top: -200%; }
-   1400 { left:  -5%; top: -300%; }
-}
-
-#ship_bg_img{
-    -skrollr-animation-name:shipAni;
-}
-@-skrollr-keyframes shipAni {
-       0 { left:  37%; top:  30%; transform: rotate(0deg);}
-       5 { left:  37%; top:  35%; transform: rotate(0deg);}
-      17 { left:  37%; top:  40%; transform: rotate(-35deg);}
-      40 { left:  45%; top:  50%; transform: rotate(-35deg);}
-      80 { left:  45%; top:  50%; transform: rotate(15deg);}
-     120 { left:  45%; top:  50%; transform: rotate(15deg);}
-     250 { left:  45%; top:  50%; transform: rotate(-70deg);}
-     420 { left:  45%; top:  50%; transform: rotate(30deg);}
-    1000 { left:  45%; top:  50%; transform: rotate(0deg);}
-    1400 { left:  45%; top:  50%; transform: rotate(0deg);}
+@-skrollr-keyframes  ship1 {
+     0 { transform: translateX( 600px ) translateY( -180px ) rotate(0deg); }
+   270 { transform: translateX( 500px ) translateY( 550px ) rotate(90deg); }
+   300 { transform: translateX( 400px ) translateY( 550px ) rotate(90deg); }
+   310 { transform: translateX( 400px ) translateY( 550px ) rotate(140deg); }
+   340 { transform: translateX( 400px ) translateY( 550px ) rotate(200deg); }
+   350 { transform: translateX( 400px ) translateY( 550px ) rotate(320deg); }
+   600 { transform: translateX( 900px ) translateY( 1200px ) rotate(380deg); }
 }
 
+#split-1 {
+    -skrollr-animation-name: split1;
+}
+@-skrollr-keyframes  split1 {
+   400 { transform: translateY( 100px );}
+   600 { transform: translateY(-100px );}
+}
+
+
+
+
+
+#ship-2 {
+    -skrollr-animation-name: ship2;
+}
+@-skrollr-keyframes  ship2 {
+   600 { transform: translateX( 900px ) translateY( -50px ) rotate(-20deg);  }
+   1400 { transform: translateX( 1100 ) translateY( 600px ) rotate(20deg);  }
+   1600 { transform: translateX( 1100 ) translateY( 1400px ) rotate(0deg);  }
+   
+}
+
+#split-2 {
+    -skrollr-animation-name: split2;
+}
+@-skrollr-keyframes  split2 {
+  1200 { transform: translateY(100);}
+  2500 { transform: translateY(-100px);}
+}
