@@ -25,6 +25,7 @@ body{
 	height: @splitHeight;
 	width: 100%;
 	background: url(../img/retina_wood.png);
+	
 
 	h1{
 		line-height: 100px;
@@ -51,11 +52,13 @@ body{
 #ship-1{
 	height: 180px;
 	width: 70px;
+	z-index: 101;
 }
 
 #ship-2{
 	height: 40px;
 	width: 20px;
+	z-index: 104;
 }
 
 .map-holder{
@@ -63,21 +66,24 @@ body{
 	height: @mapHeight;
 	outline: 1px solid black;
 	position: relative;
-	overflow: hidden;
 }
 
 #map-1{
 	background: url(../img/grey_wash_wall.png);
+	z-index: 100;
 }
 
 #map-2{
 	background: url(../img/mochaGrunge.png);
+	z-index: 102;
 }
 
 #split-1{
 	top: @mapHeight - @splitHeight/2;
+	z-index: 105;
 }
 
 #split-2{
 	top: 2*@mapHeight - @splitHeight/2;
+	z-index: 105;
 }
