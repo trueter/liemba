@@ -1,0 +1,507 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.1
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+	
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* IE */
+@font-face {
+ font-family:Din;
+ src:url("../liemba/fonts/DINReg.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../liemba/fonts/DINBol.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../liemba/fonts/DINLig.eot");
+}
+
+/* Modern Browsers */
+@font-face {
+ font-family:Din;
+ src:url("../liemba/fonts/DINReg.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../liemba/fonts/DINBol.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../liemba/fonts/DINLig.ttf");
+}
+
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+body {
+	font:300 11px/1.4 Din, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#FFF;
+	background-color: #FFF;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+
+/*------------------------------------*\
+    GLOBAL COLOR CLASSES
+\*------------------------------------*/
+
+.page_item, .blue-item {
+	background-color: #00b0e3;
+	outline: 1px solid #00b0e3;	
+	outline-offset: 1px;
+}
+
+.page_item:hover, .footer-widget:hover {
+	background-color: #00809e;
+	outline: 1px solid #00809e;
+}
+
+.white-item {
+	background-color: #FFFFFF;
+	outline: 1px solid #FFF;	
+	outline-offset: 1px;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	width:100%;
+	position:relative;
+	overflow: hidden;
+}
+/* header */
+.header {
+	
+}
+/* search */
+.search {
+	float: right;
+	height: 38px;
+	width: 300px;
+	padding: 7px;
+	padding-left: 9px;
+}
+
+.search label{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	vertical-align: bottom;
+	margin: 0 5px;
+}
+
+.search-input{
+	border: 1px solid #000;
+	height: 20px;
+	width: 215px;
+	margin-left: 6px;
+}
+.search-submit{
+	position: absolute;
+	display: block;
+	border: 0;
+	top: 9px;
+	right: 5px;
+	height: 30px;
+	width: 35px;
+	
+	cursor: pointer;
+	background: url(../liemba/img/icons/search.png) no-repeat;
+	text-indent: -999px
+}
+/* logo */
+.logo {
+	margin-top: 50px;
+	width: 230px;
+}
+.logo-img {
+	
+}
+/* nav */
+.nav {
+	float: right;
+	padding-right:2px;/* 1px offset + 1px offset distance */
+}
+
+.page_item {
+	position: relative;
+	margin: 5px 0;
+	max-width: 180px;
+	height: 40px;
+	width: 150px;
+	text-align: right;
+	
+	
+	text-transform: uppercase;
+	font-size: 18px;	
+
+	background-color: #00b0e3; /* remove when bakground images available */
+	white-space: nowrap;
+}
+
+.page_item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	line-height: 43px;
+	padding-right: 20px;
+	color: #FFF;
+}
+
+.page_item.hover .children {
+	display: block;
+}
+
+.children {
+	position: absolute;
+	top: -18px;
+	right: -190px;
+	display: none;
+}
+
+.children .page_item{
+	width: 175px;
+}
+/* sidebar */
+.sidebar {
+	display: inline-block;
+	width: 230px;
+}
+
+#sidebar-and-content{
+	color: #000;
+	padding-bottom: 150px;
+}
+/* main content wrap */
+#content-wrap{
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 500px;
+	padding: 10px 20px 10px;
+	background-color: #FFF;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#social-wrapper{
+	position: fixed;
+	right:0;
+	margin-top: -50px;
+	top: 50%;
+}
+#social-wrapper img{
+	display: block;
+	width: 40px;
+	margin: 5px;
+}
+/* footer */
+.footer {
+	margin-top: 5px;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.copyright{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 5px;
+	font-size: 1em;
+	background-color: #00b0e3;
+}
+
+.footer-widget-wrapper{
+	margin: 0 auto;
+	width: 550px;
+	display: block;
+
+}
+
+.footer-widget{
+	cursor: not-allowed;
+	padding: 5px 35px;
+	font-weight: bold;
+	display: inline-block;
+	height: 90px;
+	width: 264px;
+	text-align: right;
+	font-size: 24px;
+	vertical-align: top;
+	text-transform: uppercase;
+	margin: 0 4px;
+}
+
+.footer-widget:hover{
+	color: #FFF;
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+   
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+   
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+	
+}
+.bypostauthor {
+	
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
