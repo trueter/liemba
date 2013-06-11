@@ -35,7 +35,9 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<?php get_template_part('searchform'); ?>
+					<div id="bomb">
+						Initiative zum Erhalt des historischen Passagier- und Frachtschiffes "Liemba" als Träger von Entwicklung und Kulturaustausch am Tanganjika-See
+					</div>
 				
 					<!-- logo -->
 					<div class="logo">
