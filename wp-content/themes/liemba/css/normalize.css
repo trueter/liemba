@@ -488,6 +488,10 @@ input::-moz-focus-inner {
 textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
+    display: block;
+}
+textarea:focus{
+    outline: 0;
 }
 
 /* ==========================================================================

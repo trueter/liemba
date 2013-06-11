@@ -23,7 +23,7 @@
 		<script>
 		!function(){
 			// configure legacy, retina, touch requirements @ conditionizr.com
-			conditionizr()
+			conditionizr();
 		}()
 		</script>
 	</head>
@@ -35,9 +35,7 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<div id="bomb">
-						Initiative zum Erhalt des historischen Passagier- und Frachtschiffes "Liemba" als Träger von Entwicklung und Kulturaustausch am Tanganjika-See
-					</div>
+					<div id="bomb">Initiative zum Erhalt des historischen Passagier- und Frachtschiffes "Liemba" als Träger von Entwicklung und Kulturaustausch am Tanganjika-See</div>
 				
 					<!-- logo -->
 					<div class="logo">
@@ -47,6 +45,13 @@
 						</a>
 					</div>
 					<!-- /logo -->
+
+					<!-- social wrapper -->
+					<div id="social-wrapper" class="white-item">
+						<a href="http://www.facebook.com/Run.Liemba"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" alt="facebook"></a>
+						<a href="http://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.png" alt="twitter"></a>
+					</div>
+					<!-- !social wrapper -->
 					
 			</header>
 			<!-- /header -->

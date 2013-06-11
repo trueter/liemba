@@ -4,6 +4,12 @@
 		padding: 0 10px;
 	}
 
+	#bomb{
+		/*width: 100%;
+		padding: 5px;*/
+		display:none;
+	}
+
 	.sidebar {
 		display: block;
 		width: 100%;
@@ -14,7 +20,6 @@
 		margin: 0;
 	}
 	.logo{
-		margin-top: 100px;
 		width: 100%;
 	}
 	.logo-img{
@@ -56,6 +61,7 @@
 
 
 	.page-item a{
+		display: table;
 		text-align: center;
 		line-height: inherit;
 		padding: 5px 0;
@@ -99,24 +105,27 @@
 		padding: 0 5px;
 	}
 
-	#content-wrap{
+	#content-wrapper{
 		width: 100%;
 		padding: 5px;
 		word-wrap:break-word;
+		margin-bottom: 50px;
 	}
 
-	#content-wrap h1{
+	#content-wrapper h1{
 		font-weight: normal;
 		font-size: 2.6em;
 		margin: 0 0 5px 0;
 	}
 
-	#content-wrap p{
+	#content-wrapper p{
 		font-size: 1.5em;
 	}
 
 	#social-wrapper{
-		top: 165px;
+		top: 53px;
+		right: -5px;
+		position: absolute;
 	}
 
 	footer{
