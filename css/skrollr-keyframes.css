@@ -2,12 +2,10 @@
     -skrollr-animation-name: ship1;
 }
 @-skrollr-keyframes  ship1 {
-     0 { transform: translateX( 600px ) translateY( -180px ) rotate(0deg);  }
-   270 { transform: translateX( 500px ) translateY( 550px ) rotate(90deg); }
-   300 { transform: translateX( 400px ) translateY( 550px ) rotate(90deg); }
-   310 { transform: translateX( 400px ) translateY( 550px ) rotate(140deg); }
-   340 { transform: translateX( 400px ) translateY( 550px ) rotate(200deg); }
-   370 { transform: translateX( 400px ) translateY( 550px ) rotate(320deg); }
+     0 { transform: translateX( 1100px ) translateY( 570px ) rotate(0deg);  }
+   100 { transform: translateX( 1100px ) translateY( 570px ) rotate(30deg);  }
+   
+   360 { transform: translateX( 950px ) translateY( 820px ) rotate(30deg); }
    
 }
 
@@ -15,8 +13,8 @@
     -skrollr-animation-name: split1;
 }
 @-skrollr-keyframes  split1 {
-   400 { transform: translateY( 100px );}
-   600 { transform: translateY(-100px );}
+   360 { transform: translateY(0px );}
+   530 { transform: translateY(-200px );}
 }
 
 
@@ -25,9 +23,14 @@
     -skrollr-animation-name: ship2;
 }
 @-skrollr-keyframes  ship2 {
-    700 {  transform: translateX( 900px ) translateY(    5px ) rotate(-20deg);  }
-   1000 { transform: translateX( 1100px ) translateY(  600px ) rotate(20deg);  }
-   1400 { transform: translateX( 1100px ) translateY( 1400px ) rotate(0deg);  }
+    530 { transform: translateX( 750px ) translateY( 350px ) rotate(0deg);  }
+   1000 { transform: translateX( 760px ) translateY( 550px ) rotate(-5deg);  }
+   1300 { transform: translateX( 750px ) translateY( 850px ) rotate(5deg);  }
+   1400 { transform: translateX( 750px ) translateY( 950px ) rotate(0deg);  }
+   1420 { transform: translateX( 750px ) translateY( 950px ) rotate(-20deg);  }
+   1600 { transform: translateX( 780px ) translateY(1150px ) rotate(-20deg);  }
+   1700 { transform: translateX( 810px ) translateY(1250px ) rotate(-20deg);  }
+   1900 { transform: translateX( 850px ) translateY(1550px ) rotate(-20deg);  }
    
 }
 
@@ -35,6 +38,25 @@
     -skrollr-animation-name: split2;
 }
 @-skrollr-keyframes  split2 {
-  1200 { transform: translateY( 100px);}
-  2500 { transform: translateY(-100px);}
+  1900 { transform: translateY( 0px);}
+  2100 { transform: translateY(-200px);}
+}
+
+
+
+#ship-3 {
+    -skrollr-animation-name: ship3;
+}
+@-skrollr-keyframes  ship3 {
+  2100 { transform: translateX(350px) translateY(-170px) rotate(-10deg);  }
+
+   
+}
+
+#split-3 {
+    -skrollr-animation-name: split3;
+}
+@-skrollr-keyframes  split3 {
+  1900 { transform: translateY( 0px);}
+  2100 { transform: translateY(-200px);}
 }

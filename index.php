@@ -24,6 +24,14 @@
         </div>
         
         <div id="split-2" class="split-holder"><h1>Split #2</h1></div>
+
+        <div id="map-3" class="map-holder">
+            <div id="ship-3" class="ships"></div>
+        </div>
+        
+        <div id="split-3" class="split-holder"><h1>Split #3</h1></div>
+
+
         <h1 style="text-align:center; margin-top: 400px">Ende</h1>
         
         <!--
