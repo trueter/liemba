@@ -1033,17 +1033,17 @@ class Walker_Page extends Walker {
 			$indent = '';
 
 		extract($args, EXTR_SKIP);
-		$css_class = array('page_item', 'page-item-'.$page->ID);
+		$css_class = array('page-item', 'page-item-'.$page->ID);
 		if ( !empty($current_page) ) {
 			$_current_page = get_post( $current_page );
 			if ( in_array( $page->ID, $_current_page->ancestors ) )
-				$css_class[] = 'current_page_ancestor';
+				$css_class[] = 'current-page-ancestor';
 			if ( $page->ID == $current_page )
-				$css_class[] = 'current_page_item';
+				$css_class[] = 'current-page-item';
 			elseif ( $_current_page && $page->ID == $_current_page->post_parent )
-				$css_class[] = 'current_page_parent';
+				$css_class[] = 'current-page-parent';
 		} elseif ( $page->ID == get_option('page_for_posts') ) {
-			$css_class[] = 'current_page_parent';
+			$css_class[] = 'current-page-parent';
 		}
 
 		$css_class = implode( ' ', apply_filters( 'page_css_class', $css_class, $page, $depth, $args, $current_page ) );

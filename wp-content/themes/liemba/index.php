@@ -3,17 +3,13 @@
 <div id="sidebar-and-content">
 <?php get_sidebar(); ?>
 
-<!-- section -->
-	<section id="content-wrap" class="clear" role="main">
+<!-- section 
+	<section id="content-wrap" class="clear white-item" role="main">
 	
-		<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1> 
-	
-		<?php get_template_part('loop'); ?>
-		
-		<?php get_template_part('pagination'); ?>
-	
+		<h1>Willkommen</h1> 
+
 	</section>
-	<!-- /section -->
+	 /section -->
 
 </div>
 

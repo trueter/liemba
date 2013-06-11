@@ -1,0 +1,160 @@
+
+@media all and (min-width: 481px) {
+	body{
+		padding-left: 5px;
+	}
+
+	.sidebar {
+		display: inline-block;
+		width: 230px;
+	}
+
+	.page-item{
+		position: relative;
+	}
+
+	.current-page-item, .current-page-ancestor{
+		height: 40px;
+		width: 150px;
+		background-color: none;
+		outline: 0 !important;
+		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png) !important;
+	}
+
+	
+	.page-item:not(.current-page-item){
+		height: 36px;
+		width: 146px;
+		margin-left: 2px;
+	}
+
+	.page-item:hover, .blue-item:hover {
+		background-color: #00809e;
+		outline: 1px solid #00809e;
+		opacity: 1;
+	}
+
+	.page-item a{
+		padding-right: 20px;
+	}
+
+
+	.page-item, .blue-item {
+		background-color: #00b0e3;
+		outline: 1px solid #00b0e3;	
+		outline-offset: 1px;
+		opacity: 0.925;
+		
+	}
+
+	.children{
+		position: absolute;
+		top: -25px;
+		right: -185px;
+	}
+
+	.children .page-item{
+		width: 175px;
+		font-size: 1em;
+	}
+
+	.white-item {
+		background-color: #FFFFFF;
+		outline: 1px solid #FFFFFF;	
+		outline-offset: 1px;
+		opacity: 0.925;
+	}
+
+	.green-item {
+		background-color: #40ab4d;
+		outline: 1px solid #40ab4d;	
+		outline-offset: 1px;
+		opacity: 0.925;
+	}
+
+	.current-page-item:hover, .current-page-ancestor:hover{
+		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
+	}
+
+	#donation-status-wrapper{
+		float: left;
+		width: 370px;
+		margin: 30px 0;
+	}
+
+	.donation-status{
+		float: left;
+		height: 40px;
+	}
+
+	#news-ticker-wrapper{
+		margin: 10px 0;
+		float: left;
+		width: 300px;
+	}
+
+	#content-wrap{
+		vertical-align: top;
+		margin-left: 115px;
+		margin-top: 7px;
+		width: 60%;
+		min-width: 200px;
+		max-width: 1300px;
+		padding: 10px 20px 10px;
+		display: inline-block;
+	}
+
+	#content-wrap h1{
+		font-weight: normal;
+		font-size: 2.4em;
+		margin: 5px 0;
+	}
+
+	#content-wrap p{
+		font-size: 1.4em;
+		line-height: 1.2em;
+	}
+
+	#social-wrapper{
+		top: 50%;
+	}
+
+	#search-and-info{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.footer {
+		margin-top: 5px;
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.search{
+		width: 300px;
+	}
+
+	.search label{
+		vertical-align: bottom;
+		margin: 0 5px;
+		position: relative;
+		top: 12px;
+	}
+	
+	.footer-widget{
+		cursor: not-allowed;
+		padding: 5px 35px;
+		font-weight: bold;
+		display: inline-block;
+		height: 90px;
+		width: 264px;
+		text-align: right;
+		font-size: 24px;
+		vertical-align: top;
+		text-transform: uppercase;
+		margin: 0 4px;
+	}
+}

@@ -1,10 +1,10 @@
 <?php get_header(); ?>	
 	
-	<div id="sidebar-and-content">
+	<div id="sidebar-and-content" class="clear">
 <?php get_sidebar(); ?>
 
 	<!-- section -->
-	<section id="content-wrap" class="clear" role="main">
+	<section id="content-wrap" class="white-item" role="main">
 	
 		<h1><?php the_title(); ?></h1>
 	

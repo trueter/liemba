@@ -11,16 +11,13 @@
 			<p>4,5 Mio</p>
 		</div>
 		<div class="donation-status green-item">
-			<a>Spenden</a>
+			<a href="#">Spenden</a>
 		</div>
 	</div>
 
-	<div id="newsticker" class="white-item">
-		<!--<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1> -->
-	
-		<?php get_template_part('loop'); ?>
-		
-		<?php get_template_part('pagination'); ?>
+	<div id="news-ticker-wrapper" class="white-item">
+		<h1>Neuigkeiten</h1>
+		<?php if ( function_exists('insert_newsticker') ) { insert_newsticker(); } ?>
 	</div>
 	    			
 </aside>

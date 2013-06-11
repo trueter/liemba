@@ -353,9 +353,9 @@ function _wp_menu_item_classes_by_context( &$menu_items ) {
 
 			if ( 'post_type' == $menu_item->type && 'page' == $menu_item->object ) {
 				// Back compat classes for pages to match wp_page_menu()
-				$classes[] = 'page_item';
+				$classes[] = 'page-item';
 				$classes[] = 'page-item-' . $menu_item->object_id;
-				$classes[] = 'current_page_item';
+				$classes[] = 'current-page-item';
 			}
 			$active_parent_item_ids[] = (int) $menu_item->menu_item_parent;
 			$active_parent_object_ids[] = (int) $menu_item->post_parent;
@@ -383,7 +383,7 @@ function _wp_menu_item_classes_by_context( &$menu_items ) {
 
 				if ( in_array( home_url(), array( untrailingslashit( $current_url ), untrailingslashit( $_indexless_current ) ) ) ) {
 					// Back compat for home link to match wp_page_menu()
-					$classes[] = 'current_page_item';
+					$classes[] = 'current-page-item';
 				}
 				$active_parent_item_ids[] = (int) $menu_item->menu_item_parent;
 				$active_parent_object_ids[] = (int) $menu_item->post_parent;
