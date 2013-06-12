@@ -15,44 +15,52 @@
 
 	.sidebar {
 		display: inline-block;
-		width: 230px;
+		width: 330px;
+	}
+
+	nav{
+		
+	}
+
+	.page-item, .donation-item{
+		height: 40px;
+		width: 160px;
+		margin: 7px 0 7px 2px;
+		font-size: 1.5em;
 	}
 
 	.page-item{
 		position: relative;
+		background: url(../../liemba/img/backgrounds/button_lightBlue.png);
+	}
+
+	.page-item:hover{
+		background: url(../../liemba/img/backgrounds/button_darkBlue.png);		
 	}
 
 	.current-page-item, .current-page-ancestor{
-		height: 40px;
-		width: 150px;
-		background-color: none;
-		outline: 0 !important;
-		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png) !important;
+		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png);
 	}
 
-	.page-item:not(.current-page-item){
-		height: 36px;
-		width: 146px;
-		margin-left: 2px;
+	.current-page-item:hover, .current-page-ancestor:hover{
+		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png);
 	}
-
-	.page-item:hover, .blue-item:hover {
+	/*.blue-item:hover {
 		background-color: #00809e;
 		outline: 1px solid #00809e;
 		opacity: 1;
-	}
+	}*/
 
 	.page-item a{
 		display: block;
 		padding-right: 20px;
 	}
 
-	.page-item, .blue-item {
+	.blue-item {
 		background-color: #00b0e3;
 		outline: 1px solid #00b0e3;	
 		outline-offset: 1px;
 		opacity: 0.925;
-		
 	}
 
 	.children{
@@ -72,13 +80,6 @@
 		opacity: 0.925;
 	}
 
-	.green-item {
-		background-color: #40ab4d;
-		outline: 1px solid #40ab4d;	
-		outline-offset: 1px;
-		opacity: 0.925;
-	}
-
 	.current-page-item:hover, .current-page-ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
 	}
@@ -89,9 +90,18 @@
 		margin: 30px 0;
 	}
 
-	.donation-status{
-		float: left;
-		height: 40px;
+	.donation-item{
+		text-align: right;
+		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
+	}
+
+	.donation-item:hover{
+		background: url(../../liemba/img/backgrounds/button_darkGreen.png);
+	}
+
+	.donation-item a{
+		display: block;
+		padding-right: 20px;
 	}
 
 	#news-ticker-wrapper{

@@ -9,7 +9,7 @@ htw.liemba = {
 		$.each(mainNavItems, function(){
 		  $(this).click(function(e){
 		   	
-		   	if(!$(this).hasClass("hover")) e.preventDefault();
+		   	if(!$(this).hasClass("hover")) return false;
 		   	
 		  	mainNavItems.removeClass("hover");
 		   	$(this).addClass("hover");

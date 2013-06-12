@@ -50,13 +50,16 @@ body {
 }
 /* nav */
 .nav {
-	padding-right:2px;/* 1px offset + 1px offset distance */
 	white-space: nowrap;
 }
 
 .menu > ul{
 	margin: 0 0 0 0;
 	padding: 0;
+}
+
+.page-item, .donation-item{
+	text-transform: uppercase;
 }
 
 .page-item {	
@@ -73,7 +76,7 @@ body {
 	cursor: default;
 }
 
-.page-item a {	
+.page-item a, .donation-item a{	
 	line-height: 43px;
 	color: #FFF;
 	margin: 0 auto;
@@ -97,35 +100,29 @@ body {
 }
 /* sidebar */
 
-.donation-status{
+#donation-wrapper{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.donation-item{
 	height: 40px;
 	color: #FFF;
 	padding: 3px;
 }
 
-.donation-status:last-child{
-	margin-left: 10px;
-}
-
-.donation-status h1{
-	font-size: 13px;
+.donation-item h1{
+	font-size: 0.8em;
 	font-weight: lighter;
 	margin: 0;
 }
 
-.donation-status p{
+.donation-item p{
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
-	font-size: 1.2em;
-}
-
-.donation-status a{
-	display: block;
-	color: #FFF;
-	line-height: 35px;
-	font-size: 1.6em;
-	text-align: center;
+	font-size: 1em;
 }
 
 #news-ticker-wrapper{

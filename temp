@@ -1,0 +1,59 @@
+diff --git a/wp-content/themes/liemba/css/tablets_and_desktops.css b/wp-content/themes/liemba/css/tablets_and_desktops.css
+index 005559c..ed380f0 100644
+--- a/wp-content/themes/liemba/css/tablets_and_desktops.css
++++ b/wp-content/themes/liemba/css/tablets_and_desktops.css
+@@ -18,8 +18,15 @@
+ 		width: 230px;
+ 	}
+ 
++	nav{
++		width: 315px;
++	}
++
+ 	.page-item{
+ 		position: relative;
++		height: 36px;
++		width: 158px;
++		margin-left: 2px;
+ 	}
+ 
+ 	.current-page-item, .current-page-ancestor{
+@@ -30,12 +37,6 @@
+ 		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png) !important;
+ 	}
+ 
+-	.page-item:not(.current-page-item){
+-		height: 36px;
+-		width: 146px;
+-		margin-left: 2px;
+-	}
+-
+ 	.page-item:hover, .blue-item:hover {
+ 		background-color: #00809e;
+ 		outline: 1px solid #00809e;
+diff --git a/wp-content/themes/liemba/js/htw.liemba.js b/wp-content/themes/liemba/js/htw.liemba.js
+index 002d486..d66f957 100644
+--- a/wp-content/themes/liemba/js/htw.liemba.js
++++ b/wp-content/themes/liemba/js/htw.liemba.js
+@@ -9,7 +9,7 @@ htw.liemba = {
+ 		$.each(mainNavItems, function(){
+ 		  $(this).click(function(e){
+ 		   	
+-		   	if(!$(this).hasClass("hover")) e.preventDefault();
++		   	if(!$(this).hasClass("hover")) return false;
+ 		   	
+ 		  	mainNavItems.removeClass("hover");
+ 		   	$(this).addClass("hover");
+diff --git a/wp-includes/nav-menu-template.php b/wp-includes/nav-menu-template.php
+index ab76f0a..abb2a0d 100644
+--- a/wp-includes/nav-menu-template.php
++++ b/wp-includes/nav-menu-template.php
+@@ -400,7 +400,7 @@ function _wp_menu_item_classes_by_context( &$menu_items ) {
+ 
+ 		// back-compat with wp_page_menu: add "current_page_parent" to static home page link for any non-page query
+ 		if ( ! empty( $home_page_id ) && 'post_type' == $menu_item->type && empty( $wp_query->is_page ) && $home_page_id == $menu_item->object_id )
+-			$classes[] = 'current_page_parent';
++			$classes[] = 'current-page-parent';
+ 
+ 		$menu_items[$key]->classes = array_unique( $classes );
+ 	}

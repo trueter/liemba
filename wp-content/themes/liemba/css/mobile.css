@@ -82,21 +82,18 @@
 		background-color: #FFFFFF;
 	}
 
-	.green-item {
-		background-color: #40ab4d;
-	}
-
-	#donation-status-wrapper{
+	
+	#donation-wrapper{
 		width: 100%;
 		margin: 30px auto;
 		
 	}
 
-	.donation-status{
+	.donation-item{
 		display: inline-block;
-		height: 40px;
 		vertical-align: top;
 		width: 48%;
+		background-color: #40ab4d;
 	}
 
 	#news-ticker-wrapper{

@@ -3,17 +3,18 @@
 
 	<nav class="nav" role="navigation">
 		<?php html5blank_nav(); ?>
+		
+		<ul id="donation-wrapper">
+			<li class="donation-item green-item">
+				<a href="#">Spenden</a>
+			</li>
+			<li class="donation-item green-item">
+				<h1>Erreichte Summe:</h1>
+				<p>4,5 Mio</p>
+			</li>
+		</ul>
 	</nav>
 
-	<div id="donation-status-wrapper">
-		<div class="donation-status green-item">
-			<h1>Erreichte Summe:</h1>
-			<p>4,5 Mio</p>
-		</div>
-		<div class="donation-status green-item">
-			<a href="#">Spenden</a>
-		</div>
-	</div>
 
 	<div id="news-ticker-wrapper" class="white-item">
 		<h1>Neuigkeiten</h1>
