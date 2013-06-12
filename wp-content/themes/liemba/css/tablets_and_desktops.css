@@ -129,12 +129,14 @@
 
 	#content-wrapper{
 		vertical-align: top;
-		margin-top: 7px;
 		width: 60%;
 		min-width: 200px;
 		max-width: 1300px;
 		padding: 10px 20px 10px;
 		display: inline-block;
+		border: 1px solid black;
+		outline: 1px solid black;
+		outline-offset: 1px;
 	}
 
 	#content-wrapper h1{
