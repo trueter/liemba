@@ -5,10 +5,10 @@
 		<?php html5blank_nav(); ?>
 		
 		<ul id="donation-wrapper">
-			<li class="donation-item green-item">
+			<li class="donation-item">
 				<a href="#">Spenden</a>
 			</li>
-			<li class="donation-item green-item">
+			<li class="donation-item green-item clear">
 				<h1>Erreichte Summe:</h1>
 				<p>4,5 Mio</p>
 			</li>

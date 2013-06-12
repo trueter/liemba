@@ -110,19 +110,22 @@ body {
 	height: 40px;
 	color: #FFF;
 	padding: 3px;
+	line-height: 35px;
 }
 
 .donation-item h1{
-	font-size: 0.8em;
-	font-weight: lighter;
-	margin: 0;
+	display: inline;
+	float: left;
+	font-size: 1em;
 }
 
 .donation-item p{
-	font-weight: bold;
+	display: inline;
+	float: right;
+	margin: 0 10px;
 	text-align: center;
-	margin: 0;
-	font-size: 1em;
+	font-size: 0.8em;
+	font-weight: bold;
 }
 
 #news-ticker-wrapper{
