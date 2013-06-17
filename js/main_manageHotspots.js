@@ -1,8 +1,8 @@
 window.htw = {};
+window.htw.debug = true;
 window.htw.interactiveMap = function () {
 
   var map = null;
-  var debug = false;
   
   return {
 
@@ -40,7 +40,7 @@ window.htw.interactiveMap = function () {
       
 
       }).fail(function(){
-        if(debug)console.log("addHotspot:fail");
+        if(htw.debug)console.log("addHotspot:fail");
       
       }).error(function (xhr, ajaxOptions, thrownError){
         alert(xhr.status);
@@ -53,20 +53,31 @@ window.htw.interactiveMap = function () {
       $.ajax('./rest/hotspots/'+id, {type: 'DELETE'}).success(function(){
 
         $('#hotspot-'+id).remove();
-        if(debug)console.log("removeHotspot:success");
+        if(htw.debug)console.log("removeHotspot:success");
       
       }).fail(function(){
-        if(debug)console.log("removeHotspot:fail");
+        if(htw.debug)console.log("removeHotspot:fail");
       
       }).error(function (xhr, ajaxOptions, thrownError){
-        if(debug)console.log("xhr status" +xhr.status);
-        if(debug)console.log("thrown error" +thrownError);
+        if(htw.debug)console.log("xhr status" +xhr.status);
+        if(htw.debug)console.log("thrown error" +thrownError);
       
       });
       
     }, 
-    showHotspotDetails : function (){
-
+    hideHotspots : function (category){
+      if(category=="")return;
+      
+      $(".hotspots."+category).each(function(){
+          $(this).css("display","none");
+      });
+    },
+    showHotspots : function (category){
+      if(category=="")return;
+      
+      $(".hotspots."+category).each(function(){
+          $(this).css("display","block");
+      });
     }
 
   } // return
@@ -80,8 +91,9 @@ $(function() {
     response = data;
   }).success(function(){
     htw.interactiveMap.init(response);
+    if(htw.debug)console.log("initial request successfully called");
   }).fail(function(){
-    if(debug)console.log("initial request failed");
+    if(htw.debug)console.log("initial request failed");
   });
 
   // Init Events
@@ -103,17 +115,38 @@ $(function() {
       $("#navigation-stops").stop();
   });
 
+  // Bind Hotspot Category Toggling
+  $('#category-selection').find("li").click(function(){
+    var category=$(this).data("category");
+
+    if( ! $(this).hasClass("itemsHidden")){
+      $(this).addClass("itemsHidden")
+      htw.interactiveMap.hideHotspots( category );
+    }else{
+      $(this).removeClass("itemsHidden")
+      htw.interactiveMap.showHotspots( category );
+    }
+
+  });
+
+   // Bind Hotspot Hover effect
+   var hotspotHoverTimer;
   $('.hotspots').hover(function(){
-    var that = $(this).addClass("extended");
-    setTimeout(function(){
+    var that = $(this).stop().addClass("extended");
+    clearTimeout(hotspotHoverTimer);
+
+    hotspotHoverTimer = setTimeout(function(){
       that.children("h1, p").css("opacity", "1");
-    },400);
+    },300);
   }, function(){
-    var that = $(this)
+    var that = $(this).stop();
+
       that.children("h1, p").css("opacity", "0");
-      setTimeout(function(){
+
+      clearTimeout(hotspotHoverTimer);
+      hotspotHoverTimer = setTimeout(function(){
         that.removeClass("extended");
-      },200);
+      },150);
   });
 
 });

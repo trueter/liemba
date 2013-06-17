@@ -56,22 +56,22 @@
                 <div id="navigation-anchor-down" class="navigation-anchor"></div>
 
                 <ul id="category-selection">
-                    <li>
+                    <li data-category="airports">
                         <img src="img/category_icons/plane.png" style="left: -2px;top: 1px;">
                     </li>
-                    <li>
+                    <li data-category="" class="nyi">
                         <img src="img/category_icons/house.png" style="left: 1px;top: 0px;">
                     </li>
-                    <li>
+                    <li data-category="" class="nyi">
                         <img src="img/category_icons/flower.png" style="left: -3px;top: -2px;">
                     </li>
-                    <li>
+                    <li data-category="" class="nyi">
                         <img src="img/category_icons/train.png" style="left: -1px;top: 0px;">
                     </li>
-                    <li>
+                    <li data-category="" class="nyi">
                         <img src="img/category_icons/money.png" style="left: 3px;top: -1px;">
                     </li>
-                    <li>
+                    <li data-category="" class="nyi">
                         <!--<img src="img/category_icons/">-->
                     </li>
                 </ul>

@@ -5,7 +5,9 @@
        0 { transform: translateX(75px) translateY(25px) scale(1,1); }
      100 { transform: translateX(75px) translateY(30px) scale(1,1); }
      320 { transform: translateX(75px) translateY(40px) scale(1,1); }
-     530 { transform: translateX(80px) translateY(80px) scale(2,2); }
+     530 { transform: translateX(82px) translateY(80px) scale(2,2); }
+     730 { transform: translateX(82px) translateY(100px) scale(2,2); }
+    2000 { transform: translateX(92px) translateY(120px) scale(2,2); }
 }
 
 #ship-1 {

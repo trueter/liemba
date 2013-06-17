@@ -525,3 +525,40 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/**
+ * Add DIN Font
+ */
+
+
+/* IE */
+@font-face {
+ font-family:Din;
+ src:url("../fonts/DINReg.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../fonts/DINBol.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../fonts/DINLig.eot");
+}
+
+/* Modern Browsers */
+@font-face {
+ font-family:Din;
+ src:url("../fonts/DINReg.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../fonts/DINBol.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../fonts/DINLig.ttf");
+}
