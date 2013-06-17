@@ -1,5 +1,6 @@
 body{
 	font-family: Helvetica, Times;
+	padding-top: 50px;
 }
 
 #offsetHelper{
@@ -16,7 +17,7 @@ body{
 	}
 }
 
-.split-holder{
+.split{
 	position: absolute;
 	overflow: hidden;
 	height: 200px;
@@ -33,28 +34,52 @@ body{
 
 #minimap{
 	position: fixed;
-	top: 75px;
-	right: 75px;
-	height: 300px;
-	width: 150px;
-	z-index: 101;
-	background-color: red;
+	top: 20px;
+	right: 15%;
+	height: 218px;
+	width: 218px;
+	z-index: 200;
+	background: url(../img/minimap.png);
+
+	#current-location{
+		position: absolute;
+		border: 2px dashed red;
+		height: 18px;
+		width: 30px;
+		transform: translateX(78px) translateY(25px) scale(1,1);
+	}
+}
+
+#navigation{
+	position: fixed;
+	left: 15%;
+	top: 30%;
+	width: 164px;
+	height: 294px;
+	background: url(../img/navigation.png);	
+	z-index: 200;
 }
 
 .ships{
 	position: absolute;
-	background: blue;
+}
+
+
+.ship-big{
+	height: 160px;
+	width: 50px;
+}
+
+.ship-small{
+	height: 40px;
+	width: 20px;
 }
 
 #ship-1{
-	height: 160px;
-	width: 50px;
 	z-index: 101;
 }
 
 #ship-2{
-	height: 40px;
-	width: 20px;
 	z-index: 104;
 }
 
@@ -64,16 +89,19 @@ body{
 	z-index: 106;
 }
 
-.map-holder{
-	width: 100%;
-	outline: 1px solid black;
+#map-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.map{
 	position: relative;
 }
 
 #map-1{
-	background: url(../img/bujumbura.png);
+	background: url(../img/dummy_background.png);
 	z-index: 100;
-	height: 1000px;
+	height: 717px;
 }
 
 #map-2{
@@ -89,7 +117,7 @@ body{
 }
 
 #split-1{
-	top: 1000px;
+	top: 760px;
 	z-index: 105;
 }
 

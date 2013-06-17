@@ -1,20 +1,30 @@
+#current-location{
+    -skrollr-animation-name: minimapLocation;  
+}
+@-skrollr-keyframes  minimapLocation {
+       0 { transform: translateX(75px) translateY(25px) scale(1,1); }
+     100 { transform: translateX(75px) translateY(30px) scale(1,1); }
+     320 { transform: translateX(75px) translateY(40px) scale(1,1); }
+     530 { transform: translateX(80px) translateY(80px) scale(2,2); }
+}
+
 #ship-1 {
     -skrollr-animation-name: ship1;
 }
 @-skrollr-keyframes  ship1 {
-     0 { transform: translateX( 1100px ) translateY( 570px ) rotate(0deg);  }
-   100 { transform: translateX( 1100px ) translateY( 570px ) rotate(30deg);  }
-   
-   360 { transform: translateX( 950px ) translateY( 820px ) rotate(30deg); }
-   
+     0 { transform: translateX(130px) translateY(-150px) rotate(-30deg);  }
+    160 { transform: translateX(325px) translateY(320px) rotate(00deg); }
+    200 { transform: translateX(325px) translateY(320px) rotate(00deg); }
+    400 { transform: translateX(265px) translateY(570px) rotate(20deg); }
+    600 { transform: translateX(235px) translateY(640px) rotate(20deg); }  
 }
 
 #split-1 {
     -skrollr-animation-name: split1;
 }
 @-skrollr-keyframes  split1 {
-   360 { transform: translateY(0px );}
-   530 { transform: translateY(-200px );}
+   320 { transform: translateY(0px );}
+   530 { transform: translateY(-190px );}
 }
 
 
@@ -42,15 +52,11 @@
   2100 { transform: translateY(-200px);}
 }
 
-
-
 #ship-3 {
     -skrollr-animation-name: ship3;
 }
 @-skrollr-keyframes  ship3 {
-  2100 { transform: translateX(350px) translateY(-170px) rotate(-10deg);  }
-
-   
+  2100 { transform: translateX(350px) translateY(-170px) rotate(-10deg); }
 }
 
 #split-3 {
