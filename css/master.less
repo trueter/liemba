@@ -1,6 +1,7 @@
 body{
-	font-family: Din, Helvetica, Times;
+	font-family: Din, Helvetica, Arial;
 	padding-top: 50px;
+	color: #FFF;
 }
 
 .preload * {
@@ -8,7 +9,7 @@ body{
 }
 
 #offsetHelper{
-	position:fixed;
+	position: fixed;
 	top: 50px;
 	left: 50px;
 	color: black;
@@ -16,19 +17,18 @@ body{
 	z-index: 100000;
 	
 	&:before{
-		content:"yOff: ";
-		color: black;
+		content: "yOff: ";
+		color: #000;
 	}
 }
 
 .split{
 	position: absolute;
-	overflow: hidden;
 	height: 200px;
 	width: 100%;
 	background: url(../img/retina_wood.png);
+	color: #000;
 	
-
 	h1{
 		line-height: 100px;
 		margin: 60px auto;
@@ -36,36 +36,44 @@ body{
 	}
 }
 
+/*
+	Minimap
+*/
+
 #minimap{
 	position: fixed;
-	top: 20px;
-	right: 15%;
 	height: 218px;
 	width: 218px;
+	top: 20px;
+	right: 15%;
 	z-index: 200;
 	background: url(../img/minimap.png);
 
 	#current-location{
 		position: absolute;
-		border: 2px dashed red;
 		height: 18px;
 		width: 30px;
+		border: 2px dashed red;
 		transform: translateX(78px) translateY(25px) scale(1,1);
 	}
 }
 
+/*
+	Navigation
+*/
+
 #navigation{
 	position: fixed;
+	width: 130px;
+	height: 264px;
 	left: 15%;
 	top: 30%;
 	padding: 14px 16px;
-	width: 130px;
-	height: 264px;
+	z-index: 200;
 	background: #558535;	
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
-	z-index: 200;
 
 	.navigation-anchor{
 		height: 25px;
@@ -76,26 +84,16 @@ body{
 	#navigation-anchor-down{
 		transform: rotate(180deg);
 	}
-
+	
 	ul{
 		overflow: auto;
 		margin: 0;
 		list-style: none;
-
-		
-		li{
-			cursor: pointer;
-
-			&.nyi{
-				cursor: not-allowed;
-			}
-		}
 	}
 
 	#navigation-stops{
 		height: 125px;
 		padding: 0;
-		color: #FFF;
 		font-size: 11px;
 		text-transform: uppercase;
 		text-align: center;
@@ -106,18 +104,23 @@ body{
 		padding-left: 11px;
 
 		li{
-			float: left;
-			height: 16px;
 			width: 16px;
-			padding: 6px;
-			margin: 3px 4px;
-			background: #96c185;
+			height: 16px;
+			float: left;
 			display: inline-block;
+			margin: 3px 4px;
+			padding: 6px;
+			background: #96c185;
 			border-radius: 90px;
 			border: 1px solid #FFF;
+			cursor: pointer;
 
 			&.itemsHidden{
 				opacity: 0.2;
+			}
+
+			&.nyi{
+				cursor: not-allowed;
 			}
 		}
 
@@ -127,13 +130,15 @@ body{
 	}
 }
 
+/*
+	Hotspots
+*/
 
 @hotspotWidthExtended : 320px;
 .hotspots{
 	position: relative;
 	width: 28px;
 	height: 28px;
-	color: #FFF;
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
@@ -166,8 +171,8 @@ body{
 	}
 
 	&.extended{
-		height: 180px;
 		width: @hotspotWidthExtended;
+		height: 180px;
 		padding: 10px;
 		white-space: normal;
 		transform: translateX(-175px) translateY(-50px);
@@ -179,21 +184,18 @@ body{
 		.hotspot-arrows{
 			opacity: 0;
 		}
-
 	}
-
-
 }
-
 
 .hotspots.airports{
 	background: #0b6e8e url(../img/hotspot_icons/airport.png) no-repeat;
 }
 
-.ships{
-	position: absolute;
-}
+/*
+	Ships
+*/
 
+.ships{	position: absolute; }
 
 .ship-big{
 	height: 160px;
@@ -205,27 +207,23 @@ body{
 	width: 20px;
 }
 
-#ship-1{
-	z-index: 101;
-}
+#ship-1{ z-index: 101; }
 
-#ship-2{
-	z-index: 104;
-}
+#ship-2{ z-index: 104; }
 
-#ship-3{
-	height: 160px;
-	width: 50px;
-	z-index: 106;
+#ship-3{ z-index: 106; }
+
+/*
+	Maps
+*/
+
+.map{
+	position: relative;
 }
 
 #map-wrapper{
 	width: 1024px;
 	margin: 0 auto;
-}
-
-.map{
-	position: relative;
 }
 
 #map-1{
@@ -244,19 +242,4 @@ body{
 	background: url(../img/rumonge.png);
 	z-index: 104;
 	height: 1400px;
-}
-
-#split-1{
-	top: 760px;
-	z-index: 105;
-}
-
-#split-2{
-	top: 2700px;
-	z-index: 105;
-}
-
-#split-3{
-	top: 4000px;
-	z-index: 106;
 }

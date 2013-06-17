@@ -1,5 +1,4 @@
-/*
- * This file is NOT needed in order to use skrollr.
+/* This file is NOT needed in order to use skrollr.
  * The demo uses it and it may help you as well.
  */
 html, body {
@@ -9,14 +8,10 @@ html, body {
 }
 
 .skrollable {
-	/*
-	 * First-level skrollables are positioned relative to window
-	 */
+	 /* First-level skrollables are positioned relative to window */
 	position:fixed;
 
-	/*
-	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
-	 */
+	 /* Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable */
 	z-index:100;
 }
 
@@ -25,15 +20,11 @@ html, body {
 }
 
 .skrollable .skrollable {
-	/*
-	 * Second-level skrollables are positioned relative their parent skrollable
-	 */
+	 /* Second-level skrollables are positioned relative their parent skrollable */
 	position:absolute;
 }
 
 .skrollable .skrollable .skrollable {
-	/*
-	 * Third-level (and below) skrollables are positioned static
-	 */
+	 /* Third-level (and below) skrollables are positioned static */
 	position:static;
 }

@@ -1,4 +1,3 @@
-// Executed on document.ready event
 $(function() {
 
 	$(document).scroll(function(){	
@@ -7,27 +6,11 @@ $(function() {
 		$('#offsetHelper').html(top);
 	});
 
-	// Used to center elements
-
-	var nav = $('#nav');
-	var x = -1*(nav.outerWidth() / 2);
-	nav.css("margin-left", x);
-
-	var circle = $('#instruction-circle');
-	var x = -1*(circle.outerWidth() / 2);
-	circle.css("margin-left", x);
-	
 });
 
 // initialize skrollr
 var s = skrollr.init({
 	edgeStrategy: 'set',
-	/*easing: {
-		WTF: Math.random,
-		inverted: function(p) {
-			return 1-p;
-		}
-	}*/
 }); 
 // & menu
 skrollr.menu.init(s, {

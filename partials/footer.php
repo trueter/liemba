@@ -5,5 +5,6 @@
 <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
 <script type="text/javascript" src="js/vendor/skrollr.menu.js"></script>
 <script type="text/javascript" src="js/vendor/prefixfree.min.js"></script>
-<script type="text/javascript" src="js/main_skrollr.js"></script>
-<script type="text/javascript" src="js/main_manageHotspots.js"></script>
+<script type="text/javascript" src="js/init_skrollr.js"></script>
+<script type="text/javascript" src="js/interactiveMap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>

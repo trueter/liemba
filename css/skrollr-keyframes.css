@@ -1,3 +1,6 @@
+/*
+  Current Location
+*/
 #current-location{
     -skrollr-animation-name: minimapLocation;  
 }
@@ -9,6 +12,10 @@
      730 { transform: translateX(82px) translateY(100px) scale(2,2); }
     2000 { transform: translateX(92px) translateY(120px) scale(2,2); }
 }
+
+/*
+   # 1
+*/
 
 #ship-1 {
     -skrollr-animation-name: ship1;
@@ -22,17 +29,19 @@
 }
 
 #split-1 {
-    -skrollr-animation-name: split1;
+  top: 760px; z-index: 105; -skrollr-animation-name: split1;
 }
 @-skrollr-keyframes  split1 {
    320 { transform: translateY(0px );}
    530 { transform: translateY(-190px );}
 }
 
-
+/*
+   # 2
+*/
 
 #ship-2 {
-    -skrollr-animation-name: ship2;
+  -skrollr-animation-name: ship2;
 }
 @-skrollr-keyframes  ship2 {
     530 { transform: translateX( 750px ) translateY( 350px ) rotate(0deg);  }
@@ -47,12 +56,16 @@
 }
 
 #split-2 {
-    -skrollr-animation-name: split2;
+  top: 2700px; z-index: 105; -skrollr-animation-name: split2;
 }
 @-skrollr-keyframes  split2 {
   1900 { transform: translateY( 0px);}
   2100 { transform: translateY(-200px);}
 }
+
+/*
+   # 3
+*/
 
 #ship-3 {
     -skrollr-animation-name: ship3;
@@ -62,7 +75,7 @@
 }
 
 #split-3 {
-    -skrollr-animation-name: split3;
+  top: 4000px; z-index: 106; -skrollr-animation-name: split3;
 }
 @-skrollr-keyframes  split3 {
   1900 { transform: translateY( 0px);}
