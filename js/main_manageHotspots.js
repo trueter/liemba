@@ -89,4 +89,35 @@ $(function() {
     htw.interactiveMap.addHotspot($(this).serialize());
     return false;
   });
+
+  // Bind Navigation Scrolling anchors
+  $("#navigation-anchor-up").hover(function(){
+      $("#navigation-stops").animate({ scrollTop: "-500px" }, 1000, "linear");
+  },function(){
+      $("#navigation-stops").stop();
+  });
+
+  $("#navigation-anchor-down").hover(function(){
+      $("#navigation-stops").animate({ scrollTop: "500px" }, 1000, "linear");
+  },function(){
+      $("#navigation-stops").stop();
+  });
+
+  $('.hotspots').hover(function(){
+    var that = $(this).addClass("extended");
+    setTimeout(function(){
+      that.children("h1, p").css("opacity", "1");
+    },400);
+  }, function(){
+    var that = $(this)
+      that.children("h1, p").css("opacity", "0");
+      setTimeout(function(){
+        that.removeClass("extended");
+      },200);
+  });
+
+});
+
+$(window).load(function() {
+  $("body").removeClass("preload");  
 });

@@ -6,7 +6,7 @@
     <head>
     <?php require("partials/header.php"); ?>     
     </head>
-    <body>
+    <body class="preload">
     <!--
         <div id="restdummy">
             <div id="map-wrapper">
@@ -31,7 +31,52 @@
         <div id="offsetHelper">0</div>
         <div id="map-wrapper">
 
-            <div id="navigation"></div>
+            <div id="navigation">
+                <div id="navigation-anchor-up" class="navigation-anchor"></div>
+
+                    <ul id="navigation-stops">
+                        <li>Stop 1</li>
+                        <li>Stop 2</li>
+                        <li>Stop 3</li>
+                        <li>Stop 4</li>
+                        <li>Stop 5</li>
+                        <li>Stop 6</li>
+                        <li>Stop 7</li>
+                        <li>Stop 8</li>
+                        <li>Stop 9</li>
+                        <li>Stop 10</li>
+                        <li>Stop 11</li>
+                        <li>Stop 12</li>
+                        <li>Stop 13</li>
+                        <li>Stop 14</li>
+                        <li>Stop 15</li>
+                        <li>Stop 16</li>
+                    </ul>
+
+                <div id="navigation-anchor-down" class="navigation-anchor"></div>
+
+                <ul id="category-selection">
+                    <li>
+                        <img src="img/category_icons/plane.png" style="left: -2px;top: 1px;">
+                    </li>
+                    <li>
+                        <img src="img/category_icons/house.png" style="left: 1px;top: 0px;">
+                    </li>
+                    <li>
+                        <img src="img/category_icons/flower.png" style="left: -3px;top: -2px;">
+                    </li>
+                    <li>
+                        <img src="img/category_icons/train.png" style="left: -1px;top: 0px;">
+                    </li>
+                    <li>
+                        <img src="img/category_icons/money.png" style="left: 3px;top: -1px;">
+                    </li>
+                    <li>
+                        <!--<img src="img/category_icons/">-->
+                    </li>
+                </ul>
+            </div>
+
             <div id="minimap">
                 <div id="current-location"></div>
             </div>
@@ -40,6 +85,13 @@
                 <div id="ship-1" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
+
+                <div class="hotspots airports" style="top: 240px;left: 700px;">
+                    <h1>Kigoma Airport</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    <div class="hotspot-arrows"></div>
+                </div>
+
             </div>
             
             <div id="map-2" class="map">
