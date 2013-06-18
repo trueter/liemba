@@ -1,6 +1,6 @@
-window.htw = {};
-window.htw.debug = true;
-window.htw.interactiveMap = function () {
+htw = {};
+htw.debug = true;
+htw.interactiveMap = function () {
 
   var map = null;
   
@@ -15,9 +15,10 @@ window.htw.interactiveMap = function () {
             name = currentHotspot.name,
             left = currentHotspot.xOff,
             top = currentHotspot.yOff,
-            e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name, 
+            e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name,
                    'class': 'map-hotspot-anchor',
                    'style': 'top:' + top + 'px;left:' + left + 'px' });
+
 
         map.append(e);
 
@@ -64,20 +65,21 @@ window.htw.interactiveMap = function () {
       
       });
       
-    }, 
+    },
+
     hideHotspots : function (category){
-      if(category=="")return; //remove when all buttons are implemented
+      if(category==="")return; //remove when all buttons are implemented
       
       $(".hotspots."+category).each(function(){
           $(this).css("display","none");
       });
     },
     showHotspots : function (category){
-      if(category=="")return; //remove when all buttons are implemented
+      if(category==="")return; //remove when all buttons are implemented
       
       $(".hotspots."+category).each(function(){
           $(this).css("display","block");
       });
     }
-  }
+  };
 }();

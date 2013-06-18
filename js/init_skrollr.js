@@ -1,6 +1,6 @@
 $(function() {
 
-	$(document).scroll(function(){	
+	$(document).scroll(function(){
 		var doc = document.documentElement, body = document.body;
 		var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0);
 		$('#offsetHelper').html(top);
@@ -11,7 +11,7 @@ $(function() {
 // initialize skrollr
 var s = skrollr.init({
 	edgeStrategy: 'set',
-}); 
+});
 // & menu
 skrollr.menu.init(s, {
     animate: true, //skrollr will smoothly animate to the new position using `animateTo`.

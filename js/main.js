@@ -31,10 +31,10 @@ $(function() {
     var category=$(this).data("category");
 
     if( ! $(this).hasClass("itemsHidden")){
-      $(this).addClass("itemsHidden")
+      $(this).addClass("itemsHidden");
       htw.interactiveMap.hideHotspots( category );
     }else{
-      $(this).removeClass("itemsHidden")
+      $(this).removeClass("itemsHidden");
       htw.interactiveMap.showHotspots( category );
     }
   });
@@ -62,7 +62,7 @@ $(function() {
 });
 
 $(window).load(function() {
-  $("body").removeClass("preload");  
+  $("body").removeClass("preload");
 });
 
 /*

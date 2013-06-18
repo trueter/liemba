@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
     <?php require("partials/header.php"); ?>     
+    
     </head>
     <body class="preload">
     <!--
