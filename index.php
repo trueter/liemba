@@ -8,29 +8,29 @@
     
     </head>
     <body class="preload">
-    <!--
-        <div id="restdummy">
-            <div id="map-wrapper">
-                <img id="#map-image" src="img/map1.jpg">
-            </div>
-            <div id="add-hotspot-dummy">
-                <form id="add-hotspot-form" action="#">
-                    <fieldset>
-                        <label>Name</label>
-                        <input value="A" name="name" type="text" required>
-                        <label>xOff</label>
-                        <input value="1" name="xOff" type="number" required>
-                        <label>yOff</label>
-                        <input value="2" name="yOff" type="number" required>
-                    </fieldset>
-                    <input type="submit" value="create hotspot">
-                </form>
-            </div>
-        </div>
-    -->
-
+    
         <div id="offsetHelper">0</div>
+        <div id="page-wrapper">
         <div id="map-wrapper">
+
+            <div id="hotspot-prepare-dialog">
+                <div id="hotspot-prepare-dialog-close">x</div>
+                <form id="add-hotspot-form" action="#"><fieldset>
+                    <label for="name">Name</label>
+                    <input value="A" name="name" type="text" required>
+                    <label for="description">Beschreibung</label>
+                    <input value="Lorem Ipsum dolor sit amet" name="description" type="text" required>
+                    <label for="xOff">xOff</label>
+                    <input id="xOff" value="1" name="xOff" type="number" required>
+                    <label for="yOff">yOff</label>
+                    <input id="yOff" value="2" name="yOff" type="number" required>
+                    <label for="category">yOff</label>
+                    <select name="category">
+                        <option value="airports">Flughäfen</option>
+                    </select>
+                    <input type="submit" value="create hotspot">
+                </fieldset></form>
+            </div>
 
             <div id="navigation">
                 <div id="navigation-anchor-up" class="navigation-anchor"></div>
@@ -87,7 +87,7 @@
                     <img src="img/ship.png" class="ship-big">
                 </div>
 
-                <div class="hotspots airports" style="top: 240px;left: 700px;">
+                <div class="hotspots airports" style="bottom:450px;right: 300px;">
                     <h1>Kigoma Airport</h1>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                     <div class="hotspot-arrows"></div>
@@ -101,23 +101,24 @@
                 </div>
             </div>
             
-
             <div id="map-3" class="map">
                 <div id="ship-3" class="ships"></div>
             </div>
-        </div>
 
-        
+            <div id="hotspot-confirm-dialog">
+                <button id="hotspot-confirm-dialog-create">Hotspot erstellen</button>
+                <button id="hotspot-confirm-dialog-cancel">Abbrechen</button>
+            </div>
+
+            <div id="hotspot-create-anchor" class="hotspots new-hotspot"></div>
+            </div>
+        </div>
 
         <div id="split-1" class="split"><h1>Split #1</h1></div>
         <div id="split-2" class="split"><h1>Split #2</h1></div>
         <div id="split-3" class="split"><h1>Split #3</h1></div>
 
-
-        <h1 style="text-align:center; margin-top: 400px">Ende</h1>
-        
-        
-        
+        <h1 style="text-align:center; margin-top: 400px">Ende</h1>      
 
         <?php require("partials/footer.php"); ?>  
 

@@ -1,11 +1,63 @@
 body{
 	font-family: Din, Helvetica, Arial;
-	padding-top: 50px;
 	color: #FFF;
+	background-color: #ecf0f1;
 }
 
 .preload * {
   transition: none !important;
+}
+
+#page-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#hotspot-prepare-dialog{
+	display: none;
+	position: absolute;
+	padding: 10px;
+	z-index: 10000;
+	color: #000;
+	background-color: #fff;
+
+	input, label{
+		display: block;
+		margin: 5px 0;
+	}
+
+	form{
+		float: left;
+	}
+
+	#hotspot-prepare-dialog-close{
+		float: right;
+		text-align: center;
+		line-height: 15px;
+		border: 1px solid #000;
+		width: 15px; height: 15px;
+	}
+}
+
+#hotspot-confirm-dialog{
+	position: absolute;
+	display: none;
+	top: 50px;
+	left: 500px;
+	z-index: 1000;
+	font-size: 0.7em;
+	padding: 10px 5px;
+	
+	background: #558535;	
+	border: 1px solid #FFF;
+	outline: 1px solid #FFF;
+	outline-offset: 1px;
+	box-shadow: 0px 0px 10px 4px #444;
+}
+
+#hotspot-create-anchor{
+	display: none;
+
 }
 
 #offsetHelper{
@@ -45,9 +97,14 @@ body{
 	height: 218px;
 	width: 218px;
 	top: 20px;
-	right: 15%;
 	z-index: 200;
 	background: url(../img/minimap.png);
+
+	@media all and (max-width : 1280px) { right: 0px; } 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { right: 4%; } 
+	@media all and (min-width : 1441px) and (max-width : 1680px) { right: 11%; } 
+	@media all and (min-width : 1681px) and (max-width : 1919px) { right: 16%; } 
+	@media all and (min-width : 1920px) { right: 20%; } 
 
 	#current-location{
 		position: absolute;
@@ -66,7 +123,6 @@ body{
 	position: fixed;
 	width: 130px;
 	height: 264px;
-	left: 15%;
 	top: 30%;
 	padding: 14px 16px;
 	z-index: 200;
@@ -74,6 +130,15 @@ body{
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
+	box-shadow: 0px 0px 10px 4px #444;
+	margin-left: 25px;
+
+	@media all and (max-width : 1280px) { left: 0px; margin-left: 0px;} 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { left: 4%; } 
+	@media all and (min-width : 1441px) and (max-width : 1680px) { left: 11%; } 
+	@media all and (min-width : 1681px) and (max-width : 1919px) { left: 16%; } 
+	@media all and (min-width : 1920px) { left: 20%; } 
+
 
 	.navigation-anchor{
 		height: 25px;
@@ -136,12 +201,14 @@ body{
 
 @hotspotWidthExtended : 320px;
 .hotspots{
-	position: relative;
+	position: absolute;
 	width: 28px;
 	height: 28px;
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
+	box-shadow: 0px 0px 5px 3px #444;
+	z-index: 150;
 
 	transition: all 0.4s ease-in-out;
 
@@ -175,8 +242,7 @@ body{
 		height: 180px;
 		padding: 10px;
 		white-space: normal;
-		transform: translateX(-175px) translateY(-50px);
-
+	
 		h1, p{
 			visibility: visible;
 		}
@@ -185,6 +251,14 @@ body{
 			opacity: 0;
 		}
 	}
+}
+
+.hotspot.new-hotspot{
+	background-color: red;
+}
+
+.hotspots.placeholder{
+	background: #ecf0f1 url(../img/hotspot_icons/placeholder.png) no-repeat;
 }
 
 .hotspots.airports{
@@ -222,8 +296,9 @@ body{
 }
 
 #map-wrapper{
-	width: 1024px;
-	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	box-shadow: 0px 0px 20px 5px #888;
 }
 
 #map-1{

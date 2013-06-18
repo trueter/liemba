@@ -1,5 +1,5 @@
-htw = {};
-htw.debug = true;
+var htw;
+htw = {debug: true};
 htw.interactiveMap = function () {
 
   var map = null;
@@ -7,22 +7,36 @@ htw.interactiveMap = function () {
   return {
 
     init : function (hotspots) {
-      map = $('#map-wrapper');
+      
 
       $(hotspots).each(function () {
         var currentHotspot = $(this)[0],
             id = currentHotspot.id,
+            map = currentHotspot.map?$(currentHotspot.map):$('#map-1'),
             name = currentHotspot.name,
+            description = currentHotspot.description || "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
             left = currentHotspot.xOff,
             top = currentHotspot.yOff,
-            e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name,
-                   'class': 'map-hotspot-anchor',
+            category = currentHotspot.category || "Kategorie",
+            h1 = $('<h1>'+name+'</h1>'),
+            p = $('<p>'+description+'</p>'),
+            arrow= $('<div/>', {"class":"hotspot-arrows"}),
+            div = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name,
+                   'class': 'hotspots '+category,
                    'style': 'top:' + top + 'px;left:' + left + 'px' });
+            
+            div.append(h1);
+            div.append(p);
+            div.append(arrow);
 
 
-        map.append(e);
+
+             map.append(div);
 
       });
+    },
+    prepareHotspot : function(){
+      $('#hotspot-prepare-dialog').fadeIn(100);
     },
     addHotspot : function (formdata) {
       
