@@ -8,6 +8,24 @@ body{
   transition: none !important;
 }
 
+.green-box{
+	background: #558535;	
+	border: 1px solid #FFF;
+	outline: 1px solid #FFF;
+	outline-offset: 1px;
+	box-shadow: 0px 0px 10px 4px #444;
+	color: #FFF;
+
+	button, input, select{
+		margin: 2px;
+		padding: 2px;
+		border: 1px solid #FFF;
+		outline: 1px solid #FFF;
+		background: #FFFFFF;	
+	}
+	
+}
+
 #page-wrapper{
 	width: 1024px;
 	margin: 0 auto;
@@ -18,23 +36,35 @@ body{
 	position: absolute;
 	padding: 10px;
 	z-index: 10000;
-	color: #000;
-	background-color: #fff;
 
-	input, label{
+	input, label, textarea, select{
 		display: block;
-		margin: 5px 0;
+		margin: 0 2px 8px 2px !important;
+		width: 250px;
 	}
 
-	form{
-		float: left;
+	textarea{
+		height: 200px;
+		position: relative;
+		left: -1px;
+		width: 247px;
+	}
+
+	select{
+		text-indent: 60px;
+		border-radius: 0;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
 	}
 
 	#hotspot-prepare-dialog-close{
 		float: right;
 		text-align: center;
-		line-height: 15px;
-		border: 1px solid #000;
+		cursor: pointer;
+		line-height: 16px;
+		text-indent: 1px;
+		border: 1px solid #FFF;
 		width: 15px; height: 15px;
 	}
 }
@@ -45,19 +75,8 @@ body{
 	top: 50px;
 	left: 500px;
 	z-index: 1000;
-	font-size: 0.7em;
-	padding: 10px 5px;
-	
-	background: #558535;	
-	border: 1px solid #FFF;
-	outline: 1px solid #FFF;
-	outline-offset: 1px;
-	box-shadow: 0px 0px 10px 4px #444;
-}
-
-#hotspot-create-anchor{
-	display: none;
-
+	font-size: 0.8em;
+	padding: 10px 8px;
 }
 
 #offsetHelper{
@@ -126,11 +145,6 @@ body{
 	top: 30%;
 	padding: 14px 16px;
 	z-index: 200;
-	background: #558535;	
-	border: 1px solid #FFF;
-	outline: 1px solid #FFF;
-	outline-offset: 1px;
-	box-shadow: 0px 0px 10px 4px #444;
 	margin-left: 25px;
 
 	@media all and (max-width : 1280px) { left: 0px; margin-left: 0px;} 
@@ -138,7 +152,6 @@ body{
 	@media all and (min-width : 1441px) and (max-width : 1680px) { left: 11%; } 
 	@media all and (min-width : 1681px) and (max-width : 1919px) { left: 16%; } 
 	@media all and (min-width : 1920px) { left: 20%; } 
-
 
 	.navigation-anchor{
 		height: 25px;

@@ -17,7 +17,7 @@ htw.interactiveMap = function () {
             description = currentHotspot.description || "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
             left = currentHotspot.xOff,
             top = currentHotspot.yOff,
-            category = currentHotspot.category || "Kategorie",
+            category = currentHotspot.category || "placeholder",
             h1 = $('<h1>'+name+'</h1>'),
             p = $('<p>'+description+'</p>'),
             arrow= $('<div/>', {"class":"hotspot-arrows"}),
@@ -37,6 +37,7 @@ htw.interactiveMap = function () {
     },
     prepareHotspot : function(){
       $('#hotspot-prepare-dialog').fadeIn(100);
+      $('#hotspot-confirm-dialog').fadeOut(50);
     },
     addHotspot : function (formdata) {
       

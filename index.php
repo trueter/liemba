@@ -11,28 +11,30 @@
     
         <div id="offsetHelper">0</div>
         <div id="page-wrapper">
+            <div id="hotspot-confirm-dialog" class="green-box">
+                <button id="hotspot-confirm-dialog-create">Hotspot erstellen</button>
+                <button id="hotspot-confirm-dialog-cancel">Abbrechen</button>
+            </div>
         <div id="map-wrapper">
 
-            <div id="hotspot-prepare-dialog">
+            <div id="hotspot-prepare-dialog" class="green-box">
                 <div id="hotspot-prepare-dialog-close">x</div>
-                <form id="add-hotspot-form" action="#"><fieldset>
-                    <label for="name">Name</label>
-                    <input value="A" name="name" type="text" required>
+                <form id="add-hotspot-form" action="#">
+                    <label for="add-hotspot-form-name">Name</label>
+                    <input value="A" name="add-hotspot-form-name" type="text" required>
                     <label for="description">Beschreibung</label>
-                    <input value="Lorem Ipsum dolor sit amet" name="description" type="text" required>
-                    <label for="xOff">xOff</label>
-                    <input id="xOff" value="1" name="xOff" type="number" required>
-                    <label for="yOff">yOff</label>
-                    <input id="yOff" value="2" name="yOff" type="number" required>
-                    <label for="category">yOff</label>
+                    <textarea name="description" required placeholder="Lorem Ipsum dolor sit amet"></textarea>
                     <select name="category">
+                        <option value="placeholders" disabled selected>Kategorie wählen</option>
                         <option value="airports">Flughäfen</option>
                     </select>
-                    <input type="submit" value="create hotspot">
-                </fieldset></form>
+                    <input id="add-hotspot-form-x" name="add-hotspot-form-x" type="hidden">
+                    <input id="add-hotspot-form-y" name="add-hotspot-form-y" type="hidden">
+                    <input type="submit" value="Hotspot erstellen">
+                </form>
             </div>
 
-            <div id="navigation">
+            <div id="navigation" class="green-box">
                 <div id="navigation-anchor-up" class="navigation-anchor"></div>
 
                     <ul id="navigation-stops">
@@ -104,14 +106,7 @@
             <div id="map-3" class="map">
                 <div id="ship-3" class="ships"></div>
             </div>
-
-            <div id="hotspot-confirm-dialog">
-                <button id="hotspot-confirm-dialog-create">Hotspot erstellen</button>
-                <button id="hotspot-confirm-dialog-cancel">Abbrechen</button>
-            </div>
-
-            <div id="hotspot-create-anchor" class="hotspots new-hotspot"></div>
-            </div>
+ 
         </div>
 
         <div id="split-1" class="split"><h1>Split #1</h1></div>
