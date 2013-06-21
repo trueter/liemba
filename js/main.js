@@ -12,7 +12,9 @@ $(function() {
   });
   // Bind Hotspot Create Form
   $('#add-hotspot-form').submit(function(){
-    htw.interactiveMap.addHotspot($(this).serialize());
+    if (htw.interactiveMap.createHotspot($(this).serialize())){
+      $('#hotspot-prepare-dialog').fadeOut(0);
+    }
     return false;
   });
 

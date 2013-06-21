@@ -2,76 +2,60 @@ var htw;
 htw = {debug: true};
 htw.interactiveMap = function () {
 
-  var map = null;
-  
-  return {
+   return {
 
     init : function (hotspots) {
-      
-
       $(hotspots).each(function () {
-        var currentHotspot = $(this)[0],
-            id = currentHotspot.id,
-            map = currentHotspot.map?$('#'+currentHotspot.map):$('#map-1'),
-            name = currentHotspot.name,
-            description = currentHotspot.description || "No Description",
-            special_icon_path = currentHotspot.special_icon_path || "no_icon_path",
-            x = currentHotspot.xOff,
-            y = currentHotspot.yOff,
-            right = map.width()-x-16;
-            bottom = map.height()-y+15;
-            category = currentHotspot.category || "placeholder",
-            h1 = $('<h1>'+name+'</h1>'),
-            p = $('<p>'+description+'</p>'),
-            arrow= $('<div/>', {"class":"hotspot-arrows"}),
-            //imagestrip = $('<div/>', {"class":"image-strip"}),
-            /* picture files ? */
-
-            div = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id,
-                   'class': 'hotspots '+category,
-                   'style': 'bottom:' + bottom + 'px;right:' + right + 'px' });
-            
-
-            div.append(h1);
-            div.append(p);
-            div.append(arrow);
-
-
-
-             map.append(div);
-
+        var currentHotspot = $(this)[0];
+        htw.interactiveMap.addHotspot(currentHotspot);
       });
     },
     prepareHotspot : function(){
       $('#hotspot-prepare-dialog').fadeIn(100);
       $('#hotspot-confirm-dialog').fadeOut(50);
     },
-    addHotspot : function (formdata) {
-      console.log(formdata);
+    createHotspot : function (formdata) {
       $.post('./rest/hotspots', formdata ).success(function(feedback){
 
-      var hotspot = feedback,
-          map = hotspot.map?$(hotspot.map):$('#map-1'),
-          id = hotspot.id,
-          name = hotspot.name,
-          top = hotspot.yOff,
-          left = hotspot.xOff,
-          e = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id, 'data-name' : name,
-                   'class': 'map-hotspot-anchor',
-                   'style': 'top:' + top + 'px;left:' + left + 'px' });
-
-        map.append(e);
-      
+      htw.interactiveMap.addHotspot(feedback);
 
       }).fail(function(){
-        if(htw.debug)console.log("addHotspot:fail");
-      
+        if(htw.debug)console.log("createHotspot:fail");
       }).error(function (xhr, ajaxOptions, thrownError){
         alert(xhr.status);
         alert(thrownError);
       });
+      return true;
+    },
+    addHotspot : function (h){
+      var id = h.id,
+          map = $('#'+h.map),
+          name = h.name,
+          description = h.description,
+          category = h.category,
+          special_icon_path = h.special_icon_path,
+          x = h.xOff,
+          y = h.yOff;
 
-      
+          
+      var right = map.width()-x-16,
+          bottom = map.height()-y+15;
+          
+
+      var h1 = $('<h1>'+name+'</h1>'),
+          p = $('<p>'+description+'</p>'),
+          arrow= $('<div/>', {"class":"hotspot-arrows"}),
+          
+          div = $('<div/>', {'id' : 'hotspot-' + id, 'data-id' : id,
+                 'class': 'hotspots '+category,
+                 'style': 'bottom:' + bottom + 'px;right:' + right + 'px;' });
+          // (special_icon_path!=="")?('background-image:'+special_icon_path):''
+
+          div.append(h1);
+          div.append(p);
+          div.append(arrow);
+
+          map.append(div);
     },
     removeHotspot : function (id){
       $.ajax('./rest/hotspots/'+id, {type: 'DELETE'}).success(function(){
