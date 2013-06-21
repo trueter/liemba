@@ -5,7 +5,7 @@ $(function() {
   $.get('./rest/hotspots', function(data) {
     response = data;
   }).success(function(){
-    //htw.interactiveMap.init(response);
+    htw.interactiveMap.init(response);
     if(htw.debug)console.log("initial request successfully called");
   }).fail(function(){
     if(htw.debug)console.log("initial request failed");
@@ -21,7 +21,6 @@ $(function() {
   $('.map').on("contextmenu", function(e){
     
       var target = $(e.target);
-      console.log(target);
 
       if( e.button !== 2 ) return false;
       
@@ -46,7 +45,9 @@ $(function() {
         "left":prepareX
       });
 
-      $('#xOff').val(x);$('#yOff').val(y);
+      $('#add-hotspot-form-x').val(x);
+      $('#add-hotspot-form-y').val(y);
+      $('#add-hotspot-form-map').val(e.target.id);
       return false;
 
   });
@@ -90,11 +91,9 @@ $(function() {
   /*
 
   // Bind Hotspot Hover effect
-
-*/
+/* / Works for Predefined
   var hotspotHoverTimer;
   $(".hotspots").on( "mouseenter", function(){
-      console.log("x");
       var that = $(this).stop().addClass("extended");
       clearTimeout(hotspotHoverTimer);
 
@@ -102,9 +101,7 @@ $(function() {
         that.children("h1, p").css("opacity", "1");
       },400);
    }).on("mouseleave", function(){
-      console.log("y");
     var that = $(this).stop();
-
       that.children("h1, p").css("opacity", "0");
 
       clearTimeout(hotspotHoverTimer);
@@ -113,7 +110,25 @@ $(function() {
       },150);
 
    } );
+*/
+  var hotspotHoverTimer;
+  $("#map-wrapper").on( "mouseenter", ".hotspots", function(){
+      var that = $(this).stop().addClass("extended");
+      clearTimeout(hotspotHoverTimer);
 
+      hotspotHoverTimer = setTimeout(function(){
+        that.children("h1, p").css("opacity", "1");
+      },400);
+   }).on("mouseleave", ".hotspots", function(){
+    var that = $(this).stop();
+      that.children("h1, p").css("opacity", "0");
+
+      clearTimeout(hotspotHoverTimer);
+      hotspotHoverTimer = setTimeout(function(){
+        that.removeClass("extended");
+      },150);
+
+   } );
 });
 
 $(window).load(function() {

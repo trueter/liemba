@@ -23,13 +23,16 @@
                     <label for="add-hotspot-form-name">Name</label>
                     <input value="A" name="add-hotspot-form-name" type="text" required>
                     <label for="description">Beschreibung</label>
-                    <textarea name="description" required placeholder="Lorem Ipsum dolor sit amet"></textarea>
-                    <select name="category">
-                        <option value="placeholders" disabled selected>Kategorie wählen</option>
+                    <textarea required name="add-hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
+                    <select required name="add-hotspot-form-category">
+                        <option value="" disabled selected>Kategorie wählen</option>
                         <option value="airports">Flughäfen</option>
+                        <option value="pois">Sehenswürdigkeiten</option>
                     </select>
+                    <input id="add-hotspot-form-special_icon_path" name="add-hotspot-form-special_icon_path" value="" type="hidden">
                     <input id="add-hotspot-form-x" name="add-hotspot-form-x" type="hidden">
                     <input id="add-hotspot-form-y" name="add-hotspot-form-y" type="hidden">
+                    <input id="add-hotspot-form-map" name="add-hotspot-form-map" type="hidden">
                     <input type="submit" value="Hotspot erstellen">
                 </form>
             </div>
@@ -89,11 +92,11 @@
                     <img src="img/ship.png" class="ship-big">
                 </div>
 
-                <div class="hotspots airports" style="bottom:450px;right: 300px;">
+                <!--<div class="hotspots airports" style="bottom:450px;right: 300px;">
                     <h1>Kigoma Airport</h1>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                     <div class="hotspot-arrows"></div>
-                </div>
+                </div>-->
 
             </div>
             
