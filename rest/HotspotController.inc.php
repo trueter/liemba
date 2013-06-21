@@ -54,7 +54,7 @@ function getHotspot($id){
 # POST /hotspots
 function createHotspot($formData) {
 
-	$pre = 'add-hotspot-form-';
+	$pre = 'hotspot-form-';
 	
 	$values = array(':name'=>$formData[$pre.'name'], 
 				  ':xOff'=>$formData[$pre.'x'], 
@@ -107,7 +107,7 @@ function createHotspot($formData) {
 # POST /hotspots/id
 function updateHotspot($id, $formData){
 
-	$pre = 'add-hotspot-form-';
+	$pre = 'hotspot-form-';
 
 	$values = array(':name'=>$formData[$pre.'name'], 
 				  ':xOff'=>$formData[$pre.'x'], 
@@ -117,30 +117,34 @@ function updateHotspot($id, $formData){
 				  ':map'=>$formData[$pre.'map'],
 				  ':category'=>$formData[$pre.'category']);
 
-
 	$status = 200;
 
-	if(!isset( $id ) || 
-	   !isset( $formData['name'] ) || 
-	   !isset( $formData['xOff'] ) || 
-	   !isset( $formData['yOff'] ) 
+	if(!isset( $formData[$pre.'name'] ) || 
+	   !isset( $formData[$pre.'description'] ) || 
+	   !isset( $formData[$pre.'x'] ) ||
+	   !isset( $formData[$pre.'y'] ) 
 	  ){
 		$status = 400;
+	die(var_dump($formData));
 	}
 
 	if($status != 400){
 		try{
 			$db = getConnection();
-		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_HOTSPOTS_TABLE'] .' SET name=:name,description=:description,xOff=:xOff,yOff=:yOff,special_icon_path=:special_icon_path,category=:category WHERE id='.$id);
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+
+		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_HOTSPOT_TABLE'] .' SET name=:name,description=:description,xOff=:xOff,yOff=:yOff,special_icon_path=:special_icon_path,category=:category,map=:map WHERE id='.$id);
 			$statement->execute($values);
 
 			if( $statement->rowCount() != 1 ){
 				$status = 500;
+				die("1");
 			}
 
 		} catch(PDOException $e) {
 	 		echo($e->getMessage());
 	 		$status = 500;
+	 		die("2");
 	    }
 	}
 
@@ -155,7 +159,7 @@ function deleteHotspot($id) {
 	try{
 	    $db = getConnection();
 
-	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_HOTSPOTS_TABLE'] .' WHERE ID='.$id);
+	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_HOTSPOT_TABLE'] .' WHERE ID='.$id);
 		
 		if($statement->rowCount() != 1){
 			$status = 500;

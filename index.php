@@ -19,21 +19,21 @@
 
             <div id="hotspot-prepare-dialog" class="green-box">
                 <div id="hotspot-prepare-dialog-close">x</div>
-                <form id="add-hotspot-form" action="#">
-                    <label for="add-hotspot-form-name">Name</label>
-                    <input value="A" name="add-hotspot-form-name" type="text" required>
+                <form id="hotspot-form" data-hotspot-id="new"  action="#">
+                    <label for="hotspot-form-name">Name</label>
+                    <input value="" placeholder="Name" id="hotspot-form-name" name="hotspot-form-name" type="text" required>
                     <label for="description">Beschreibung</label>
-                    <textarea required name="add-hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
-                    <select required name="add-hotspot-form-category">
+                    <textarea required id="hotspot-form-description" name="hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
+                    <select required id="hotspot-form-category" name="hotspot-form-category">
                         <option value="" disabled selected>Kategorie wählen</option>
                         <option value="airports">Flughäfen</option>
                         <option value="pois">Sehenswürdigkeiten</option>
                     </select>
-                    <input id="add-hotspot-form-special_icon_path" name="add-hotspot-form-special_icon_path" value="" type="hidden">
-                    <input id="add-hotspot-form-x" name="add-hotspot-form-x" type="hidden">
-                    <input id="add-hotspot-form-y" name="add-hotspot-form-y" type="hidden">
-                    <input id="add-hotspot-form-map" name="add-hotspot-form-map" type="hidden">
-                    <input type="submit" value="Hotspot erstellen">
+                    <input id="hotspot-form-special_icon_path" name="hotspot-form-special_icon_path" value="" type="hidden">
+                    <input id="hotspot-form-x" name="hotspot-form-x" type="hidden">
+                    <input id="hotspot-form-y" name="hotspot-form-y" type="hidden">
+                    <input id="hotspot-form-map" name="hotspot-form-map" type="hidden">
+                    <input id="hotspot-form-submit" type="submit" value="Hotspot erstellen">
                 </form>
             </div>
 
@@ -41,22 +41,8 @@
                 <div id="navigation-anchor-up" class="navigation-anchor"></div>
 
                     <ul id="navigation-stops">
-                        <li>Stop 1</li>
-                        <li>Stop 2</li>
-                        <li>Stop 3</li>
-                        <li>Stop 4</li>
-                        <li>Stop 5</li>
-                        <li>Stop 6</li>
-                        <li>Stop 7</li>
-                        <li>Stop 8</li>
-                        <li>Stop 9</li>
-                        <li>Stop 10</li>
-                        <li>Stop 11</li>
-                        <li>Stop 12</li>
-                        <li>Stop 13</li>
-                        <li>Stop 14</li>
-                        <li>Stop 15</li>
-                        <li>Stop 16</li>
+                        <li>Stop 1</li><li>Stop 2</li><li>Stop 3</li><li>Stop 4</li><li>Stop 5</li><li>Stop 6</li><li>Stop 7</li><li>Stop 8</li>
+                        <li>Stop 9</li><li>Stop 10</li><li>Stop 11</li><li>Stop 12</li><li>Stop 13</li><li>Stop 14</li><li>Stop 15</li><li>Stop 16</li>
                     </ul>
 
                 <div id="navigation-anchor-down" class="navigation-anchor"></div>
@@ -91,13 +77,6 @@
                 <div id="ship-1" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
-
-                <!--<div class="hotspots airports" style="bottom:450px;right: 300px;">
-                    <h1>Kigoma Airport</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                    <div class="hotspot-arrows"></div>
-                </div>-->
-
             </div>
             
             <div id="map-2" class="map">

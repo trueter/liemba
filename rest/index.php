@@ -81,13 +81,13 @@ $app->post('/hotspots', function() use ($app){
 	
 	if($result[0] == 200){
 		$hotspot = array('id'=>$result[1],
-						'name'=>$_POST['add-hotspot-form-name'],
-						'description'=>$_POST['add-hotspot-form-description'],
-						'xOff'=>$_POST['add-hotspot-form-x'],
-						'yOff'=>$_POST['add-hotspot-form-y'],
-						'category'=>$_POST['add-hotspot-form-category'],
-						'special_icon_path'=>$_POST['add-hotspot-form-special_icon_path'],
-						'map'=>$_POST['add-hotspot-form-map']);
+						'name'=>$_POST['hotspot-form-name'],
+						'description'=>$_POST['hotspot-form-description'],
+						'xOff'=>$_POST['hotspot-form-x'],
+						'yOff'=>$_POST['hotspot-form-y'],
+						'category'=>$_POST['hotspot-form-category'],
+						'special_icon_path'=>$_POST['hotspot-form-special_icon_path'],
+						'map'=>$_POST['hotspot-form-map']);
 
 		$res->write(json_encode($hotspot));
 	}else{
@@ -109,7 +109,14 @@ $app->post('/hotspots/:id', function($id) use ($app){
 	$app->response()->status($status);
 
 	if($status == 200){
-		$hotspot = array('name'=>$_POST['name'], 'xOff'=>$_POST['xOff'], 'yOff'=>$_POST['yOff']);
+		$hotspot = array('id'=>$id,
+						'name'=>$_POST['hotspot-form-name'],
+						'description'=>$_POST['hotspot-form-description'],
+						'xOff'=>$_POST['hotspot-form-x'],
+						'yOff'=>$_POST['hotspot-form-y'],
+						'category'=>$_POST['hotspot-form-category'],
+						'special_icon_path'=>$_POST['hotspot-form-special_icon_path'],
+						'map'=>$_POST['hotspot-form-map']);
 
 		$res->write(json_encode($hotspot));
 	}else{
