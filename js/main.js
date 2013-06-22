@@ -15,7 +15,7 @@ $(function() {
 //// Bind Hotspot Create Form
 
   $('#hotspot-form').submit(function(){
-    var hsid = $(this).data("mode");
+    var hsid = $(this).data("hotspot-id");
 
     if( hsid  === "new"){
       if (htw.interactiveMap.createHotspot($(this).serialize())){
@@ -45,9 +45,7 @@ $(function() {
 
 
       var x = Math.round(e.pageX - target.offset().left),
-      y = Math.round(e.pageY - target.offset().top);
-      var prepareX = (x-80<20)?20:(x-80);
-      var prepareY = (y-80<20)?20:(y-80);
+          y = Math.round(e.pageY - target.offset().top);
 
       $('#hotspot-confirm-dialog').css({
         "top":e.pageY,
@@ -55,8 +53,9 @@ $(function() {
       }).fadeIn(200);
 
       $('#hotspot-prepare-dialog').css({
-        "top":prepareY,
-        "left":prepareX
+        
+        "top":e.pageY,
+        "left":e.pageX,
       });
 
       htw.interactiveMap.cleanForm();
@@ -141,6 +140,7 @@ $(function() {
 
     var id = $(this).parent().data("id");
     htw.interactiveMap.editHotspot(id);
+
    });
 
 });

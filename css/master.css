@@ -3,12 +3,13 @@ body {
   font-family: Din, Helvetica, Arial;
   color: #FFF;
   background-color: #ecf0f1;
+  position: relative;
 }
-/* line 7, /Users/torsten/liemba/css/master.less */
+/* line 8, /Users/torsten/liemba/css/master.less */
 .preload * {
   transition: none !important;
 }
-/* line 11, /Users/torsten/liemba/css/master.less */
+/* line 12, /Users/torsten/liemba/css/master.less */
 .green-box {
   background: #558535;
   border: 1px solid #FFF;
@@ -17,7 +18,7 @@ body {
   box-shadow: 0px 0px 10px 4px #444;
   color: #FFF;
 }
-/* line 19, /Users/torsten/liemba/css/master.less */
+/* line 20, /Users/torsten/liemba/css/master.less */
 .green-box button,
 .green-box input,
 .green-box select {
@@ -27,19 +28,20 @@ body {
   outline: 1px solid #FFF;
   background: #FFFFFF;
 }
-/* line 29, /Users/torsten/liemba/css/master.less */
+/* line 30, /Users/torsten/liemba/css/master.less */
 #page-wrapper {
   width: 1024px;
   margin: 0 auto;
+  position: relative;
 }
-/* line 34, /Users/torsten/liemba/css/master.less */
+/* line 36, /Users/torsten/liemba/css/master.less */
 #hotspot-prepare-dialog {
   display: none;
   position: absolute;
   padding: 10px;
   z-index: 10000;
 }
-/* line 40, /Users/torsten/liemba/css/master.less */
+/* line 42, /Users/torsten/liemba/css/master.less */
 #hotspot-prepare-dialog input,
 #hotspot-prepare-dialog label,
 #hotspot-prepare-dialog textarea,
@@ -48,14 +50,14 @@ body {
   margin: 0 2px 8px 2px !important;
   width: 250px;
 }
-/* line 46, /Users/torsten/liemba/css/master.less */
+/* line 48, /Users/torsten/liemba/css/master.less */
 #hotspot-prepare-dialog textarea {
   height: 200px;
   position: relative;
   left: -1px;
   width: 247px;
 }
-/* line 53, /Users/torsten/liemba/css/master.less */
+/* line 55, /Users/torsten/liemba/css/master.less */
 #hotspot-prepare-dialog select {
   text-indent: 60px;
   border-radius: 0;
@@ -63,7 +65,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 61, /Users/torsten/liemba/css/master.less */
+/* line 63, /Users/torsten/liemba/css/master.less */
 #hotspot-prepare-dialog #hotspot-prepare-dialog-close {
   float: right;
   text-align: center;
@@ -74,7 +76,7 @@ body {
   width: 15px;
   height: 15px;
 }
-/* line 72, /Users/torsten/liemba/css/master.less */
+/* line 74, /Users/torsten/liemba/css/master.less */
 #hotspot-confirm-dialog {
   position: absolute;
   display: none;
@@ -84,7 +86,7 @@ body {
   font-size: 0.8em;
   padding: 10px 8px;
 }
-/* line 82, /Users/torsten/liemba/css/master.less */
+/* line 84, /Users/torsten/liemba/css/master.less */
 #offsetHelper {
   position: fixed;
   top: 50px;
@@ -93,12 +95,12 @@ body {
   font-size: 28px;
   z-index: 100000;
 }
-/* line 90, /Users/torsten/liemba/css/master.less */
+/* line 92, /Users/torsten/liemba/css/master.less */
 #offsetHelper:before {
   content: "yOff: ";
   color: #000;
 }
-/* line 96, /Users/torsten/liemba/css/master.less */
+/* line 98, /Users/torsten/liemba/css/master.less */
 .split {
   position: absolute;
   height: 200px;
@@ -106,7 +108,7 @@ body {
   background: url(../img/retina_wood.png);
   color: #000;
 }
-/* line 103, /Users/torsten/liemba/css/master.less */
+/* line 105, /Users/torsten/liemba/css/master.less */
 .split h1 {
   line-height: 100px;
   margin: 60px auto;
@@ -115,7 +117,7 @@ body {
 /*
 	Minimap
 */
-/* line 114, /Users/torsten/liemba/css/master.less */
+/* line 116, /Users/torsten/liemba/css/master.less */
 #minimap {
   position: fixed;
   height: 218px;
@@ -125,36 +127,36 @@ body {
   background: url(../img/minimap.png);
 }
 @media all and (max-width: 1280px) {
-  /* line 122, /Users/torsten/liemba/css/master.less */
+  /* line 124, /Users/torsten/liemba/css/master.less */
   #minimap {
     right: 0px;
   }
 }
 @media all and (min-width: 1281px) and (max-width: 1440px) {
-  /* line 123, /Users/torsten/liemba/css/master.less */
+  /* line 125, /Users/torsten/liemba/css/master.less */
   #minimap {
     right: 4%;
   }
 }
 @media all and (min-width: 1441px) and (max-width: 1680px) {
-  /* line 124, /Users/torsten/liemba/css/master.less */
+  /* line 126, /Users/torsten/liemba/css/master.less */
   #minimap {
     right: 11%;
   }
 }
 @media all and (min-width: 1681px) and (max-width: 1919px) {
-  /* line 125, /Users/torsten/liemba/css/master.less */
+  /* line 127, /Users/torsten/liemba/css/master.less */
   #minimap {
     right: 16%;
   }
 }
 @media all and (min-width: 1920px) {
-  /* line 126, /Users/torsten/liemba/css/master.less */
+  /* line 128, /Users/torsten/liemba/css/master.less */
   #minimap {
     right: 20%;
   }
 }
-/* line 128, /Users/torsten/liemba/css/master.less */
+/* line 130, /Users/torsten/liemba/css/master.less */
 #minimap #current-location {
   position: absolute;
   height: 18px;
@@ -165,7 +167,7 @@ body {
 /*
 	Navigation
 */
-/* line 141, /Users/torsten/liemba/css/master.less */
+/* line 143, /Users/torsten/liemba/css/master.less */
 #navigation {
   position: fixed;
   width: 130px;
@@ -176,53 +178,53 @@ body {
   margin-left: 25px;
 }
 @media all and (max-width: 1280px) {
-  /* line 150, /Users/torsten/liemba/css/master.less */
+  /* line 152, /Users/torsten/liemba/css/master.less */
   #navigation {
     left: 0px;
     margin-left: 0px;
   }
 }
 @media all and (min-width: 1281px) and (max-width: 1440px) {
-  /* line 151, /Users/torsten/liemba/css/master.less */
+  /* line 153, /Users/torsten/liemba/css/master.less */
   #navigation {
     left: 4%;
   }
 }
 @media all and (min-width: 1441px) and (max-width: 1680px) {
-  /* line 152, /Users/torsten/liemba/css/master.less */
+  /* line 154, /Users/torsten/liemba/css/master.less */
   #navigation {
     left: 11%;
   }
 }
 @media all and (min-width: 1681px) and (max-width: 1919px) {
-  /* line 153, /Users/torsten/liemba/css/master.less */
+  /* line 155, /Users/torsten/liemba/css/master.less */
   #navigation {
     left: 16%;
   }
 }
 @media all and (min-width: 1920px) {
-  /* line 154, /Users/torsten/liemba/css/master.less */
+  /* line 156, /Users/torsten/liemba/css/master.less */
   #navigation {
     left: 20%;
   }
 }
-/* line 156, /Users/torsten/liemba/css/master.less */
+/* line 158, /Users/torsten/liemba/css/master.less */
 #navigation .navigation-anchor {
   height: 25px;
   background: url(../img/anchor.png) no-repeat;
   background-position: 38px 8px;
 }
-/* line 162, /Users/torsten/liemba/css/master.less */
+/* line 164, /Users/torsten/liemba/css/master.less */
 #navigation #navigation-anchor-down {
   transform: rotate(180deg);
 }
-/* line 166, /Users/torsten/liemba/css/master.less */
+/* line 168, /Users/torsten/liemba/css/master.less */
 #navigation ul {
   overflow: auto;
   margin: 0;
   list-style: none;
 }
-/* line 172, /Users/torsten/liemba/css/master.less */
+/* line 174, /Users/torsten/liemba/css/master.less */
 #navigation #navigation-stops {
   height: 125px;
   padding: 0;
@@ -230,12 +232,12 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 180, /Users/torsten/liemba/css/master.less */
+/* line 182, /Users/torsten/liemba/css/master.less */
 #navigation #category-selection {
   padding-top: 11px;
   padding-left: 11px;
 }
-/* line 184, /Users/torsten/liemba/css/master.less */
+/* line 186, /Users/torsten/liemba/css/master.less */
 #navigation #category-selection li {
   width: 16px;
   height: 16px;
@@ -248,22 +250,22 @@ body {
   border: 1px solid #FFF;
   cursor: pointer;
 }
-/* line 196, /Users/torsten/liemba/css/master.less */
+/* line 198, /Users/torsten/liemba/css/master.less */
 #navigation #category-selection li.itemsHidden {
   opacity: 0.2;
 }
-/* line 200, /Users/torsten/liemba/css/master.less */
+/* line 202, /Users/torsten/liemba/css/master.less */
 #navigation #category-selection li.nyi {
   cursor: not-allowed;
 }
-/* line 205, /Users/torsten/liemba/css/master.less */
+/* line 207, /Users/torsten/liemba/css/master.less */
 #navigation #category-selection img {
   position: relative;
 }
 /*
 	Hotspots
 */
-/* line 216, /Users/torsten/liemba/css/master.less */
+/* line 218, /Users/torsten/liemba/css/master.less */
 .hotspots {
   position: absolute;
   width: 28px;
@@ -275,7 +277,7 @@ body {
   z-index: 150;
   transition: all 0.4s ease-in-out;
 }
-/* line 228, /Users/torsten/liemba/css/master.less */
+/* line 230, /Users/torsten/liemba/css/master.less */
 .hotspots h1,
 .hotspots p {
   visibility: hidden;
@@ -283,13 +285,13 @@ body {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-/* line 235, /Users/torsten/liemba/css/master.less */
+/* line 237, /Users/torsten/liemba/css/master.less */
 .hotspots h1 {
   text-align: center;
   white-space: nowrap;
   margin: 0;
 }
-/* line 241, /Users/torsten/liemba/css/master.less */
+/* line 243, /Users/torsten/liemba/css/master.less */
 .hotspots .hotspot-arrows {
   position: absolute;
   bottom: -14px;
@@ -301,7 +303,7 @@ body {
   border-top: 12px solid #FFF;
   transition: all 0.4s ease-in-out;
 }
-/* line 253, /Users/torsten/liemba/css/master.less */
+/* line 255, /Users/torsten/liemba/css/master.less */
 .hotspots .hotspot-destroy {
   float: right;
   border: 1px solid red;
@@ -309,7 +311,7 @@ body {
   width: 10px;
   margin: 3px;
 }
-/* line 261, /Users/torsten/liemba/css/master.less */
+/* line 263, /Users/torsten/liemba/css/master.less */
 .hotspots .hotspot-edit {
   float: right;
   border: 1px solid yellow;
@@ -317,7 +319,7 @@ body {
   width: 10px;
   margin: 3px;
 }
-/* line 269, /Users/torsten/liemba/css/master.less */
+/* line 271, /Users/torsten/liemba/css/master.less */
 .hotspots.extended {
   width: 320px;
   height: 180px;
@@ -325,86 +327,86 @@ body {
   white-space: normal;
   z-index: 250;
 }
-/* line 276, /Users/torsten/liemba/css/master.less */
+/* line 278, /Users/torsten/liemba/css/master.less */
 .hotspots.extended h1,
 .hotspots.extended p {
   visibility: visible;
 }
-/* line 280, /Users/torsten/liemba/css/master.less */
+/* line 282, /Users/torsten/liemba/css/master.less */
 .hotspots.extended .hotspot-arrows {
   opacity: 0;
 }
-/* line 286, /Users/torsten/liemba/css/master.less */
+/* line 288, /Users/torsten/liemba/css/master.less */
 .hotspot.new-hotspot {
   background-color: red;
 }
-/* line 290, /Users/torsten/liemba/css/master.less */
+/* line 292, /Users/torsten/liemba/css/master.less */
 .hotspots.placeholder {
   background: #ecf0f1 url(../img/hotspot_icons/placeholder.png) no-repeat;
 }
-/* line 294, /Users/torsten/liemba/css/master.less */
+/* line 296, /Users/torsten/liemba/css/master.less */
 .hotspots.airports {
   background: #0b6e8e url(../img/hotspot_icons/airport.png) no-repeat;
 }
-/* line 298, /Users/torsten/liemba/css/master.less */
+/* line 300, /Users/torsten/liemba/css/master.less */
 .hotspots.pois {
   background: #111111 url(../img/hotspot_icons/poi.png) no-repeat;
 }
 /*
 	Ships
 */
-/* line 306, /Users/torsten/liemba/css/master.less */
+/* line 308, /Users/torsten/liemba/css/master.less */
 .ships {
   position: absolute;
 }
-/* line 308, /Users/torsten/liemba/css/master.less */
+/* line 310, /Users/torsten/liemba/css/master.less */
 .ship-big {
   height: 160px;
   width: 50px;
 }
-/* line 313, /Users/torsten/liemba/css/master.less */
+/* line 315, /Users/torsten/liemba/css/master.less */
 .ship-small {
   height: 40px;
   width: 20px;
 }
-/* line 318, /Users/torsten/liemba/css/master.less */
+/* line 320, /Users/torsten/liemba/css/master.less */
 #ship-1 {
   z-index: 101;
 }
-/* line 320, /Users/torsten/liemba/css/master.less */
+/* line 322, /Users/torsten/liemba/css/master.less */
 #ship-2 {
   z-index: 104;
 }
-/* line 322, /Users/torsten/liemba/css/master.less */
+/* line 324, /Users/torsten/liemba/css/master.less */
 #ship-3 {
   z-index: 106;
 }
 /*
 	Maps
 */
-/* line 328, /Users/torsten/liemba/css/master.less */
+/* line 330, /Users/torsten/liemba/css/master.less */
 .map {
   position: relative;
 }
-/* line 332, /Users/torsten/liemba/css/master.less */
+/* line 334, /Users/torsten/liemba/css/master.less */
 #map-wrapper {
   width: 100%;
   position: relative;
   box-shadow: 0px 0px 20px 5px #888;
 }
-/* line 338, /Users/torsten/liemba/css/master.less */
+/* line 340, /Users/torsten/liemba/css/master.less */
 #map-1 {
   background: url(../img/dummy_background.png);
   z-index: 100;
   height: 717px;
 }
-/* line 344, /Users/torsten/liemba/css/master.less */
+/* line 346, /Users/torsten/liemba/css/master.less */
 #map-2 {
   background: url(../img/lake.png);
   z-index: 102;
   height: 1700px;
 }
-/* line 350, /Users/torsten/liemba/css/master.less */
+/* line 352, /Users/torsten/liemba/css/master.less */
 #map-3 {
   background: url(../img/rumonge.png);
   z-index: 104;

@@ -10,32 +10,35 @@
     <body class="preload">
     
         <div id="offsetHelper">0</div>
-        <div id="page-wrapper">
-            <div id="hotspot-confirm-dialog" class="green-box">
-                <button id="hotspot-confirm-dialog-create">Hotspot erstellen</button>
-                <button id="hotspot-confirm-dialog-cancel">Abbrechen</button>
-            </div>
-        <div id="map-wrapper">
+        
+        <div id="hotspot-confirm-dialog" class="green-box">
+            <button id="hotspot-confirm-dialog-create">Hotspot erstellen</button>
+            <button id="hotspot-confirm-dialog-cancel">Abbrechen</button>
+        </div>
 
-            <div id="hotspot-prepare-dialog" class="green-box">
-                <div id="hotspot-prepare-dialog-close">x</div>
-                <form id="hotspot-form" data-hotspot-id="new"  action="#">
-                    <label for="hotspot-form-name">Name</label>
-                    <input value="" placeholder="Name" id="hotspot-form-name" name="hotspot-form-name" type="text" required>
-                    <label for="description">Beschreibung</label>
-                    <textarea required id="hotspot-form-description" name="hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
-                    <select required id="hotspot-form-category" name="hotspot-form-category">
-                        <option value="" disabled selected>Kategorie wählen</option>
-                        <option value="airports">Flughäfen</option>
-                        <option value="pois">Sehenswürdigkeiten</option>
-                    </select>
-                    <input id="hotspot-form-special_icon_path" name="hotspot-form-special_icon_path" value="" type="hidden">
-                    <input id="hotspot-form-x" name="hotspot-form-x" type="hidden">
-                    <input id="hotspot-form-y" name="hotspot-form-y" type="hidden">
-                    <input id="hotspot-form-map" name="hotspot-form-map" type="hidden">
-                    <input id="hotspot-form-submit" type="submit" value="Hotspot erstellen">
-                </form>
-            </div>
+        <div id="hotspot-prepare-dialog" class="green-box">
+            <div id="hotspot-prepare-dialog-close">x</div>
+            <form id="hotspot-form" data-hotspot-id="new"  action="#">
+                <label for="hotspot-form-name">Name</label>
+                <input value="" placeholder="Name" id="hotspot-form-name" name="hotspot-form-name" type="text" required>
+                <label for="description">Beschreibung</label>
+                <textarea required id="hotspot-form-description" name="hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
+                <select required id="hotspot-form-category" name="hotspot-form-category">
+                    <option value="" disabled selected>Kategorie wählen</option>
+                    <option value="airports">Flughäfen</option>
+                    <option value="pois">Sehenswürdigkeiten</option>
+                </select>
+                <input id="hotspot-form-special_icon_path" name="hotspot-form-special_icon_path" value="" type="hidden">
+                <input id="hotspot-form-x" name="hotspot-form-x" type="hidden">
+                <input id="hotspot-form-y" name="hotspot-form-y" type="hidden">
+                <input id="hotspot-form-map" name="hotspot-form-map" type="hidden">
+                <input id="hotspot-form-submit" type="submit" value="Hotspot erstellen">
+            </form>
+        </div>
+
+        <div id="page-wrapper">
+
+        <div id="map-wrapper">
 
             <div id="navigation" class="green-box">
                 <div id="navigation-anchor-up" class="navigation-anchor"></div>
@@ -91,6 +94,8 @@
  
         </div>
 
+
+
         <div id="split-1" class="split"><h1>Split #1</h1></div>
         <div id="split-2" class="split"><h1>Split #2</h1></div>
         <div id="split-3" class="split"><h1>Split #3</h1></div>
@@ -98,6 +103,8 @@
         <h1 style="text-align:center; margin-top: 400px">Ende</h1>      
 
         <?php require("partials/footer.php"); ?>  
+
+        </div>
 
     </body>
 </html>
