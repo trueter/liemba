@@ -17,6 +17,11 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 			
 		<!-- css + javascript -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/wordpress_core.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/master.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mobile.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tablets_and_desktops.css">
 		<?php wp_head(); ?>
 
 		<!-- custom scripts -->
