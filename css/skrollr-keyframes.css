@@ -29,11 +29,11 @@
 }
 
 #split-1 {
-  top: 760px; z-index: 105; -skrollr-animation-name: split1;
+  top: 600px; z-index: 105; -skrollr-animation-name: split1;
 }
 @-skrollr-keyframes  split1 {
    320 { transform: translateY(0px );}
-   530 { transform: translateY(-190px );}
+   530 { transform: translateY(-90px );}
 }
 
 /*

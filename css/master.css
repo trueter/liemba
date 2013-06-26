@@ -103,15 +103,15 @@ body {
 /* line 98, /Users/torsten/liemba/css/master.less */
 .split {
   position: absolute;
-  height: 200px;
+  height: 100px;
   width: 100%;
   background: url(../img/retina_wood.png);
   color: #000;
 }
 /* line 105, /Users/torsten/liemba/css/master.less */
 .split h1 {
-  line-height: 100px;
-  margin: 60px auto;
+  line-height: 50px;
+  margin: 30px auto;
   text-align: center;
 }
 /*
@@ -396,9 +396,11 @@ body {
 }
 /* line 340, /Users/torsten/liemba/css/master.less */
 #map-1 {
-  background: url(../img/dummy_background.png);
+  background: url(../img/maps/1_bujumbura.png);
+  /* bujumbura */
+
   z-index: 100;
-  height: 717px;
+  height: 600px;
 }
 /* line 346, /Users/torsten/liemba/css/master.less */
 #map-2 {
