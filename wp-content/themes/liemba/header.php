@@ -3,8 +3,6 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
-		
-		<!-- dns prefetch -->
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		
 		<!-- meta -->
@@ -31,6 +29,8 @@
 			conditionizr();
 		}()
 		</script>
+		<script>var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+		
 	</head>
 	<body <?php body_class(); ?>>
 	
