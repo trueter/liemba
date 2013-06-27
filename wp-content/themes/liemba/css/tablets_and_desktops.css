@@ -1,32 +1,45 @@
 @media all and (min-width: 481px) {
-	body{
-		padding-left: 5px;
-	}
-
 	.logo{
-		margin-top: 50px;
+		margin-top: 40px;
+		width: 144px;
+		height: 76px;
 	}
 
 	#bomb{
 		float: right;
-		width: 400px;
-		margin-top: 20px;
+		width: 323px;
+		margin-top: 40px;
+	}
+
+	.logo, .sidebar{
+		margin-left: 2px;/* counter outline clipping */
 	}
 
 	.sidebar {
 		display: inline-block;
-		width: 330px;
+		width: 285;
+		margin-bottom: 21px;
+
 	}
 
 	nav{
 		
 	}
 
+	#donation-wrapper{
+		width: 282px;
+	}
+
+	.page-item:first-child{
+		margin-top: 0px;
+	}
+
 	.page-item, .donation-item{
-		height: 40px;
-		width: 160px;
-		margin: 7px 0 7px 2px;
+		height: 41px;
+		width: 124px;
+		margin: 7px 0;
 		font-size: 1.5em;
+		
 	}
 
 	.page-item{
@@ -80,13 +93,6 @@
 		font-size: 1em;
 	}
 
-	.white-item {
-		background-color: #FFFFFF;
-		outline: 1px solid #FFFFFF;	
-		outline-offset: 1px;
-		opacity: 0.925;
-	}
-
 	.current-page-item:hover, .current-page-ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
 	}
@@ -98,7 +104,9 @@
 	}
 
 	.donation-item{
+		width: 137px;
 		text-align: right;
+		float: left;
 		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
 	}
 
@@ -107,7 +115,7 @@
 	}
 
 	.donation-item:last-child{
-		width: 230px;
+
 		background-image: none;
 		margin-left: 4px;
 
@@ -118,25 +126,20 @@
 	}
 
 	#news-ticker-wrapper{
-		margin: 10px 0;
+		margin-top: 24px;
 		float: left;
-		width: 300px;
+		width: 282px;
 	}
 
 	#sidebar-and-content{
-		margin-bottom: 150px;
+		margin-bottom: 110px;
 	}
 
 	#content-wrapper{
-		vertical-align: top;
-		width: 60%;
-		min-width: 200px;
-		max-width: 1300px;
-		padding: 10px 20px 10px;
-		display: inline-block;
-		border: 1px solid black;
-		outline: 1px solid black;
-		outline-offset: 1px;
+		width: 98%;
+		margin: 0 auto;
+		padding: 5px 10px 5px;
+		display: block;
 	}
 
 	#content-wrapper h1{
@@ -153,6 +156,7 @@
 	#social-wrapper{
 		top: 50%;
 		position: fixed;
+		z-index: 10;
 	}
 
 	#search-and-info{
@@ -163,14 +167,13 @@
 
 	.footer {
 		margin-top: 5px;
-		display: block;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
 	}
 
 	.search{
-		width: 300px;
+		width: 282px;
 	}
 
 	.search label{
@@ -179,18 +182,36 @@
 		position: relative;
 		top: 12px;
 	}
+
+	.footer-widget-wrapper{
+		margin: 0 auto;
+		width: 590px;
+
+	}
+
 	
 	.footer-widget{
 		cursor: not-allowed;
 		padding: 5px 35px;
 		font-weight: bold;
 		display: inline-block;
-		height: 90px;
-		width: 264px;
+		height: 101px;
+		width: 282px;
 		text-align: right;
 		font-size: 24px;
 		vertical-align: top;
 		text-transform: uppercase;
 		margin: 0 4px;
+	}
+}
+
+@media all and (min-width: 755px) {
+	#content-wrapper{
+		margin-left: 21px;
+		vertical-align: top;	
+		width: 62%;
+		max-width: 1300px;
+		padding: 10px 20px 10px;
+		display: inline-block;
 	}
 }

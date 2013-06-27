@@ -4,13 +4,13 @@
 	<nav class="nav" role="navigation">
 		<?php html5blank_nav(); ?>
 		
-		<ul id="donation-wrapper">
-			<li class="donation-item">
-				<a href="#">Spenden</a>
-			</li>
-			<li class="donation-item green-item clear">
+		<ul id="donation-wrapper" class="clear">
+			<li class="donation-item green-item">
 				<h1>Erreichte Summe:</h1>
 				<p>4,5 Mio</p>
+			</li>
+			<li class="donation-item green-item ">
+				<a href="#">Spenden</a>
 			</li>
 		</ul>
 	</nav>

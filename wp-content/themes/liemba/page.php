@@ -4,7 +4,7 @@
 <?php get_sidebar(); ?>
 
 	<!-- section -->
-	<section id="content-wrapper" class="white-item" role="main">
+	<section id="content-wrapper" class="black-item" role="main">
 	
 		<h1><?php the_title(); ?></h1>
 	
