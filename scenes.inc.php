@@ -187,9 +187,9 @@ alles markieren mit cmd + d
 	<h1>Erster Termin f&uuml;r Stapellauf </h1>
 	<h2>Jan. 1915</h2>
 	<p> Ein Telegramm an die Eisenbahnverwaltung in Tabora vom Januar 1915 k&uuml;ndigt den voraussichtlichen Termin 
-		des Stapellaufes f&uuml;r den 25. Januar an und ein Schreiben nach dort vom 18. Mai 1914 erw&auml;hnt als Termin 
-		f&uuml;r die Jungfernfahrt des Schiffes und seine &uuml;bergabe an ein Marinekommando der Schutztruppe die 
-		darauffolgende Woche. Zu beiden Ereignissen wurden die Vertreter der Eisenbahnverwaltung eingeladen. Aufgrund 
+		des Stapellaufes f&uuml;r den 25. Januar an, und ein weiteres Schreiben erw&auml;hnt als Termin 
+		f&uuml;r die Jungfernfahrt des Schiffes und seine &Uuml;bergabe an ein Marinekommando der Schutztruppe 
+		eine Woche Ende Mai. Zu beiden Ereignissen wurden die Vertreter der Eisenbahnverwaltung eingeladen. Aufgrund 
 		eines Schadens am Propellerschaft waren diese Termine jedoch nicht zu halten.
 	</p>
 
