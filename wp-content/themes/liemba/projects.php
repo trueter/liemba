@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Donations
+Template Name: projects
 */
 
 get_header(); ?>  
@@ -26,10 +26,9 @@ get_header(); ?>
     var fetchedProjects;
     var list = $('#project-list');
 
-    $.get("https://api.betterplace.org/en/api_v4/organisations/125/projects.json", function(feedback){
+    $.get("https://api.betterplace.org/en/api_v4/organisations/"+htw.liemba.organisationID+"/projects.json", function(feedback){
       fetchedProjects = feedback.data;
     }).success(function(){
-      console.log(fetchedProjects);
 
       var source = $("#donation-item-template").html();
       var template = Handlebars.compile(source);
@@ -38,6 +37,8 @@ get_header(); ?>
 
         list.html(template(context));
 
+    }).error(function(){
+      $('#content-wrapper').html("<h1>Konnte keine Verbindung zu Betterplace.org herstellen</h1>");
     });
 
   });
@@ -50,11 +51,14 @@ get_header(); ?>
         <div class="project-content">
           <h3 class="project-title">{{title}}</h1>
           <div class="project-description">{{ safe description }}</div>
-          <div class="project-donate-button green-item">Spenden</div>
+          <a href="./donation-form?project_id={{id}}">
+            <button class="project-donate-button green-item">Spenden</button>
+          </a>
         </div>
       </div>
     {{/each}}
   </script>
+  
 
 
 

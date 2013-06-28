@@ -16,10 +16,9 @@
 	}
 
 	.sidebar {
-		display: inline-block;
-		width: 285;
+		float: left;
+		width: 285px;
 		margin-bottom: 21px;
-
 	}
 
 	nav{
@@ -132,14 +131,16 @@
 	}
 
 	#sidebar-and-content{
+		padding: 2px;
 		margin-bottom: 110px;
+		overflow: hidden;
 	}
 
 	#content-wrapper{
-		width: 98%;
-		margin: 0 auto;
+		width: auto;
 		padding: 5px 10px 5px;
-		display: block;
+		overflow: hidden;
+		margin-right: 50px;
 	}
 
 	#content-wrapper h1{
@@ -205,13 +206,9 @@
 	}
 }
 
-@media all and (min-width: 755px) {
+
+@media all and (min-width: 750px) {
 	#content-wrapper{
-		margin-left: 21px;
-		vertical-align: top;	
-		width: 62%;
-		max-width: 1300px;
-		padding: 10px 20px 10px;
-		display: inline-block;
+		overflow: visible;
 	}
 }

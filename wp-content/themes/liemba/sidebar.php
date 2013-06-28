@@ -10,7 +10,7 @@
 				<p id="donation-sum">4,5 Mio</p>
 			</li>
 			<li class="donation-item green-item ">
-				<a href="#">Spenden</a>
+				<a href="./projects">Spenden</a>
 			</li>
 		</ul>
 	</nav>

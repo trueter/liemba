@@ -73,10 +73,6 @@ body {
 	outline-offset: 1px;
 }
 
-.menu > ul > li.page-item > a {	
-	cursor: default;
-}
-
 .page-item a, .donation-item a{	
 	line-height: 43px;
 	color: #FFF;
@@ -222,7 +218,7 @@ body {
 }
 .search-submit{
 	position: absolute;
-	display: block;
+	display: none;/*no icon */
 	border: 0;
 	top: 9px;
 	right: 5px;
@@ -230,7 +226,7 @@ body {
 	width: 35px;
 	
 	cursor: pointer;
-	background: url(../../liemba/img/icons/search.png) no-repeat;
+	*background: url(../../liemba/img/icons/search.png) no-repeat;
 	text-indent: -999px
 }
 
@@ -288,9 +284,19 @@ body {
 	line-height: 38px;
 	font-size: 1.3em;
 	font-weight: bold;
+	margin: 3px;
 }
 
+.project-donation-frame{
+	background: transparent url('http://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;
+}
 
+#betterplace_donation_iframe{
+	width: 100%;
+}
+#betterplace_donation_iframe iframe{
+	width: 100%;
+}
 
 /*------------------------------------*\
     RESPONSIVE

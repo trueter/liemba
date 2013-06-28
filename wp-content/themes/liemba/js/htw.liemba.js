@@ -1,7 +1,8 @@
 var htw = {};
-htw.production = false;
 
 htw.liemba = {
+	organisationID : 125,
+	production : true,
 
 	init : function(){
 
@@ -27,7 +28,7 @@ htw.liemba = {
 
 		   });
 		});
-	if( htw.production ){
+	if( htw.liemba.production ){
 
 	// init backstretch
 	var imageSources = ["http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-002.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-052.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-063.jpg"];
