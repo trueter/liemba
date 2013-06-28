@@ -4,6 +4,12 @@ $(document).ready(function(){
   
 });
 
+Handlebars.registerHelper('safe', function(s) {
+  return new Handlebars.SafeString(
+    s
+  );
+});
+
 
 
 

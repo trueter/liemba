@@ -6,8 +6,8 @@
 		
 		<ul id="donation-wrapper" class="clear">
 			<li class="donation-item green-item">
-				<h1>Erreichte Summe:</h1>
-				<p>4,5 Mio</p>
+				<h1>Sum:</h1>
+				<p id="donation-sum">4,5 Mio</p>
 			</li>
 			<li class="donation-item green-item ">
 				<a href="#">Spenden</a>

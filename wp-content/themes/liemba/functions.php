@@ -108,6 +108,11 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array(), '2.6.2'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+        wp_register_script('handlebars', get_template_directory_uri() . '/js/handlebars.min.js', array(), '1.0.0'); // handlebars
+        wp_enqueue_script('handlebars'); // Enqueue it!
+
+        
+
         wp_register_script('liemba', get_template_directory_uri() . '/js/htw.liemba.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('liemba'); // Enqueue it!
     }
