@@ -21,10 +21,9 @@
     -skrollr-animation-name: ship1;
 }
 @-skrollr-keyframes  ship1 {
-     0 { transform: translateX(130px) translateY(-150px) rotate(-30deg);  }
-    160 { transform: translateX(325px) translateY(320px) rotate(00deg); }
-    200 { transform: translateX(325px) translateY(320px) rotate(00deg); }
-    400 { transform: translateX(265px) translateY(570px) rotate(20deg); }
+     0 { transform: translateX(525px) translateY(320px) rotate(00deg);  }
+    220 { transform: translateX(525px) translateY(320px) rotate(30deg); }
+    400 { transform: translateX(465px) translateY(570px) rotate(20deg); }
     600 { transform: translateX(235px) translateY(640px) rotate(20deg); }  
 }
 
@@ -44,23 +43,19 @@
   -skrollr-animation-name: ship2;
 }
 @-skrollr-keyframes  ship2 {
-    530 { transform: translateX( 750px ) translateY( 350px ) rotate(0deg);  }
-   1000 { transform: translateX( 760px ) translateY( 550px ) rotate(-5deg);  }
-   1300 { transform: translateX( 750px ) translateY( 850px ) rotate(5deg);  }
-   1400 { transform: translateX( 750px ) translateY( 950px ) rotate(0deg);  }
-   1420 { transform: translateX( 750px ) translateY( 950px ) rotate(-20deg);  }
-   1600 { transform: translateX( 780px ) translateY(1150px ) rotate(-20deg);  }
-   1700 { transform: translateX( 810px ) translateY(1250px ) rotate(-20deg);  }
-   1900 { transform: translateX( 850px ) translateY(1550px ) rotate(-20deg);  }
-   
+    530 { transform: translateX( 420px ) translateY( 150px ) rotate(0deg);  }
+    700 { transform: translateX( 400px ) translateY( 450px ) rotate(10deg);  }
+    800 { transform: translateX( 400px ) translateY( 500px ) rotate(-14deg);  }
+    880 { transform: translateX( 460px ) translateY( 600px ) rotate(-17deg);  }    
+   1200 { transform: translateX( 500px ) translateY( 800px ) rotate(-15deg);  }
 }
 
 #split-2 {
-  top: 2700px; z-index: 105; -skrollr-animation-name: split2;
+  top: 1400px; z-index: 106; -skrollr-animation-name: split2;
 }
 @-skrollr-keyframes  split2 {
-  1900 { transform: translateY( 0px);}
-  2100 { transform: translateY(-200px);}
+  1000 { transform: translateY( 0px);}
+  1200 { transform: translateY(-100px);}
 }
 
 /*
@@ -71,13 +66,57 @@
     -skrollr-animation-name: ship3;
 }
 @-skrollr-keyframes  ship3 {
-  2100 { transform: translateX(350px) translateY(-170px) rotate(-10deg); }
+  1100 { transform: translateX(150px) translateY(70px) rotate(-25deg); }
+  1800 { transform: translateX(500px) translateY(650px) rotate(-25deg); }
 }
 
 #split-3 {
-  top: 4000px; z-index: 106; -skrollr-animation-name: split3;
+  top: 2200px; z-index: 109; -skrollr-animation-name: split3;
 }
 @-skrollr-keyframes  split3 {
   1900 { transform: translateY( 0px);}
-  2100 { transform: translateY(-200px);}
+  2200 { transform: translateY(-50px);}
+}
+/*
+   # 4
+*/
+
+#ship-4 {
+    -skrollr-animation-name: ship4;
+}
+@-skrollr-keyframes  ship4 {
+  2100 { transform: translateX(600px) translateY(70px) rotate(-5deg); }
+  2600 { transform: translateX(680px) translateY(750px) rotate(-7deg); }
+  2700 { transform: translateX(700px) translateY(800px) rotate(-50deg); }
+  2800 { transform: translateX(770px) translateY(840px) rotate(-70deg); }
+}
+
+#split-4 {
+  top: 3100px; z-index: 112; -skrollr-animation-name: split4;
+}
+@-skrollr-keyframes  split4 {
+  2700 { transform: translateY( 0px);}
+  3000 { transform: translateY(-80px);}
+}
+/*
+   # 5
+*/
+
+#ship-5 {
+    -skrollr-animation-name: ship5;
+}
+@-skrollr-keyframes  ship5 {
+  3000 { transform: translateX(300px) translateY(70px) rotate(-5deg); }
+  3100 { transform: translateX(310px) translateY(250px) rotate(-7deg); }
+  3200 { transform: translateX(350px) translateY(400px) rotate(-50deg); }
+  3250 { transform: translateX(400px) translateY(520px) rotate(-70deg); }
+  3350 { transform: translateX(700px) translateY(450px) rotate(-100deg); }
+}
+
+#split-5 {
+  top: 3800px; z-index: 115; -skrollr-animation-name: split5;
+}
+@-skrollr-keyframes  split5 {
+  3400 { transform: translateY( 0px);}
+  3600 { transform: translateY(-50px);}
 }

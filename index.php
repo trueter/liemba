@@ -81,17 +81,137 @@
                     <img src="img/ship.png" class="ship-big">
                 </div>
             </div>
-            
             <div id="map-2" class="map">
                 <div id="ship-2" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>
             </div>
-            
             <div id="map-3" class="map">
-                <div id="ship-3" class="ships"></div>
+                <div id="ship-3" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>
             </div>
- 
+            <div id="map-4" class="map">
+                <div id="ship-4" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+
+            <div id="map-5" class="map">
+                <div id="ship-5" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>
+             <div id="map-6" class="map">
+                <div id="ship-6" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+            <div id="map-7" class="map">
+                <div id="ship-7" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>
+            </div>
+            <div id="map-8" class="map">
+                <div id="ship-8" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+            <div id="map-10" class="map">
+                <div id="ship-10" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>
+            <div id="map-11" class="map">
+                <div id="ship-11" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+            <div id="map-12" class="map">
+                <div id="ship-12" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>
+            </div>
+            <div id="map-13" class="map">
+                <div id="ship-13" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+            <div id="map-14" class="map">
+                <div id="ship-14" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>
+            <div id="map-15" class="map">
+                <div id="ship-15" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>
+            <div id="map-16" class="map">
+                <div id="ship-16" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>  
+            <div id="map-17" class="map">
+                <div id="ship-17" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>  
+            <div id="map-18" class="map">
+                <div id="ship-18" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>           
+            </div>  
+            <div id="map-19" class="map">
+                <div id="ship-19" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>    
+            </div>  
+            <div id="map-20" class="map">
+                <div id="ship-20" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>
+            </div>  
+            <div id="map-21" class="map">
+                <div id="ship-21" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>                          
+            <div id="map-22" class="map">
+                <div id="ship-22" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>   
+            <div id="map-23" class="map">
+                <div id="ship-23" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                
+            </div>   
+            <div id="map-24" class="map">
+                <div id="ship-214" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>   
+            <div id="map-24" class="map">
+                <div id="ship-24" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>             
+            </div>   
+            <div id="map-25" class="map">
+                <div id="ship-25" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                    
+            </div>   
+            <div id="map-26" class="map">
+                <div id="ship-26" class="ships">
+                    <img src="img/ship.png" class="ship-small">
+                </div>                    
+            </div>   
+            <div id="map-27" class="map">
+                <div id="ship-27" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                 
+            </div>                                                                                                                            
         </div>
 
 
@@ -99,6 +219,20 @@
         <div id="split-1" class="split"><h1>Split #1</h1></div>
         <div id="split-2" class="split"><h1>Split #2</h1></div>
         <div id="split-3" class="split"><h1>Split #3</h1></div>
+        <div id="split-4" class="split"><h1>Split #4</h1></div>
+        <div id="split-5" class="split"><h1>Split #5</h1></div>
+        <div id="split-6" class="split"><h1>Split #6</h1></div>
+        <div id="split-7" class="split"><h1>Split #7</h1></div>
+        <div id="split-8" class="split"><h1>Split #8</h1></div>
+        <div id="split-9" class="split"><h1>Split #9</h1></div>
+        <div id="split-10" class="split"><h1>Split #10</h1></div>
+        <div id="split-11" class="split"><h1>Split #11</h1></div>
+        <div id="split-12" class="split"><h1>Split #12</h1></div>
+        <div id="split-13" class="split"><h1>Split #13</h1></div>
+        <div id="split-14" class="split"><h1>Split #14</h1></div>
+        <div id="split-15" class="split"><h1>Split #15</h1></div>
+        <div id="split-16" class="split"><h1>Split #16</h1></div>
+        <div id="split-17" class="split"><h1>Split #17</h1></div>
 
         <h1 style="text-align:center; margin-top: 400px">Ende</h1>      
 
