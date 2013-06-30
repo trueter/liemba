@@ -117,99 +117,104 @@
                     <img src="img/ship.png" class="ship-small">
                 </div>                
             </div>
+            <div id="map-9" class="map">
+                <div id="ship-9" class="ships">
+                    <img src="img/ship.png" class="ship-big">
+                </div>                
+            </div>            
             <div id="map-10" class="map">
                 <div id="ship-10" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>
             <div id="map-11" class="map">
                 <div id="ship-11" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>
             <div id="map-12" class="map">
                 <div id="ship-12" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>
             </div>
             <div id="map-13" class="map">
                 <div id="ship-13" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>
             <div id="map-14" class="map">
                 <div id="ship-14" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>
             <div id="map-15" class="map">
                 <div id="ship-15" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>
             <div id="map-16" class="map">
                 <div id="ship-16" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>  
             <div id="map-17" class="map">
                 <div id="ship-17" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>  
             <div id="map-18" class="map">
                 <div id="ship-18" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>           
             </div>  
             <div id="map-19" class="map">
                 <div id="ship-19" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>    
             </div>  
             <div id="map-20" class="map">
                 <div id="ship-20" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>
             </div>  
             <div id="map-21" class="map">
                 <div id="ship-21" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>                          
             <div id="map-22" class="map">
                 <div id="ship-22" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             <div id="map-23" class="map">
                 <div id="ship-23" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>   
             <div id="map-24" class="map">
                 <div id="ship-214" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             <div id="map-24" class="map">
                 <div id="ship-24" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>             
             </div>   
             <div id="map-25" class="map">
                 <div id="ship-25" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             <div id="map-26" class="map">
                 <div id="ship-26" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                    
             </div>   
             <div id="map-27" class="map">
                 <div id="ship-27" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                 
             </div>                                                                                                                            
         </div>

@@ -32,7 +32,7 @@
 }
 @-skrollr-keyframes  split1 {
    320 { transform: translateY(0px );}
-   530 { transform: translateY(-90px );}
+   520 { transform: translateY(-100px );}
 }
 
 /*
@@ -71,11 +71,11 @@
 }
 
 #split-3 {
-  top: 2200px; z-index: 109; -skrollr-animation-name: split3;
+  top: 2218px; z-index: 109; -skrollr-animation-name: split3;
 }
 @-skrollr-keyframes  split3 {
   1900 { transform: translateY( 0px);}
-  2200 { transform: translateY(-50px);}
+  2100 { transform: translateY(-100px);}
 }
 /*
    # 4
@@ -92,11 +92,11 @@
 }
 
 #split-4 {
-  top: 3100px; z-index: 112; -skrollr-animation-name: split4;
+  top: 3118px; z-index: 112; -skrollr-animation-name: split4;
 }
 @-skrollr-keyframes  split4 {
   2700 { transform: translateY( 0px);}
-  3000 { transform: translateY(-80px);}
+  2900 { transform: translateY(-100px);}
 }
 /*
    # 5
@@ -114,9 +114,69 @@
 }
 
 #split-5 {
-  top: 3800px; z-index: 115; -skrollr-animation-name: split5;
+  top: 3835px; z-index: 115; -skrollr-animation-name: split5;
 }
 @-skrollr-keyframes  split5 {
   3400 { transform: translateY( 0px);}
-  3600 { transform: translateY(-50px);}
+  3600 { transform: translateY(-100px);}
+}
+/*
+   # 6
+*/
+
+#ship-6 {
+    -skrollr-animation-name: ship6;
+}
+@-skrollr-keyframes  ship6 {
+  3600 { transform: translateX(650px) translateY(70px) rotate(-10deg); }
+  4000 { transform: translateX(730px) translateY(310px) rotate(-10deg); }
+}
+
+#split-6 {
+  top: 4335px; z-index: 118; -skrollr-animation-name: split6;
+}
+@-skrollr-keyframes  split6 {
+  3900 { transform: translateY( 0px);}
+  4100 { transform: translateY(-100px);}
+}
+/*
+   # 7
+*/
+
+#ship-7 {
+    -skrollr-animation-name: ship7;
+}
+@-skrollr-keyframes  ship7 {
+  4200 { transform: translateX(400px) translateY(70px) rotate(  20deg); }
+  4450 { transform: translateX(230px) translateY(270px) rotate( 20deg); }
+  4800 { transform: translateX(230px) translateY(550px) rotate(  0deg); }
+}
+
+#split-7 {
+  top: 5102px; z-index: 121; -skrollr-animation-name: split7;
+}
+@-skrollr-keyframes  split7 {
+  4700 { transform: translateY( 0px);}
+  4900 { transform: translateY(-100px);}
+}
+/*
+   # 8
+*/
+
+#ship-8 {
+    -skrollr-animation-name: ship8;
+}
+@-skrollr-keyframes  ship8 {
+  4900 { transform: translateX(700px) translateY(30px) rotate(  20deg); }
+  4950 { transform: translateX(640px) translateY(130px) rotate( 20deg); }
+  5000 { transform: translateX(650px) translateY(150px) rotate(-30deg); }
+  5400 { transform: translateX(750px) translateY(330px) rotate(-30deg); }
+}
+
+#split-8 {
+  top: 5652px; z-index: 124; -skrollr-animation-name: split8;
+}
+@-skrollr-keyframes  split8 {
+  5300 { transform: translateY( 0px);}
+  5500 { transform: translateY(-100px);}
 }
