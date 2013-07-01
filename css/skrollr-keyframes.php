@@ -1,3 +1,60 @@
+<?php
+  header("Content-Type: text/css");
+  header("X-Content-Type-Options: nosniff");
+
+  $a_map_height = array(
+    800, /* 1 */
+    800, /* 2 */
+    818, /* 3 */
+    900, /* 4 */
+    800, /* 5 */
+    700, /* 6 */
+    768, /* 7 */
+    700, /* 8 */
+    800, /* 9 */
+    700, /* 10 */
+    768, /* 11 */
+    1374, /* 12 */
+    768, /* 13 */
+    1374, /* 14 */
+    914, /* 15 */
+    1374, /* 16 */
+    1400, /* 17 */
+    1374, /* 18 */
+    768, /* 19 */
+    1374, /* 20 */
+    914, /* 21 */
+    1000, /* 22 */
+    914, /* 23 */
+    1000, /* 24 */
+    768, /* 25 */
+    1000, /* 26 */
+    768 /* 27 */
+  );
+
+  function height_up_to($n){
+    $sum = 0;
+    for($i = 1; $i <= n; $i++){
+      $var_name =  ${"map_".$i."_height"};
+      $sum += $var_name;
+    }
+    return $sum;
+  }
+?>
+/*
+  Splits 
+*/
+<?php
+  for ($i = 1; $i <= 27; i++){
+    ?>
+    #split-<?=$i;?> {
+      top: <?= ;?>; z-index: 105; -skrollr-animation-name: split1;
+    }
+    <?php
+  }
+
+?>
+
 /*
   Current Location
 */
