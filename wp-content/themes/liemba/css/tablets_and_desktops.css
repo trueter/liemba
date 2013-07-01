@@ -207,8 +207,11 @@
 }
 
 
-@media all and (min-width: 750px) {
+@media all and (max-width: 750px) {
 	#content-wrapper{
 		overflow: visible;
+	}
+	.sidebar{
+		float: none;
 	}
 }
