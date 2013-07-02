@@ -19,7 +19,7 @@
     1000{left: 50%; margin-left: -512px;}
     4000{left: 50%; margin-left: -512px;}
     5000{left: 50%; margin-left: -1536px;}
-    8000{left: 50%; margin-left: -1536px}
+    8000{left: 50%; margin-left: -1536px;}
     9000{left: 50%; margin-left : -2550px;}
     12000{left: 50%; margin-left: -2550px;}
     13000{left: 50%; margin-left: -3574px;}
@@ -34,10 +34,10 @@
 }
 @-skrollr-keyframes background2 {
     
-    0{left: 50%; margin-left: 512px}
-    4000{left: 50%; margin-left: 512px}
-    5000{left: 50%; margin-left: -512px}
-    8000{left: 50%; margin-left: -512px}
+    0{left: 50%; margin-left: 512px;}
+    4000{left: 50%; margin-left: 512px;}
+    5000{left: 50%; margin-left: -512px;}
+    8000{left: 50%; margin-left: -512px;}
     9000{left: 50%; margin-left : -1536px;}
     12000{left: 50%; margin-left: -1536px;}
     13000{left: 50%; margin-left: -2550px;}
@@ -51,10 +51,10 @@
 }
 @-skrollr-keyframes background3 {
     
-    0{left: 50%; margin-left: 1536px}
-    4000{left: 50%; margin-left: 1536px}
-    5000{left: 50%; margin-left: 512px}
-    8000{left: 50%; margin-left: 512px}
+    0{left: 50%; margin-left: 1536px;}
+    4000{left: 50%; margin-left: 1536px;}
+    5000{left: 50%; margin-left: 512px;}
+    8000{left: 50%; margin-left: 512px;}
     9000{left: 50%; margin-left : -512px;}
     12000{left: 50%; margin-left: -512px;}
     13000{left: 50%; margin-left: -1536px;}
@@ -67,10 +67,10 @@
 }
 @-skrollr-keyframes background4 {
     
-    0{left: 50%; margin-left: 2550px}
-    4000{left: 50%; margin-left: 2550px}
-    5000{left: 50%; margin-left: 1536px}
-    8000{left: 50%; margin-left: 1536px}
+    0{left: 50%; margin-left: 2550px;}
+    4000{left: 50%; margin-left: 2550px;}
+    5000{left: 50%; margin-left: 1536px;}
+    8000{left: 50%; margin-left: 1536px;}
     9000{left: 50%; margin-left : 512px;}
     12000{left: 50%; margin-left: 512px;}
     13000{left: 50%; margin-left: -512px;}
@@ -84,10 +84,10 @@
 }
 @-skrollr-keyframes background5 {
     
-     0{left: 50%; margin-left: 3574px}
-    4000{left: 50%; margin-left: 3574px}
-    5000{left: 50%; margin-left: 2550px}
-    8000{left: 50%; margin-left: 2550px}
+     0{left: 50%; margin-left: 3574px;}
+    4000{left: 50%; margin-left: 3574px;}
+    5000{left: 50%; margin-left: 2550px;}
+    8000{left: 50%; margin-left: 2550px;}
     9000{left: 50%; margin-left : 1536px;}
     12000{left: 50%; margin-left: 1536px;}
     13000{left: 50%; margin-left: 512px;}
@@ -531,20 +531,3 @@
     19499{opacity: 0}
     19500{opacity: 1}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
