@@ -19,8 +19,6 @@ htw.interactiveMap = function () {
     createHotspot : function (formdata) {
       $.post('./rest/hotspots', formdata ).success(function(feedback){
         htw.interactiveMap.addHotspot(feedback);
-        console.log(feedback);
-
       }).fail(function(){
         if(htw.debug)console.log("createHotspot:fail");
       }).error(function (xhr, ajaxOptions, thrownError){
@@ -43,7 +41,12 @@ htw.interactiveMap = function () {
       });
       return true;
     },
-    editHotspot : function(id){
+    editHotspot : function(id, e){
+      $('#hotspot-prepare-dialog').css({
+        
+        "top":e.pageY,
+        "left":e.pageX,
+      });
       $('#hotspot-prepare-dialog').fadeIn(100);
       $('#hotspot-form').attr("data-hotspot-id",  id);
       $('#hotspot-form-submit').val("Hotspot updaten");
@@ -60,49 +63,28 @@ htw.interactiveMap = function () {
       $("#hotspot-form-map").val(h.data("map"));
 
     },
-    addHotspot : function (h){
+    addHotspot : function(data){
 
-      var id = h.id,
-          map = h.map,
-          name = h.name,
-          description = h.description,
-          category = h.category,
-          special_icon_path = h.special_icon_path,
-          x = h.xOff,
-          y = h.yOff;
+      var mapE = $('#'+data.map);
+      var context = {
+        id: data.id,
+        map : data.map,
+        name : data.name,
+        description : data.description,
+        category : data.category,
+        special_icon_path : data.special_icon_path,
+        x : parseInt(data.xOff),
+        y : parseInt(data.yOff)
+      };
+      context.right = mapE.width()-(context.x-16),
+      context.bottom = mapE.height()-(context.y+15)
 
-      var mapE = $('#'+h.map);
+      var source = $("#hotspot-template").html();
 
-          
-      var right = mapE.width()-x-16,
-          bottom = mapE.height()-y+15;
-          
-
-      var h1       = $('<h1>'+name+'</h1>'),
-          p        = $('<p>'+description+'</p>'),
-          arrow    = $('<div/>', {"class":"hotspot-arrows"}),
-          destroy  = $('<div/>', {"class":"hotspot-destroy", 'data-id' : id}),
-          edit     = $('<div/>', {"class":"hotspot-edit", 'data-id' : id}),
-          div      = $('<div/>', {'id'       : 'hotspot-' + id,
-                                    'data-id': id,
-                                  'data-name': name,
-                           'data-description': description,
-                              'data-category': category,
-                                     'data-x': x,
-                                     'data-y': y,
-                                   'data-map': map,
-                     'data-special_icon_path': special_icon_path,
-                                      'class': 'hotspots '+category,
-                                      'style': 'bottom:' + bottom + 'px;right:' + right + 'px;' });
-
-          div.append(h1);
-          div.append(p);
-          div.append(arrow);
-          div.append(edit);
-          div.append(destroy);
-
-          mapE.append(div);
-
+      var template = Handlebars.compile(source);
+  
+      mapE.append(template(context));
+  
     },
     removeHotspot : function (id){
        $('#hotspot-'+id).remove();

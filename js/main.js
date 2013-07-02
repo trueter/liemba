@@ -2,6 +2,7 @@ $(function() {
   
 //// Init Hotspots
 
+
   var response;
   $.get('./rest/hotspots', function(data) {
     response = data;
@@ -136,10 +137,10 @@ $(function() {
 
 ////
 
-   $("#map-wrapper").on( "click", ".hotspot-edit", function(){
+   $("#map-wrapper").on( "click", ".hotspot-edit", function(e){
 
     var id = $(this).parent().data("id");
-    htw.interactiveMap.editHotspot(id);
+    htw.interactiveMap.editHotspot(id,e);
 
    });
 

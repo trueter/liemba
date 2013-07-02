@@ -139,7 +139,7 @@ $app->delete('/hotspots/:id', function($id) use ($app){
 
 
 	if($status == 200){
-		$res->body("{}");
+		$res->body("{\"id\":".$id."}");
 	}else{
 		$res->write("{error: ".$status."}");
 	}
