@@ -137,7 +137,7 @@ alles markieren mit cmd + d
 
 <!-- railroad scene -->
 
-<div id="railroadText" class="historyText">
+<div class="historyText not-yet-implemented">
 
 	<!-- #1 -->
 	<h1>Erste Pl&auml;ne</h1>
@@ -160,7 +160,7 @@ alles markieren mit cmd + d
 
 <!-- ocean scene -->
 
-<div id="oceanText" class="historyText">
+<div class="historyText not-yet-implemented">
 	<!-- #2 -->
 	<h1>Vormontage</h1>
 	<h2>Feb. 1913</h2>
