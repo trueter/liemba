@@ -2,10 +2,10 @@
 Template Name: Donation Form
 */
 
-if( isset($_GET['project_id']) ){
-  $project_id = $_GET['project_id'];
+if( isset($_GET['pid']) ){
+  $pid = $_GET['pid'];
 }else{
-  header("location: ./projects");
+  header("location: ./spenden");
 }
 
 
@@ -20,7 +20,7 @@ get_header(); ?>
     
     <script type="text/javascript">
       var _bp_iframe         = _bp_iframe || {};
-      _bp_iframe.project_id  = <?= $project_id ?>;
+      _bp_iframe.project_id  = <?= $pid ?>;
       _bp_iframe.lang        = 'de';
 
       (function() {

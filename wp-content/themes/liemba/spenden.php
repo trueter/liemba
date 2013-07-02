@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Project Page
+Template Name: Spenden Page
 */
 
 get_header(); ?>  
@@ -51,7 +51,7 @@ get_header(); ?>
         <div class="project-content">
           <h3 class="project-title">{{title}}</h1>
           <div class="project-description">{{ safe description }}</div>
-          <a href="./donation-form?project_id={{id}}">
+          <a href="./projekt?pid={{id}}">
             <button class="project-donate-button green-item">Spenden</button>
           </a>
         </div>
