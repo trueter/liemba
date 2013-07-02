@@ -50,18 +50,28 @@
 <?php
   for ($i = 1; $i <= 27; $i++){
     $top = height_up_to($i);
-    $z_index_split = 102 + $i*3;
-    $split_name = "split".($i);
-    $ship_name = "ship".($i);
-    $z_index_ship = $z_index_split - 4;
-
+    $z_index_split = 1000 - $i;
+    $z_index_ship = $z_index_split - 1;
+    $z_index_map = $z_index_split - 2;
     ?>
+
     #split-<?=$i;?> {
-      top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: <?= $split_name;?>;
+      top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: split<?= $i;?>;
     }
+
     #ship-<?=$i;?> {
-        -skrollr-animation-name: ship<?=$i;?>;
-    }    
+        z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ship<?=$i;?>;
+    }  
+
+    #map-<?=$i;?> {
+        z-index: <?= $z_index_map;?>;
+    } 
+
+    @-skrollr-keyframes  split<?=$i;?> {
+       <?= $top-200;?> { transform: translateY(   0px );}
+       <?= $top;?>     { transform: translateY(-100px );}
+    }
+
     <?php
   }
 ?>
@@ -84,50 +94,39 @@
 <?php 
   $map_number = 1;
   $end = height_up_to($map_number);
-  $start = $end- $a_map_height[$map_number];
+  $start = $end - $a_map_height[$map_number];
 ?>
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
-    <?= $start;?> { transform: translateX(525px) translateY(420px) rotate(00deg);  }
-    220           { transform: translateX(525px) translateY(420px) rotate(30deg); }
-    <?= $end;?>   { transform: translateX(465px) translateY(670px) rotate(20deg); }
+    <?= $start;?>     { transform: translateX(525px) translateY(420px) rotate(00deg);  }
+    <?= $start+250;?> { transform: translateX(525px) translateY(420px) rotate(30deg); }
+    <?= $end;?>       { transform: translateX(465px) translateY(670px) rotate(20deg); }
 }
 
-@-skrollr-keyframes  split1 {
-   <?= $end-200;?> { transform: translateY(0px );}
-   <?= $end;?> { transform: translateY(-100px );}
+<?php 
+  $map_number = 2;
+  $end = height_up_to($map_number);
+  $start = $end - $a_map_height[$map_number];
+?>
+@-skrollr-keyframes  ship<?= $map_number;?> {
+
+    <?= $start;?>     { transform: translateX( 420px ) translateY( 150px ) rotate(  0deg);  }
+    <?= $start+200;?> { transform: translateX( 400px ) translateY( 450px ) rotate( 10deg);  }
+    <?= $start+250;?> { transform: translateX( 400px ) translateY( 500px ) rotate(-19deg);  }
+    <?= $end;?>       { transform: translateX( 500px ) translateY( 720px ) rotate(-19deg);  }
 }
 
-/*
-   # 2
-*/
+<?php 
+  $map_number = 3;
+  $end = height_up_to($map_number);
+  $start = $end - $a_map_height[$map_number];
+?>
+@-skrollr-keyframes  ship<?= $map_number;?> {
 
-@-skrollr-keyframes  ship2 {
-    580 { transform: translateX( 420px ) translateY( 150px ) rotate(0deg);  }
-    800 { transform: translateX( 400px ) translateY( 450px ) rotate(10deg);  }
-    850 { transform: translateX( 400px ) translateY( 500px ) rotate(-19deg);  }
-    950 { transform: translateX( 460px ) translateY( 650px ) rotate(-19deg);  }    
-   1100 { transform: translateX( 500px ) translateY( 720px ) rotate(-19deg);  }
+    <?= $start;?>     { transform: translateX(150px) translateY(-70px) rotate(-25deg); }
+    <?= $end;?>       { transform: translateX(550px) translateY(850px) rotate(-25deg); }
 }
 
-@-skrollr-keyframes  split2 {
-  1000 { transform: translateY( 0px);}
-  1200 { transform: translateY(-100px);}
-}
-
-/*
-   # 3
-*/
-
-@-skrollr-keyframes  ship3 {
-  1100 { transform: translateX(150px) translateY(70px) rotate(-25deg); }
-  2100 { transform: translateX(500px) translateY(650px) rotate(-25deg); }
-}
-
-@-skrollr-keyframes  split3 {
-  2000 { transform: translateY( 0px);}
-  2200 { transform: translateY(-100px);}
-}
 /*
    # 4
 */
