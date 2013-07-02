@@ -1,5 +1,5 @@
 <?php /*
-Template Name: projects
+Template Name: Project Page
 */
 
 get_header(); ?>  

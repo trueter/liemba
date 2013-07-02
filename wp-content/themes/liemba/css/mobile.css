@@ -46,19 +46,19 @@
 		background-position: -1px -2px;
 	}
 
-	.page-item.expanded .nav-mobile-anchor{
+	.page_item.expanded .nav-mobile-anchor{
 		background-position: -1px 18px;	
 	}
 
-	.page-item.expanded ul.children{
+	.page_item.expanded ul.children{
 		display: block;
 	}
 
-	.page-item, .donation-item{
+	.page_item, .donation-item{
 		height: 35px;
 	}
 
-	.page-item{
+	.page_item{
 		position: relative;
 		width: 100%;
 		margin: 9px auto;
@@ -67,7 +67,7 @@
 		margin-bottom: 5px;
 	}
 
-	.page-item a{
+	.page_item a{
 		display: table;
 		text-align: center;
 		line-height: inherit;
@@ -75,13 +75,13 @@
 
 	}
 
-	.children .page-item{
+	.children .page_item{
 		font-size: 17px;
 		border-top: 1px dotted #FFF;
 		font-weight: lighter;
 	}
 
-	.page-item, .blue-item {
+	.page_item, .blue-item {
 		background-color: #00b0e3;
 	}
 

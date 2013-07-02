@@ -46,11 +46,11 @@ body {
 	padding: 0;
 }
 
-.page-item, .donation-item{
+.page_item, .donation-item{
 	text-transform: uppercase;
 }
 
-.page-item {	
+.page_item {	
 	margin: 7px 0;
 	text-align: right;
 	text-transform: uppercase;
@@ -73,18 +73,18 @@ body {
 	outline-offset: 1px;
 }
 
-.page-item a, .donation-item a{	
+.page_item a, .donation-item a{	
 	line-height: 43px;
 	color: #FFF;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-.page-item a:focus{
+.page_item a:focus{
 	color: #000;
 }
 
-.page-item.hover .children {
+.page_item.hover .children {
 	display: block;
 }
 
@@ -92,7 +92,7 @@ body {
 	display: none;
 }
 
-.children .page-item{
+.children .page_item{
 	cursor: pointer;
 }
 /* sidebar */

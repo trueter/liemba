@@ -29,11 +29,11 @@
 		width: 282px;
 	}
 
-	.page-item:first-child{
+	.page_item:first-child{
 		margin-top: 0px;
 	}
 
-	.page-item, .donation-item{
+	.page_item, .donation-item{
 		height: 41px;
 		width: 124px;
 		margin: 7px 0;
@@ -41,12 +41,12 @@
 		
 	}
 
-	.page-item{
+	.page_item{
 		position: relative;
 		background: url(../../liemba/img/backgrounds/button_lightBlue.png);
 	}
 
-	.page-item:hover{
+	.page_item:hover{
 		background: url(../../liemba/img/backgrounds/button_darkBlue.png);		
 	}
 
@@ -63,7 +63,7 @@
 		opacity: 1;
 	}*/
 
-	.page-item a{
+	.page_item a{
 		display: block;
 		float: right;
 	}
@@ -88,7 +88,7 @@
 		right: -165px;
 	}
 
-	.children .page-item{
+	.children .page_item{
 		font-size: 1em;
 	}
 

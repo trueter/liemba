@@ -567,8 +567,6 @@ function get_body_class( $class = '' ) {
  * @return bool false if a password is not required or the correct password cookie is present, true otherwise.
  */
 function post_password_required( $post = null ) {
-	global $wp_hasher;
-
 	$post = get_post($post);
 
 	if ( empty( $post->post_password ) )
@@ -577,15 +575,14 @@ function post_password_required( $post = null ) {
 	if ( ! isset( $_COOKIE['wp-postpass_' . COOKIEHASH] ) )
 		return true;
 
-	if ( empty( $wp_hasher ) ) {
-		require_once( ABSPATH . 'wp-includes/class-phpass.php');
-		// By default, use the portable hash from phpass
-		$wp_hasher = new PasswordHash(8, true);
-	}
+	require_once ABSPATH . 'wp-includes/class-phpass.php';
+	$hasher = new PasswordHash( 8, true );
 
 	$hash = stripslashes( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] );
+	if ( 0 !== strpos( $hash, '$P$B' ) )
+		return true;
 
-	return ! $wp_hasher->CheckPassword( $post->post_password, $hash );
+	return ! $hasher->CheckPassword( $post->post_password, $hash );
 }
 
 /**
@@ -1033,17 +1030,17 @@ class Walker_Page extends Walker {
 			$indent = '';
 
 		extract($args, EXTR_SKIP);
-		$css_class = array('page-item', 'page-item-'.$page->ID);
+		$css_class = array('page_item', 'page-item-'.$page->ID);
 		if ( !empty($current_page) ) {
 			$_current_page = get_post( $current_page );
 			if ( in_array( $page->ID, $_current_page->ancestors ) )
-				$css_class[] = 'current-page-ancestor';
+				$css_class[] = 'current_page_ancestor';
 			if ( $page->ID == $current_page )
-				$css_class[] = 'current-page-item';
+				$css_class[] = 'current_page_item';
 			elseif ( $_current_page && $page->ID == $_current_page->post_parent )
-				$css_class[] = 'current-page-parent';
+				$css_class[] = 'current_page_parent';
 		} elseif ( $page->ID == get_option('page_for_posts') ) {
-			$css_class[] = 'current-page-parent';
+			$css_class[] = 'current_page_parent';
 		}
 
 		$css_class = implode( ' ', apply_filters( 'page_css_class', $css_class, $page, $depth, $args, $current_page ) );
