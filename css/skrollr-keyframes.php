@@ -36,7 +36,6 @@
   function height_up_to($n){
     global $a_map_height;
 
-    $index = $n;
     $sum = 0;
     for($i = 1; $i <= $n; $i++){
       $sum += $a_map_height[$i];
@@ -91,7 +90,7 @@
     2000 { transform: translateX(92px) translateY(120px) scale(2,2); }
 }
 
-<?php 
+<?php  ###### 1
   $map_number = 1;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];
@@ -103,7 +102,7 @@
     <?= $end;?>       { transform: translateX(465px) translateY(670px) rotate(20deg); }
 }
 
-<?php 
+<?php  ###### 2
   $map_number = 2;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];
@@ -116,7 +115,7 @@
     <?= $end;?>       { transform: translateX( 500px ) translateY( 720px ) rotate(-19deg);  }
 }
 
-<?php 
+<?php  ###### 3
   $map_number = 3;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];
