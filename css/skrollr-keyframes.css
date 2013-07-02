@@ -3,110 +3,546 @@
 }
 @-skrollr-keyframes scrollAni {
     
-    0{opacity: 1;}
-    200{opacity: 0;}
+    0{opacity: 1; left: 50%;}
+    200{opacity: 0;left: 50%;}
+    200{opacity: 0;left: -100%;}
 }
+
+/*BAckgrounds*/
+
+#background1{
+    -skrollr-animation-name:background1;
+}
+@-skrollr-keyframes background1 {
     
-/* RAILROAD */
-#railroadBackground{
-    -skrollr-animation-name:railroadBackgroundAni;
-}
-@-skrollr-keyframes railroadBackgroundAni {
-       0{ opacity: 1;  }
-     850{ opacity: 0.7;}
-     900{ opacity: 0;  }
-}
-
-#railroadText {
-    -skrollr-animation-name: railroadTextAni;
-}
-@-skrollr-keyframes railroadTextAni {
-      50{ left: 100%; } 
-     1000{ left:  25%; }
-     1500{ left:  25%; }
-     1700{ left: -45%; }
-}
-
-#railroadTrain{
-    -skrollr-animation-name:railroadTrainAni;
-}
-@-skrollr-keyframes railroadTrainAni {
-      0 { left: -5% }
-    100 { left:   5%; top: 510px; }
-   1000 { left: 120%; top: 550px; }
-}
-
-/* OCEAN */
-#oceanBackground{
-    -skrollr-animation-name:oceanBackgroundAni;
-}
-@-skrollr-keyframes oceanBackgroundAni {
-       0 { opacity: 0; }
-    1000 { opacity: 1; }
-    
-    
-}
-
-#oceanText{
-    -skrollr-animation-name:oceanTextAni;
-}
-@-skrollr-keyframes oceanTextAni {
-    1600{ left: 100%; } 
-    2000{ left:  25%; } 
-    2600{ left:  25%; } 
-    2800{ left: -45%; }
-}
-
-#oceanShip{
-    -skrollr-animation-name:oceanShipAni;
-}
-@-skrollr-keyframes oceanShipAni {
-       0 { left:-100%; bottom: 260px;}
-    1000 { left:  10%; bottom: 260px;}   
-    2000 { left:  30%; bottom: 260px;}
-    2500 { left:  40%; bottom: 180px;}
-}
-
-#water{
-    -skrollr-animation-name:waterAni;
-}
-@-skrollr-keyframes waterAni {
-    250 { left: 0%; bottom: 200px;}
-    2000 { left:-50%; bottom: 200px;}
-    2500 { left:-60%; bottom: 260px;}
-    3000 { left:-70%; bottom: 260px;}
-}
-
-#bombs{
-    -skrollr-animation-name:bombsAni;
-}
-@-skrollr-keyframes bombsAni {
-
-    1100 {left:70%; bottom: 1000px; opacity: 1;}
-    1650 {left:40%; bottom: 250px; opacity: 1;}
-    1700 {left:40%; bottom: 250px; opacity: 0;}
+    0{left: 50%; margin-left: -512px;}
+    1000{left: 50%; margin-left: -512px;}
+    4000{left: 50%; margin-left: -512px;}
+    5000{left: 50%; margin-left: -1536px;}
+    8000{left: 50%; margin-left: -1536px}
+    9000{left: 50%; margin-left : -2550px;}
+    12000{left: 50%; margin-left: -2550px;}
+    13000{left: 50%; margin-left: -3574px;}
+    16000{left: 50%; margin-left: -3574px;}
+    17000{left: 50%; margin-left: -4598px;}
+    20000{left: 50%; margin-left: -4598px;}
    
 }
 
-#clouds{
-    -skrollr-animation-name:cloudsAni;
+#background2{
+    -skrollr-animation-name:background2;
 }
-@-skrollr-keyframes cloudsAni {
-
-    0 {left:0%; }
-    3000 { left: -10%; }
-}
-
-#bild{
-    -skrollr-animation-name:bildAni;
-}
-@-skrollr-keyframes bildAni {
+@-skrollr-keyframes background2 {
     
-    1600{ left: 100%; } 
-    2000{ left:  70%; } 
-    2600{ left:  70%; } 
-    2800{ left: -45%; }
+    0{left: 50%; margin-left: 512px}
+    4000{left: 50%; margin-left: 512px}
+    5000{left: 50%; margin-left: -512px}
+    8000{left: 50%; margin-left: -512px}
+    9000{left: 50%; margin-left : -1536px;}
+    12000{left: 50%; margin-left: -1536px;}
+    13000{left: 50%; margin-left: -2550px;}
+    16000{left: 50%; margin-left: -2550px;}
+    17000{left: 50%; margin-left: -3574px;}
+    20000{left: 50%; margin-left: -3574px;}
+ 
 }
+#background3{
+    -skrollr-animation-name:background3;
+}
+@-skrollr-keyframes background3 {
+    
+    0{left: 50%; margin-left: 1536px}
+    4000{left: 50%; margin-left: 1536px}
+    5000{left: 50%; margin-left: 512px}
+    8000{left: 50%; margin-left: 512px}
+    9000{left: 50%; margin-left : -512px;}
+    12000{left: 50%; margin-left: -512px;}
+    13000{left: 50%; margin-left: -1536px;}
+    16000{left: 50%; margin-left: -1536px;}
+    17000{left: 50%; margin-left: -2550px;}
+    20000{left: 50%; margin-left: -2550px;}
+}
+#background4{
+    -skrollr-animation-name:background4;
+}
+@-skrollr-keyframes background4 {
+    
+    0{left: 50%; margin-left: 2550px}
+    4000{left: 50%; margin-left: 2550px}
+    5000{left: 50%; margin-left: 1536px}
+    8000{left: 50%; margin-left: 1536px}
+    9000{left: 50%; margin-left : 512px;}
+    12000{left: 50%; margin-left: 512px;}
+    13000{left: 50%; margin-left: -512px;}
+    16000{left: 50%; margin-left: -512px;}
+    17000{left: 50%; margin-left: -1536px;}
+    20000{left: 50%; margin-left: -1536px;}
+
+}
+#background5{
+    -skrollr-animation-name:background5;
+}
+@-skrollr-keyframes background5 {
+    
+     0{left: 50%; margin-left: 3574px}
+    4000{left: 50%; margin-left: 3574px}
+    5000{left: 50%; margin-left: 2550px}
+    8000{left: 50%; margin-left: 2550px}
+    9000{left: 50%; margin-left : 1536px;}
+    12000{left: 50%; margin-left: 1536px;}
+    13000{left: 50%; margin-left: 512px;}
+    16000{left: 50%; margin-left: 512px;}
+    17000{left: 50%; margin-left: -512px;}
+    20000{left: 50%; margin-left: -512px;}
+    
+}
+
+
+/*---#1---*/
+
+#schiffchen{
+    -skrollr-animation-name:schiffchen;
+}
+@-skrollr-keyframes schiffchen {
+    
+    0{left: 0px; }
+    1000{left: 512px; }
+    
+}
+#figur1{
+    -skrollr-animation-name:figur1;
+}
+@-skrollr-keyframes figur1 {
+    
+    0{left: 20px; }
+    1000{left: 532px; }
+
+    
+}
+#figur2{
+    -skrollr-animation-name:figur2;
+}
+@-skrollr-keyframes figur2 {
+    
+    0{left: 90px; }
+    1000{left: 602px; }  
+}
+#figur3{
+    -skrollr-animation-name:figur3;
+}
+@-skrollr-keyframes figur3 {
+    
+    0{left: 180px; }
+    1000{left: 692px; }  
+}
+#name1{
+    -skrollr-animation-name:name1;
+}
+@-skrollr-keyframes name1 {
+    
+    0{left: 400px; top: 200px; opacity: 0}
+    950{left: 400px; top: 200px; opacity: 0}
+    1000{left: 400px; top: 200px; opacity: 1}
+    1200{left: 400px; top: 200px; opacity: 1}
+    1250{left: 400px; top: 200px; opacity: 0}
+}
+#name2{
+    -skrollr-animation-name:name2;
+}
+@-skrollr-keyframes name2 {
+    
+    0{left: 800px; top: 200px; opacity: 0}
+    950{left: 800px; top: 200px; opacity: 0}
+    1000{left: 800px; top: 200px; opacity: 1}
+    1200{left: 800px; top: 200px; opacity: 1}
+    1250{left: 800px; top: 200px; opacity: 0}
+}
+#name3{
+    -skrollr-animation-name:name3;
+}
+@-skrollr-keyframes name3 {
+    
+    0{left: 600px; top: 30px; opacity: 0}
+    950{left: 600px; top: 30px; opacity: 0}
+    1000{left: 600px; top: 30px; opacity: 1}
+    1200{left: 600px; top: 30px; opacity: 1}
+    1250{left: 600px; top: 30px; opacity: 0}
+}
+
+
+#welle{
+    -skrollr-animation-name:welle;
+}
+@-skrollr-keyframes welle {
+    
+    0{left: 0px; }
+    1000{left: 450px; }  
+}
+
+/*---#6---*/
+
+#schiff_6{
+    -skrollr-animation-name:schiff_6;
+}
+@-skrollr-keyframes schiff_6{
+    
+    5499{opacity: 0}
+    5500{opacity: 1}
+    6499{opacity: 1}
+    6500{opacity: 0}
+}
+#aktie_6{
+    -skrollr-animation-name:aktie_6;
+}
+@-skrollr-keyframes aktie_6{
+    
+    5499{opacity: 0}
+    5500{opacity: 1}
+    6499{opacity: 1}
+    6500{opacity: 0}
+}
+#briefmarke_6{
+    -skrollr-animation-name:briefmarke_6;
+}
+@-skrollr-keyframes briefmarke_6{
+    
+    5499{opacity: 0}
+    5500{opacity: 1}
+    6499{opacity: 1}
+    6500{opacity: 0}
+}
+#einladung_6{
+    -skrollr-animation-name:einladung_6;
+}
+@-skrollr-keyframes einladung_6{
+    
+    5499{opacity: 0; z-index: 1}
+    5500{opacity: 1; z-index: 999}
+    6499{opacity: 1; z-index: 999}
+    6500{opacity: 0; z-index: 1}
+}
+#faust_6{
+    -skrollr-animation-name:faust_6;
+}
+@-skrollr-keyframes faust_6{
+    
+    5499{opacity: 0; z-index: 1}
+    5500{opacity: 1; z-index: 999}
+    6499{opacity: 1; z-index: 999}
+    6500{opacity: 0; z-index: 1}
+}
+#afrsoldaten_6{
+    -skrollr-animation-name:afrsoldaten_6;
+}
+@-skrollr-keyframes afrsoldaten_6{
+    
+    5499{opacity: 0}
+    5500{opacity: 1}
+    6499{opacity: 1}
+    6500{opacity: 0}
+}
+#siegel_6{
+    -skrollr-animation-name:siegel_6;
+}
+@-skrollr-keyframes siegel_6{
+    
+    5499{opacity: 0}
+    5500{opacity: 1}
+    6499{opacity: 1}
+    6500{opacity: 0}
+}
+#sprechblase_6{
+    -skrollr-animation-name:sprechblase_6;
+}
+@-skrollr-keyframes sprechblase_6{
+    
+    5499{opacity: 0; z-index: 1}
+    5500{opacity: 1; z-index: 999}
+    6499{opacity: 1; z-index: 999}
+    6500{opacity: 0; z-index: 1}}
+
+}
+
+/*---7---*/
+
+#ausrufezeichen_7{
+    -skrollr-animation-name:ausrufezeichen_7;
+}
+@-skrollr-keyframes ausrufezeichen_7{
+    
+    6499{opacity: 0}
+    6500{opacity: 1}
+    7499{opacity: 1}
+    7500{opacity: 0}
+}
+#kanone_7{
+    -skrollr-animation-name:kanone_7;
+}
+@-skrollr-keyframes kanone_7{
+    
+    6499{opacity: 0}
+    6500{opacity: 1}
+    7499{opacity: 1}
+    7500{opacity: 0}
+}
+#soldaten_7{
+    -skrollr-animation-name:soldaten_7;
+}
+@-skrollr-keyframes soldaten_7{
+    
+    6499{opacity: 0}
+    6500{opacity: 1}
+    7499{opacity: 1}
+    7500{opacity: 0}
+}
+#sprechblase_7{
+    -skrollr-animation-name:sprechblase_7;
+}
+@-skrollr-keyframes sprechblase_7{
+    
+    6499{opacity: 0}
+    6500{opacity: 1}
+    7499{opacity: 1}
+    7500{opacity: 0}
+}
+#text_7{
+    -skrollr-animation-name:text_7;
+}
+@-skrollr-keyframes text_7{
+    
+    6499{opacity: 0}
+    6500{opacity: 1}
+    7499{opacity: 1}
+    7500{opacity: 0}
+}
+
+/*---#8---*/
+
+#bismarckburg_8{
+    -skrollr-animation-name:bismarckburg_8;
+}
+@-skrollr-keyframes bismarckburg_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+#burg_8{
+    -skrollr-animation-name:burg_8;
+}
+@-skrollr-keyframes burg_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+
+#karte_8{
+    -skrollr-animation-name:karte_8;
+}
+@-skrollr-keyframes karte_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+#schiff_8{
+    -skrollr-animation-name:schiff_8;
+}
+@-skrollr-keyframes schiff_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+#sprechblase_8{
+    -skrollr-animation-name:sprechblase_8;
+}
+@-skrollr-keyframes sprechblase_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+#typo_8{
+    -skrollr-animation-name:typo_8;
+}
+@-skrollr-keyframes typo_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+#wellen_8{
+    -skrollr-animation-name:wellen_8;
+}
+@-skrollr-keyframes wellen_8{
+    
+    7499{opacity: 0}
+    7500{opacity: 1}
+    8499{opacity: 1}
+    8500{opacity: 0}
+}
+
+/*---19---*/
+
+#fahrten_19{
+    -skrollr-animation-name:fahrten_19;
+}
+@-skrollr-keyframes fahrten_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#tsd_19{
+    -skrollr-animation-name:tsd_19;
+}
+@-skrollr-keyframes tsd_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#fluechtlinge_19{
+    -skrollr-animation-name:fluechtlinge_19;
+}
+@-skrollr-keyframes fluechtlinge_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#karte_19{
+    -skrollr-animation-name:karte_19;
+}
+@-skrollr-keyframes karte_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#liemba_19{
+    -skrollr-animation-name:liemba_19;
+}
+@-skrollr-keyframes liemba_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#menschen_19{
+    -skrollr-animation-name:menschen_19;
+}
+@-skrollr-keyframes menschen_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#staedte_19{
+    -skrollr-animation-name:staedte_19;
+}
+@-skrollr-keyframes staedte_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+#wellen_19{
+    -skrollr-animation-name:wellen_19;
+}
+@-skrollr-keyframes wellen_19{
+    
+    18499{opacity: 0}
+    18500{opacity: 1}
+    19499{opacity: 1}
+    19500{opacity: 0}
+}
+
+/*---20---*/
+
+#ausrufezeichen_20{
+    -skrollr-animation-name:ausrufezeichen_20;
+}
+@-skrollr-keyframes ausrufezeichen_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#banner_20{
+    -skrollr-animation-name:banner_20;
+}
+@-skrollr-keyframes banner_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#boote_20{
+    -skrollr-animation-name:boote_20;
+}
+@-skrollr-keyframes boote_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#liemba_20{
+    -skrollr-animation-name:liemba_20;
+}
+@-skrollr-keyframes liemba_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#see_20{
+    -skrollr-animation-name:see_20;
+}
+@-skrollr-keyframes see_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#typo_20{
+    -skrollr-animation-name:typo_20;
+}
+@-skrollr-keyframes typo_20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+#wellen_20{
+    -skrollr-animation-name:wellen_20;
+}
+@-skrollr-keyframes wellen:20{
+    
+    19499{opacity: 0}
+    19500{opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

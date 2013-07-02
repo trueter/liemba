@@ -9,24 +9,35 @@
 	<link href="css/skrollr-keyframes.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
 	<link href="css/main.less" rel="stylesheet/less" type="text/css" data-skrollr-stylesheet>
 </head>
+
+
 <body>
 	<div id="offsetHelper" class="always-on-top">0</div>
 
-    <div id="notepad-wrapper">
-        <img id="spiral" src="img/spiral05.png">
-
-        <img id="paperstack" src="img/nav.png" alt="">
-    </div>
-
+    
 	
-	</div>
-
-
-		
 	<div id="skollr-menu-wrapper" class="always-on-top">
 		<ul>
-			<li><a href="#railroadText" data-menu-top="1400">Fliegerbomben</a></li>
-			<li><a href="#oceanText" data-menu-top="2000">Versenkung</a></li>
+			<li><a href="#railroadText" data-menu-top="1000">#1</a></li>
+			<li><a href="#railroadText" data-menu-top="2000">#2</a></li>
+			<li><a href="#railroadText" data-menu-top="3000">#3</a></li>
+			<li><a href="#railroadText" data-menu-top="4000">#4</a></li>
+			<li><a href="#railroadText" data-menu-top="5000">#5</a></li>
+			<li><a href="#railroadText" data-menu-top="6000">#6</a></li>
+			<li><a href="#railroadText" data-menu-top="7000">#7</a></li>
+			<li><a href="#railroadText" data-menu-top="8000">#8</a></li>
+			<li><a href="#railroadText" data-menu-top="9000">#9</a></li>
+			<li><a href="#railroadText" data-menu-top="10000">#10</a></li>
+			<li><a href="#railroadText" data-menu-top="11000">#11</a></li>
+			<li><a href="#railroadText" data-menu-top="12000">#12</a></li>
+			<li><a href="#railroadText" data-menu-top="13000">#13</a></li>
+			<li><a href="#railroadText" data-menu-top="14000">#14</a></li>
+			<li><a href="#railroadText" data-menu-top="15000">#15</a></li>
+			<li><a href="#railroadText" data-menu-top="16000">#16</a></li>
+			<li><a href="#railroadText" data-menu-top="17000">#17</a></li>
+			<li><a href="#railroadText" data-menu-top="18000">#18</a></li>
+			<li><a href="#railroadText" data-menu-top="19000">#19</a></li>
+			<li><a href="#railroadText" data-menu-top="20000">#20</a></li>
 		</ul>
 	</div>
 

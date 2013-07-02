@@ -1,7 +1,8 @@
 body{
 	font-family: Helvetica, Times;
-	background-color: #000000;
+	background-color: black;
 }
+
 
 #head{
 	height: 107px;
@@ -13,10 +14,11 @@ body{
 	right: 0;	
 }
 
+
 #offsetHelper{
 
 	position:fixed;
-	bottom: 20px;
+	top: 20px;
 	left: 500px;
 	z-index:999;
 	color: white;
@@ -35,6 +37,7 @@ body{
 	height: 216px;
 	margin-top: -108px;
 	margin-left: -183px;
+	position: fixed;
 }
 
 #skollr-menu-wrapper{
@@ -69,29 +72,7 @@ body{
 	}	
 }
 
-#notepad-wrapper{
-	background: url(../img/paper03.png);
-	position: fixed;
-	width: 100%;
-	height: 100%;
 
-	#spiral{
-
-	}
-
-	#paperstack{
-		position: absolute;
-		bottom: 0;
-	}
-}
-
-#paper{
-	top: 107px;
-	width: auto;
-	height: auto;
-	position: fixed;
-	margin: 0 auto ;
-}
 
 .always-on-top{
 	z-index: 1000;
@@ -114,48 +95,388 @@ body{
 	}
 }
 
-#oceanShip{
-	background: url(../img/ship.png);
-	width: 500px;
-	height: 140px;
-	bottom: 260px;
+.scene{
+	top: 50%;
+	width: 1024px;
+	height: 768px;
+	z-index: 0;
+	margin-top: -384px;
+	position: fixed;
 }
 
-#water{
-	background: url(../img/water.png);
-	width: 3000px;
-	height: 70px;
-	bottom: 200px;
+.element{
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 500;
 }
 
-#bombs{
-	background: url(../img/bomb.png);
-	width: 100px;
-	height: 88px;
-	bottom: 110%;
+#content{
+	top: 50%;
 	left: 100%;
+	width: 20480px;
+	height: 768px;
+	z-index: 500;
+	margin-top: -384px;
+	position: fixed;
 }
 
-#clouds{
-	background: url(../img/clouds.png);
-	width: 2000px;
-	height: 261px;
+#background1{
+	background: url(../img/background_green.png);
+}
+#background2{
+	background: url(../img/background_orange.png);
+}
+#background3{
+	background: url(../img/background_blue.png);
+}
+#background4{
+	background: url(../img/background_red.png);
+}
+#background5{
+	background: url(../img/background_yellow.png);
+}
+
+
+
+
+#schiffchen{
+	background: url(../img/1/schiffchen.png);
+	top: 150px;
+	left: 0px;
+	width: 400px;
+	height: 563px;
+}
+#figur1{
+	background: url(../img/1/figur1.png);
 	top: 120px;
-	left: 100%;
-	opacity: 0.5;
-}
-
-#bild{
-	background: url(../img/bild.png);
-	width: 269px;
-	height: 237px;
-	top: 130px;
-	left: 100%;
-
+	width: 201px;
+	height: 410px;
 	&:hover{
-		width: 400px;
-		height: 352px;
-		background: url(../img/bild_gross.png);
+		top: 110px;
 	}
 }
+#figur2{
+	background: url(../img/1/figur2.png);
+	top: 100px;
+	width: 227px;
+	height: 438px;
+	&:hover{
+		top: 80px;
+	}
+}
+#figur3{
+	background: url(../img/1/figur3.png);
+	top: 120px;
+	width: 195px;
+	height: 408px;
+	&:hover{
+		top: 110px;
+	}
+}
+#welle{
+	background: url(../img/1/welle.gif);
+	top: 570px;	
+	width: 533px;
+	height: 113px;
+
+	&:hover{
+		background: url(../img/1/welle1.png);
+	}
+}
+#ersteplaene{
+	background: url(../img/1/erstePlaene.png);
+	width: 500px;
+	height: 113px;
+	top: 30px;
+	left:30px;
+}
+#name1{
+	background: url(../img/1/name1.png);
+	width: 163px;
+	height: 108px;
+}
+#name2{
+	background: url(../img/1/name2.png);
+	width: 233px;
+	height: 55px;
+}
+#name3{
+	background: url(../img/1/name3.png);
+	width: 209px;
+	height: 109px;
+}
+
+/*---#6---*/
+
+#schiff_6{
+	background: url(../img/6/Schiff.png);
+	width: 526px;
+	height: 202px;
+	top: 420px;
+	left: 420px;
+}
+#aktie_6{
+	background: url(../img/6/aktie.png);
+	width: 301px;
+	height: 444px;
+	top: 220px;
+	left: 200px;
+}
+#briefmarke_6{
+	background: url(../img/6/briefmarke.png);
+	width: 188px;
+	height: 128px;
+	top: 150px;
+	left: 660px;
+}
+#einladung_6{
+	background: url(../img/6/einladung.png);
+	width: 263px;
+	height: 193px;
+	top: 100px;
+	left: 70px;
+}
+#faust_6{
+	background: url(../img/6/faust.png);
+	width: 314px;
+	height: 276px;
+	top: 200px;
+	left: 480px;
+	&:hover{
+		background: url(../img/6/faust2.png);
+	}
+}
+#afrsoldaten_6{
+	background: url(../img/6/afrsoldaten.png);
+	width: 386px;
+	height: 238px;
+	top: 390px;
+	left: 200px;
+}
+#siegel_6{
+	background: url(../img/6/siegel.png);
+	width: 114px;
+	height: 123px;
+	top: 460px;
+	left: 200px;
+}
+#sprechblase_6{
+	background: url(../img/6/sprechblase.png);
+	width: 173px;
+	height: 125px;
+	top: 360px;
+	left: 720px;
+}
+
+/*---#7---*/
+
+#ausrufezeichen_7{
+	background: url(../img/7/ausrufezeichen.png);
+	width: 41px;
+	height: 82px;
+	top: 60px;
+	left: 540px;
+}
+#kanone_7{
+	background: url(../img/7/kanone.png);
+	width: 568px;
+	height: 341px;
+	top: 240px;
+	left: 130px;
+}
+#soldaten_7{
+	background: url(../img/7/soldaten.png);
+	width: 376px;
+	height: 265px;
+	top: 370px;
+	left: 530px;
+}
+#sprechblase_7{
+	background: url(../img/7/sprechblase.png);
+	width: 265px;
+	height: 207px;
+	top: 170px;
+	left: 540px;
+}
+#text_7{
+	background: url(../img/7/text.png);
+	width: 431px;
+	height: 76px;
+	top: 130px;
+	left: 80px;
+}
+
+/*---#8---*/
+
+#bismarckburg_8{
+	background: url(../img/8/bismarckburg.png);
+	width: 134px;
+	height: 60px;
+	top: 70px;
+	left: 530px;
+}
+#burg_8{
+	background: url(../img/8/burg.png);
+	width: 421px;
+	height: 119px;
+	top: 110px;
+	left: 230px;
+}
+#karte_8{
+	background: url(../img/8/karte.png);
+	width: 389px;
+	height: 409px;
+	top: 180px;
+	left: 210px;
+}
+#schiff_8{
+	background: url(../img/8/schiff.png);
+	width: 495px;
+	height: 291px;
+	top: 320px;
+	left: 230px;
+}
+#sprechblase_8{
+	background: url(../img/8/sprechblase.png);
+	width: 293px;
+	height: 221px;
+	top: 220px;
+	left: 430px;
+	&:hover{
+		background: url(../img/8/sprechblase_hover.png);
+	}
+}
+#typo_8{
+	background: url(../img/8/typo.png);
+	width: 623px;
+	height: 295px;
+	top: 450px;
+	left: 80px;
+}
+#wellen_8{
+	background: url(../img/8/wellen.png);
+	width: 330px;
+	height: 180px;
+	top: 370px;
+	left: 470px;
+}
+
+/*---19---*/
+
+#fahrten_19{
+	background: url(../img/19/22fahrten.png);
+	width: 173px;
+	height: 141px;
+	top: 370px;
+	left: 470px;
+}
+#tsd_19{
+	background: url(../img/19/75-Tsd.png);
+	width: 286px;
+	height: 69px;
+	top: 370px;
+	left: 470px;
+}
+#fluechtlinge_19{
+	background: url(../img/19/fluechtlinge.png);
+	width: 598px;
+	height: 125px;
+	top: 370px;
+	left: 470px;
+}
+#karte_19{
+	background: url(../img/19/karte.png);
+	width: 421px;
+	height: 483px;
+	top: 370px;
+	left: 470px;
+}
+#liemba_19{
+	background: url(../img/19/Liemba.png);
+	width: 330px;
+	height: 278px;
+	top: 370px;
+	left: 470px;
+}
+#menschen_19{
+	background: url(../img/19/Menschen.png);
+	width: 315px;
+	height: 87px;
+	top: 370px;
+	left: 470px;
+}
+#staedte_19{
+	background: url(../img/19/Uvira_Kigoma.png);
+	width: 474px;
+	height: 280px;
+	top: 370px;
+	left: 470px;
+}
+#wellen_19{
+	background: url(../img/19/Wellen.png);
+	width: 289px;
+	height: 81px;
+	top: 370px;
+	left: 470px;
+}
+
+
+/*---20---*/
+
+#ausrufezeichen_20{
+	background: url(../img/20/!!.png);
+	width: 173px;
+	height: 141px;
+	top: 370px;
+	left: 470px;
+}
+#banner_20{
+	background: url(../img/20/banner.png);
+	width: 646px;
+	height: 238px;
+	top: 50px;
+	left: 200px;
+}
+#boote_20{
+	background: url(../img/20/Boote.png);
+	width: 274px;
+	height: 64px;
+	top: 500px;
+	left: 560px;
+}
+#liemba_20{
+	background: url(../img/20/liemba.png);
+	width: 720px;
+	height: 342px;
+	top: 230px;
+	left: 150px;
+}
+#see_20{
+	background: url(../img/20/see.png);
+	width: 670px;
+	height: 134px;
+	top: 570px;
+	left: 180px;
+}
+#typo_20{
+	background: url(../img/20/typo.png);
+	width: 264px;
+	height: 137px;
+	top: 300px;
+	left: 700px;
+}
+#wellen_20{
+	background: url(../img/20/Wellen.png);
+	width: 916px;
+	height: 139px;
+	top: 500px;
+	left: 40px;
+}
+
+
+
+
+
+
+
 
