@@ -1,85 +1,70 @@
-<!-- 
-HTML SPECIAL CHARS
-http://unicode.e-workers.de/entities.php
-&auml; &ouml;ü Ä Ö Ü ü
-aæ &szlig; ...
-alles markieren mit cmd + d
-
-&ldquo;Liemba &rdquo; -> <em>Liemba</em> (emphasis)
-' 'leerzeichen = &nbsp;
-″ = &Prime; Doppelter 'Prime' (Zoll/ inch, Winkelminuten)
-Ä = &auml;; äÄ
-Ö = &ouml; Ö&ouml;Ü = &uuml;; Ü&uuml;
-ß = &szlig; 
-² = &sup2; "Hoch 2", zum Quadrat auch &sup3;
-... = &hellip; 
-
-
--->
-
-
 <div id="scroll-instruction">
 	<img src="img/scroll.png" alt="bla">
 </div>
 
-<div id="background1" class="scene">
+<section id="section-1">
 <!-- #1 -->
+	<div id="story-1" class="story">
+		<div id="ship-wrapper">
+			<img src="img/1/schiffchen.png" id="schiffchen">
+			<img src="img/1/figur1.png" class="figur" id="figur-1">
+			<img src="img/1/figur2.png" class="figur" id="figur-2">
+			<img src="img/1/figur3.png" class="figur" id="figur-3">
+			<div id="welle"></div>
+		</div>
 
-	<div id="schiffchen" class="element"></div>
-	<div id="figur1" class="element"></div>
-	<div id="figur3" class="element"></div>
-	<div id="figur2" class="element"></div>
-	<div id="welle" class="element"></div>
-	<div id="ersteplaene" class="element"></div>
-	<div id="name1" class="element"></div>
-	<div id="name2" class="element"></div>
-	<div id="name3" class="element"></div>
+		<img src="img/1/erstePlaene.png" id="erstePlaene">
+		<img src="img/1/name1.png" id="name1">
+		<img src="img/1/name1.png" id="name2">
+		<img src="img/1/name2.png" id="name3">
 
+	</div>
 <!-- #2 -->
 
 <!-- #3 -->
 
 <!-- #4 -->
 
-</div>
+</section>
 
 
-<div id="background2" class="scene">
+<section id="section-2">
 <!-- #5 -->
 
 <!-- #6 -->
-	
-	<div id="aktie_6" class="element"></div>
-	<div id="briefmarke_6" class="element"></div>
-	<div id="einladung_6" class="element"></div>
-	<div id="afrsoldaten_6" class="element"></div>
-	<div id="schiff_6" class="element"></div>
-	<div id="siegel_6" class="element"></div>
-	<div id="faust_6" class="element"></div>
-	<div id="sprechblase_6" class="element"></div>
+	<div id="story-6" class="story">
+		<img id="aktie_6" src="img/6/aktie.png">
+		<img id="briefmarke_6" src="img/6/briefmarke.png">
+		<img id="einladung_6" src="img/6/einladung.png">
+		<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
+		<img id="schiff_6" src="img/6/schiff.png">
+		<img id="siegel_6" src="img/6/siegel.png">
+		<img id="faust_6" src="img/6/faust.png">
+		<img id="sprechblase_6" src="img/6/sprechblase.png">
+	</div>
 <!-- #7 -->
-
-	<div id="ausrufezeichen_7" class="element"></div>
-	<div id="kanone_7" class="element"></div>
-	<div id="soldaten_7" class="element"></div>
-	<div id="sprechblase_7" class="element"></div>
-	<div id="text_7" class="element"></div>
+	<div id="story-7" class="story">
+		<div id="ausrufezeichen_7" class="element"></div>
+		<div id="kanone_7" class="element"></div>
+		<div id="soldaten_7" class="element"></div>
+		<div id="sprechblase_7" class="element"></div>
+		<div id="text_7" class="element"></div>
+	</div>
 
 <!-- #8 -->
+	<div id="story-8" class="story">
+		<div id="bismarckburg_8" class="element"></div>
+		<div id="karte_8" class="element"></div>
+		<div id="burg_8" class="element"></div>
+		<div id="wellen_8" class="element"></div>
+		<div id="schiff_8" class="element"></div>
+		<div id="sprechblase_8" class="element"></div>
+		<div id="typo_8" class="element"></div>
+	</div>
 
-	<div id="bismarckburg_8" class="element"></div>
-	<div id="karte_8" class="element"></div>
-	<div id="burg_8" class="element"></div>
-	<div id="wellen_8" class="element"></div>
-	<div id="schiff_8" class="element"></div>
-	<div id="sprechblase_8" class="element"></div>
-	<div id="typo_8" class="element"></div>
+</section>
 
-
-
-</div>
-
-<div id="background3" class="scene">
+<section id="section-3">
 <!-- #9 -->
 
 <!-- #10 -->
@@ -88,9 +73,9 @@ alles markieren mit cmd + d
 
 <!-- #12 -->
 
-</div>
+</section>
 
-<div id="background4" class="scene">
+<section id="section-4">
 <!-- #13 -->
 
 <!-- #14 -->
@@ -99,9 +84,9 @@ alles markieren mit cmd + d
 
 <!-- #16 -->
 
-</div>
+</section>
 
-<div id="background5" class="scene">
+<section id="section-5">
 
 <!-- #17 -->
 

@@ -1,183 +1,4 @@
-#scroll-instruction{
-    -skrollr-animation-name:scrollAni;
-}
-@-skrollr-keyframes scrollAni {
-    
-    0{opacity: 1; left: 50%;}
-    200{opacity: 0;left: 50%;}
-    200{opacity: 0;left: -100%;}
-}
 
-/*BAckgrounds*/
-
-#background1{
-    -skrollr-animation-name:background1;
-}
-@-skrollr-keyframes background1 {
-    
-    0{left: 50%; margin-left: -512px;}
-    1000{left: 50%; margin-left: -512px;}
-    4000{left: 50%; margin-left: -512px;}
-    5000{left: 50%; margin-left: -1536px;}
-    8000{left: 50%; margin-left: -1536px;}
-    9000{left: 50%; margin-left : -2550px;}
-    12000{left: 50%; margin-left: -2550px;}
-    13000{left: 50%; margin-left: -3574px;}
-    16000{left: 50%; margin-left: -3574px;}
-    17000{left: 50%; margin-left: -4598px;}
-    20000{left: 50%; margin-left: -4598px;}
-   
-}
-
-#background2{
-    -skrollr-animation-name:background2;
-}
-@-skrollr-keyframes background2 {
-    
-    0{left: 50%; margin-left: 512px;}
-    4000{left: 50%; margin-left: 512px;}
-    5000{left: 50%; margin-left: -512px;}
-    8000{left: 50%; margin-left: -512px;}
-    9000{left: 50%; margin-left : -1536px;}
-    12000{left: 50%; margin-left: -1536px;}
-    13000{left: 50%; margin-left: -2550px;}
-    16000{left: 50%; margin-left: -2550px;}
-    17000{left: 50%; margin-left: -3574px;}
-    20000{left: 50%; margin-left: -3574px;}
- 
-}
-#background3{
-    -skrollr-animation-name:background3;
-}
-@-skrollr-keyframes background3 {
-    
-    0{left: 50%; margin-left: 1536px;}
-    4000{left: 50%; margin-left: 1536px;}
-    5000{left: 50%; margin-left: 512px;}
-    8000{left: 50%; margin-left: 512px;}
-    9000{left: 50%; margin-left : -512px;}
-    12000{left: 50%; margin-left: -512px;}
-    13000{left: 50%; margin-left: -1536px;}
-    16000{left: 50%; margin-left: -1536px;}
-    17000{left: 50%; margin-left: -2550px;}
-    20000{left: 50%; margin-left: -2550px;}
-}
-#background4{
-    -skrollr-animation-name:background4;
-}
-@-skrollr-keyframes background4 {
-    
-    0{left: 50%; margin-left: 2550px;}
-    4000{left: 50%; margin-left: 2550px;}
-    5000{left: 50%; margin-left: 1536px;}
-    8000{left: 50%; margin-left: 1536px;}
-    9000{left: 50%; margin-left : 512px;}
-    12000{left: 50%; margin-left: 512px;}
-    13000{left: 50%; margin-left: -512px;}
-    16000{left: 50%; margin-left: -512px;}
-    17000{left: 50%; margin-left: -1536px;}
-    20000{left: 50%; margin-left: -1536px;}
-
-}
-#background5{
-    -skrollr-animation-name:background5;
-}
-@-skrollr-keyframes background5 {
-    
-     0{left: 50%; margin-left: 3574px;}
-    4000{left: 50%; margin-left: 3574px;}
-    5000{left: 50%; margin-left: 2550px;}
-    8000{left: 50%; margin-left: 2550px;}
-    9000{left: 50%; margin-left : 1536px;}
-    12000{left: 50%; margin-left: 1536px;}
-    13000{left: 50%; margin-left: 512px;}
-    16000{left: 50%; margin-left: 512px;}
-    17000{left: 50%; margin-left: -512px;}
-    20000{left: 50%; margin-left: -512px;}
-    
-}
-
-
-/*---#1---*/
-
-#schiffchen{
-    -skrollr-animation-name:schiffchen;
-}
-@-skrollr-keyframes schiffchen {
-    
-    0{left: 0px; }
-    1000{left: 512px; }
-    
-}
-#figur1{
-    -skrollr-animation-name:figur1;
-}
-@-skrollr-keyframes figur1 {
-    
-    0{left: 20px; }
-    1000{left: 532px; }
-
-    
-}
-#figur2{
-    -skrollr-animation-name:figur2;
-}
-@-skrollr-keyframes figur2 {
-    
-    0{left: 90px; }
-    1000{left: 602px; }  
-}
-#figur3{
-    -skrollr-animation-name:figur3;
-}
-@-skrollr-keyframes figur3 {
-    
-    0{left: 180px; }
-    1000{left: 692px; }  
-}
-#name1{
-    -skrollr-animation-name:name1;
-}
-@-skrollr-keyframes name1 {
-    
-    0{left: 400px; top: 200px; opacity: 0}
-    950{left: 400px; top: 200px; opacity: 0}
-    1000{left: 400px; top: 200px; opacity: 1}
-    1200{left: 400px; top: 200px; opacity: 1}
-    1250{left: 400px; top: 200px; opacity: 0}
-}
-#name2{
-    -skrollr-animation-name:name2;
-}
-@-skrollr-keyframes name2 {
-    
-    0{left: 800px; top: 200px; opacity: 0}
-    950{left: 800px; top: 200px; opacity: 0}
-    1000{left: 800px; top: 200px; opacity: 1}
-    1200{left: 800px; top: 200px; opacity: 1}
-    1250{left: 800px; top: 200px; opacity: 0}
-}
-#name3{
-    -skrollr-animation-name:name3;
-}
-@-skrollr-keyframes name3 {
-    
-    0{left: 600px; top: 30px; opacity: 0}
-    950{left: 600px; top: 30px; opacity: 0}
-    1000{left: 600px; top: 30px; opacity: 1}
-    1200{left: 600px; top: 30px; opacity: 1}
-    1250{left: 600px; top: 30px; opacity: 0}
-}
-
-
-#welle{
-    -skrollr-animation-name:welle;
-}
-@-skrollr-keyframes welle {
-    
-    0{left: 0px; }
-    1000{left: 450px; }  
-}
 
 /*---#6---*/
 
@@ -531,3 +352,316 @@
     19499{opacity: 0}
     19500{opacity: 1}
 }
+
+
+
+
+/*---#6---*/
+
+#schiff_6{
+	background: url(../img/6/schiff.png);
+	width: 526px;
+	height: 202px;
+	top: 420px;
+	left: 420px;
+}
+#aktie_6{
+	background: url(../img/6/aktie.png);
+	width: 301px;
+	height: 444px;
+	top: 220px;
+	left: 200px;
+}
+#briefmarke_6{
+	background: url(../img/6/briefmarke.png);
+	width: 188px;
+	height: 128px;
+	top: 150px;
+	left: 660px;
+}
+#einladung_6{
+	background: url(../img/6/einladung.png);
+	width: 263px;
+	height: 193px;
+	top: 100px;
+	left: 70px;
+}
+#faust_6{
+	background: url(../img/6/faust.png);
+	width: 314px;
+	height: 276px;
+	top: 200px;
+	left: 480px;
+	&:hover{
+		background: url(../img/6/faust2.png);
+	}
+}
+#afrsoldaten_6{
+	background: url(../img/6/afrsoldaten.png);
+	width: 386px;
+	height: 238px;
+	top: 390px;
+	left: 200px;
+}
+#siegel_6{
+	background: url(../img/6/siegel.png);
+	width: 114px;
+	height: 123px;
+	top: 460px;
+	left: 200px;
+}
+#sprechblase_6{
+	background: url(../img/6/sprechblase.png);
+	width: 173px;
+	height: 125px;
+	top: 360px;
+	left: 720px;
+}
+*/
+
+/*---#7---*/
+
+#ausrufezeichen_7{
+	background: url(../img/7/ausrufezeichen.png);
+	width: 41px;
+	height: 82px;
+	top: 60px;
+	left: 540px;
+}
+#kanone_7{
+	background: url(../img/7/kanone.png);
+	width: 568px;
+	height: 341px;
+	top: 240px;
+	left: 130px;
+}
+#soldaten_7{
+	background: url(../img/7/soldaten.png);
+	width: 376px;
+	height: 265px;
+	top: 370px;
+	left: 530px;
+}
+#sprechblase_7{
+	background: url(../img/7/sprechblase.png);
+	width: 265px;
+	height: 207px;
+	top: 170px;
+	left: 540px;
+}
+#text_7{
+	background: url(../img/7/text.png);
+	width: 431px;
+	height: 76px;
+	top: 130px;
+	left: 80px;
+}
+
+/*---#8---*/
+
+#bismarckburg_8{
+	background: url(../img/8/bismarckburg.png);
+	width: 134px;
+	height: 60px;
+	top: 70px;
+	left: 530px;
+}
+#burg_8{
+	background: url(../img/8/burg.png);
+	width: 421px;
+	height: 119px;
+	top: 110px;
+	left: 230px;
+}
+#karte_8{
+	background: url(../img/8/karte.png);
+	width: 389px;
+	height: 409px;
+	top: 180px;
+	left: 210px;
+}
+#schiff_8{
+	background: url(../img/8/schiff.png);
+	width: 495px;
+	height: 291px;
+	top: 320px;
+	left: 230px;
+}
+#sprechblase_8{
+	background: url(../img/8/sprechblase.png);
+	width: 293px;
+	height: 221px;
+	top: 220px;
+	left: 430px;
+	&:hover{
+		background: url(../img/8/sprechblase_hover.png);
+	}
+}
+#typo_8{
+	background: url(../img/8/typo.png);
+	width: 623px;
+	height: 295px;
+	top: 450px;
+	left: 80px;
+}
+#wellen_8{
+	background: url(../img/8/wellen.png);
+	width: 330px;
+	height: 180px;
+	top: 370px;
+	left: 470px;
+}
+
+/*---19---*/
+
+#fahrten_19{
+	background: url(../img/19/22fahrten.png);
+	width: 173px;
+	height: 141px;
+	top: 370px;
+	left: 470px;
+}
+#tsd_19{
+	background: url(../img/19/75-Tsd.png);
+	width: 286px;
+	height: 69px;
+	top: 370px;
+	left: 470px;
+}
+#fluechtlinge_19{
+	background: url(../img/19/fluechtlinge.png);
+	width: 598px;
+	height: 125px;
+	top: 370px;
+	left: 470px;
+}
+#karte_19{
+	background: url(../img/19/karte.png);
+	width: 421px;
+	height: 483px;
+	top: 370px;
+	left: 470px;
+}
+#liemba_19{
+	background: url(../img/19/Liemba.png);
+	width: 330px;
+	height: 278px;
+	top: 370px;
+	left: 470px;
+}
+#menschen_19{
+	background: url(../img/19/Menschen.png);
+	width: 315px;
+	height: 87px;
+	top: 370px;
+	left: 470px;
+}
+#staedte_19{
+	background: url(../img/19/Uvira_Kigoma.png);
+	width: 474px;
+	height: 280px;
+	top: 370px;
+	left: 470px;
+}
+#wellen_19{
+	background: url(../img/19/Wellen.png);
+	width: 289px;
+	height: 81px;
+	top: 370px;
+	left: 470px;
+}
+
+
+/*---20---*/
+
+#ausrufezeichen_20{
+	background: url(../img/20/!!.png);
+	width: 173px;
+	height: 141px;
+	top: 370px;
+	left: 470px;
+}
+#banner_20{
+	background: url(../img/20/banner.png);
+	width: 646px;
+	height: 238px;
+	top: 50px;
+	left: 200px;
+}
+#boote_20{
+	background: url(../img/20/Boote.png);
+	width: 274px;
+	height: 64px;
+	top: 500px;
+	left: 560px;
+}
+#liemba_20{
+	background: url(../img/20/liemba.png);
+	width: 720px;
+	height: 342px;
+	top: 230px;
+	left: 150px;
+}
+#see_20{
+	background: url(../img/20/see.png);
+	width: 670px;
+	height: 134px;
+	top: 570px;
+	left: 180px;
+}
+#typo_20{
+	background: url(../img/20/typo.png);
+	width: 264px;
+	height: 137px;
+	top: 300px;
+	left: 700px;
+}
+#wellen_20{
+	background: url(../img/20/Wellen.png);
+	width: 916px;
+	height: 139px;
+	top: 500px;
+	left: 40px;
+}
+
+
+
+
+
+
+
+/*---#1---*/
+#name1{
+    -skrollr-animation-name:name1;
+}
+@-skrollr-keyframes name1 {
+    
+    0{left: 400px; top: 200px; opacity: 0}
+    950{left: 400px; top: 200px; opacity: 0}
+    1000{left: 400px; top: 200px; opacity: 1}
+    1200{left: 400px; top: 200px; opacity: 1}
+    1250{left: 400px; top: 200px; opacity: 0}
+}
+#name2{
+    -skrollr-animation-name:name2;
+}
+@-skrollr-keyframes name2 {
+    
+    0{left: 800px; top: 200px; opacity: 0}
+    950{left: 800px; top: 200px; opacity: 0}
+    1000{left: 800px; top: 200px; opacity: 1}
+    1200{left: 800px; top: 200px; opacity: 1}
+    1250{left: 800px; top: 200px; opacity: 0}
+}
+#name3{
+    -skrollr-animation-name:name3;
+}
+@-skrollr-keyframes name3 {
+    
+    0{left: 600px; top: 30px; opacity: 0}
+    950{left: 600px; top: 30px; opacity: 0}
+    1000{left: 600px; top: 30px; opacity: 1}
+    1200{left: 600px; top: 30px; opacity: 1}
+    1250{left: 600px; top: 30px; opacity: 0}
+}
+

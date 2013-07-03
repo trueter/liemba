@@ -8,15 +8,19 @@ $(function() {
 	});
 
 	// Used to center elements
-
-	var nav = $('#nav');
+/*
+	var nav = $('#skollr-menu-wrapper');
 	var x = -1*(nav.outerWidth() / 2);
 	nav.css("margin-left", x);
-
+*/
 	var circle = $('#instruction-circle');
 	var x = -1*(circle.outerWidth() / 2);
 	circle.css("margin-left", x);
 	
+});
+
+$(window).resize(function() {
+	// $('#scenes-wrapper').css('height', window.innerHeight+'px');
 });
 
 // initialize skrollr
