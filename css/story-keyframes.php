@@ -44,4 +44,22 @@ $end = offsetTo($currentStory+1);
     <?=($end-100);   ?> { bottom: 80%; }
 }
 
+
+
+<?
+## Story 3
+
+$currentStory = 3; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
 ?>
+
+
+#construction-wrapper_3{ -skrollr-animation-name : construction-wrapper_3; }
+@-skrollr-keyframes construction-wrapper_3 {
+    <?=($start+100); ?> { width: 1300px; height: 900px; margin-top: -450px; margin-left: -650px;}
+    <?=($end-100);   ?> { width: 650px; height: 450px;; margin-top: -225px; margin-left: -325px;}
+}
+
+
+

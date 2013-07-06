@@ -18,6 +18,7 @@
 		.figur{
 			transition: all 0.1s ease-in-out;
 			position: absolute;
+			z-index: 11;
 		}
 
 		#figur-1{
@@ -29,7 +30,7 @@
 		}
 
 		#figur-2{
-			right: 32px;
+			right: 70px;
 			top: -39px;
 
 			&:hover{ transform: translateY(-20px); }
@@ -38,7 +39,7 @@
 
 		#figur-3{
 			left: 84px;
-			z-index: 3;
+			z-index: 11;
 			top: -51px;
 
 			&:hover{ transform: translateY(-20px); }
@@ -64,6 +65,112 @@
 	}
 }
 
-#story-6{
+#story-3{
+	*{
+		position: absolute;
+	}
+
+	#banner-wrapper_3{
+		position: relative;
+		width:750px;
+		height:260px;
+		top: 5%;
+		left: 50%;
+		margin-left: -375px;
+
+		#banner_3{
+			top: 25px;
+			left: 0px;
+		}
+		
+		#banner_text_3{
+			top: 30px;
+			left: 90px;
+			width: 522px;
+			height: 172px;
+			background: url(../img/3/banner5.png);
+
+			&:hover{ background: url(../img/3/banner6.png); }
+		}
+		
+		#text_werft_3{
+			top: 0px;
+			left: 60px;
+		}
 	
+	}
+
+	#construction-wrapper_3{
+		position: absolute;
+		width: 650px;
+		height: 450px;
+		top: 50%;
+		left: 50%;
+		margin-left: -325px;
+		margin-top: -225px;
+
+		.element{
+			transition: all 0.1s ease-in-out;
+			position: absolute;
+			z-index: 11;
+		}
+
+		#maschine_3{
+			bottom: 0px;
+			left: 0px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#anker_3{
+			bottom: 40%;
+			left: 50px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#fisch_3{
+			top: 100px;
+			left: 10px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#rad_3{
+			top: 60px;
+			left: 3000px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#schraube_3{
+			top: 0px;
+			left: 50%;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#schraube2_3{
+			bottom: 100px;
+			right: 380px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#torpedo_3{
+			top: 100px;
+			right: 0px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#uhr_3{
+			bottom: 130px;
+			right: 170px;
+			&:hover{ transform: translateY(-20px); }
+		}
+		#wappen_3{
+			top: 40px;
+			right: 70%;
+			&:hover{ transform: translateY(-20px); }
+		}
+
+	}
+}
+
+#story-6{
+	*{
+		position: absolute;
+	}
+
+	#aktie_6{
+		top: 20%;
+		left: 20%;
+	}
 }

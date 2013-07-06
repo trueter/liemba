@@ -23,6 +23,30 @@
 
 <!-- #3 -->
 
+	<div id="story-3" class="story">
+		<div id="banner-wrapper_3">
+			<img src="img/3/banner1.png" id="banner_3">
+			<div id="points_3"></div>
+			<img src="img/3/banner7.png" id="text_werft_3">	
+			<div id="banner_text_3"></div>	
+		</div>
+
+		<div id ="construction-wrapper_3">
+			<img src="img/3/wappen.png" class="element" id="wappen_3">
+			<img src="img/3/uhr.png" class="element" id="uhr_3">
+			<img src="img/3/rad.png" class="element" id="rad_3">
+			<img src="img/3/torpedo.png" class="element" id="torpedo_3">
+			<img src="img/3/maschine.png" class="element" id="maschine_3">	
+			<img src="img/3/fisch.png" class="element" id="fisch_3">
+			<img src="img/3/anker.png" class="element" id="anker_3">
+			<img src="img/3/schraube.png" class="element" id="schraube_3">	
+			<img src="img/3/schraube2.png" class="element" id="schraube2_3">
+			
+								
+		</div>
+
+	</div>
+
 <!-- #4 -->
 
 </section>
@@ -42,6 +66,8 @@
 		<img id="faust_6" src="img/6/faust.png">
 		<img id="sprechblase_6" src="img/6/sprechblase.png">
 	</div>
+
+	
 <!-- #7 -->
 	<div id="story-7" class="story">
 		<div id="ausrufezeichen_7" class="element"></div>
@@ -113,12 +139,8 @@
 <div id="typo_20" class="element"></div>
 <div id="wellen_20" class="element"></div>
 
-<!-- fliegerbomben scene -->
-<div id="clouds"></div>
-<div id="oceanShip"></div>
-<div id="water"></div>
 
-<div id="bombs"></div>
+</section>
 
 <!-- railroad scene -->
 
