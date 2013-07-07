@@ -21,6 +21,22 @@
 	</div>
 <!-- #2 -->
 
+	<div id="story-2" class="story">
+		<img id="aktie_6" src="img/6/aktie.png">
+		<img id="briefmarke_6" src="img/6/briefmarke.png">
+		<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
+		<img id="siegel_6" src="img/6/siegel.png">
+		
+		<div id="einladung_6"></div>
+
+		<div id="ship-wrapper_6">
+			<img id="schiff_6" src="img/6/schiff.png">
+			<img id="sprechblase_6" src="img/6/sprechblase.png">
+		</div>
+		<div id="faust_6"></div>
+
+	</div>
+
 <!-- #3 -->
 
 	<div id="story-3" class="story">
@@ -59,34 +75,25 @@
 	<div id="story-6" class="story">
 		<img id="aktie_6" src="img/6/aktie.png">
 		<img id="briefmarke_6" src="img/6/briefmarke.png">
-		<img id="einladung_6" src="img/6/einladung.png">
 		<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
-		<img id="schiff_6" src="img/6/schiff.png">
 		<img id="siegel_6" src="img/6/siegel.png">
-		<img id="faust_6" src="img/6/faust.png">
-		<img id="sprechblase_6" src="img/6/sprechblase.png">
+		
+		<div id="einladung_6"></div>
+
+		<div id="ship-wrapper_6">
+			<img id="schiff_6" src="img/6/schiff.png">
+			<img id="sprechblase_6" src="img/6/sprechblase.png">
+		</div>
+		<div id="faust_6"></div>
+
 	</div>
 
 	
 <!-- #7 -->
-	<div id="story-7" class="story">
-		<div id="ausrufezeichen_7" class="element"></div>
-		<div id="kanone_7" class="element"></div>
-		<div id="soldaten_7" class="element"></div>
-		<div id="sprechblase_7" class="element"></div>
-		<div id="text_7" class="element"></div>
-	</div>
+	
 
 <!-- #8 -->
-	<div id="story-8" class="story">
-		<div id="bismarckburg_8" class="element"></div>
-		<div id="karte_8" class="element"></div>
-		<div id="burg_8" class="element"></div>
-		<div id="wellen_8" class="element"></div>
-		<div id="schiff_8" class="element"></div>
-		<div id="sprechblase_8" class="element"></div>
-		<div id="typo_8" class="element"></div>
-	</div>
+	
 
 </section>
 

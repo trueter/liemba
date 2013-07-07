@@ -61,5 +61,21 @@ $end = offsetTo($currentStory+1);
     <?=($end-100);   ?> { width: 650px; height: 450px;; margin-top: -225px; margin-left: -325px;}
 }
 
+<?
+## Story 6
+
+$currentStory = 6; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+
+
+#ship-wrapper_6{ -skrollr-animation-name : ship-wrapper_6; }
+@-skrollr-keyframes ship-wrapper_6 {
+    <?=($start+100); ?> { right: 0%;}
+    <?=($end-100);   ?> { right: 30%;}
+}
+
+
 
 
