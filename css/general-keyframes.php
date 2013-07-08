@@ -28,7 +28,7 @@ for($i=1; $i<21; $i++){
     <?= ($end+2*$range);     ?> { opacity:    0; display:  none; }
     }
     
-<?
+<?php
 }
 
 ?>
