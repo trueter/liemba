@@ -64,9 +64,4 @@ for($i = 2; $i<6; $i++){
     <?php
 }?>
 
-#scroll-instruction{ -skrollr-animation-name:scrollAni; }
-@-skrollr-keyframes scrollAni {
-    0{opacity: 1;}
-    100{opacity: 1;}
-    200{opacity: 0;}
-}
+
