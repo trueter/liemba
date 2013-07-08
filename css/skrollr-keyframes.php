@@ -4,7 +4,7 @@
 
   $a_map_height = array(
     0,
-    800, /* 1 */
+    790, /* 1 */
     800, /* 2 */
     818, /* 3 */
     1200, /* 4 */
@@ -57,24 +57,11 @@
     #split-<?=$i;?> {
       top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: split<?= $i;?>;
     }
-
     #ship-<?=$i;?> {
         z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ship<?=$i;?>;
     }  
-
     #map-<?=$i;?> {
         z-index: <?= $z_index_map;?>;
-    }
-    #ape-<?=$i;?> {
-        z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ape<?=$i;?>;
-    } 
-    @-skrollr-keyframes  ape<?=$i;?> {
-        <?= $top-520;?>     { transform: translateY( 00px);}
-        <?= $top-490;?>     { transform: translateY(-10px);}
-        <?= $top-460;?>     { transform: translateY( 00px);}
-        <?= $top-260;?>     { transform: translateY( 00px);}
-        <?= $top-250;?>     { transform: translateY(-10px);}
-        <?= $top-240;?>     { transform: translateY( 00px);}
     }
     @-skrollr-keyframes  split<?=$i;?> {
        <?= $top-5;?>  { transform: translateY(   0px );}
@@ -298,9 +285,10 @@
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
     <?= $start-100;?> { transform: translateX(750px) translateY(150px) rotate(-32deg); }
-    <?= $start+100;?> { transform: translateX(840px) translateY(360px) rotate(-32deg); }
-    <?= $start+230;?> { transform: translateX(820px) translateY(430px) rotate( 45deg); }
-    <?= $end-200;?>   { transform: translateX(710px) translateY(520px) rotate( 45deg); }
+    <?= $start+150;?> { transform: translateX(860px) translateY(380px) rotate(-32deg); }
+    <?= $start+260;?> { transform: translateX(870px) translateY(430px) rotate( 25deg); }
+    <?= $start+350;?> { transform: translateX(820px) translateY(450px) rotate( 45deg); }
+    <?= $end-200;?>   { transform: translateX(790px) translateY(460px) rotate( 45deg); }
 }
 <?php 
   $map_number = 11;
@@ -413,7 +401,7 @@
     <?= $start-350;?> { transform: translateX( 780px) translateY(400px) rotate(  5deg); }
     <?= $start-200;?> { transform: translateX( 770px) translateY(440px) rotate(  5deg); }
     <?= $start+100;?> { transform: translateX( 820px) translateY(520px) rotate(-25deg); }
-    <?= $end-350;?>   { transform: translateX( 930px) translateY(720px) rotate(-25deg); }
+    <?= $end-350;?>   { transform: translateX( 900px) translateY(680px) rotate(-25deg); }
 }
 <?php 
   $map_number = 21;

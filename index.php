@@ -84,29 +84,43 @@
                 <div id="ship-1" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
-                <div id="ape-1" class="stuff">
-                    <img src="img/singlePics/affe1.png" class="apes">
-                </div>                
+                <div id="ape-1_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>
+                <div id="ape-1_2" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>
+                <div id="ape-1_3" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div>                                                
             </div>
             <div id="map-2" class="map">
                 <div id="ship-2" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>
+                <div id="ape-2_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>  
+                <div id="ape-2_2" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                                
             </div>
             <div id="map-3" class="map">
                 <div id="ship-3" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>
-                <div id="ape-3" class="stuff">
-                    <img src="img/singlePics/affe1.png" class="apes">
-                </div>                  
+                </div>                
             </div>
             <div id="map-4" class="map">
                 <div id="ship-4" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                
+                </div>
+                <div id="ape-4_1" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>  
+                <div id="ape-4_2" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>                               
             </div>
-
             <div id="map-5" class="map">
                 <div id="ship-5" class="ships">
                     <img src="img/ship.png" class="ship-big">
@@ -115,7 +129,19 @@
              <div id="map-6" class="map">
                 <div id="ship-6" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                
+                </div>
+                <div id="ape-6_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-6_2" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div> 
+                <div id="ape-6_3" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-6_4" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                                 
             </div>
             <div id="map-7" class="map">
                 <div id="ship-7" class="ships">
@@ -125,7 +151,19 @@
             <div id="map-8" class="map">
                 <div id="ship-8" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                
+                </div>
+                <div id="ape-8_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-8_2" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div> 
+                <div id="ape-8_3" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-8_4" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                
             </div>
             <div id="map-9" class="map">
                 <div id="ship-9" class="ships">
@@ -135,7 +173,25 @@
             <div id="map-10" class="map">
                 <div id="ship-10" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                    
+                </div>
+                <div id="ape-10_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-10_2" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div> 
+                <div id="ape-10_3" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-10_4" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>
+                <div id="ape-10_5" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-10_6" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                                   
             </div>
             <div id="map-11" class="map">
                 <div id="ship-11" class="ships">
@@ -146,11 +202,23 @@
                 <div id="ship-12" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>
+                <div id="ape-12_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-12_2" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div>                 
             </div>
             <div id="map-13" class="map">
                 <div id="ship-13" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                
+                </div>
+                <div id="ape-13_1" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>  
+                <div id="ape-13_2" class="stuff">
+                    <img src="img/affe2_left.png" class="apes">
+                </div>                                 
             </div>
             <div id="map-14" class="map">
                 <div id="ship-14" class="ships">
@@ -160,12 +228,30 @@
             <div id="map-15" class="map">
                 <div id="ship-15" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                
+                </div>
+                <div id="ape-15_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-15_2" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>                    
+                <div id="ape-15_3" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                               
             </div>
             <div id="map-16" class="map">
                 <div id="ship-16" class="ships">
                     <img src="img/ship.png" class="ship-small">
+                </div>
+                <div id="ape-16_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-16_2" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
                 </div>                    
+                <div id="ape-16_3" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                   
             </div>  
             <div id="map-17" class="map">
                 <div id="ship-17" class="ships">
@@ -175,7 +261,16 @@
             <div id="map-18" class="map">
                 <div id="ship-18" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>           
+                </div>
+                <div id="ape-18_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-18_2" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>                    
+                <div id="ape-18_3" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                            
             </div>  
             <div id="map-19" class="map">
                 <div id="ship-19" class="ships">
@@ -186,6 +281,15 @@
                 <div id="ship-20" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>
+                <div id="ape-20_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-20_2" class="stuff">
+                    <img src="img/affe1_right.png" class="apes">
+                </div>                    
+                <div id="ape-20_3" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                 
             </div>  
             <div id="map-21" class="map">
                 <div id="ship-21" class="ships">
@@ -200,7 +304,13 @@
             <div id="map-23" class="map">
                 <div id="ship-23" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                
+                </div>
+                <div id="ape-23_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-23_2" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                 
             </div>   
             <div id="map-24" class="map">
                 <div id="ship-24" class="ships">
@@ -220,8 +330,14 @@
             <div id="map-27" class="map">
                 <div id="ship-27" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                 
-            </div>                                                                                                                            
+                </div> 
+                <div id="ape-27_1" class="stuff">
+                    <img src="img/affe2_right.png" class="apes">
+                </div>
+                <div id="ape-27_2" class="stuff">
+                    <img src="img/affe1_left.png" class="apes">
+                </div>                                 
+            </div>                                                                                                                           
         </div>
 
 
