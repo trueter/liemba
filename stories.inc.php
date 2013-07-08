@@ -22,19 +22,17 @@
 <!-- #2 -->
 
 	<div id="story-2" class="story">
-		<img id="aktie_6" src="img/6/aktie.png">
-		<img id="briefmarke_6" src="img/6/briefmarke.png">
-		<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
-		<img id="siegel_6" src="img/6/siegel.png">
-		
-		<div id="einladung_6"></div>
-
-		<div id="ship-wrapper_6">
-			<img id="schiff_6" src="img/6/schiff.png">
-			<img id="sprechblase_6" src="img/6/sprechblase.png">
+		<div id="loesung1">
+			<img src="img/2/title_2.png" id="title_2">
+			<img src="img/2/2_2.png" id="fruechte_2">
+			<img src="img/2/2_4.png" id="kreuz_2">
+			<img src="img/2/2_8.png" id="or_2">
 		</div>
-		<div id="faust_6"></div>
 
+		<div id="loesung2">
+			<img src="img/2/2_6.png" id="title2_2">
+			<img src="img/2/2_3.png" id="dampfmaschine_2">
+		</div>
 	</div>
 
 <!-- #3 -->
@@ -65,34 +63,96 @@
 
 <!-- #4 -->
 
+	<div id="story-4" class="story">
+		<div id="karte-wrapper_4">
+			<img src="img/4/karte.png" id="karte_4">
+			<img src="img/4/weg.png" id="weg_4">
+			<img src="img/4/menschen.png" id="menschen_4">
+			<img src="img/4/bahn.png" id="bahn_4">
+		</div>
+		
+		<img src="img/4/transport.png" id="transport_4">
+		<img src="img/4/text.png" id="text_4">
+		<img src="img/4/text1.png" id="text1_4">
+		
+
+		
+
+	</div>
+
 </section>
 
 
 <section id="section-2">
 <!-- #5 -->
 
+	<div id="story-5" class="story">
+	
+		<div id="content_5">
+			
+			<img id="telegramm_5" src="img/5/telegramm.png">
+			<img id="text_5" src="img/5/text.png">
+			<img id="text1_5" src="img/5/text1.png">
+			<img id="kiste_5" src="img/5/kiste_nagel.png">
+			<img id="fragezeichen_5" src="img/5/fragezeichen.png">
+		</div>
+
+
+	</div>
+
 <!-- #6 -->
 	<div id="story-6" class="story">
-		<img id="aktie_6" src="img/6/aktie.png">
-		<img id="briefmarke_6" src="img/6/briefmarke.png">
-		<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
-		<img id="siegel_6" src="img/6/siegel.png">
 		
-		<div id="einladung_6"></div>
-
 		<div id="ship-wrapper_6">
 			<img id="schiff_6" src="img/6/schiff.png">
 			<img id="sprechblase_6" src="img/6/sprechblase.png">
 		</div>
-		<div id="faust_6"></div>
+
+		<div id="content-wrapper_6">
+			<div id="einladung_6"></div>
+			<img id="aktie_6" src="img/6/aktie.png">
+			<img id="briefmarke_6" src="img/6/briefmarke.png">
+			<img id="afrsoldaten_6" src="img/6/afrsoldaten.png">
+			<img id="siegel_6" src="img/6/siegel.png">
+			<div id="faust_6"></div>
+		</div>
 
 	</div>
 
 	
 <!-- #7 -->
+	<div id="story-7" class="story">
+		
+		<img id="title_7" src="img/7/text.png">
+		<div id="content_7">
+			<img id="kanone_7" src="img/7/kanone.png">
+			<img id="soldaten_7" src="img/7/soldaten.png">
+			<img id="sprechblase_7" src="img/7/sprechblase.png">
+			<img id="ausrufezeichen_7" src="img/7/ausrufezeichen.png">
+
+		</div>
+
+	
+	</div>
 	
 
 <!-- #8 -->
+<div id="story-8" class="story">
+		
+		<div id="karte-wrapper_8">
+			<img id="bismarckburg_8" src="img/8/bismarckburg.png">
+			<img id="burg_8" src="img/8/burg.png">
+			<img id="karte_8" src="img/8/karte.png">
+			<img id="welle_8" src="img/8/wellen.png">	
+		</div>
+		<div id="schiff-wrapper_8">
+			<img id="schiff_8" src="img/8/schiff.png">
+			<img id="sprechblase_8" src="img/8/sprechblase.png">
+		</div>
+		
+		
+		<img id="typo_8" src="img/8/typo.png">
+	</div>
 	
 
 </section>

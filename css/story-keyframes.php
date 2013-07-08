@@ -44,6 +44,13 @@ $end = offsetTo($currentStory+1);
     <?=($end-100);   ?> { bottom: 80%; }
 }
 
+<?
+## Story 2
+
+$currentStory = 2; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
 
 
 <?
@@ -62,6 +69,22 @@ $end = offsetTo($currentStory+1);
 }
 
 <?
+## Story 4
+
+$currentStory = 4; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+
+<?
+## Story 5
+
+$currentStory = 5; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+
+<?
 ## Story 6
 
 $currentStory = 6; 
@@ -75,7 +98,52 @@ $end = offsetTo($currentStory+1);
     <?=($start+100); ?> { right: 0%;}
     <?=($end-100);   ?> { right: 30%;}
 }
+<?
+## Story 7
 
+$currentStory = 7; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+<?
+## Story 8
+
+$currentStory = 8; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+
+#schiff-wrapper_8{ -skrollr-animation-name : schiff-wrapper_8; }
+@-skrollr-keyframes schiff-wrapper_8 {
+    <?=($start+100); ?> { left: 0%;}
+    <?=($end-100);   ?> { left: 40%;}
+}
+#bismarckburg_8{ -skrollr-animation-name : bismarckburg_8; }
+@-skrollr-keyframes bismarckburg_8 {
+    <?=($start+100); ?> { left: 185px; top: 36px}
+    <?=($end-100);   ?> { left: 250px; top: -20px}
+}
+#welle_8{ -skrollr-animation-name : welle_8; }
+@-skrollr-keyframes welle_8 {
+    <?=($start+100); ?> { right: -50%;}
+    <?=($end-100);   ?> { right: 0%;}
+}
+
+<?
+## Story 9
+
+$currentStory = 9; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
+
+<?
+## Story 10
+
+$currentStory = 10; 
+$start = offsetTo($currentStory);
+$end = offsetTo($currentStory+1);
+?>
 
 
 
