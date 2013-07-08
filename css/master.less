@@ -135,7 +135,7 @@ body{
 	#current-location{
 		position: absolute;
 		height: 10px;
-		width: 35px;
+		width: 15px;
 		background-color: rgba(180, 0, 0, 0.6);
 		border: 1.5px solid red;
 		transform: translateX(80px) translateY(25px) scale(1,1);
@@ -155,7 +155,6 @@ body{
 	@media all and (min-width : 1681px) and (max-width : 1919px) { right: 16%; } 
 	@media all and (min-width : 1920px) { right: 20%; } 
 	transform: translateX(78px) translateY(25px) scale(1,1);
-
 }
 
 /*
@@ -342,10 +341,15 @@ body{
 /* 
 	Kleinkram
 */
-.stuff{position: absolute;}
+.stuff{
+	position: absolute;
+	transition: all 0.5 ease-out;
+}
 .apes{
 	height:10%;
 	width:10%;
+	z-index: 1500;
+	
 	&:hover{
 		transform: translateY(5px);
 	}
