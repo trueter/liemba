@@ -76,10 +76,17 @@
                 <div id="current-location"></div>
             </div>
 
+            <div id="Massstab">
+                <div id="current-size"></div>
+            </div>
+
             <div id="map-1" class="map">
                 <div id="ship-1" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
+                <div id="ape-1" class="stuff">
+                    <img src="img/singlePics/affe1.png" class="apes">
+                </div>                
             </div>
             <div id="map-2" class="map">
                 <div id="ship-2" class="ships">
@@ -90,6 +97,9 @@
                 <div id="ship-3" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
+                <div id="ape-3" class="stuff">
+                    <img src="img/singlePics/affe1.png" class="apes">
+                </div>                  
             </div>
             <div id="map-4" class="map">
                 <div id="ship-4" class="ships">
@@ -193,51 +203,56 @@
                 </div>                
             </div>   
             <div id="map-24" class="map">
-                <div id="ship-214" class="ships">
+                <div id="ship-24" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>                    
-            </div>   
-            <div id="map-24" class="map">
-                <div id="ship-24" class="ships">
-                    <img src="img/ship.png" class="ship-big">
-                </div>             
-            </div>   
+            </div>     
             <div id="map-25" class="map">
                 <div id="ship-25" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                    
             </div>   
             <div id="map-26" class="map">
                 <div id="ship-26" class="ships">
-                    <img src="img/ship.png" class="ship-big">
+                    <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             <div id="map-27" class="map">
                 <div id="ship-27" class="ships">
-                    <img src="img/ship.png" class="ship-small">
+                    <img src="img/ship.png" class="ship-big">
                 </div>                 
             </div>                                                                                                                            
         </div>
 
 
 
-        <div id="split-1" class="split"><h1>Split #1</h1></div>
-        <div id="split-2" class="split"><h1>Split #2</h1></div>
-        <div id="split-3" class="split"><h1>Split #3</h1></div>
-        <div id="split-4" class="split"><h1>Split #4</h1></div>
-        <div id="split-5" class="split"><h1>Split #5</h1></div>
-        <div id="split-6" class="split"><h1>Split #6</h1></div>
-        <div id="split-7" class="split"><h1>Split #7</h1></div>
-        <div id="split-8" class="split"><h1>Split #8</h1></div>
-        <div id="split-9" class="split"><h1>Split #9</h1></div>
-        <div id="split-10" class="split"><h1>Split #10</h1></div>
-        <div id="split-11" class="split"><h1>Split #11</h1></div>
-        <div id="split-12" class="split"><h1>Split #12</h1></div>
-        <div id="split-13" class="split"><h1>Split #13</h1></div>
-        <div id="split-14" class="split"><h1>Split #14</h1></div>
-        <div id="split-15" class="split"><h1>Split #15</h1></div>
-        <div id="split-16" class="split"><h1>Split #16</h1></div>
-        <div id="split-17" class="split"><h1>Split #17</h1></div>
+        <div id="split-1" class="split"></div>
+        <div id="split-2" class="split"></div>
+        <div id="split-3" class="split"></div>
+        <div id="split-4" class="split"></div>
+        <div id="split-5" class="split"></div>
+        <div id="split-6" class="split"></div>
+        <div id="split-7" class="split"></div>
+        <div id="split-8" class="split"></div>
+        <div id="split-9" class="split"></div>
+        <div id="split-10" class="split"></div>
+        <div id="split-11" class="split"></div>
+        <div id="split-12" class="split"></div>
+        <div id="split-13" class="split"></div>
+        <div id="split-14" class="split"></div>
+        <div id="split-15" class="split"></div>
+        <div id="split-16" class="split"></div>
+        <div id="split-17" class="split"></div>
+        <div id="split-18" class="split"></div>
+        <div id="split-19" class="split"></div>
+        <div id="split-20" class="split"></div>
+        <div id="split-21" class="split"></div>
+        <div id="split-22" class="split"></div>
+        <div id="split-23" class="split"></div>
+        <div id="split-24" class="split"></div>
+        <div id="split-25" class="split"></div>
+        <div id="split-26" class="split"></div>
+
 
         <h1 style="text-align:center; margin-top: 400px">Ende</h1>      
 
