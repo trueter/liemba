@@ -137,7 +137,7 @@
 	
 
 <!-- #8 -->
-<div id="story-8" class="story">
+	<div id="story-8" class="story">
 		
 		<div id="karte-wrapper_8">
 			<img id="bismarckburg_8" src="img/8/bismarckburg.png">
@@ -159,6 +159,14 @@
 
 <section id="section-3">
 <!-- #9 -->
+
+	<div id="story-9" class="story">
+		<div id="schiff-wrapper_9">
+			<img id="schiff_9" src="img/9/schiff.png">
+			<img id="wellen_9" src="img/9/wellen.png">
+		</div>
+		
+	</div>
 
 <!-- #10 -->
 
