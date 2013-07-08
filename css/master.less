@@ -53,7 +53,7 @@ body{
 	}
 
 	select{
-		text-indent: 60px;
+		text-indent: 61px;
 		border-radius: 0;
 		appearance: none;
 		-webkit-appearance: none;
@@ -68,6 +68,10 @@ body{
 		text-indent: 1px;
 		border: 1px solid #FFF;
 		width: 15px; height: 15px;
+	}
+
+	input[type=button],select{
+		cursor: pointer;
 	}
 }
 
@@ -131,8 +135,9 @@ body{
 	#current-location{
 		position: absolute;
 		height: 10px;
-		width: 15px;
-		border: 2px dashed red;
+		width: 35px;
+		background-color: rgba(180, 0, 0, 0.6);
+		border: 1.5px solid red;
 		transform: translateX(80px) translateY(25px) scale(1,1);
 	}
 }

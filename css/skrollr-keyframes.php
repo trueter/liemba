@@ -36,7 +36,6 @@
   function height_up_to($n){
     global $a_map_height;
 
-    $index = $n;
     $sum = 0;
     for($i = 1; $i <= $n; $i++){
       $sum += $a_map_height[$i];
@@ -110,8 +109,9 @@
     <?= height_up_to( 7);?>     { transform: translateX(90px) translateY(85px) scale(1,1); }
     <?= height_up_to( 7)+10;?>  { transform: translateX(90px) translateY(85px) scale(2,2); }
 }
-*/
-<?php 
+
+
+<?php  ###### 1
   $map_number = 1;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];
@@ -124,7 +124,7 @@
     <?= $end;?>       { transform: translateX(460px) translateY(650px) rotate(20deg); }
 }
 
-<?php 
+<?php  ###### 2
   $map_number = 2;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];
@@ -137,7 +137,7 @@
     <?= $end;?>       { transform: translateX( 520px ) translateY( 740px ) rotate(-19deg);  }
 }
 
-<?php 
+<?php  ###### 3
   $map_number = 3;
   $end = height_up_to($map_number);
   $start = $end - $a_map_height[$map_number];

@@ -260,5 +260,17 @@
 
         </div>
 
+
+  <script id="hotspot-template" type="text/x-handlebars-template">
+    <div id="hotspot-{{id}}" data-id="{{id}}" data-name="{{name}}" data-description="{{description}}" data-category="{{category}}" data-x="{{x}}" data-y="{{y}}" data-map="{{map}}" data-special_icon_path="{{special_icon_path}}" class="hotspots {{category}}" style="bottom:{{bottom}}px;right:{{right}}px;">
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
+        <div class="hotspot-arrows"></div>
+        <div class="hotspot-edit" data-id="{{id}}">
+        </div>
+        <div class="hotspot-destroy" data-id="{{id}}"></div>
+    </div>
+  </script>
+
     </body>
 </html>
