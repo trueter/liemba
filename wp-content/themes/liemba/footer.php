@@ -16,8 +16,7 @@
 				
 				<div id="info" class="blue-item">
 					<?php # get_template_part('searchform'); ?>
-					<a href="<?php get_permalink( get_page_by_title( 'Impressum' ) ); ?>">Impressum</a> | <a href="<?php get_permalink( get_page_by_title( 'Kontakt' ) ); ?>">Kontakt</a><br>
-					&copy; <?php echo date("Y"); ?> Run Liemba
+					<a href="<?php echo get_page_link(334); ?>">Impressum</a> | <a href="<?php echo get_page_link(84); ?>">Kontakt</a><br>
 				</div>
 
 			</footer>

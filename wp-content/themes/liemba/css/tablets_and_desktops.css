@@ -53,11 +53,11 @@
 		background: url(../../liemba/img/backgrounds/button_darkBlue.png);		
 	}
 
-	.current-page-item, .current-page-ancestor{
+	.current_page_item, .current_page_ancestor{
 		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png);
 	}
 
-	.current-page-item:hover, .current-page-ancestor:hover{
+	.current_page_item:hover, .current_page_ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png);
 	}
 
@@ -91,6 +91,7 @@
 		position: absolute;
 		top: -17px;
 		right: -126px;
+		z-index: 15;
 	}
 
 	.children .page_item{
@@ -100,7 +101,7 @@
 		text-overflow: ellipsis;
 	}
 
-	.current-page-item:hover, .current-page-ancestor:hover{
+	.current_page_item:hover, .current_page_ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
 	}
 
@@ -148,7 +149,6 @@
 		padding: 2px;
 		margin-top: 10px;
 		margin-bottom: 110px;
-		overflow: hidden;
 	}
 
 	#content-wrapper{
