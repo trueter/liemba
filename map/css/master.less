@@ -1,0 +1,498 @@
+body{
+	font-family: Din, Helvetica, Arial;
+	color: #FFF;
+	background-color: #ecf0f1;
+	position: relative;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+.green-box{
+	background: #558535;	
+	border: 1px solid #FFF;
+	outline: 1px solid #FFF;
+	outline-offset: 1px;
+	box-shadow: 0px 0px 10px 4px #444;
+	color: #FFF;
+
+	button, input, select{
+		margin: 2px;
+		padding: 2px;
+		border: 1px solid #FFF;
+		outline: 1px solid #FFF;
+		background: #FFFFFF;	
+	}
+	
+}
+
+#page-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#hotspot-prepare-dialog{
+	display: none;
+	position: absolute;
+	padding: 10px;
+	z-index: 10000;
+
+	input, label, textarea, select{
+		display: block;
+		margin: 0 2px 8px 2px !important;
+		width: 250px;
+	}
+
+	textarea{
+		height: 200px;
+		position: relative;
+		left: -1px;
+		width: 247px;
+	}
+
+	select{
+		text-indent: 61px;
+		border-radius: 0;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	#hotspot-prepare-dialog-close{
+		float: right;
+		text-align: center;
+		cursor: pointer;
+		line-height: 16px;
+		text-indent: 1px;
+		border: 1px solid #FFF;
+		width: 15px; height: 15px;
+	}
+
+	input[type=button],select{
+		cursor: pointer;
+	}
+}
+
+#hotspot-confirm-dialog{
+	position: absolute;
+	display: none;
+	top: 50px;
+	left: 500px;
+	z-index: 10000;
+	font-size: 0.8em;
+	padding: 10px 8px;
+}
+
+#offsetHelper{
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	color: black;
+	font-size: 28px; 
+	z-index: 100000;
+	
+	&:before{
+		content: "yOff: ";
+		color: #000;
+	}
+}
+
+.split{
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	/*background: url(../img/retina_wood.png);*/
+	background: #000;
+	/*#5a8d3c;*/
+	
+	h1{
+		line-height: 50px;
+		margin: 30px auto;
+		text-align: center;
+	}
+}
+
+/*
+	Minimap
+*/
+
+#minimap{
+	position: fixed;
+	height: 218px;
+	width: 218px;
+	top: 20px;
+	z-index: 2000;
+	background: url(../img/minimap.png);
+
+	@media all and (max-width : 1280px) { right: 0px; } 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { right: 4%; } 
+	@media all and (min-width : 1441px) and (max-width : 1680px) { right: 11%; } 
+	@media all and (min-width : 1681px) and (max-width : 1919px) { right: 16%; } 
+	@media all and (min-width : 1920px) { right: 20%; } 
+
+	#current-location{
+		position: absolute;
+		height: 10px;
+		width: 35px;
+		background-color: rgba(180, 0, 0, 0.6);
+		border: 1.5px solid red;
+		transform: translateX(80px) translateY(25px) scale(1,1);
+	}
+}
+#Massstab{
+	position: fixed;
+	height: 20px;
+	width:100px;
+	top:400px;
+	z-index: 2000;
+	background:url(../img/minimap.png);
+
+	@media all and (max-width : 1280px) { right: 0px; } 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { right: 4%; } 
+	@media all and (min-width : 1441px) and (max-width : 1680px) { right: 11%; } 
+	@media all and (min-width : 1681px) and (max-width : 1919px) { right: 16%; } 
+	@media all and (min-width : 1920px) { right: 20%; } 
+	transform: translateX(78px) translateY(25px) scale(1,1);
+
+}
+
+/*
+	Navigation
+*/
+
+#navigation{
+	position: fixed;
+	width: 130px;
+	height: 264px;
+	top: 30%;
+	padding: 14px 16px;
+	z-index: 2000;
+	margin-left: 25px;
+
+	@media all and (max-width : 1280px) { left: 0px; margin-left: 0px;} 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { left: 4%; } 
+	@media all and (min-width : 1441px) and (max-width : 1680px) { left: 11%; } 
+	@media all and (min-width : 1681px) and (max-width : 1919px) { left: 16%; } 
+	@media all and (min-width : 1920px) { left: 20%; } 
+
+	.navigation-anchor{
+		height: 25px;
+		background: url(../img/anchor.png) no-repeat;
+		background-position: 38px 8px;
+	}
+
+	#navigation-anchor-down{
+		transform: rotate(180deg);
+	}
+	
+	ul{
+		overflow: auto;
+		margin: 0;
+		list-style: none;
+	}
+
+	#navigation-stops{
+		height: 125px;
+		padding: 0;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	#category-selection{
+		padding-top: 11px;
+		padding-left: 11px;
+
+		li{
+			width: 16px;
+			height: 16px;
+			float: left;
+			display: inline-block;
+			margin: 3px 4px;
+			padding: 6px;
+			background: #96c185;
+			border-radius: 90px;
+			border: 1px solid #FFF;
+			cursor: pointer;
+
+			&.itemsHidden{
+				opacity: 0.2;
+			}
+
+			&.nyi{
+				cursor: not-allowed;
+			}
+		}
+
+		img{
+			position: relative;
+		}
+	}
+}
+
+/*
+	Hotspots
+*/
+
+@hotspotWidthExtended : 320px;
+.hotspots{
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	border: 1px solid #FFF;
+	outline: 1px solid #FFF;
+	outline-offset: 1px;
+	box-shadow: 0px 0px 5px 3px #444;
+	z-index: 1500;
+
+	transition: all 0.4s ease-in-out;
+
+	h1, p{
+		visibility: hidden;
+		width: @hotspotWidthExtended;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+	}
+
+	h1{
+		text-align: center;
+		white-space: nowrap;
+		margin: 0;
+	}
+
+	.hotspot-arrows{
+		position: absolute;
+		bottom: -14px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 12px solid #FFF;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.hotspot-destroy{
+		float: right;
+		border: 1px solid red;
+		height: 10px;
+		width: 10px;
+		margin: 3px;
+	}
+
+	.hotspot-edit{
+		float: right;
+		border: 1px solid yellow;
+		height: 10px;
+		width: 10px;
+		margin: 3px;
+	}
+
+	&.extended{
+		width: @hotspotWidthExtended;
+		height: 180px;
+		padding: 10px;
+		white-space: normal;
+		z-index: 2500;
+	
+		h1, p{
+			visibility: visible;
+		}
+
+		.hotspot-arrows{
+			opacity: 0;
+		}
+	}
+}
+
+.hotspot.new-hotspot{
+	background-color: red;
+}
+
+.hotspots.placeholder{
+	background: #ecf0f1 url(../img/hotspot_icons/placeholder.png) no-repeat;
+}
+
+.hotspots.airports{
+	background: #0b6e8e url(../img/hotspot_icons/airport.png) no-repeat;
+}
+
+.hotspots.pois{
+	background: #111 url(../img/hotspot_icons/poi.png) no-repeat;
+}
+
+/*
+	Ships
+*/
+
+.ships{	position: absolute; }
+
+.ship-big{
+	height: 160px;
+	width: 50px;
+}
+
+.ship-small{
+	height: 40px;
+	width: 20px;
+}
+
+/* 
+	Kleinkram
+*/
+.stuff{position: absolute;}
+.apes{
+	height:10%;
+	width:10%;
+	&:hover{
+		transform: translateY(5px);
+	}
+}
+
+#ape-1{
+	top: 500px;
+	left:750px;
+}
+#ape-3{
+	top: 500px;
+	left:750px;
+}
+
+/*
+	Maps
+*/
+
+.map{
+	position: relative;
+}
+
+#map-wrapper{
+	width: 100%;
+	position: relative;
+	box-shadow: 0px 0px 20px 5px #888;
+}
+
+#map-1{
+	background: url(../img/maps/1_bujumbura.png); /* bujumbura */
+	height: 800px;
+}
+
+#map-2{
+	background: url(../img/maps/1-2_bigmap_1.png);
+	background-position: 0% 5%;
+	height: 800px;
+}
+
+#map-3{
+	background: url(../img/maps/2_rumonge.png); 
+	background-position: 0% 0%;
+	height: 818px;
+}
+#map-4{
+	background: url(../img/maps/1-2_bigmap_1.png);
+	background-position: 0% 90%;
+	height: 1200px;
+}
+#map-5{
+	background: url(../img/maps/3_kigoma.png);
+	height: 800px;
+}
+#map-6{
+	background: url(../img/maps/3-2_bigmap_2.png);
+	height: 700px;
+	/*backgound-position: x y;*/
+}
+#map-7{
+	background: url(../img/maps/4_kirando.png);
+	height: 768px;
+}
+#map-8{
+	background: url(../img/maps/3-2_bigmap_2.png);
+	height: 700px;
+	background-position: 0% 30%;
+}
+#map-9{
+	background: url(../img/maps/5_sigunda_helembe.png);
+	height: 800px;
+}
+#map-10{
+	background: url(../img/maps/3-2_bigmap_2.png);
+	height: 700px;
+	background-position: 0% 70%;
+}
+#map-11{
+	background: url(../img/maps/6_mugambo.png);
+	height: 768px;
+}
+#map-12{
+	background: url(../img/maps/6-2_bigmap_3.png);
+	height: 768px;
+}
+#map-13{
+	background: url(../img/maps/7_kibwesa_kalya.png);
+	height: 768px;
+}
+#map-14{
+	background: url(../img/maps/6-2_bigmap_3.png);
+	height: 768px;
+	background-position: 0% 40%;
+}
+#map-15{
+	background: url(../img/maps/8_ikola_karema.png);
+	height: 914px;
+}
+#map-16{
+	background: url(../img/maps/6-2_bigmap_3.png);
+	height: 768px;
+	background-position: 0% 80%;
+}
+#map-17{
+	background: url(../img/maps/9_Kabwe.png);
+	height: 800px;
+}
+#map-18{
+	background: url(../img/maps/6-2_bigmap_3.png);
+	height: 768px;
+	background-position: 0% 100%;
+}
+#map-19{
+	background: url(../img/maps/10_kirando_kibili.png);
+	height: 768px;
+}
+#map-20{
+	background: url(../img/maps/6-2_bigmap_3.png);
+	height: 768px;
+	background-position: 0% 100%;
+}
+#map-21{
+	background: url(../img/maps/11_ninde_msamba.png);
+	height: 914px;
+}
+#map-22{
+	background: url(../img/maps/11-2_bigmap_4.png);
+	height: 768px;
+}
+#map-23{
+	background: url(../img/maps/12_kala.png);
+	height: 914px;
+}
+#map-24{
+	background: url(../img/maps/11-2_bigmap_4.png);
+	height: 768px;
+	background-position: 0% 50%;
+}
+#map-25{
+	background: url(../img/maps/13_kasanga.png);
+	height: 768px;
+}
+#map-26{
+	background: url(../img/maps/11-2_bigmap_4.png);
+	height: 768px;
+	background-position: 0% 100%;
+}
+#map-27{
+	background: url(../img/maps/14_mpulungu.png);
+	height: 768px;
+}

@@ -1,0 +1,157 @@
+body{
+	font-family: Helvetica, Times;
+	background-color: black;
+}
+
+#head{
+	height: 107px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+}
+
+#offsetHelper{
+
+	position:fixed;
+	top: 20px;
+	left: 500px;
+	z-index:999;
+	color: white;
+	font-size: 16px;
+	
+	&:before{
+		content:"yOff: ";
+		color: white;
+	}
+}
+
+#scroll-instruction{
+	top: 50%;
+	left: 50%;
+	width: 367px;
+	height: 216px;
+	margin-top: -108px;
+	margin-left: -183px;
+	position: fixed;
+}
+
+#sections-wrapper{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#skollr-menu-wrapper{
+
+	position: fixed;
+	bottom: 5px;
+	left: 50%;
+	width: 1070px;
+	margin-left: -535px;
+	padding: 5px;
+	background: #333;
+
+	li{
+		display: block;
+		border-bottom: 1px solid white;
+		color: #FFF;
+		float: left;
+		&:last-child{
+			border: 0;
+		}
+
+		&:hover{
+			background: #FFF;
+			color: #000;
+		}
+	}
+
+	a{
+		padding: 10px 15px;
+		display: block;
+		cursor: pointer;
+		color: inherit;
+		text-decoration: none;
+	}	
+}
+
+.always-on-top{
+	z-index: 1000;
+}
+
+.historyText{
+	top: 130px;
+	width: 400px;
+	height: auto;
+	color: black;
+	h1{
+		margin-bottom: 5px;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+
+	&.not-yet-implemented{
+		display: none;
+	}
+}
+
+section{	
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	display: none;
+}
+
+.story{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 768px;
+	min-width: 1024px;
+}
+
+#section-1{
+	display: block;
+
+	
+}
+
+.element{
+	position: relative;
+	z-index: 500;
+}
+
+#content{
+	top: 50%;
+	left: 100%;
+	width: 20480px;
+	height: 768px;
+	z-index: 500;
+	margin-top: -384px;
+	position: fixed;
+}
+
+#section-1{
+	background: url(../img/background_green.jpg);
+}
+#section-2{
+	background: url(../img/background_orange.jpg);
+}
+#section-3{
+	background: url(../img/background_blue.jpg);
+}
+#section-4{
+	background: url(../img/background_red.jpg);
+}
+#section-5{
+	background: url(../img/background_yellow.jpg);
+}
