@@ -7,7 +7,7 @@ htw.liemba = {
 	init : function(){
 
 		// init main navigation hover effect
-		var mainNavItems = $('nav').find('.menu  > ul > li.page-item');
+		var mainNavItems = $('nav').find('.menu  > ul > li.page_item');
 		$.each(mainNavItems, function(){
 		  $(this).click(function(e){
 		   	

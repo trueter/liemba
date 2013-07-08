@@ -14,13 +14,10 @@
 				</div>
 				<!-- /footer widgets -->
 				
-				<div id="search-and-info">
-					<?php  get_template_part('searchform'); ?>
-					<!-- copyright -->
-					<span class="copyright blue-item">
-						&copy; <?php echo date("Y"); ?> Run Liemba | Impressum | Kontakt
-					</span>
-					<!-- /copyright -->
+				<div id="info" class="blue-item">
+					<?php # get_template_part('searchform'); ?>
+					<a href="<?php get_permalink( get_page_by_title( 'Impressum' ) ); ?>">Impressum</a> | <a href="<?php get_permalink( get_page_by_title( 'Kontakt' ) ); ?>">Kontakt</a><br>
+					&copy; <?php echo date("Y"); ?> Run Liemba
 				</div>
 
 			</footer>

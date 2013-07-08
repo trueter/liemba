@@ -1,6 +1,10 @@
 @media all and (min-width: 481px) {
+
+	.logo, #bomb{
+		margin-top: 30px;
+	}
+
 	.logo{
-		margin-top: 40px;
 		width: 144px;
 		height: 76px;
 	}
@@ -8,7 +12,6 @@
 	#bomb{
 		float: right;
 		width: 323px;
-		margin-top: 40px;
 	}
 
 	.logo, .sidebar{
@@ -17,12 +20,12 @@
 
 	.sidebar {
 		float: left;
-		width: 285px;
+		width: 186px;
 		margin-bottom: 21px;
 	}
 
-	nav{
-		
+	nav{ 
+		margin-left: 17px;
 	}
 
 	#donation-wrapper{
@@ -36,7 +39,7 @@
 	.page_item, .donation-item{
 		height: 41px;
 		width: 124px;
-		margin: 7px 0;
+		margin: 2px 0;
 		font-size: 1.5em;
 		
 	}
@@ -57,39 +60,44 @@
 	.current-page-item:hover, .current-page-ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png);
 	}
-	/*.blue-item:hover {
-		background-color: #00809e;
-		outline: 1px solid #00809e;
-		opacity: 1;
-	}*/
 
 	.page_item a{
 		display: block;
 		float: right;
+		font-weight: bold;
 	}
 
 	.blue-item {
 		background-color: #00b0e3;
 		outline: 1px solid #00b0e3;	
 		outline-offset: 1px;
-		opacity: 0.925;
+		opacity: 0.97;
 	}
+
+	.blue-item:hover {
+		outline: 1px solid #00b0e3 !important;
+		opacity: 0.99;
+	}
+
 
 	.green-item{
 		background-color: #40ab4d !important;
 		outline: 1px solid #40ab4d;
 		outline-offset: 1px;
-		opacity: 0.925;
+		opacity: 0.97;
 	}
 
 	.children{
 		position: absolute;
-		top: -25px;
-		right: -165px;
+		top: -17px;
+		right: -126px;
 	}
 
 	.children .page_item{
 		font-size: 1em;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	.current-page-item:hover, .current-page-ancestor:hover{
@@ -125,13 +133,20 @@
 	}
 
 	#news-ticker-wrapper{
-		margin-top: 24px;
-		float: left;
 		width: 282px;
+		float: left;
+		height: 101px;
+		margin-top: 24px;
+		padding: 5px 10px;
+	}
+
+	#news-ticker-wrapper h1{
+		font-size: 1.9em;
 	}
 
 	#sidebar-and-content{
 		padding: 2px;
+		margin-top: 10px;
 		margin-bottom: 110px;
 		overflow: hidden;
 	}
@@ -141,6 +156,7 @@
 		padding: 5px 10px 5px;
 		overflow: hidden;
 		margin-right: 50px;
+		background-color: rgba(255,255,255,0.97);
 	}
 
 	#content-wrapper h1{
@@ -160,10 +176,17 @@
 		z-index: 10;
 	}
 
-	#search-and-info{
+	#info{
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		padding: 5px;
+		font-size: 1.2em;
+		text-align: right;
+	}
+
+	#info a{
+		color: #FFF;
 	}
 
 	.footer {
@@ -193,7 +216,7 @@
 	
 	.footer-widget{
 		cursor: not-allowed;
-		padding: 5px 35px;
+		padding: 18px 22px;
 		font-weight: bold;
 		display: inline-block;
 		height: 101px;
@@ -210,6 +233,7 @@
 @media all and (max-width: 750px) {
 	#content-wrapper{
 		overflow: visible;
+		margin-left: 21px;
 	}
 	.sidebar{
 		float: none;
