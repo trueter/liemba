@@ -1,0 +1,217 @@
+@media all and (min-width: 481px) {
+	.logo{
+		margin-top: 40px;
+		width: 144px;
+		height: 76px;
+	}
+
+	#bomb{
+		float: right;
+		width: 323px;
+		margin-top: 40px;
+	}
+
+	.logo, .sidebar{
+		margin-left: 2px;/* counter outline clipping */
+	}
+
+	.sidebar {
+		float: left;
+		width: 285px;
+		margin-bottom: 21px;
+	}
+
+	nav{
+		
+	}
+
+	#donation-wrapper{
+		width: 282px;
+	}
+
+	.page_item:first-child{
+		margin-top: 0px;
+	}
+
+	.page_item, .donation-item{
+		height: 41px;
+		width: 124px;
+		margin: 7px 0;
+		font-size: 1.5em;
+		
+	}
+
+	.page_item{
+		position: relative;
+		background: url(../../liemba/img/backgrounds/button_lightBlue.png);
+	}
+
+	.page_item:hover{
+		background: url(../../liemba/img/backgrounds/button_darkBlue.png);		
+	}
+
+	.current-page-item, .current-page-ancestor{
+		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png);
+	}
+
+	.current-page-item:hover, .current-page-ancestor:hover{
+		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png);
+	}
+	/*.blue-item:hover {
+		background-color: #00809e;
+		outline: 1px solid #00809e;
+		opacity: 1;
+	}*/
+
+	.page_item a{
+		display: block;
+		float: right;
+	}
+
+	.blue-item {
+		background-color: #00b0e3;
+		outline: 1px solid #00b0e3;	
+		outline-offset: 1px;
+		opacity: 0.925;
+	}
+
+	.green-item{
+		background-color: #40ab4d !important;
+		outline: 1px solid #40ab4d;
+		outline-offset: 1px;
+		opacity: 0.925;
+	}
+
+	.children{
+		position: absolute;
+		top: -25px;
+		right: -165px;
+	}
+
+	.children .page_item{
+		font-size: 1em;
+	}
+
+	.current-page-item:hover, .current-page-ancestor:hover{
+		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
+	}
+
+	#donation-status-wrapper{
+		float: left;
+		width: 370px;
+		margin: 30px 0;
+	}
+
+	.donation-item{
+		width: 137px;
+		text-align: right;
+		float: left;
+		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
+	}
+
+	.donation-item:hover{
+		background: url(../../liemba/img/backgrounds/button_darkGreen.png);
+	}
+
+	.donation-item:last-child{
+
+		background-image: none;
+		margin-left: 4px;
+
+	}
+	.donation-item a{
+		display: block;
+		padding-right: 20px;
+	}
+
+	#news-ticker-wrapper{
+		margin-top: 24px;
+		float: left;
+		width: 282px;
+	}
+
+	#sidebar-and-content{
+		padding: 2px;
+		margin-bottom: 110px;
+		overflow: hidden;
+	}
+
+	#content-wrapper{
+		width: auto;
+		padding: 5px 10px 5px;
+		overflow: hidden;
+		margin-right: 50px;
+	}
+
+	#content-wrapper h1{
+		font-weight: normal;
+		font-size: 2.6em;
+		margin: 3px 0;
+	}
+
+	#content-wrapper p{
+		font-size: 1.4em;
+		line-height: 1.2em;
+	}
+
+	#social-wrapper{
+		top: 50%;
+		position: fixed;
+		z-index: 10;
+	}
+
+	#search-and-info{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.footer {
+		margin-top: 5px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.search{
+		width: 282px;
+	}
+
+	.search label{
+		vertical-align: bottom;
+		margin: 0 5px;
+		position: relative;
+		top: 12px;
+	}
+
+	.footer-widget-wrapper{
+		margin: 0 auto;
+		width: 590px;
+
+	}
+
+	
+	.footer-widget{
+		cursor: not-allowed;
+		padding: 5px 35px;
+		font-weight: bold;
+		display: inline-block;
+		height: 101px;
+		width: 282px;
+		text-align: right;
+		font-size: 24px;
+		vertical-align: top;
+		text-transform: uppercase;
+		margin: 0 4px;
+	}
+}
+
+
+@media all and (max-width: 750px) {
+	#content-wrapper{
+		overflow: visible;
+	}
+	.sidebar{
+		float: none;
+	}
+}
