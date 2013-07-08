@@ -173,7 +173,21 @@
 	</div>
 
 <!-- #10 -->
+	<div id="story-10" class="story">
+		<img id="dorf_10" src="img/10/Dorf.png">
+		<div id="content-wrapper_10">
+			<img id="flieger_10" src="img/10/Flieger.png">
+			<img id="kanonen_10" src="img/10/Kanonen.png">
+				<div id="schiff-wrapper_10">
+					<img id="schiff_10" src="img/10/Schiff.png">
+					<img id="explosion_10" src="img/10/Explosion.png">
+				</div>
+			
 
+		</div>
+		<img id="schrift_10" src="img/10/Schrift.png">
+
+	</div>
 <!-- #11 -->
 
 <!-- #12 -->
