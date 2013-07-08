@@ -165,6 +165,10 @@
 			<img id="schiff_9" src="img/9/schiff.png">
 			<img id="wellen_9" src="img/9/wellen.png">
 		</div>
+		<img id="kampfeinsatz_9" src="img/9/kampfeinsatz.png">
+		<img id="soldaten_9" src="img/9/soldaten.png">
+		<img id="text_9" src="img/9/text.png">
+
 		
 	</div>
 
