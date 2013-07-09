@@ -3,7 +3,9 @@
 <div id="sidebar-and-content">
 <?php get_sidebar(); ?>
 
+<?php if (! is_home() ){?>
 <!-- section -->
+
 	<section id="content-wrapper" class="clear white-item" role="main">
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); // Anfang des Loop ?>
@@ -15,9 +17,11 @@
 			<div class="post-content"><?php the_content('Mehr erfahren.. &raquo;'); ?></div>
 
 			<p class="post-metadata">
-				<!--Abgelegt in <?php the_category(', ') ?>  <strong>|</strong> -->
 				<?php edit_post_link('Bearbeiten','',''); ?> 
-				<!--<?php comments_popup_link('Keine Kommentare »', '1 Kommentar »', '% Kommentare »'); ?>-->
+				<!--
+					Abgelegt in <?php the_category(', ') ?>  <strong>|</strong> 
+				    <?php comments_popup_link('Keine Kommentare »', '1 Kommentar »', '% Kommentare »'); ?>
+				-->
 			</p>
 
 		<?php endwhile; // Ende des Loop ?>
@@ -33,6 +37,7 @@
 
 	</section>
 	<!-- /section -->
+<?php } ?>
 
 </div>
 
