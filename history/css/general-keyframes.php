@@ -28,7 +28,7 @@ for($i=1; $i<21; $i++){
     <?= ($end+2*$range);     ?> { opacity:    0; display:  none; }
     }
     
-<?
+<?php
 }
 
 ?>
@@ -65,3 +65,10 @@ for($i = 2; $i<6; $i++){
 }?>
 
 
+
+#scroll-instruction{ -skrollr-animation-name:scroll-instruction; }
+@-skrollr-keyframes scroll-instruction {
+    0{opacity: 1;}
+    100{opacity: 1;}
+    200{opacity: 0;}
+}

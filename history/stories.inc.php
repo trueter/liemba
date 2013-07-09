@@ -137,7 +137,7 @@
 	
 
 <!-- #8 -->
-<div id="story-8" class="story">
+	<div id="story-8" class="story">
 		
 		<div id="karte-wrapper_8">
 			<img id="bismarckburg_8" src="img/8/bismarckburg.png">
@@ -160,8 +160,34 @@
 <section id="section-3">
 <!-- #9 -->
 
-<!-- #10 -->
+	<div id="story-9" class="story">
+		<div id="schiff-wrapper_9">
+			<img id="schiff_9" src="img/9/schiff.png">
+			<img id="wellen_9" src="img/9/wellen.png">
+		</div>
+		<img id="kampfeinsatz_9" src="img/9/kampfeinsatz.png">
+		<img id="soldaten_9" src="img/9/soldaten.png">
+		<img id="text_9" src="img/9/text.png">
 
+		
+	</div>
+
+<!-- #10 -->
+	<div id="story-10" class="story">
+		<img id="dorf_10" src="img/10/Dorf.png">
+		<div id="content-wrapper_10">
+			<img id="flieger_10" src="img/10/Flieger.png">
+			<img id="kanonen_10" src="img/10/Kanonen.png">
+				<div id="schiff-wrapper_10">
+					<img id="schiff_10" src="img/10/Schiff.png">
+					<img id="explosion_10" src="img/10/Explosion.png">
+				</div>
+			
+
+		</div>
+		<img id="schrift_10" src="img/10/Schrift.png">
+
+	</div>
 <!-- #11 -->
 
 <!-- #12 -->
