@@ -84,8 +84,8 @@
                 <div id="ship-1" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
-                <div id="ape-1" class="stuff">
-                    <img src="img/singlePics/affe1.png" class="apes">
+                <div id="ape-1" class="doodads">
+                    <img src="img/doodads/ape1.png" class="apes">
                 </div>                
             </div>
             <div id="map-2" class="map">
@@ -97,8 +97,8 @@
                 <div id="ship-3" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
-                <div id="ape-3" class="stuff">
-                    <img src="img/singlePics/affe1.png" class="apes">
+                <div id="ape-3" class="doodads">
+                    <img src="img/doodads/ape2.png" class="apes">
                 </div>                  
             </div>
             <div id="map-4" class="map">

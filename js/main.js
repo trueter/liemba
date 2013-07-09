@@ -127,7 +127,7 @@ $(function() {
 
    } );
 
-////
+//// Hotspot destroy
 
    $("#map-wrapper").on( "click", ".hotspot-destroy", function(){
 
@@ -135,7 +135,7 @@ $(function() {
 
    });
 
-////
+//// Hotspot edit
 
    $("#map-wrapper").on( "click", ".hotspot-edit", function(e){
 
@@ -144,6 +144,19 @@ $(function() {
 
    });
 
+//// Move Dooads 
+/*
+  setInterval(function(){
+    $apes = $(".apes");
+    $apes.each(function(){
+      $(this).animate({
+        transform : translateY(-10px);
+      },4500).animate({
+        transform : translateY(0px);
+      },4500)
+    });
+  },4000);
+*/
 });
 
 $(window).load(function() {
