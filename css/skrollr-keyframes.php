@@ -4,7 +4,7 @@
 
   $a_map_height = array(
     0,
-    800, /* 1 */
+    790, /* 1 */
     800, /* 2 */
     818, /* 3 */
     1200, /* 4 */
@@ -57,32 +57,19 @@
     #split-<?=$i;?> {
       top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: split<?= $i;?>;
     }
-
     #ship-<?=$i;?> {
         z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ship<?=$i;?>;
     }  
-
     #map-<?=$i;?> {
         z-index: <?= $z_index_map;?>;
-    }
-    #ape-<?=$i;?> {
-        z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ape<?=$i;?>;
-    } 
-    @-skrollr-keyframes  ape<?=$i;?> {
-        <?= $top-520;?>     { transform: translateY( 00px);}
-        <?= $top-490;?>     { transform: translateY(-10px);}
-        <?= $top-460;?>     { transform: translateY( 00px);}
-        <?= $top-260;?>     { transform: translateY( 00px);}
-        <?= $top-250;?>     { transform: translateY(-10px);}
-        <?= $top-240;?>     { transform: translateY( 00px);}
     }
     @-skrollr-keyframes  split<?=$i;?> {
        <?= $top-5;?>  { transform: translateY(   0px );}
        <?= $top;?>    { transform: translateY(-100px );}
     }
     <?php
-  }
-?>
+    }
+    ?>
 
 
 /*
@@ -93,23 +80,88 @@
 }
 /*
 @-skrollr-keyframes  minimapLocation {
-    <?= height_up_to( 0);?>     { transform: translateX(80px) translateY(25px) scale(1,1); }
-    <?= height_up_to( 1);?>     { transform: translateX(80px) translateY(26px) scale(1,1); }
-    <?= height_up_to( 1)+10;?>  { transform: translateX(80px) translateY(26px) scale(2,2); }
-    <?= height_up_to( 2);?>     { transform: translateX(80px) translateY(30px) scale(2,2); }
-    <?= height_up_to( 2)+10;?>  { transform: translateX(80px) translateY(30px) scale(1,1); }
-    <?= height_up_to( 3);?>     { transform: translateX(80px) translateY(35px) scale(1,1); }
-    <?= height_up_to( 3)+10;?>  { transform: translateX(80px) translateY(35px) scale(2,2); }
-    <?= height_up_to( 4);?>     { transform: translateX(80px) translateY(62px) scale(2,2); }
-    <?= height_up_to( 4)+10;?>  { transform: translateX(90px) translateY(62px) scale(1,1); }
-    <?= height_up_to( 5);?>     { transform: translateX(90px) translateY(65px) scale(1,1); }
-    <?= height_up_to( 5)+10;?>  { transform: translateX(90px) translateY(65px) scale(2,2); }
-    <?= height_up_to( 6);?>     { transform: translateX(90px) translateY(80px) scale(2,2); }
-    <?= height_up_to( 6)+10;?>  { transform: translateX(90px) translateY(80px) scale(1,1); }
-    <?= height_up_to( 7);?>     { transform: translateX(90px) translateY(85px) scale(1,1); }
-    <?= height_up_to( 7)+10;?>  { transform: translateX(90px) translateY(85px) scale(2,2); }
+    /* Bujumbura */
+    <?= height_up_to( 0);?>     { transform: translateX( 80px) translateY( 25px) scale(1,1); }
+    <?= height_up_to( 1);?>     { transform: translateX( 80px) translateY( 25px) scale(1,1); }
+    /* big Map 1 */
+    <?= height_up_to( 1)+10;?>  { transform: translateX( 80px) translateY( 25px) scale(2,2); }
+    <?= height_up_to( 2);?>     { transform: translateX( 80px) translateY( 30px) scale(2,2); }
+    /* Rumonge */
+    <?= height_up_to( 2)+10;?>  { transform: translateX( 80px) translateY( 30px) scale(1,1); }
+    <?= height_up_to( 3);?>     { transform: translateX( 80px) translateY( 35px) scale(1,1); }
+    /* big Map 1 */
+    <?= height_up_to( 3)+10;?>  { transform: translateX( 80px) translateY( 35px) scale(2,2); }
+    <?= height_up_to( 4);?>     { transform: translateX( 80px) translateY( 62px) scale(2,2); }
+    /* Kigoma */
+    <?= height_up_to( 4)+10;?>  { transform: translateX( 90px) translateY( 62px) scale(1,1); }
+    <?= height_up_to( 5);?>     { transform: translateX( 90px) translateY( 65px) scale(1,1); }
+    /* big Map 2 */
+    <?= height_up_to( 5)+10;?>  { transform: translateX( 90px) translateY( 65px) scale(2,2); }
+    <?= height_up_to( 6);?>     { transform: translateX( 90px) translateY( 80px) scale(2,2); }
+    /* Kirando */
+    <?= height_up_to( 6)+10;?>  { transform: translateX( 95px) translateY( 80px) scale(1,1); }
+    <?= height_up_to( 7);?>     { transform: translateX( 95px) translateY( 85px) scale(1,1); }
+    /* big Map 2 */
+    <?= height_up_to( 7)+10;?>  { transform: translateX( 90px) translateY( 85px) scale(2,2); }
+    <?= height_up_to( 8);?>     { transform: translateX( 90px) translateY( 90px) scale(2,2); }
+    /* Sigunda Helembe */
+    <?= height_up_to( 8)+10;?>  { transform: translateX(100px) translateY( 90px) scale(1,1); }
+    <?= height_up_to( 9);?>     { transform: translateX(100px) translateY( 95px) scale(1,1); }
+    /* big Map 2 */
+    <?= height_up_to( 9)+10;?>  { transform: translateX( 90px) translateY( 95px) scale(2,2); }
+    <?= height_up_to(10);?>     { transform: translateX( 90px) translateY(100px) scale(2,2); }
+    /* Mugambo */
+    <?= height_up_to(10)+10;?>  { transform: translateX( 95px) translateY(100px) scale(1,1); }
+    <?= height_up_to(11);?>     { transform: translateX( 90px) translateY(102px) scale(1,1); }
+    /* big Map 3 */
+    <?= height_up_to(11)+10;?>  { transform: translateX( 90px) translateY(105px) scale(2,2); }
+    <?= height_up_to(12);?>     { transform: translateX( 95px) translateY(115px) scale(2,2); }
+    /* Kibwesa Kalya */
+    <?= height_up_to(12)+10;?>  { transform: translateX( 95px) translateY(115px) scale(1,1); }
+    <?= height_up_to(13);?>     { transform: translateX(105px) translateY(115px) scale(1,1); }
+    /* big Map 3 */
+    <?= height_up_to(13)+10;?>  { transform: translateX(100px) translateY(115px) scale(2,2); }
+    <?= height_up_to(14);?>     { transform: translateX(105px) translateY(120px) scale(2,2); }
+    /* Ikola Karema */
+    <?= height_up_to(14)+10;?>  { transform: translateX(110px) translateY(120px) scale(1,1); }
+    <?= height_up_to(15);?>     { transform: translateX(112px) translateY(122px) scale(1,1); }
+    /* big Map 3 */
+    <?= height_up_to(15)+10;?>  { transform: translateX(105px) translateY(122px) scale(2,2); }  
+    <?= height_up_to(16);?>     { transform: translateX(110px) translateY(125px) scale(2,2); }
+    /* Kabwe */
+    <?= height_up_to(16)+10;?>  { transform: translateX(115px) translateY(125px) scale(1,1); }
+    <?= height_up_to(17);?>     { transform: translateX(117px) translateY(128px) scale(1,1); }
+    /* big Map 3 */
+    <?= height_up_to(17)+10;?>  { transform: translateX(110px) translateY(133px) scale(2,2); }  
+    <?= height_up_to(18);?>     { transform: translateX(112px) translateY(140px) scale(2,2); }
+    /* Kirando Kibili */
+    <?= height_up_to(18)+10;?>  { transform: translateX(120px) translateY(140px) scale(1,1); }
+    <?= height_up_to(19);?>     { transform: translateX(120px) translateY(145px) scale(1,1); }
+    /* big Map 3 */
+    <?= height_up_to(19)+10;?>  { transform: translateX(115px) translateY(145px) scale(2,2); }  
+    <?= height_up_to(20);?>     { transform: translateX(117px) translateY(152px) scale(2,2); }
+    /* Ninde Msamba */
+    <?= height_up_to(20)+10;?>  { transform: translateX(123px) translateY(152px) scale(1,1); }
+    <?= height_up_to(21);?>     { transform: translateX(128px) translateY(155px) scale(1,1); }
+    /* big Map 4 */
+    <?= height_up_to(21)+10;?>  { transform: translateX(119px) translateY(155px) scale(2,2); }  
+    <?= height_up_to(22);?>     { transform: translateX(122px) translateY(160px) scale(2,2); }
+    /* Kala */
+    <?= height_up_to(22)+10;?>  { transform: translateX(125px) translateY(160px) scale(1,1); }
+    <?= height_up_to(23);?>     { transform: translateX(130px) translateY(163px) scale(1,1); }
+    /* big Map 4 */
+    <?= height_up_to(23)+10;?>  { transform: translateX(123px) translateY(165px) scale(2,2); }
+    <?= height_up_to(24);?>     { transform: translateX(125px) translateY(170px) scale(2,2); }
+    /* Kasanga */
+    <?= height_up_to(24)+10;?>  { transform: translateX(130px) translateY(167px) scale(1,1); }
+    <?= height_up_to(25);?>     { transform: translateX(135px) translateY(170px) scale(1,1); }
+    /* big Map 4 */
+    <?= height_up_to(25)+10;?>  { transform: translateX(126px) translateY(170px) scale(2,2); }
+    <?= height_up_to(26);?>     { transform: translateX(124px) translateY(177px) scale(2,2); }
+    /* Mpulungu */
+    <?= height_up_to(26)+10;?>  { transform: translateX(130px) translateY(177px) scale(1,1); }
+    <?= height_up_to(27);?>     { transform: translateX(130px) translateY(180px) scale(1,1); }       
 }
-
 
 <?php  ###### 1
   $map_number = 1;
@@ -156,7 +208,7 @@
 ?>
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
-    <?= $start-300;?> { transform: translateX(450px) translateY(-30px) rotate(-15deg); }
+    <?= $start-300;?> { transform: translateX(450px) translateY(-50px) rotate(-15deg); }
     <?= $start;?>     { transform: translateX(500px) translateY(350px) rotate(-15deg); }
     <?= $end-500;?>   { transform: translateX(680px) translateY(1050px) rotate(-17deg); }
     <?= $end-400;?>   { transform: translateX(700px) translateY(1100px) rotate(-50deg); }
@@ -233,9 +285,10 @@
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
     <?= $start-100;?> { transform: translateX(750px) translateY(150px) rotate(-32deg); }
-    <?= $start+100;?> { transform: translateX(840px) translateY(360px) rotate(-32deg); }
-    <?= $start+230;?> { transform: translateX(820px) translateY(430px) rotate( 45deg); }
-    <?= $end-200;?>   { transform: translateX(710px) translateY(520px) rotate( 45deg); }
+    <?= $start+150;?> { transform: translateX(860px) translateY(380px) rotate(-32deg); }
+    <?= $start+260;?> { transform: translateX(870px) translateY(430px) rotate( 25deg); }
+    <?= $start+350;?> { transform: translateX(820px) translateY(450px) rotate( 45deg); }
+    <?= $end-200;?>   { transform: translateX(790px) translateY(460px) rotate( 45deg); }
 }
 <?php 
   $map_number = 11;
@@ -348,7 +401,7 @@
     <?= $start-350;?> { transform: translateX( 780px) translateY(400px) rotate(  5deg); }
     <?= $start-200;?> { transform: translateX( 770px) translateY(440px) rotate(  5deg); }
     <?= $start+100;?> { transform: translateX( 820px) translateY(520px) rotate(-25deg); }
-    <?= $end-350;?>   { transform: translateX( 930px) translateY(720px) rotate(-25deg); }
+    <?= $end-350;?>   { transform: translateX( 900px) translateY(680px) rotate(-25deg); }
 }
 <?php 
   $map_number = 21;
