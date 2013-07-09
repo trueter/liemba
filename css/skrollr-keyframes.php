@@ -48,6 +48,7 @@
 */
 <?php
   for ($i = 1; $i <= 27; $i++){
+
     $top = height_up_to($i);
     $z_index_split = 1000 - $i;
     $z_index_ship = $z_index_split - 1;
@@ -173,7 +174,7 @@
 
     <?= $start;?>     { transform: translateX(525px) translateY(420px) rotate(00deg);  }
     <?= $start+250;?> { transform: translateX(525px) translateY(420px) rotate(30deg); }
-    <?= $end;?>       { transform: translateX(460px) translateY(650px) rotate(20deg); }
+    <?= $end;?>       { transform: translateX(460px) translateY(610px) rotate(20deg); }
 }
 
 <?php  ###### 2
@@ -188,6 +189,26 @@
     <?= $start+250;?> { transform: translateX( 400px ) translateY( 500px ) rotate(-19deg);  }
     <?= $end;?>       { transform: translateX( 520px ) translateY( 740px ) rotate(-19deg);  }
 }
+  #cloud-2_1 {-skrollr-animation-name: cloud-2_1; }
+  @-skrollr-keyframes  cloud-2_1 {
+    <?= $start-200;?> { transform: translateX( 200px ) translateY( 400px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 870px ) translateY( 410px ) rotate(  0deg);  }    
+  }
+  #cloud-2_2 {-skrollr-animation-name: cloud-2_2; }
+  @-skrollr-keyframes  cloud-2_2 {
+    <?= $start-200;?> { transform: translateX( 160px ) translateY( 420px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 660px ) translateY( 420px ) rotate(  0deg);  }    
+  }
+  #cloud-2_3 {-skrollr-animation-name: cloud-2_3; }
+  @-skrollr-keyframes  cloud-2_3 {
+    <?= $start-200;?> { transform: translateX( 280px ) translateY( 360px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 880px ) translateY( 360px ) rotate(  0deg);  }    
+  }
+  #cloud-2_4 {-skrollr-animation-name: cloud-2_4; }
+  @-skrollr-keyframes  cloud-2_4 {
+    <?= $start-200;?> { transform: translateX(  50px ) translateY( 370px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 390px ) translateY( 370px ) rotate(  0deg);  }    
+  }   
 
 <?php  ###### 3
   $map_number = 3;
@@ -214,6 +235,11 @@
     <?= $end-400;?>   { transform: translateX(700px) translateY(1100px) rotate(-50deg); }
     <?= $end-200;?>   { transform: translateX(770px) translateY(1140px) rotate(-70deg); }
 }
+  #cloud-4_1 {-skrollr-animation-name: cloud-4_1; }
+  @-skrollr-keyframes  cloud-4_1 {
+    <?= $start-200;?> { transform: translateX( 170px ) translateY( 600px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 870px ) translateY(  60px ) rotate(  0deg);  }    
+  }
 
 <?php 
   $map_number = 5;
@@ -240,6 +266,16 @@
     <?= $start-200;?> { transform: translateX(600px) translateY(040px) rotate(-12deg); }
     <?= $end-200;?>   { transform: translateX(720px) translateY(420px) rotate(-12deg); }
 }
+  #cloud-6_1 {-skrollr-animation-name: cloud-6_1; }
+  @-skrollr-keyframes  cloud-6_1 {
+    <?= $start-200;?> { transform: translateX( 270px ) translateY( 360px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 440px ) translateY( 320px ) rotate(  0deg);  }    
+  }
+  #cloud-6_2 {-skrollr-animation-name: cloud-6_2; }
+  @-skrollr-keyframes  cloud-6_2 {
+    <?= $start-200;?> { transform: translateX( 130px ) translateY( 390px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 570px ) translateY( 350px ) rotate(  0deg);  }    
+  }
 
 <?php 
   $map_number = 7;
@@ -265,6 +301,16 @@
     <?= $start+50;?> { transform: translateX(650px) translateY(300px) rotate(-30deg); }
     <?= $end-300;?>   { transform: translateX(760px) translateY(440px) rotate(-40deg); }
 }
+  #cloud-8_1 {-skrollr-animation-name: cloud-8_1; }
+  @-skrollr-keyframes  cloud-8_1 {
+    <?= $start-200;?> { transform: translateX( 270px ) translateY( 160px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 540px ) translateY( 120px ) rotate(  0deg);  }    
+  }
+  #cloud-8_2 {-skrollr-animation-name: cloud-8_2; }
+  @-skrollr-keyframes  cloud-8_2 {
+    <?= $start-200;?> { transform: translateX( 270px ) translateY( 290px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 350px ) translateY( 150px ) rotate(  0deg);  }    
+  }
 
 <?php 
   $map_number = 9;
@@ -290,6 +336,11 @@
     <?= $start+350;?> { transform: translateX(820px) translateY(450px) rotate( 45deg); }
     <?= $end-200;?>   { transform: translateX(790px) translateY(460px) rotate( 45deg); }
 }
+  #cloud-10_1 {-skrollr-animation-name: cloud-10_1; }
+  @-skrollr-keyframes  cloud-10_1 {
+    <?= $start-200;?> { transform: translateX( 570px ) translateY( 560px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 640px ) translateY( 470px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 11;
   $end = height_up_to($map_number);
@@ -315,6 +366,21 @@
     <?= $start+200;?> { transform: translateX(380px) translateY(380px) rotate(-75deg); }
     <?= $end-300;?>   { transform: translateX(500px) translateY(455px) rotate(-80deg); }
 }
+  #cloud-12_1 {-skrollr-animation-name: cloud-12_1; }
+  @-skrollr-keyframes  cloud-12_1 {
+    <?= $start-350;?> { transform: translateX( 330px ) translateY(  70px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 520px ) translateY(  10px ) rotate(  0deg);  }    
+  }
+  #cloud-12_2 {-skrollr-animation-name: cloud-12_2; }
+  @-skrollr-keyframes  cloud-12_2 {
+    <?= $start-200;?> { transform: translateX( 670px ) translateY( 460px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 740px ) translateY( 360px ) rotate(  0deg);  }    
+  }
+  #cloud-12_3 {-skrollr-animation-name: cloud-12_3; }
+  @-skrollr-keyframes  cloud-12_3 {
+    <?= $start-200;?> { transform: translateX( 570px ) translateY( 360px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 640px ) translateY( 330px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 13;
   $end = height_up_to($map_number);
@@ -337,6 +403,16 @@
     <?= $start    ;?>   { transform: translateX(600px) translateY( 300px) rotate(-35deg); }
     <?= $end-200;?>   { transform: translateX(720px) translateY( 400px) rotate(-35deg); }
 }
+  #cloud-14_1 {-skrollr-animation-name: cloud-14_1; }
+  @-skrollr-keyframes  cloud-14_1 {
+    <?= $start-200;?> { transform: translateX( 720px ) translateY( 260px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 780px ) translateY( 160px ) rotate(  0deg);  }    
+  }
+  #cloud-14_2 {-skrollr-animation-name: cloud-14_2; }
+  @-skrollr-keyframes  cloud-14_2 {
+    <?= $start-200;?> { transform: translateX( 620px ) translateY( 160px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 670px ) translateY( 130px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 15;
   $end = height_up_to($map_number);
@@ -358,6 +434,16 @@
     <?= $start+100;?> { transform: translateX( 740px) translateY(270px) rotate(-25deg); }
     <?= $end-250;?>   { transform: translateX(780px) translateY( 350px) rotate(-10deg); }
 }
+  #cloud-16_1 {-skrollr-animation-name: cloud-16_1; }
+  @-skrollr-keyframes  cloud-16_1 {
+    <?= $start-200;?> { transform: translateX( 700px ) translateY( 50px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 780px ) translateY( 20px ) rotate(  0deg);  }    
+  }
+  #cloud-16_2 {-skrollr-animation-name: cloud-16_2; }
+  @-skrollr-keyframes  cloud-16_2 {
+    <?= $start-200;?> { transform: translateX( 480px ) translateY(650px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 650px ) translateY(540px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 17;
   $end = height_up_to($map_number);
@@ -380,6 +466,21 @@
     <?= $start+100;?> { transform: translateX( 740px) translateY(280px) rotate(  5deg); }
     <?= $end-350;?>   { transform: translateX( 780px) translateY(420px) rotate(-25deg); }
 }
+  #cloud-18_1 {-skrollr-animation-name: cloud-18_1; }
+  @-skrollr-keyframes  cloud-18_1 {
+    <?= $start-200;?> { transform: translateX( 650px ) translateY(440px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 750px ) translateY(380px ) rotate(  0deg);  }    
+  }
+  #cloud-18_2 {-skrollr-animation-name: cloud-18_2; }
+  @-skrollr-keyframes  cloud-18_2 {
+    <?= $start-200;?> { transform: translateX( 120px ) translateY(630px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 300px ) translateY(570px ) rotate(  0deg);  }    
+  }
+  #cloud-18_3 {-skrollr-animation-name: cloud-18_3; }
+  @-skrollr-keyframes  cloud-18_3 {
+    <?= $start-200;?> { transform: translateX(  80px ) translateY(650px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 360px ) translateY(540px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 19;
   $end = height_up_to($map_number);
