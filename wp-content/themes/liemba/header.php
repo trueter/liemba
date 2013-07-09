@@ -54,7 +54,7 @@
 					<!-- social wrapper -->
 					<div id="social-wrapper" class="white-item">
 						<a href="http://www.facebook.com/Run.Liemba"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/facebook.png" alt="facebook"></a>
-						<a href="http://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.png" alt="twitter"></a>
+						<!-- no twitter yet <a href="http://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/twitter.png" alt="twitter"></a>-->
 					</div>
 					<!-- !social wrapper -->
 					
