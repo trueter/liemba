@@ -45,7 +45,7 @@ $middle = ($start + 500);
     <?=($middle);   ?> { bottom: 80%; }
 }
 
-<?
+<?php
 ## Story 2
 
 $currentStory = 2; 
@@ -54,7 +54,7 @@ $end = offsetTo($currentStory+1);
 ?>
 
 
-<?
+<?php
 ## Story 3
 
 $currentStory = 3; 
@@ -66,11 +66,12 @@ $middle = ($start + 500);
 
 #construction-wrapper_3{ -skrollr-animation-name : construction-wrapper_3; }
 @-skrollr-keyframes construction-wrapper_3 {
-    <?=($start); ?> { width: 1300px; height: 900px; margin-top: -450px; margin-left: -650px;}
-    <?=($middle);   ?> { width: 650px; height: 450px;; margin-top: -225px; margin-left: -325px;}
+    <?=($start+100); ?> { width: 1300px; height: 900px; margin-top: -450px; margin-left: -650px;}
+    <?=($end-100);   ?> { width: 650px; height: 450px; margin-top: -225px; margin-left: -325px;}
+
 }
 
-<?
+<?php
 ## Story 4
 
 $currentStory = 4; 
@@ -78,7 +79,7 @@ $start = offsetTo($currentStory);
 $end = offsetTo($currentStory+1);
 ?>
 
-<?
+<?php
 ## Story 5
 
 $currentStory = 5; 
@@ -86,7 +87,7 @@ $start = offsetTo($currentStory);
 $end = offsetTo($currentStory+1);
 ?>
 
-<?
+<?php
 ## Story 6
 
 $currentStory = 6; 
@@ -100,14 +101,14 @@ $end = offsetTo($currentStory+1);
     <?=($start+100); ?> { right: 0%;}
     <?=($end-100);   ?> { right: 30%;}
 }
-<?
+<?php
 ## Story 7
 
 $currentStory = 7; 
 $start = offsetTo($currentStory);
 $end = offsetTo($currentStory+1);
 ?>
-<?
+<?php
 ## Story 8
 
 $currentStory = 8; 
@@ -131,7 +132,7 @@ $end = offsetTo($currentStory+1);
     <?=($end-100);   ?> { right: 0%;}
 }
 
-<?
+<?php
 ## Story 9
 
 $currentStory = 9; 
@@ -139,7 +140,7 @@ $start = offsetTo($currentStory);
 $end = offsetTo($currentStory+1);
 ?>
 
-<?
+<?php
 ## Story 10
 
 $currentStory = 10; 
