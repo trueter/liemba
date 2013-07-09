@@ -189,17 +189,97 @@
 
 	</div>
 <!-- #11 -->
+<div id= "story-11" class="story">
+		<img id="ship" src="img/11/ship.png">
+		<img id="bubble" src="img/11/bubble.png">
+		<img id="26juli" src="img/11/26juli.png">
+		<img id="flag" src="img/11/flag.png">
+		<img id="oilman" src="img/11/oilman.png">
+		<img id="oil_big" src="img/11/oil_big.png">
+		<img id="arrow_down" src="img/11/arrow_down.png">
+		<img id="sandbag1" src="img/11/sandbag1.png">
+		<img id="sandbag2" src="img/11/sandbag2.png">
+		<img id="sandbag3" src="img/11/sandbag3.png">
+		<img id="sandbag4" src="img/11/sandbag4.png">
+		<img id="bagropes" src="img/11/bagropes.png">
+		<img id="fish" src="img/11/fish.png">
+	</div>
+
 
 <!-- #12 -->
+	<div id="story-12" class="story">
+		<div id="erste_bergung-wrapper_12">
+			<img id="sign_1" src="img/12/sign_1.png">
+			<img id="1_1" src="img/12/1_1.png">
+			<img id="9_1" src="img/12/9_1.png">
+			<img id="1_2" src="img/12/1_2.png">
+			<img id="6" src="img/12/6.png">
+			<img id="crane_right" src="img/12/crane_right.png">
+			<img id="ship_pickup" src="img/12/ship_pickup.png">
+			<img id="waves" src="img/12/waves.png">
+			<img id="wire" src="img/12/wire.png">
+
+
+		</div>
+
+		<div id="zweite_untergang-wrapper_12">
+			<img id="sign_2" src="img/12/sign_2.png">
+			<img id="1_3" src="img/12/1_3.png">
+			<img id="9_2" src="img/12/9_2.png">
+			<img id="2" src="img/12/2.png">
+			<img id="0" src="img/12/0.png">
+			<img id="rainy_cloud" src="img/12/rainy_cloud.png">
+			<img id="arrows_down" src="img/12/arrows_down.png">
+			<img id="ship_sink" src="img/12/ship_sink.png">
+			<img id="angery_waves" src="img/12/angery_waves.png">
+
+			
+		</div>	
+
 
 </section>
 
 <section id="section-4">
 <!-- #13 -->
+	<div id="story-13" class="story">
+		<img id="man" src="img/13/man.png">
+		<img id="crane_left" src="img/13/crane_left.png">
+		<img id="16mars" src="img/13/16mars.png">
+		<img id="arrows_up" src="img/13/arrows_up.png">
+		<img id="flags" src="img/13/flags.png">
+		<img id="wire" src="img/13/wire.png">
+		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
+		<img id="great_britania" src="img/13/great_britania.png">
+
+
+
+	</div>
+
+
 
 <!-- #14 -->
+	<div id="story-14" class="story">
+		<img id="flasche_1" src="img/14/flasche_1.png">
+		<img id="flasche_2" src="img/14/flasche_2.png">
+		<img id="goetzen" src="img/14/goetzen.png">
+		<img id="liemba_typo" src="img/14/liemba_typo.png">
+		<img id="schiff" src="img/14/schiff.png">
+		<img id="ueberschrift" src="img/14/ueberschrift.png">
+
+
+
+	</div>
 
 <!-- #15 -->
+	<div id="story-15" class="story">
+		<img id="15" src="img/15/15.png">
+		<img id="ship_board" src="img/15/ship_board.png">
+		<img id="passingers" src="img/15/passingers.png">
+		<img id="police" src="img/15/police.png">
+		<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">
+		<img id="ship" src="img/15/ship.png">
+
+	</div>
 
 <!-- #16 -->
 
