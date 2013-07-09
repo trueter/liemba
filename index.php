@@ -94,6 +94,8 @@
                     <img src="img/ape2_right.png" class="apes other-direction">
                 </div>                                            
             </div>
+
+            <div id="split-1" class="split"></div>
             
             <div id="map-2" class="map">
                 <div id="ship-2" class="ships">
@@ -111,12 +113,16 @@
                     <img id="cloud-2_4" class="clouds doodads" src="img/Wolke_4.png">
             </div>
             
+            <div id="split-2" class="split"></div>
+
             <div id="map-3" class="map">
                 <div id="ship-3" class="ships">
                     <img src="img/ship.png" class="ship-big">               
                 </div>                
             </div>
             
+            <div id="split-3" class="split"></div>
+
             <div id="map-4" class="map">
                 <div id="ship-4" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -130,13 +136,17 @@
                 <img id="cloud-4_1" class="clouds doodads" src="img/Wolke_4.png">
             </div>
             
+            <div id="split-4" class="split"></div>
+
             <div id="map-5" class="map">
                 <div id="ship-5" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                    
             </div>
              
-             <div id="map-6" class="map">
+            <div id="split-5" class="split"></div>
+
+            <div id="map-6" class="map">
                 <div id="ship-6" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>
@@ -156,12 +166,16 @@
                 <img id="cloud-6_2" class="clouds doodads" src="img/Wolke_2.png">
             </div>
             
+            <div id="split-6" class="split"></div>
+
             <div id="map-7" class="map">
                 <div id="ship-7" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
             </div>
             
+            <div id="split-7" class="split"></div>
+
             <div id="map-8" class="map">
                 <div id="ship-8" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -182,12 +196,16 @@
                 <img id="cloud-8_2" class="clouds doodads" src="img/Wolke_3.png">                                               
             </div>
             
+            <div id="split-8" class="split"></div>
+
             <div id="map-9" class="map">
                 <div id="ship-9" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>            
             
+            <div id="split-9" class="split"></div>
+
             <div id="map-10" class="map">
                 <div id="ship-10" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -213,12 +231,16 @@
                 <img id="cloud-10_1" class="clouds doodads" src="img/Wolke_2.png">
             </div>
             
+            <div id="split-10" class="split"></div>
+
             <div id="map-11" class="map">
                 <div id="ship-11" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>
             
+            <div id="split-11" class="split"></div>
+
             <div id="map-12" class="map">
                 <div id="ship-12" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -234,6 +256,8 @@
                 <img id="cloud-12_3" class="clouds doodads" src="img/Wolke_4.png">                 
             </div>
             
+            <div id="split-12" class="split"></div>
+
             <div id="map-13" class="map">
                 <div id="ship-13" class="ships">
                     <img src="img/ship.png" class="ship-big">
@@ -246,6 +270,8 @@
                 </div>                                 
             </div>
             
+            <div id="split-13" class="split"></div>
+
             <div id="map-14" class="map">
                 <div id="ship-14" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -254,6 +280,8 @@
                 <img id="cloud-14_2" class="clouds doodads" src="img/Wolke_4.png">                                      
             </div>
             
+            <div id="split-14" class="split"></div>
+
             <div id="map-15" class="map">
                 <div id="ship-15" class="ships">
                     <img src="img/ship.png" class="ship-big">
@@ -269,6 +297,8 @@
                 </div>                               
             </div>
             
+            <div id="split-15" class="split"></div>
+
             <div id="map-16" class="map">
                 <div id="ship-16" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -286,12 +316,16 @@
                 <img id="cloud-16_2" class="clouds doodads" src="img/Wolke_3.png">                                                    
             </div>  
             
+            <div id="split-16" class="split"></div>
+
             <div id="map-17" class="map">
                 <div id="ship-17" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>  
             
+            <div id="split-17" class="split"></div>
+
             <div id="map-18" class="map">
                 <div id="ship-18" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -310,12 +344,16 @@
                 <img id="cloud-18_3" class="clouds doodads" src="img/Wolke_4.png"> 
             </div>  
             
+            <div id="split-18" class="split"></div>
+
             <div id="map-19" class="map">
                 <div id="ship-19" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>    
             </div>  
             
+            <div id="split-19" class="split"></div>
+
             <div id="map-20" class="map">
                 <div id="ship-20" class="ships">
                     <img src="img/ship.png" class="ship-small">
@@ -331,18 +369,24 @@
                 </div>                 
             </div>  
             
+            <div id="split-20" class="split"></div>
+
             <div id="map-21" class="map">
                 <div id="ship-21" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                
             </div>                          
             
+            <div id="split-21" class="split"></div>
+
             <div id="map-22" class="map">
                 <div id="ship-22" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             
+            <div id="split-22" class="split"></div>
+
             <div id="map-23" class="map">
                 <div id="ship-23" class="ships">
                     <img src="img/ship.png" class="ship-big">
@@ -355,24 +399,32 @@
                 </div>                                 
             </div>   
             
+            <div id="split-23" class="split"></div>
+
             <div id="map-24" class="map">
                 <div id="ship-24" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>     
             
+            <div id="split-24" class="split"></div>
+
             <div id="map-25" class="map">
                 <div id="ship-25" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>                    
             </div>   
             
+            <div id="split-25" class="split"></div>
+
             <div id="map-26" class="map">
                 <div id="ship-26" class="ships">
                     <img src="img/ship.png" class="ship-small">
                 </div>                    
             </div>   
             
+            <div id="split-26" class="split"></div>
+
             <div id="map-27" class="map">
                 <div id="ship-27" class="ships">
                     <img src="img/ship.png" class="ship-big">
@@ -385,38 +437,6 @@
                 </div>                                 
             </div>                                                                                                                           
         </div>
-
-
-
-        <div id="split-1" class="split"></div>
-        <div id="split-2" class="split"></div>
-        <div id="split-3" class="split"></div>
-        <div id="split-4" class="split"></div>
-        <div id="split-5" class="split"></div>
-        <div id="split-6" class="split"></div>
-        <div id="split-7" class="split"></div>
-        <div id="split-8" class="split"></div>
-        <div id="split-9" class="split"></div>
-        <div id="split-10" class="split"></div>
-        <div id="split-11" class="split"></div>
-        <div id="split-12" class="split"></div>
-        <div id="split-13" class="split"></div>
-        <div id="split-14" class="split"></div>
-        <div id="split-15" class="split"></div>
-        <div id="split-16" class="split"></div>
-        <div id="split-17" class="split"></div>
-        <div id="split-18" class="split"></div>
-        <div id="split-19" class="split"></div>
-        <div id="split-20" class="split"></div>
-        <div id="split-21" class="split"></div>
-        <div id="split-22" class="split"></div>
-        <div id="split-23" class="split"></div>
-        <div id="split-24" class="split"></div>
-        <div id="split-25" class="split"></div>
-        <div id="split-26" class="split"></div>
-
-
-        <h1 style="text-align:center; margin-top: 400px">Ende</h1>      
 
         <?php require("partials/footer.php"); ?>  
 

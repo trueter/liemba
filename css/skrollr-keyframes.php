@@ -54,15 +54,15 @@
     $z_index_ship = $z_index_split - 1;
     $z_index_map = $z_index_split - 2;
     ?>
-
-    #split-<?=$i;?> {
-      top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: split<?= $i;?>;
+    #map-<?=$i;?> {
+        z-index: <?= $z_index_map;?>;
     }
     #ship-<?=$i;?> {
         z-index: <?= $z_index_ship;?>; -skrollr-animation-name: ship<?=$i;?>;
     }  
-    #map-<?=$i;?> {
-        z-index: <?= $z_index_map;?>;
+    <?php if ($i==27) continue; ?>
+    #split-<?=$i;?> {
+      top: <?= $top;?>px; z-index: <?= $z_index_split;?>; -skrollr-animation-name: split<?= $i;?>;
     }
     @-skrollr-keyframes  split<?=$i;?> {
        <?= $top-5;?>  { transform: translateY(   0px );}
@@ -161,7 +161,7 @@
     <?= height_up_to(26);?>     { transform: translateX(124px) translateY(177px) scale(2,2); }
     /* Mpulungu */
     <?= height_up_to(26)+10;?>  { transform: translateX(130px) translateY(177px) scale(1,1); }
-    <?= height_up_to(27);?>     { transform: translateX(130px) translateY(180px) scale(1,1); }       
+    <?= height_up_to(26)+11;?>     { transform: translateX(130px) translateY(180px) scale(1,1); }       
 }
 
 <?php  ###### 1
