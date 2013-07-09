@@ -5,6 +5,10 @@
 <section id="section-1">
 <!-- #1 -->
 	<div id="story-1" class="story">
+
+		
+
+		
 		<div id="ship-wrapper">
 			<img src="img/1/schiffchen.png" id="schiffchen">
 			<img src="img/1/figur1.png" class="figur" id="figur-1">
