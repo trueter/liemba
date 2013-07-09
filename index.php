@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Liemba meets Skrollr</title>
+	<title>Geschichte der Liemba</title>
 	<link href="css/skrollr-fixed-setup.css" rel="stylesheet" type="text/css">
 	<link href="css/general-keyframes.php" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
 	<link href="css/master.less" rel="stylesheet/less" type="text/css">
@@ -16,7 +16,12 @@
 <body>
 	<div id="offsetHelper" class="always-on-top">0</div>
 
-    
+    <img src="img/scroll.png" id="scroll">
+	<img src="img/navigation.png" id="navigation">
+	<img src="img/startseite.png" id="startseite">
+	<img src="img/info.png" id="info">
+	
+
 	
 	
 

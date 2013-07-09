@@ -1,6 +1,3 @@
-<div id="scroll-instruction">
-	<img src="img/scroll.png" alt="bla">
-</div>
 
 <section id="section-1">
 <!-- #1 -->

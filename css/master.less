@@ -1,6 +1,6 @@
 body{
 	font-family: Helvetica, Times;
-	background-color: black;
+	background-color: white;
 }
 
 #head{
@@ -28,14 +28,35 @@ body{
 	}
 }
 
-#scroll-instruction{
-	top: 50%;
-	left: 50%;
-	width: 367px;
-	height: 216px;
-	margin-top: -108px;
-	margin-left: -183px;
+#navigation{
 	position: fixed;
+	bottom:0px;
+	left: 50%;
+	margin-left: -117px;
+	border: 3px;
+
+	&:hover{ transform: translateY(-20px); }
+}
+#scroll{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -183px;
+	margin-top: -108px;
+	&:hover{ transform: translateY(-20px); }
+}
+#info{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	&:hover{ transform: translateY(-20px); }
+}
+
+#startseite{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	&:hover{ transform: translateY(-20px); }
 }
 
 #sections-wrapper{
