@@ -3,7 +3,6 @@
 <div id="sidebar-and-content">
 <?php get_sidebar(); ?>
 
-<?php if (! is_home() ){?>
 <!-- section -->
 
 	<section id="content-wrapper" class="clear white-item" role="main">
@@ -37,7 +36,6 @@
 
 	</section>
 	<!-- /section -->
-<?php } ?>
 
 </div>
 

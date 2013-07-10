@@ -16,7 +16,7 @@
 		-->
 	</nav>
 
-	<?php if (is_home() ){?>
+	<?php if ( is_front_page() ){?>
 
 		<div id="news-ticker-wrapper" class="white-item">
 			<h1>Neuigkeiten</h1>

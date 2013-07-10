@@ -3,32 +3,43 @@ var htw = {};
 htw.liemba = {
 	organisationID : 14570,
 	production : true,
+	percentDonated : null,
 
 	init : function(){
 
 		// init main navigation hover effect
 		var mainNavItems = $('nav').find('.menu  > ul > li.page_item');
-		$.each(mainNavItems, function(){
-		  $(this).click(function(e){
-		   	
-		   	if(!$(this).hasClass("hover")) return false;
-		   	
-		  	mainNavItems.removeClass("hover");
-		   	$(this).addClass("hover");
+		var donationButtonClass = "page-item-327";
+		var donationButtonOldValue = $('.'+donationButtonClass).find("a").html();
 
-		  })
+		$.each(mainNavItems, function(){
+		  $(this)
 		  .mouseenter(function(){
 
 		  	mainNavItems.removeClass("hover");
-		   	$(this).addClass("hover");})
+		   	$(this).addClass("hover");
+
+
+		   	if( $(this).hasClass(donationButtonClass) && htw.liemba.percentDonated !== null ){
+		   		$(this).find("a").html(htw.liemba.percentDonated +" % !");
+		   	}
+
+		   })
 
 		  .mouseleave(function(){
 
 		    $(this).removeClass("hover");
 
+		    if( $(this).hasClass(donationButtonClass) && htw.liemba.percentDonated !== null ){
+		   		$(this).find("a").html(donationButtonOldValue);
+		   	}
+
 		   });
+
+		  
+
+
 		});
-	if( htw.liemba.production ){
 
 	// init backstretch
 	var imageSources = ["http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-002.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-052.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-063.jpg"];
@@ -40,7 +51,7 @@ htw.liemba = {
 	var totalDonated = 0;
 	var totalOpen = 0;
 	
-	$.get("https://api.betterplace.org/en/api_v4/organisations/125/projects.json", function(feedback){
+	$.get("https://api.betterplace.org/en/api_v4/organisations/"+ htw.liemba.organisationID +"/projects.json", function(feedback){
 		// console.log("calling:");
 
 		var projects = feedback.data;
@@ -61,22 +72,29 @@ htw.liemba = {
 					totalDonated += need.donated_amount_in_cents;
 					totalOpen += need.open_amount_in_cents;
 				});
+
+				
+
 			});
 		});
 		
 	});
-	}
 
+	$(document).ajaxStop(function() {
+		htw.liemba.percentDonated = totalDonated/totalRequested*100;
+	});
+	
 	setTimeout(function(){
-		console.log("Done parsing needs.")
+		/*console.log("Done parsing needs.")
 		console.log("Total Req: " + totalRequested/100 + " €");
 		console.log("Total Don: " + totalDonated/100 + " €");
-		console.log("Total   O: " + totalOpen/100 + " €");
-
-	}, 5000);
+		console.log("Total   O: " + totalOpen/100 + " €");*/
+		
+		
+		// init spenden hover button
+		
+	}, 2000);
 	
-	
-
 	
 
 	},

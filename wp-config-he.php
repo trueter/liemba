@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'liemba_wordpress');
+define('DB_NAME', 'db11136819-wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'db11136819-word');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Gapoku43');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'wp112.webpack.hosteurope.de');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
