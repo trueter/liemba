@@ -42,8 +42,15 @@ htw.liemba = {
 		});
 
 	// init backstretch
-	var imageSources = ["http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-002.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-052.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-063.jpg"];
-	$.backstretch(htw.liemba.helpers.randomizeArray(imageSources), {duration: 5000, fade: 1000});		
+	var baseURL = "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/backstretch/";
+	var imageSources = [baseURL + "background_boat.jpg", 
+						baseURL + "background_damage.jpg", 
+						baseURL + "background_deck.jpg", 
+						baseURL + "background_full.jpg", 
+						baseURL + "background_panoramic.jpg", 
+						baseURL + "background_passengers.jpg", 
+						baseURL + "background_passengers2.jpg" ];
+	$.backstretch(htw.liemba.helpers.randomizeArray(imageSources), {duration: 7500, fade: 750});		
 
 	// init donation sum
 	var d = $("#donation-sum");
