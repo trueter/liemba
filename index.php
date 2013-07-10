@@ -76,7 +76,7 @@
                 <div id="current-location"></div>
             </div>
 
-            <div id="Massstab">
+            <div id="massstab">
                 <div id="current-size"></div>
             </div>
             
