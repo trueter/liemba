@@ -1,6 +1,6 @@
 body{
 	font-family: Helvetica, Times;
-	background-color: black;
+	background-color: white;
 }
 
 #head{
@@ -28,14 +28,35 @@ body{
 	}
 }
 
-#scroll-instruction{
-	top: 50%;
-	left: 50%;
-	width: 367px;
-	height: 216px;
-	margin-top: -108px;
-	margin-left: -183px;
+#navigation{
 	position: fixed;
+	bottom:0px;
+	left: 50%;
+	margin-left: -117px;
+	border: 3px;
+
+	&:hover{ transform: translateY(-20px); }
+}
+#scroll{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -183px;
+	margin-top: -108px;
+	&:hover{ transform: translateY(-20px); }
+}
+#info{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	&:hover{ transform: translateY(-20px); }
+}
+
+#startseite{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	&:hover{ transform: translateY(-20px); }
 }
 
 #sections-wrapper{
@@ -46,6 +67,113 @@ body{
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+#timeline-wrapper{
+	position: fixed;
+	width: 1080px;
+	height: 60px;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -540px;
+	background: black;
+	border-radius: 30px;
+	opacity: 0.75;
+}
+
+#line{
+	position: absolute;
+	top: 29px;
+	left: 25px;
+	width: 1030px;
+	height: 3px;
+	background: white;
+}
+
+
+.circle{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	color:#fff;
+	line-height:10px;
+	text-align:center;
+	background: white;
+	overflow: hidden;
+	top: -9px;
+
+	&:hover{
+		background: red;
+		overflow: visible;
+	}
+}
+.circle span{
+	position: relative;
+	font-size: 15px;
+	top: 25px;
+	left: -5px;
+	color: white;	
+}
+
+#circle1910{
+	left: 0px;	
+}
+
+#circle1911{
+	left: 20px;	
+}
+
+#circle1913{
+	left: 60px;	
+}
+
+#circle1914{
+	left: 80px;	
+}
+
+#circle1915{
+	left: 100px;	
+}
+
+#circle1916{
+	left: 120px;	
+}
+
+#circle1920{
+	left: 200px;	
+}
+
+#circle1924{
+	left: 280px;	
+}
+
+#circle1927{
+	left: 340px;	
+}
+
+#circle1947{
+	left: 510px;	
+}
+
+#circle1964{
+	left: 650px;	
+}
+
+#circle1976{
+	left: 750px;	
+}
+
+#circle1993{
+	left: 900px;	
+}
+
+#circle1997{
+	left: 950px;	
+}
+
+#circle2013{
+	left: 1010px;	
 }
 
 #skollr-menu-wrapper{
