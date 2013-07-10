@@ -28,15 +28,11 @@
 		margin-left: 18px;
 	}
 
-	#donation-wrapper{
-		width: 282px;
-	}
-
 	.page_item:first-child{
 		margin-top: 0px;
 	}
 
-	.page_item, .donation-item{
+	.page_item{
 		height: 41px;
 		width: 124px;
 		margin: 2px 0;
@@ -105,32 +101,12 @@
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
 	}
 
-	#donation-status-wrapper{
-		float: left;
-		width: 370px;
-		margin: 30px 0;
+	.page-item-327{
+		background: url(../../liemba/img/backgrounds/button_lightGreen.png) !important;
 	}
 
-	.donation-item{
-		width: 137px;
-		text-align: right;
-		float: left;
-		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
-	}
-
-	.donation-item:hover{
-		background: url(../../liemba/img/backgrounds/button_darkGreen.png);
-	}
-
-	.donation-item:last-child{
-
-		background-image: none;
-		margin-left: 4px;
-
-	}
-	.donation-item a{
-		display: block;
-		padding-right: 20px;
+	.page-item-327:hover{
+		background: url(../../liemba/img/backgrounds/button_darkGreen.png) !important;
 	}
 
 	#news-ticker-wrapper{

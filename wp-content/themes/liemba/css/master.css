@@ -55,8 +55,6 @@ body {
 	text-align: right;
 	text-transform: uppercase;
 	font-size: 1.5em;	
-
-	/*background-color: #00b0e3;  remove when bakground images available */
 	white-space: nowrap;
 }
 
@@ -95,38 +93,9 @@ body {
 .children .page_item{
 	cursor: pointer;
 }
+
 /* sidebar */
 
-#donation-wrapper{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-.donation-item{
-	color: #FFF;
-	padding: 3px;
-	line-height: 35px;
-}
-
-.donation-item h1, .donation-item p{
-	line-height: 38px;
-	display: inline;
-}
-
-.donation-item h1{
-	margin: 0;
-	float: left;
-	padding-left: 5px;
-	font-size: 1em;
-}
-
-.donation-item p{
-	float: right;
-	margin: 0 5px;
-	font-size: 0.8em;
-	font-weight: bold;
-}
 
 #news-ticker-wrapper{
 	height: 150px;

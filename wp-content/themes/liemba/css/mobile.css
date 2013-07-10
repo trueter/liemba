@@ -54,7 +54,7 @@
 		display: block;
 	}
 
-	.page_item, .donation-item{
+	.page_item{
 		height: 35px;
 	}
 
@@ -90,21 +90,8 @@
 	}
 
 	
-	#donation-wrapper{
-		padding-bottom: 12px;
-		margin-bottom: 12px;
-		border-bottom: 2px solid #FFF;		
-	}
-
-	.donation-item{
-		display: inline-block;
-		vertical-align: top;
-		width: 48.5%;
-		background-color: #40ab4d;
-	}
-
-	.donation-item:last-child{
-		float: right;
+	.page-item-327 { /* donation page */
+		background-color: #40ab4d !important;
 	}
 
 	#news-ticker-wrapper{

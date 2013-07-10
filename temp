@@ -1,0 +1,148 @@
+diff --git a/wp-content/themes/liemba/css/master.css b/wp-content/themes/liemba/css/master.css
+index 56b055e..6d80670 100755
+--- a/wp-content/themes/liemba/css/master.css
++++ b/wp-content/themes/liemba/css/master.css
+@@ -55,8 +55,6 @@ body {
+ 	text-align: right;
+ 	text-transform: uppercase;
+ 	font-size: 1.5em;	
+-
+-	/*background-color: #00b0e3;  remove when bakground images available */
+ 	white-space: nowrap;
+ }
+ 
+@@ -95,38 +93,9 @@ body {
+ .children .page_item{
+ 	cursor: pointer;
+ }
+-/* sidebar */
+-
+-#donation-wrapper{
+-	padding: 0;
+-	margin: 0;
+-	list-style: none;
+-}
+-
+-.donation-item{
+-	color: #FFF;
+-	padding: 3px;
+-	line-height: 35px;
+-}
+-
+-.donation-item h1, .donation-item p{
+-	line-height: 38px;
+-	display: inline;
+-}
+ 
+-.donation-item h1{
+-	margin: 0;
+-	float: left;
+-	padding-left: 5px;
+-	font-size: 1em;
+-}
++/* sidebar */
+ 
+-.donation-item p{
+-	float: right;
+-	margin: 0 5px;
+-	font-size: 0.8em;
+-	font-weight: bold;
+-}
+ 
+ #news-ticker-wrapper{
+ 	height: 150px;
+diff --git a/wp-content/themes/liemba/css/mobile.css b/wp-content/themes/liemba/css/mobile.css
+index 48ef6ee..0b0c392 100755
+--- a/wp-content/themes/liemba/css/mobile.css
++++ b/wp-content/themes/liemba/css/mobile.css
+@@ -54,7 +54,7 @@
+ 		display: block;
+ 	}
+ 
+-	.page_item, .donation-item{
++	.page_item{
+ 		height: 35px;
+ 	}
+ 
+@@ -90,21 +90,8 @@
+ 	}
+ 
+ 	
+-	#donation-wrapper{
+-		padding-bottom: 12px;
+-		margin-bottom: 12px;
+-		border-bottom: 2px solid #FFF;		
+-	}
+-
+-	.donation-item{
+-		display: inline-block;
+-		vertical-align: top;
+-		width: 48.5%;
+-		background-color: #40ab4d;
+-	}
+-
+-	.donation-item:last-child{
+-		float: right;
++	.page-item-327 { /* donation page */
++		background-color: #40ab4d !important;
+ 	}
+ 
+ 	#news-ticker-wrapper{
+diff --git a/wp-content/themes/liemba/css/tablets_and_desktops.css b/wp-content/themes/liemba/css/tablets_and_desktops.css
+index 07a8878..833524f 100755
+--- a/wp-content/themes/liemba/css/tablets_and_desktops.css
++++ b/wp-content/themes/liemba/css/tablets_and_desktops.css
+@@ -28,15 +28,11 @@
+ 		margin-left: 18px;
+ 	}
+ 
+-	#donation-wrapper{
+-		width: 282px;
+-	}
+-
+ 	.page_item:first-child{
+ 		margin-top: 0px;
+ 	}
+ 
+-	.page_item, .donation-item{
++	.page_item{
+ 		height: 41px;
+ 		width: 124px;
+ 		margin: 2px 0;
+@@ -105,32 +101,12 @@
+ 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
+ 	}
+ 
+-	#donation-status-wrapper{
+-		float: left;
+-		width: 370px;
+-		margin: 30px 0;
++	.page-item-327{
++		background: url(../../liemba/img/backgrounds/button_lightGreen.png) !important;
+ 	}
+ 
+-	.donation-item{
+-		width: 137px;
+-		text-align: right;
+-		float: left;
+-		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
+-	}
+-
+-	.donation-item:hover{
+-		background: url(../../liemba/img/backgrounds/button_darkGreen.png);
+-	}
+-
+-	.donation-item:last-child{
+-
+-		background-image: none;
+-		margin-left: 4px;
+-
+-	}
+-	.donation-item a{
+-		display: block;
+-		padding-right: 20px;
++	.page-item-327:hover{
++		background: url(../../liemba/img/backgrounds/button_darkGreen.png) !important;
+ 	}
+ 
+ 	#news-ticker-wrapper{
