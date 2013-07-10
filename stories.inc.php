@@ -189,7 +189,7 @@
 		<img id="schrift_10" src="img/10/Schrift.png">
 
 	</div>
-!-- #11 -->
+<!-- #11 -->
 <div id= "story-11" class="story">
 		<img id="ship_11" src="img/shared_fotos/ship.png">
 		<img id="bubble_11" src="img/11/bubble.png">
@@ -246,7 +246,7 @@
 	<div id="story-13" class="story">
 		<img id="man" src="img/13/man.png">
 		<img id="crane_left" src="img/13/crane_left.png">
-		<img id="16mars" src="img/13/16mars.png">
+		<img id="the16mars" src="img/13/16mars.png">
 		<img id="arrows_up" src="img/13/arrows_up.png">
 		<img id="flags" src="img/13/flags.png">
 		<img id="wire" src="img/shared_fotos/wire.png">
@@ -274,12 +274,12 @@
 
 <!-- #15 -->
 	<div id="story-15" class="story">
-		<img id="15" src="img/15/15.png">
+		<img id="no_15" src="img/15/15.png">
 		<img id="ship_board" src="img/15/ship_board.png">
 		<img id="passingers" src="img/15/passingers.png">
 		<img id="police" src="img/15/police.png">
 		<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">
-		<img id="ship" src="img/15/ship.png">
+		<img id="ship_15" src="img/15/ship.png">
 
 	</div>
 
