@@ -212,26 +212,71 @@ $middle = offsetTo($currentStory);
 }
 #welle_8{ -skrollr-animation-name : welle_8; }
 @-skrollr-keyframes welle_8 {
-    <?=($middle-1200); ?> { right: -50%;}
-    <?=($middle+100);   ?> { right: 0%;}
+    <?=($middle-300); ?> { right: 0%;}
+    <?=($middle);   ?> { right: +50%;}
 }
 
 <?php
 ## Story 9
 
 $currentStory = 9; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
+
+#schiff-wrapper_9{ -skrollr-animation-name : schiff-wrapper_9; }
+@-skrollr-keyframes schiff-wrapper_9 {
+    <?=($middle-200); ?> { transform: translateX( 0%);}
+    <?=($middle+400);   ?> { transform: translateX( +50%);}
+}
+#schiff_9{ -skrollr-animation-name : schiff_9; }
+@-skrollr-keyframes schiff_9 {
+    <?=($middle-200); ?> { transform: translateX( -20%) translateY (0%) rotate(-65deg);}
+    <?=($middle+400);   ?> { transform: translateX( +50%) translateY (+30%) rotate(0deg);}
+}
+
+#text_9{ -skrollr-animation-name : text_9; }
+@-skrollr-keyframes text_9 {
+    <?=($middle-200); ?> { transform: translateX( 0%) translateY (0%);}
+    <?=($middle);   ?> { transform: translateX( -70%) translateY (+50%);}
+}
+
 
 <?php
 ## Story 10
 
 $currentStory = 10; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
 
+#schiff-wrapper_10{ -skrollr-animation-name : schiff-wrapper_10; }
+@-skrollr-keyframes schiff-wrapper_10 {
+    <?=($middle-400); ?> { transform: translateX( -50%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+    <?=($middle+400);   ?> { transform: translateX( +50%);}
+}
+
+#flieger_10{ -skrollr-animation-name : flieger_10; }
+@-skrollr-keyframes flieger_10 {
+    <?=($middle-400); ?> { right: 0%;}
+    <?=($middle);   ?> { right: 50%;}
+    <?=($middle+400);   ?> { right:100%;}
+}
+
+#explosion_10{ -skrollr-animation-name : explosion_10; }
+@-skrollr-keyframes explosion_10 {
+    <?=($middle-400); ?> {  opacity: 0;}
+    <?=($middle-5); ?> {  opacity: 0;}
+    <?=($middle);   ?> {  opacity: 1;}
+    <?=($middle+400);   ?> {  opacity: 1;}
+}
+
+#kanonen_10{ -skrollr-animation-name : kanonen_10; }
+@-skrollr-keyframes kanonen_10 {
+    <?=($middle-400); ?> { right: 0%; opacity: 1;}
+    <?=($middle-1);   ?> { right:50%; opacity: 1;}
+    <?=($middle);   ?> { right:50%; opacity: 0;}
+    <?=($middle+400);   ?> { right:100%; opacity: 0;}
+}
 
 
 

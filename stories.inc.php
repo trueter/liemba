@@ -153,8 +153,9 @@
 			<img id="bismarckburg_8" src="img/8/bismarckburg.png">
 			<img id="burg_8" src="img/8/burg.png">
 			<img id="karte_8" src="img/8/karte.png">
-			<img id="welle_8" src="img/8/wellen.png">	
+			
 		</div>
+		<img id="welle_8" src="img/8/wellen.png">	
 		<div id="schiff-wrapper_8">
 			<img id="schiff_8" src="img/8/schiff.png">
 			<img id="sprechblase_8" src="img/8/sprechblase.png">
@@ -188,6 +189,7 @@
 		<div id="content-wrapper_10">
 			<img id="flieger_10" src="img/10/Flieger.png">
 			<img id="kanonen_10" src="img/10/Kanonen.png">
+			<img id="schrift_10" src="img/10/Schrift.png">
 				<div id="schiff-wrapper_10">
 					<img id="schiff_10" src="img/10/Schiff.png">
 					<img id="explosion_10" src="img/10/Explosion.png">
@@ -195,7 +197,7 @@
 			
 
 		</div>
-		<img id="schrift_10" src="img/10/Schrift.png">
+		
 
 	</div>
 <!-- #11 -->
