@@ -134,6 +134,7 @@
 		
 		<img id="title_7" src="img/7/text.png">
 		<div id="content_7">
+			<img id="kugel_7" src="img/7/kugel.png">
 			<img id="kanone_7" src="img/7/kanone.png">
 			<img id="soldaten_7" src="img/7/soldaten.png">
 			<img id="sprechblase_7" src="img/7/sprechblase.png">

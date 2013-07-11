@@ -163,45 +163,57 @@ $middle = offsetTo($currentStory);
 ## Story 6
 
 $currentStory = 6; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
-
 
 #ship-wrapper_6{ -skrollr-animation-name : ship-wrapper_6; }
 @-skrollr-keyframes ship-wrapper_6 {
-    <?=($start+100); ?> { right: 0%;}
-    <?=($end-100);   ?> { right: 30%;}
+    <?=($middle-400); ?> { transform: translateX( +50%);}
+    <?=($middle+400);   ?> { transform: translateX( -200%);}
 }
+
 <?php
 ## Story 7
 
 $currentStory = 7; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
+
+#kanone_7{ -skrollr-animation-name : kanone_7; }
+@-skrollr-keyframes kanone_7 {
+    <?=($middle-400); ?> { transform: translateX( -40%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+}
+#kugel_7{ -skrollr-animation-name : kugel_7; }
+@-skrollr-keyframes kugel_7 {
+    <?=($middle -1); ?> { transform: translateX( -500%); display: none;}
+    <?=($middle); ?> { transform: translateX( -500%); display: block;}
+    <?=($middle+400);   ?> { transform: translateX( +4000%); display: block;}
+    <?=($middle+401);   ?> { transform: translateX( +4000%); display: none;}
+}
+
+
 <?php
 ## Story 8
 
 $currentStory = 8; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
 
 #schiff-wrapper_8{ -skrollr-animation-name : schiff-wrapper_8; }
 @-skrollr-keyframes schiff-wrapper_8 {
-    <?=($start+100); ?> { left: 0%;}
-    <?=($end-100);   ?> { left: 40%;}
+    <?=($middle-500); ?> { transform: translateX( 0%);}
+    <?=($middle+400);   ?> { transform: translateX( +200%);}
 }
 #bismarckburg_8{ -skrollr-animation-name : bismarckburg_8; }
 @-skrollr-keyframes bismarckburg_8 {
-    <?=($start+100); ?> { left: 185px; top: 36px}
-    <?=($end-100);   ?> { left: 250px; top: -20px}
+    <?=($middle-100); ?> { left: 185px; top: 36px}
+    <?=($middle+100);   ?> { left: 250px; top: -20px}
 }
 #welle_8{ -skrollr-animation-name : welle_8; }
 @-skrollr-keyframes welle_8 {
-    <?=($start+100); ?> { right: -50%;}
-    <?=($end-100);   ?> { right: 0%;}
+    <?=($middle-1200); ?> { right: -50%;}
+    <?=($middle+100);   ?> { right: 0%;}
 }
 
 <?php
