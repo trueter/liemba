@@ -284,10 +284,18 @@
 ?>
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
-    <?= $start-300;?> { transform: translateX(200px) translateY(-150px) rotate(-20deg); }
-    <?= $start+150;?> { transform: translateX(230px) translateY( 270px) rotate(-10deg); }
+    <?= $start-400;?> { transform: translateX(200px) translateY(-150px) rotate(-20deg); }
+    <?= $start+ 50;?> { transform: translateX(230px) translateY( 270px) rotate(-10deg); }
+    <?= $start+100;?> { transform: translateX(230px) translateY( 270px) rotate(-10deg); }
     <?= $end-200;?>   { transform: translateX(230px) translateY( 580px) rotate(  0deg); }
 }
+  #boat-7_1 {-skrollr-animation-name: boat-7_1; }
+  @-skrollr-keyframes  boat-7_1 {
+    <?= $start-450;?> { transform: translateX( 520px) translateY( 450px) rotate(100deg); }
+    <?= $start+ 20;?> { transform: translateX( 265px) translateY( 260px) rotate(160deg); }
+    <?= $start+120;?> { transform: translateX( 265px) translateY( 260px) rotate(320deg); }
+    <?= $end-200;?>   { transform: translateX( 520px) translateY( 490px) rotate(290deg); }     
+  }
 
 <?php 
   $map_number = 8;
@@ -323,6 +331,22 @@
     <?= $start-100;?> { transform: translateX( 80px) translateY(-50px) rotate(  -35deg); }
     <?= $end-250;?>   { transform: translateX(350px) translateY(650px) rotate(-35deg); }
 }
+  #boat-9_1 {-skrollr-animation-name: boat-9_1; }
+  @-skrollr-keyframes  boat-9_1 {
+    <?= $start-150;?> { transform: translateX( 500px) translateY( 450px) rotate( 90deg); }
+    <?= $start+240;?> { transform: translateX( 320px) translateY( 450px) rotate( 90deg); }
+    <?= $start+320;?> { transform: translateX( 320px) translateY( 450px) rotate(-35deg); }
+    <?= $start+370;?> { transform: translateX( 320px) translateY( 450px) rotate(-90deg); }
+    <?= $end-200;?>   { transform: translateX( 500px) translateY( 450px) rotate(-90deg); }     
+  }
+  #boat-9_2 {-skrollr-animation-name: boat-9_2; }
+  @-skrollr-keyframes  boat-9_2 {
+    <?= $start- 50;?> { transform: translateX( 600px) translateY( 650px) rotate( 90deg); }
+    <?= $start+420;?> { transform: translateX( 410px) translateY( 650px) rotate( 90deg); }
+    <?= $start+500;?> { transform: translateX( 410px) translateY( 650px) rotate(125deg); }
+    <?= $start+550;?> { transform: translateX( 410px) translateY( 650px) rotate(270deg); }
+    <?= $end- 50;?>   { transform: translateX( 600px) translateY( 650px) rotate(270deg); }     
+  }  
 <?php 
   $map_number = 10;
   $end = height_up_to($map_number);
@@ -389,9 +413,17 @@
 @-skrollr-keyframes  ship<?= $map_number;?> {
 
     <?= $start-350;?> { transform: translateX( 60px) translateY( 350px) rotate(-85deg); }
-    <?= $start    ;?>   { transform: translateX(600px) translateY( 450px) rotate(-65deg); }
+    <?= $start    ;?> { transform: translateX(600px) translateY( 450px) rotate(-65deg); }
+    <?= $start+100;?> { transform: translateX(600px) translateY( 450px) rotate(-65deg); }
     <?= $end-200;?>   { transform: translateX(850px) translateY( 600px) rotate(-25deg); }
 }
+  #boat-13_1 {-skrollr-animation-name: boat-13_1; }
+  @-skrollr-keyframes  boat-13_1 {
+    <?= $start-250;?> { transform: translateX( 500px) translateY( 380px) rotate( -60deg); }
+    <?= $start-100;?> { transform: translateX( 600px) translateY( 460px) rotate( -60deg); }
+    <?= $start+ 80;?> { transform: translateX( 600px) translateY( 460px) rotate(-250deg); }
+    <?= $end-200;?>   { transform: translateX( 500px) translateY( 380px) rotate(-250deg); }     
+  }
 <?php 
   $map_number = 14;
   $end = height_up_to($map_number);
@@ -423,6 +455,22 @@
     <?= $start-350;?> { transform: translateX( 100px) translateY( -150px) rotate(-25deg); }
     <?= $end-250;?>   { transform: translateX(450px) translateY( 750px) rotate(-25deg); }
 }
+  #boat-15_1 {-skrollr-animation-name: boat-15_1; }
+  @-skrollr-keyframes  boat-15_1 {
+    <?= $start-250;?> { transform: translateX( 500px) translateY( 350px) rotate( 90deg); }
+    <?= $start+140;?> { transform: translateX( 340px) translateY( 350px) rotate( 90deg); }
+    <?= $start+220;?> { transform: translateX( 340px) translateY( 350px) rotate(-35deg); }
+    <?= $start+270;?> { transform: translateX( 340px) translateY( 350px) rotate(-90deg); }
+    <?= $end-300;?>   { transform: translateX( 500px) translateY( 350px) rotate(-90deg); }     
+  }
+  #boat-15_2 {-skrollr-animation-name: boat-15_2; }
+  @-skrollr-keyframes  boat-15_2 {
+    <?= $start- 50;?> { transform: translateX( 600px) translateY( 650px) rotate( 90deg); }
+    <?= $start+380;?> { transform: translateX( 460px) translateY( 650px) rotate( 90deg); }
+    <?= $start+500;?> { transform: translateX( 460px) translateY( 650px) rotate(125deg); }
+    <?= $start+550;?> { transform: translateX( 460px) translateY( 650px) rotate(270deg); }
+    <?= $end- 50;?>   { transform: translateX( 600px) translateY( 650px) rotate(270deg); }     
+  }  
 <?php 
   $map_number = 16;
   $end = height_up_to($map_number);
@@ -492,6 +540,13 @@
     <?= $start    ;?> { transform: translateX(170px) translateY( 150px) rotate(  -5deg); }
     <?= $end-250;?>   { transform: translateX(180px) translateY( 615px) rotate( -2deg); }
 }
+  #boat-19_1 {-skrollr-animation-name: boat-19_1; }
+  @-skrollr-keyframes  boat-19_1 {
+    <?= $start+ 50;?> { transform: translateX( 540px) translateY( 695px) rotate( 90deg); }
+    <?= $start+450;?> { transform: translateX( 250px) translateY( 695px) rotate( 90deg); }
+    <?= $start+650;?> { transform: translateX( 250px) translateY( 695px) rotate(270deg); }
+    <?= $end- 50;?>   { transform: translateX( 340px) translateY( 695px) rotate(270deg); }     
+  }  
 <?php 
   $map_number = 20;
   $end = height_up_to($map_number);
@@ -504,6 +559,21 @@
     <?= $start+100;?> { transform: translateX( 820px) translateY(520px) rotate(-25deg); }
     <?= $end-350;?>   { transform: translateX( 900px) translateY(680px) rotate(-25deg); }
 }
+  #cloud-20_1 {-skrollr-animation-name: cloud-20_1; }
+  @-skrollr-keyframes  cloud-20_1 {
+    <?= $start-200;?> { transform: translateX( 750px ) translateY(380px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 830px ) translateY(320px ) rotate(  0deg);  }    
+  }
+  #cloud-20_2 {-skrollr-animation-name: cloud-20_2; }
+  @-skrollr-keyframes  cloud-20_2 {
+    <?= $start-200;?> { transform: translateX( 300px ) translateY(570px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 450px ) translateY(500px ) rotate(  0deg);  }    
+  }
+  #cloud-20_3 {-skrollr-animation-name: cloud-20_3; }
+  @-skrollr-keyframes  cloud-20_3 {
+    <?= $start-200;?> { transform: translateX( 360px ) translateY(540px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 440px ) translateY(440px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 21;
   $end = height_up_to($map_number);
@@ -515,6 +585,27 @@
     <?= $start+ 50;?>   { transform: translateX(440px) translateY( 450px) rotate(-20deg); }
     <?= $end-250;?>   { transform: translateX(520px) translateY( 750px) rotate(-10deg); }
 }
+  #boat-21_1 {-skrollr-animation-name: boat-21_1; }
+  @-skrollr-keyframes  boat-21_1 {
+    <?= $start-450;?> { transform: translateX( 360px) translateY( 150px) rotate( 90deg); }
+    <?= $start-260;?> { transform: translateX( 260px) translateY( 150px) rotate( 90deg); }
+    <?= $start    ;?> { transform: translateX( 260px) translateY( 150px) rotate(-90deg); }
+    <?= $end-400  ;?> { transform: translateX( 360px) translateY( 150px) rotate(-90deg); }     
+  }
+  #boat-21_2 {-skrollr-animation-name: boat-21_2; }
+  @-skrollr-keyframes  boat-21_2 {
+    <?= $start-250;?> { transform: translateX( 500px) translateY( 400px) rotate( 90deg); }
+    <?= $start-50 ;?> { transform: translateX( 430px) translateY( 400px) rotate( 90deg); }
+    <?= $start+350;?> { transform: translateX( 430px) translateY( 400px) rotate(270deg); }
+    <?= $end- 150;?>  { transform: translateX( 500px) translateY( 400px) rotate(270deg); }     
+  }
+  #boat-21_3 {-skrollr-animation-name: boat-21_3; }
+  @-skrollr-keyframes  boat-21_3 {
+    <?= $start- 50;?> { transform: translateX( 600px) translateY( 710px) rotate( 90deg); }
+    <?= $start+380;?> { transform: translateX( 545px) translateY( 710px) rotate( 90deg); }
+    <?= $start+550;?> { transform: translateX( 545px) translateY( 710px) rotate(270deg); }
+    <?= $end- 50;?>   { transform: translateX( 600px) translateY( 710px) rotate(270deg); }     
+  } 
 <?php 
   $map_number = 22;
   $end = height_up_to($map_number);
@@ -525,6 +616,21 @@
     <?= $start-350;?> { transform: translateX( 380px) translateY(-70px) rotate(-25deg); }
     <?= $end-350;?>   { transform: translateX( 620px) translateY(400px) rotate(-25deg); }
 }
+  #cloud-22_1 {-skrollr-animation-name: cloud-22_1; }
+  @-skrollr-keyframes  cloud-22_1 {
+    <?= $start-200;?> { transform: translateX( 450px ) translateY(180px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 730px ) translateY( 20px ) rotate(  0deg);  }    
+  }
+  #cloud-22_2 {-skrollr-animation-name: cloud-22_2; }
+  @-skrollr-keyframes  cloud-22_2 {
+    <?= $start-200;?> { transform: translateX( 600px ) translateY(570px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 650px ) translateY(500px ) rotate(  0deg);  }    
+  }
+  #cloud-22_3 {-skrollr-animation-name: cloud-22_3; }
+  @-skrollr-keyframes  cloud-22_3 {
+    <?= $start-200;?> { transform: translateX( 560px ) translateY(540px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 640px ) translateY(440px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 23;
   $end = height_up_to($map_number);
@@ -547,6 +653,21 @@
     <?= $start-350;?> { transform: translateX( 580px) translateY(270px) rotate(-30deg); }
     <?= $end-350;?>   { transform: translateX( 750px) translateY(520px) rotate(-25deg); }
 }
+  #cloud-24_1 {-skrollr-animation-name: cloud-24_1; }
+  @-skrollr-keyframes  cloud-24_1 {
+    <?= $start-200;?> { transform: translateX( 730px ) translateY( 20px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 840px ) translateY(-70px ) rotate(  0deg);  }    
+  }
+  #cloud-24_2 {-skrollr-animation-name: cloud-24_2; }
+  @-skrollr-keyframes  cloud-24_2 {
+    <?= $start-200;?> { transform: translateX( 650px ) translateY(500px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 690px ) translateY(430px ) rotate(  0deg);  }    
+  }
+  #cloud-24_3 {-skrollr-animation-name: cloud-24_3; }
+  @-skrollr-keyframes  cloud-24_3 {
+    <?= $start-200;?> { transform: translateX( 640px ) translateY(440px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 740px ) translateY(340px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 25;
   $end = height_up_to($map_number);
@@ -569,6 +690,16 @@
     <?= $start   ;?>  { transform: translateX( 740px) translateY(580px) rotate( 7deg); }
     <?= $end-350;?>   { transform: translateX( 725px) translateY(610px) rotate(35deg); }
 }
+  #cloud-26_1 {-skrollr-animation-name: cloud-26_1; }
+  @-skrollr-keyframes  cloud-26_1 {
+    <?= $start-200;?> { transform: translateX( 690px ) translateY(430px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 740px ) translateY(360px ) rotate(  0deg);  }    
+  }
+  #cloud-26_2 {-skrollr-animation-name: cloud-26_2; }
+  @-skrollr-keyframes  cloud-26_2 {
+    <?= $start-200;?> { transform: translateX( 740px ) translateY(340px ) rotate(  0deg);  }
+    <?= $end;?>       { transform: translateX( 840px ) translateY(240px ) rotate(  0deg);  }    
+  }
 <?php 
   $map_number = 27;
   $end = height_up_to($map_number);

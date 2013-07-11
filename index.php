@@ -49,8 +49,26 @@
                 <div id="navigation-anchor-up" class="navigation-anchor"></div>
 
                     <ul id="navigation-stops">
-                        <li>Stop 1</li><li>Stop 2</li><li>Stop 3</li><li>Stop 4</li><li>Stop 5</li><li>Stop 6</li><li>Stop 7</li><li>Stop 8</li>
-                        <li>Stop 9</li><li>Stop 10</li><li>Stop 11</li><li>Stop 12</li><li>Stop 13</li><li>Stop 14</li><li>Stop 15</li><li>Stop 16</li>
+                        <li><a href= "#Bujumbura" data-menu-top="0"> Bujumbura </a></li>
+                        <li><a href= "#Rumonge" data-menu-top="1590"> Rumonge </a></li>
+                        <li><a href= "#Kigoma" data-menu-top="3608"> Kigoma </a></li>
+                        <li><a href= "#Kirando" data-menu-top="5108"> Kirando </a></li>
+                        <li><a href= "#Sigunda" data-menu-top="6576"> Sigunda </a></li>
+                        <li><a href= "#Halembe" data-menu-top="6576"> Halembe </a></li>
+                        <li><a href= "#Mugambo" data-menu-top="8076"> Mugambo </a></li>
+                        <li><a href= "#Kibwesa" data-menu-top="9612"> Kibwesa </a></li>
+                        <li><a href= "#Kalya" data-menu-top="9612"> Kalya </a></li>
+                        <li><a href= "#Ikola" data-menu-top="11148"> Ikola </a></li>
+                        <li><a href= "#Karema" data-menu-top="11148"> Karema </a></li>
+                        <li><a href= "#Kabwe" data-menu-top="12830"> Kabwe </a></li>
+                        <li><a href= "#Kirando2" data-menu-top="14398"> Kirando </a></li>
+                        <li><a href= "#Kipili" data-menu-top="14398"> Kipili </a></li>
+                        <li><a href= "#Ninde" data-menu-top="15934"> Ninde </a></li>
+                        <li><a href= "#Msamba" data-menu-top="15934"> Msamba </a></li>
+                        <li><a href= "#Wanpembe" data-menu-top="15934"> Wanpembe </a></li>
+                        <li><a href= "#Kala" data-menu-top="17616"> Kala </a></li>
+                        <li><a href= "#Kasanga" data-menu-top="19298"> Kasanga </a></li>
+                        <li><a href= "#Mpulungu" data-menu-top="20834"> Mpulungu </a></li>
                     </ul>
 
                 <div id="navigation-anchor-down" class="navigation-anchor"></div>
@@ -80,10 +98,6 @@
             <div id="minimap">
                 <div id="current-location"></div>
             </div>
-
-            <div id="massstab">
-                <div id="current-size"></div>
-            </div>
             
             <div id="map-1" class="map">
                 <div id="ship-1" class="ships">
@@ -112,6 +126,18 @@
                 <div id="ape-2_2" class="doodads">
                     <img src="img/ape1_right.png" class="apes other-direction">
                 </div>
+                <div id="lion-2_1" class="doodads">
+                    <img src="img/lion_right.png" class="lions">
+                </div>
+                <div id="antilope-2_1" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope">
+                </div>
+                <div id="antilope-2_2" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope">
+                </div>
+                <div id="antilope-2_3" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope other-direction">
+                </div>                                                               
                     <img id="cloud-2_1" class="clouds doodads" src="img/Wolke_1.png">
                     <img id="cloud-2_2" class="clouds doodads" src="img/Wolke_2.png">
                     <img id="cloud-2_3" class="clouds doodads" src="img/Wolke_3.png">
@@ -177,6 +203,13 @@
                 <div id="ship-7" class="ships">
                     <img src="img/ship.png" class="ship-big">
                 </div>
+                <div id="elefant-7_1" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>  
+                <div id="elefant-7_2" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>                                  
+                <img id="boat-7_1" class="boats doodads" src="img/boat.png">
             </div>
             
             <div id="split-7" class="split"></div>
@@ -206,7 +239,9 @@
             <div id="map-9" class="map">
                 <div id="ship-9" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                
+                </div>
+                <img id="boat-9_1" class="boats doodads" src="img/boat.png">
+                <img id="boat-9_2" class="boats doodads" src="img/boat.png">               
             </div>            
             
             <div id="split-9" class="split"></div>
@@ -241,7 +276,25 @@
             <div id="map-11" class="map">
                 <div id="ship-11" class="ships">
                     <img src="img/ship.png" class="ship-big">
+                </div>
+                <div id="lion-11_1" class="doodads">
+                    <img src="img/lion_right.png" class="lions other-direction">
+                </div>
+                <div id="lion-11_2" class="doodads">
+                    <img src="img/lion_right.png" class="lions other-direction">
                 </div>                
+                <div id="antilope-11_1" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope other-direction">
+                </div>
+                <div id="antilope-11_2" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope other-direction">
+                </div>
+                <div id="antilope-11_3" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope other-direction">
+                </div>
+                <div id="antilope-11_4" class="doodads">
+                    <img src="img/antilope_right.png" class="antilope other-direction">
+                </div>                                   
             </div>
             
             <div id="split-11" class="split"></div>
@@ -272,7 +325,8 @@
                 </div>  
                 <div id="ape-13_2" class="doodads">
                     <img src="img/ape2_right.png" class="apes other-direction">
-                </div>                                 
+                </div>
+                <img id="boat-13_1" class="boats doodads" src="img/boat.png">                                
             </div>
             
             <div id="split-13" class="split"></div>
@@ -299,7 +353,9 @@
                 </div>                    
                 <div id="ape-15_3" class="doodads">
                     <img src="img/ape1_right.png" class="apes other-direction">
-                </div>                               
+                </div>
+                <img id="boat-15_1" class="boats doodads" src="img/boat.png"> 
+                <img id="boat-15_2" class="boats doodads" src="img/boat.png">                           
             </div>
             
             <div id="split-15" class="split"></div>
@@ -318,7 +374,7 @@
                     <img src="img/ape1_right.png" class="apes other-direction">                    
                 </div>
                 <img id="cloud-16_1" class="clouds doodads" src="img/Wolke_4.png">
-                <img id="cloud-16_2" class="clouds doodads" src="img/Wolke_3.png">                                                    
+                <img id="cloud-16_2" class="clouds doodads" src="img/Wolke_3.png">
             </div>  
             
             <div id="split-16" class="split"></div>
@@ -354,7 +410,8 @@
             <div id="map-19" class="map">
                 <div id="ship-19" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>    
+                </div>
+                <img id="boat-19_1" class="boats doodads" src="img/boat.png">  
             </div>  
             
             <div id="split-19" class="split"></div>
@@ -371,7 +428,10 @@
                 </div>                    
                 <div id="ape-20_3" class="doodads">
                     <img src="img/ape1_right.png" class="apes other-direction">
-                </div>                 
+                </div>
+                <img id="cloud-20_1" class="clouds doodads" src="img/Wolke_3.png">
+                <img id="cloud-20_2" class="clouds doodads" src="img/Wolke_1.png">                                             
+                <img id="cloud-20_3" class="clouds doodads" src="img/Wolke_4.png">                                  
             </div>  
             
             <div id="split-20" class="split"></div>
@@ -379,7 +439,10 @@
             <div id="map-21" class="map">
                 <div id="ship-21" class="ships">
                     <img src="img/ship.png" class="ship-big">
-                </div>                
+                </div>
+                <img id="boat-21_1" class="boats doodads" src="img/boat.png">
+                <img id="boat-21_2" class="boats doodads" src="img/boat.png">
+                <img id="boat-21_3" class="boats doodads" src="img/boat.png">               
             </div>                          
             
             <div id="split-21" class="split"></div>
@@ -387,7 +450,10 @@
             <div id="map-22" class="map">
                 <div id="ship-22" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                    
+                </div>
+                <img id="cloud-22_1" class="clouds doodads" src="img/Wolke_1.png">
+                <img id="cloud-22_2" class="clouds doodads" src="img/Wolke_4.png">
+                <img id="cloud-22_3" class="clouds doodads" src="img/Wolke_2.png">                                   
             </div>   
             
             <div id="split-22" class="split"></div>
@@ -401,7 +467,22 @@
                 </div>
                 <div id="ape-23_2" class="doodads">
                     <img src="img/ape1_right.png" class="apes other-direction">
-                </div>                                 
+                </div>
+                <div id="elefant-23_1" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>  
+                <div id="elefant-23_2" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>
+                <div id="elefant-23_3" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>    
+                <div id="elefant-23_4" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>
+                <div id="elefant-23_5" class="doodads">
+                    <img src="img/elefant_right.png" class="elefants other-direction">
+                </div>                                                      
             </div>   
             
             <div id="split-23" class="split"></div>
@@ -409,7 +490,10 @@
             <div id="map-24" class="map">
                 <div id="ship-24" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                    
+                </div>
+                <img id="cloud-24_1" class="clouds doodads" src="img/Wolke_1.png">
+                <img id="cloud-24_2" class="clouds doodads" src="img/Wolke_4.png">
+                <img id="cloud-24_3" class="clouds doodads" src="img/Wolke_2.png">                                    
             </div>     
             
             <div id="split-24" class="split"></div>
@@ -425,7 +509,9 @@
             <div id="map-26" class="map">
                 <div id="ship-26" class="ships">
                     <img src="img/ship.png" class="ship-small">
-                </div>                    
+                </div>
+                <img id="cloud-26_1" class="clouds doodads" src="img/Wolke_4.png">
+                <img id="cloud-26_2" class="clouds doodads" src="img/Wolke_2.png">                                     
             </div>   
             
             <div id="split-26" class="split"></div>

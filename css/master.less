@@ -136,22 +136,6 @@ body{
 		transform: translateX(80px) translateY(25px) scale(1,1);
 	}
 }
-#massstab{
-	display: none;
-	position: fixed;
-	height: 20px;
-	width:100px;
-	top:400px;
-	z-index: 2000;
-	background:url(../img/minimap.png);
-
-	@media all and (max-width : 1280px) { right: 0px; } 
-	@media all and (min-width : 1281px) and (max-width : 1440px) { right: 4%; } 
-	@media all and (min-width : 1441px) and (max-width : 1680px) { right: 11%; } 
-	@media all and (min-width : 1681px) and (max-width : 1919px) { right: 16%; } 
-	@media all and (min-width : 1920px) { right: 20%; } 
-	transform: translateX(78px) translateY(25px) scale(1,1);
-}
 
 /*
 	Navigation
@@ -185,9 +169,9 @@ body{
 	#navigation-stops{
 		height: 125px;
 		padding: 0;
-		font-size: 11px;
+		font-size: 10px;
 		text-transform: uppercase;
-		text-align: center;
+		text-align: left;
 	}
 
 	#category-selection{
@@ -359,72 +343,107 @@ body{
 .doodads{
 	position: absolute;
 }
+.boats{
+	width:15px;
+	z-index: 1500;
+}
 .clouds{
 	width:200px;
 	z-index: 1600;	
 }
+.elefants{
+	height:100%;
+	width:100%;
+	z-index: 1500;	
+}
+#elefant-7_1{ top: 600px; left:650px; transform: scale(1); }
+#elefant-7_2{ top: 650px; left:650px; transform: scale(1); }
+#elefant-23_1{ top: 860px; left:900px; transform: scale(0.9); }
+#elefant-23_2{ top: 870px; left:950px; transform: scale(1.1); }
+#elefant-23_3{ top: 840px; left:910px; transform: scale(0.7); }
+#elefant-23_4{ top: 835px; left:940px; transform: scale(1); }
+#elefant-23_5{ top: 880px; left:930px; transform: scale(1); }
+.lions{
+	height:100%;
+	width:100%;
+	z-index: 1500;
+}
+#lion-2_1 { top: 400px; left:750px; transform: scale(1); }
+#lion-11_1{ top: 600px; left:800px; transform: scale(1); }
+#lion-11_2{ top: 630px; left:820px; transform: scale(0.9); }
 
-
+.antilope{
+	height: 80%;
+	width: 80%;
+	z-index: 1500;
+}
+#antilope-2_1{ top: 400px; left:850px; transform: scale(0.75); }
+#antilope-2_2{ top: 420px; left:870px; transform: scale(0.75); }
+#antilope-2_3{ top: 410px; left:890px; transform: scale(   1); }
+#antilope-11_1{ top: 620px; left:610px; transform: scale(0.75); }
+#antilope-11_2{ top: 610px; left:630px; transform: scale(   1); }
+#antilope-11_3{ top: 630px; left:660px; transform: scale(0.75); }
+#antilope-11_4{ top: 620px; left:690px; transform: scale(   1); }
 .apes{
 	height:100%;
 	width:100%;
 	z-index: 1500;
 }
 /* map-1 */
-#ape-1_1{top: 200px;left:350px;}
-#ape-1_2{top: 250px;left:350px;}
-#ape-1_3{top: 230px;left:400px;}
+#ape-1_1{ top: 200px; left:350px; transform: scale(0.75); }
+#ape-1_2{ top: 250px; left:350px; }
+#ape-1_3{ top: 230px; left:400px; }
 /* map-2 */
-#ape-2_1{top:450px;left:430px;}
-#ape-2_2{top:450px;left:470px;}
+#ape-2_1{ top:450px; left:430px; }
+#ape-2_2{ top:450px; left:470px; transform: scale(0.75); }
 /* map-4 */
-#ape-4_1{top:210px;left:340px;}
-#ape-4_2{top:240px;left:330px;}
+#ape-4_1{ top:210px; left:340px; }
+#ape-4_2{ top:240px; left:330px; }
 /* map-6 */
-#ape-6_1{top:500px;left:780px;}
-#ape-6_2{top:485px;left:840px;}
-#ape-6_3{top:480px;left:810px;}
-#ape-6_4{top:505px;left:830px;}
+#ape-6_1{ top:500px; left:780px; }
+#ape-6_2{ top:485px; left:840px; transform: scale(0.75); }
+#ape-6_3{ top:480px; left:810px; }
+#ape-6_4{ top:505px; left:830px; }
 /* map-8 */
-#ape-8_1{top:300px;left:780px;}
-#ape-8_2{top:285px;left:840px;}
-#ape-8_3{top:280px;left:810px;}
-#ape-8_4{top:305px;left:830px;}
+#ape-8_1{ top:300px; left:780px; }
+#ape-8_2{ top:285px; left:840px; transform: scale(0.75); }
+#ape-8_3{ top:280px; left:810px; }
+#ape-8_4{ top:305px; left:830px; }
 /* map-10 */
-#ape-10_1{top: 25px;left:780px;}
-#ape-10_2{top: 10px;left:840px;}
-#ape-10_3{top:  5px;left:810px;}
-#ape-10_4{top: 30px;left:830px;}
-#ape-10_5{top:550px;left:750px;}
-#ape-10_6{top:570px;left:770px;}
+#ape-10_1{ top: 25px; left:780px; }
+#ape-10_2{ top: 10px; left:840px; transform: scale(0.75); }
+#ape-10_3{ top:  5px; left:810px; }
+#ape-10_4{ top: 30px; left:830px; }
+#ape-10_5{ top:550px; left:750px; }
+#ape-10_6{ top:570px; left:770px; }
 /* map-12 */
-#ape-12_1{top:150px;left:350px;}
-#ape-12_2{top:170px;left:370px;}
+#ape-12_1{ top:150px; left:350px; }
+#ape-12_2{ top:170px; left:370px; transform: scale(0.75); }
 /* map-13 */
-#ape-13_1{top:150px;left:350px;}
-#ape-13_2{top:150px;left:375px;}
+#ape-13_1{ top:150px; left:350px; transform: scale(0.75); }
+#ape-13_2{ top:150px; left:375px; }
 /* map-15 */
-#ape-15_1{top:350px;left:650px;}
-#ape-15_2{top:380px;left:655px;}
-#ape-15_3{top:350px;left:690px;}
+#ape-15_1{ top:350px; left:650px; }
+#ape-15_2{ top:380px; left:655px; }
+#ape-15_3{ top:350px; left:690px; }
 /* map-16 */
-#ape-16_1{top:585px;left:340px;}
-#ape-16_2{top:600px;left:355px;}
-#ape-16_3{top:580px;left:370px;}
+#ape-16_1{ top:585px; left:340px; transform: scale(0.75); }
+#ape-16_2{ top:600px; left:355px; }
+#ape-16_3{ top:580px; left:370px; }
 /* map-18 */
-#ape-18_1{top:505px;left:340px;}
-#ape-18_2{top:520px;left:355px;}
-#ape-18_3{top:500px;left:370px;}
+#ape-18_1{ top:505px; left:340px; transform: scale(0.75); }
+#ape-18_2{ top:520px; left:355px; }
+#ape-18_3{ top:500px; left:370px; }
 /* map-20 */
-#ape-20_1{top:505px;left:340px;}
-#ape-20_2{top:520px;left:355px;}
-#ape-20_3{top:500px;left:370px;}
+#ape-20_1{ top:505px; left:340px; transform: scale(0.75); }
+#ape-20_2{ top:520px; left:355px; }
+#ape-20_3{ top:500px; left:370px; }
 /* map-23 */
-#ape-23_1{top:505px;left:640px;}
-#ape-23_2{top:510px;left:675px;}
+#ape-23_1{ top:505px; left:640px; transform: scale(0.75); }
+#ape-23_2{ top:510px; left:675px; }
 /* map-27 */
-#ape-27_1{top:395px;left:760px;}
-#ape-27_2{top:400px;left:785px;}
+#ape-27_1{ top:395px; left:760px; }
+#ape-27_2{ top:400px; left:785px; transform: scale(0.75); }
 /*
 	Maps
 */
