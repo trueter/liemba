@@ -123,13 +123,41 @@ $middle = offsetTo($currentStory);
     <?=($middle+500);   ?> { transform: translateX( 0%);}
 }
 
+
 <?php
 ## Story 5
 
 $currentStory = 5; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
+$middle = offsetTo($currentStory);
 ?>
+
+#telegramm_5{ -skrollr-animation-name : telegramm_5; }
+@-skrollr-keyframes telegramm_5 {
+    <?=($middle); ?> { transform: translateX( +10%);}
+    <?=($middle+200);   ?> { transform: translateX( -10%);}
+}
+#text_5{ -skrollr-animation-name : text_5; }
+@-skrollr-keyframes text_5 {
+    <?=($middle); ?> { transform: translateY( 0%);}
+    <?=($middle+200);   ?> { transform: translateY( -20%);}
+}
+
+#text1_5{ -skrollr-animation-name : text1_5; }
+@-skrollr-keyframes text1_5 {
+    <?=($middle-200); ?> { transform: translateX( 0%);}
+    <?=($middle+200);   ?> { transform: translateX( +20%);}
+}
+
+#kiste_5{ -skrollr-animation-name : kiste_5; }
+@-skrollr-keyframes kiste_5 {
+    <?=($middle-100); ?> { transform: translateY( +50%);}
+    <?=($middle+300);   ?> { transform: translateY( -50%);}
+}
+#fragezeichen_5{ -skrollr-animation-name : fragezeichen_5; }
+@-skrollr-keyframes fragezeichen_5 {
+    <?=($middle-100); ?> { transform: translateY( +50%);}
+    <?=($middle+300);   ?> { transform: translateY( -50%);}
+}
 
 <?php
 ## Story 6

@@ -13,12 +13,12 @@
 				<img src="img/1/name1.png">
 			</div>
 
-			<div id="figur-2" class="figur">
-				<img src="img/1/name2.png">
-			</div>
-
 			<div id="figur-3" class="figur">
 				<img src="img/1/name3.png">
+			</div>
+
+			<div id="figur-2" class="figur">
+				<img src="img/1/name2.png">
 			</div>
 			
 			<div id="welle"></div>
