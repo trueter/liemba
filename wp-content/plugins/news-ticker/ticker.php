@@ -49,7 +49,7 @@ if(!is_admin()){
 }
 }
 function insert_newsticker(){
-  $tickerspeed=4;
+  $tickerspeed=2;
   $tickertimeout=1;
   $tickeranimation=get_option('ticker_anim');
   $tickerheight=get_option('ticker_ht');
