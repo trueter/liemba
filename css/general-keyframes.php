@@ -16,10 +16,10 @@ for($i=1; $i<21; $i++){
     }
      @-skrollr-keyframes circle<?=$i;?> {
 
-    <?= ($full-2);            ?> { background: white; overflow: hidden;}
-    <?= ($full);            ?> { background: red; overflow: visible;}
-    <?= ($full+998);            ?> { background: red; overflow: visible;}
-    <?= ($full+999);              ?> { background: white; overflow: hidden;}
+    <?= ($full-500);            ?> { background: rgb(255, 255, 255); overflow: hidden;}
+    <?= ($full-499);            ?> { background: rgb(0, 128, 158); overflow: visible;}
+    <?= ($full+499);            ?> { background: rgb(0, 128, 158); overflow: visible;}
+    <?= ($full+500);              ?> { background: rgb(255, 255, 255); overflow: hidden;}
     
     }
 
@@ -31,10 +31,12 @@ for($i=1; $i<21; $i++){
 
     @-skrollr-keyframes story-<?=$i;?> {
     <?= ($full-701);            ?> { opacity:    0; display: none; transform: translateX(   100%);}
-    <?= ($full-700);            ?> { opacity:    1; display: block; transform: translateX(   100%);}
+    <?= ($full-700);            ?> { opacity:    0; display: block; transform: translateX(   100%);}
+    <?= ($full-600);            ?> { opacity:    1; display: block; transform: translateX(   100%);}
     <?= ($full-300);            ?> { opacity:    1; display: block; transform: translateX(   0%);}
     <?= ($full+300);              ?> { opacity:    1; display: block; transform: translateX(   0%);}
-    <?= ($full+700);              ?> { opacity:    1; display: block; transform: translateX(   -100%);}
+    <?= ($full+600);              ?> { opacity:    1; display: block; transform: translateX(   -100%);}
+    <?= ($full-700);            ?> { opacity:    0; display: block; transform: translateX(   100%);}
     <?= ($full+701);              ?> { opacity:    0; display: none; transform: translateX(   -100%);}
     }
     
