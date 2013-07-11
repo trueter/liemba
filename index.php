@@ -28,6 +28,11 @@
 	<img src="img/startseite.png" id="startseite">
 	<img src="img/info.png" id="info">
 
+	<img src="img/Home_Icon.png" id="home_icon">
+	<img src="img/Infobox_Icon.png" id="infobox_icon">
+
+
+
 	<div id="timeline-wrapper" class="always-on-top">
 		<div id="line">
 			<a href="#1910" data-menu-top="1000"><div id="circle1" class="circle">
