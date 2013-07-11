@@ -7,5 +7,9 @@ Handlebars.registerHelper('safe', function(s) {
 });
 
 Handlebars.registerHelper('imageOf', function(p) {
- 	return new Handlebars.SafeString(p.profile_picture.links[0].href);
+ 	return new Handlebars.SafeString(p.profile_picture.links[3].href);
+});
+
+Handlebars.registerHelper('betterplaceLinkTo', function(p) {
+ 	return new Handlebars.SafeString(p.links[1].href);
 });

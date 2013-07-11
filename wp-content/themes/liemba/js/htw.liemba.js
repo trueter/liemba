@@ -48,28 +48,45 @@ htw.liemba = {
 						baseURL + "background_passengers2.jpg" ];
 	$.backstretch(htw.liemba.helpers.randomizeArray(imageSources), {duration: 7500, fade: 750});		
 
-	
-	var d = $("#donation-sum"),
-		totalRequested = 0,
-		totalDonated = 0,
-		totalOpen = 0;	
+		
+	// init donation sum
+		var d = $("#donation-sum");
+		var totalRequested = 0;
+		var totalDonated = 0;
+		var totalOpen = 0;
+		
+		$.get("https://api.betterplace.org/en/api_v4/organisations/"+htw.liemba.organisationID+"/projects.json", function(feedback){
+			// console.log("calling:");
+
+			var projects = feedback.data;
+
+
+			$(projects).each(function(){
+
+				// console.log("Parsing project " + this.title);
+				var projectID = this.id;
+
+				$.get("https://api.betterplace.org/en/api_v4/projects/"+projectID+"/needs.json" ,function(feedback){
+					var needs = feedback.data;
+
+					$(needs).each(function(){
+						var need = this;
+						// console.log("Parsed need "+need.title);
+						totalRequested += need.requested_amount_in_cents;
+						totalDonated += need.donated_amount_in_cents;
+						totalOpen += need.open_amount_in_cents;
+					});
+				});
+			});
+			
+		});
+		
+
 	$(document).ajaxStop(function() {
 	  htw.liemba.percentDonated = totalDonated/totalRequested*100;
 	});
 
 
-	setTimeout(function(){
-		/*console.log("Done parsing needs.")
-		console.log("Total Req: " + totalRequested/100 + " €");
-		console.log("Total Don: " + totalDonated/100 + " €");
-		console.log("Total   O: " + totalOpen/100 + " €");*/
-		
-		
-		// init spenden hover button
-		
-	}, 2000);
-	
-	
 
 	},
 	helpers : {

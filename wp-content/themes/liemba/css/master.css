@@ -107,7 +107,12 @@ body {
 }
 
 #news-ticker{ /* plugin */
-	margin-left: 5px;
+
+}
+
+#news-ticker{
+	height: 100px !important;
+	margin: 0;
 }
 
 .tickerDate{
@@ -118,13 +123,33 @@ body {
 .tickerLink{
 	font-size: 1.6em;
 	display: block;
+	position: absolute;
+	top: 0px
+	left: 5px;
+}
+
+.tickerLink a{
+	color: #000;
 }
 
 .tickerText{
-	font-size: 1.4em;
+	font-size: 1.3em;
 	margin: 2px 0;
 	display: block;
 }
+
+.tickerImg{
+	position: absolute;
+	left: 120px;
+	top: 0px
+}
+
+.tickerImg img{
+	max-height: 101px;
+	max-width: 135px;
+}
+
+
 
 #sidebar-and-content{
 	color: #000;
@@ -192,7 +217,7 @@ body {
 
 .project-entry{
 	width: 100%;
-	margin: 10px 0;
+	margin: 20px 0;
 	border-bottom: 1px solid #000;
 	max-height: 350px;
 	overflow: hidden;
@@ -203,23 +228,24 @@ body {
 }
 
 .project-content, .project-image{
-	vertical-align: top;
+	display: inline-block;
 }
 
 .project-image{
-	width: 100px;
-	height: 100px;
-	float: left;
-	margin: 10px;
+	height: 100px;	
 }
 
 .project-content{
 
 }
 
+.project-betterplace-link{
+
+}
+
 .project-content h3{
 	font-size: 2em;
-	margin: 10 0 20px 0;
+	margin: 10px 0 20px 0;
 }
 
 .project-donate-button{
@@ -232,6 +258,7 @@ body {
 	font-size: 1.3em;
 	font-weight: bold;
 	margin: 3px;
+	margin-bottom: 10px;
 }
 
 .project-donation-frame{

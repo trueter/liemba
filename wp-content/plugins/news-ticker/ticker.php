@@ -49,8 +49,8 @@ if(!is_admin()){
 }
 }
 function insert_newsticker(){
-  $tickerspeed=get_option('ticker_speed');
-  $tickertimeout=get_option('ticker_timeout');
+  $tickerspeed=4;
+  $tickertimeout=1;
   $tickeranimation=get_option('ticker_anim');
   $tickerheight=get_option('ticker_ht');
   ?>
@@ -58,6 +58,7 @@ function insert_newsticker(){
 <script type="text/javascript" language="javascript">
 jQuery(document).ready(function(){
   jQuery('#news-ticker').cycle({ 
+
 	 speed: <?php echo $tickerspeed; ?>000,
 	 timeout: <?php echo $tickertimeout; ?>000,
 	 <?php if ($tickerheight == '') { ?>
@@ -153,11 +154,10 @@ if ($rss_opt_val=='external') {
 ?>
    
 <li>
-<?php if($images_opt_val=='checked') { ?>
+
     <span class="tickerImg">
          <?php echo wp_get_attachment_image( $image, 'thumbnail' ); ?>
     </span>
-<?php } ?>
 <?php if($dates_opt_val=='checked') { ?><span class="tickerDate"><?php echo $date; ?></span><?php } ?><span class="tickerLink"><a href="<?php echo $link; ?>"><?php echo $title;?></a></span><?php if($content_opt_val=='checked') { ?><span class="tickerText"><?php echo $excerpt; ?>... <a href="<?php echo $link; ?>">More &rarr;</a></span><?php } ?></li>
 
 <?php
