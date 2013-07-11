@@ -76,13 +76,6 @@
 	}
 
 
-	.green-item{
-		background-color: #40ab4d !important;
-		outline: 1px solid #40ab4d;
-		outline-offset: 1px;
-		opacity: 0.97;
-	}
-
 	.children{
 		position: absolute;
 		top: -17px;
@@ -210,6 +203,7 @@
 @media all and (max-width: 750px) {
 	#content-wrapper{
 		overflow: visible;
+		margin-left: 21px;
 	}
 	.sidebar{
 		float: none;

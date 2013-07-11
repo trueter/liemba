@@ -84,6 +84,14 @@ body {
 	cursor: pointer;
 }
 
+
+.green-item{
+	background-color: #40ab4d !important;
+	outline: 1px solid #40ab4d;
+	outline-offset: 1px;
+	opacity: 0.97;
+}
+
 /* sidebar */
 
 
@@ -96,8 +104,8 @@ body {
 	font-weight: normal;
 	font-size: 2.6em;
 	margin: 0 0 5px 0;
-
 }
+
 #news-ticker{ /* plugin */
 	margin-left: 5px;
 }
@@ -117,9 +125,11 @@ body {
 	margin: 2px 0;
 	display: block;
 }
+
 #sidebar-and-content{
 	color: #000;
 }
+
 /* main content wrap */
 #content-wrapper{
 	color: #000;
@@ -158,36 +168,6 @@ body {
 	background-color: #00b0e3;
 	padding: 3px 10px;
 }
-/* search */
-.search {
-	height: 41px;
-	position: relative;
-}
-
-.search label{
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.search-input{
-	border: 1px solid #000;
-	height: 20px;
-	width: 235px;
-}
-.search-submit{
-	position: absolute;
-	display: none;/*no icon */
-	border: 0;
-	top: 9px;
-	right: 5px;
-	height: 30px;
-	width: 35px;
-	
-	cursor: pointer;
-	*background: url(../../liemba/img/icons/search.png) no-repeat;
-	text-indent: -999px
-}
 
 .copyright{
 	font-size: 1em;
@@ -216,6 +196,10 @@ body {
 	border-bottom: 1px solid #000;
 	max-height: 350px;
 	overflow: hidden;
+}
+
+.project-entry:last-child{
+	border: 0;
 }
 
 .project-content, .project-image{
