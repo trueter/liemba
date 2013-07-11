@@ -227,15 +227,15 @@
 			<img id="no_9_1" src="img/12/9.png">
 			<img id="no_1_2" src="img/12/1.png">
 			<img id="no_6" src="img/12/6.png">
-			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="ship_pickup" src="img/shared_fotos/ship.png">
+			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="waves" src="img/12/waves.png">
 			<img id="wire_12" src="img/shared_fotos/wire.png">
 
 
 		</div>
 
-		<div id="zweite_untergang-wrapper_12">
+	<!--	<div id="zweite_untergang-wrapper_12">
 			<img id="sign_2" src="img/12/sign.png">
 			<img id="no_1_3" src="img/12/1.png">
 			<img id="no_9_2" src="img/12/9.png">
@@ -248,7 +248,7 @@
 
 			
 		</div>	
-
+	-->
 
 </section>
 
@@ -288,9 +288,9 @@
 		<img id="no_15" src="img/15/15.png">
 		<img id="ship_board" src="img/15/ship_board.png">
 		<img id="passingers" src="img/15/passingers.png">
-		<img id="police" src="img/15/police.png">
 		<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">
-		<img id="ship_15" src="img/15/ship.png">
+		<img id="police" src="img/15/police.png">
+		<img id="ship_15" src="img/15/ship_15.png">
 
 	</div>
 
