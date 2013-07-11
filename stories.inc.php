@@ -8,16 +8,24 @@
 		
 		<div id="ship-wrapper">
 			<img src="img/1/schiffchen.png" id="schiffchen">
-			<img src="img/1/figur1.png" class="figur" id="figur-1">
-			<img src="img/1/figur2.png" class="figur" id="figur-2">
-			<img src="img/1/figur3.png" class="figur" id="figur-3">
+
+			<div id="figur-1" class="figur">
+				<img src="img/1/name1.png">
+			</div>
+
+			<div id="figur-2" class="figur">
+				<img src="img/1/name2.png">
+			</div>
+
+			<div id="figur-3" class="figur">
+				<img src="img/1/name3.png">
+			</div>
+			
 			<div id="welle"></div>
 		</div>
 
 		<img src="img/1/erstePlaene.png" id="erstePlaene">
-		<img src="img/1/name1.png" id="name1">
-		<img src="img/1/name1.png" id="name2">
-		<img src="img/1/name2.png" id="name3">
+		
 
 	</div>
 <!-- #2 -->
