@@ -350,15 +350,20 @@
 
 	<div id="story-19" class="story">
 		<div id="wrapper19">
+
+			<div id="karte-wrapper_19">
+				<img id="ikartee_19" src="img/19/kartee_19.png">
+				<img id="iuvirakigoma_19" src="img/19/uvirakigoma_19.png">
+			</div>
 				
 			<img id="i75tsd_19" src="img/19/75tsd_19.png">
 			<img id="i1997_19" src="img/19/1997_19.png">
 			<img id="iheadline_19" src="img/19/headline_19.png">
-			<img id="ikartee_19" src="img/19/kartee_19.png">
+			
 			<img id="iliemba_19" src="img/19/liemba_19.png">
 			<img id="istrahlen1_19" src="img/19/strahlen1_19.png">
 			<img id="istrahlen2_19" src="img/19/strahlen2_19.png">
-			<img id="iuvirakigoma_19" src="img/19/uvirakigoma_19.png">
+			
 			<img id="iwellen_19" src="img/19/wellen_19.png">
 			<img id="imenschen_19" src="img/19/menschen_19.png">
 			

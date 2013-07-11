@@ -278,7 +278,41 @@ $middle = offsetTo($currentStory);
     <?=($middle+400);   ?> { right:100%; opacity: 0; transform: translateY( -80%);}
 }
 
+<?php
+## Story 20
 
+$currentStory = 19; 
+$middle = offsetTo($currentStory);
+?>
+
+#iliemba_19{ -skrollr-animation-name : iliemba_19; }
+@-skrollr-keyframes iliemba_19 {
+    <?=($middle-400); ?> { transform: translateX( +100%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+}
+
+
+#imenschen_19{ -skrollr-animation-name : imenschen_19; }
+@-skrollr-keyframes imenschen_19 {
+    <?=($middle); ?> { opacity: 0;}
+    <?=($middle+100);   ?> { opacity: 1;}
+}
+#i75tsd_19{ -skrollr-animation-name : i75tsd_19; }
+@-skrollr-keyframes i75tsd_19 {
+    <?=($middle); ?> { opacity: 0;}
+    <?=($middle+100);   ?> { opacity: 1;}
+}
+#iheadline_19{ -skrollr-animation-name : iheadline_19; }
+@-skrollr-keyframes iheadline_19 {
+    <?=($middle); ?> { opacity: 0;}
+    <?=($middle+100);   ?> { opacity: 1;}
+}
+
+#karte-wrapper_19{ -skrollr-animation-name : karte-wrapper_19; }
+@-skrollr-keyframes karte-wrapper_19 {
+    <?=($middle-400); ?> { transform: translateX( -50%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+}
 
 <?php
 ## Story 20
