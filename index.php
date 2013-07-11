@@ -27,10 +27,6 @@
 	<img src="img/navigation.png" id="navigation">
 	<img src="img/startseite.png" id="startseite">
 	<img src="img/info.png" id="info">
-	
-
-	
-	
 
 	<div id="timeline-wrapper" class="always-on-top">
 		<div id="line">
