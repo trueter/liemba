@@ -272,15 +272,39 @@ $middle = offsetTo($currentStory);
 
 #kanonen_10{ -skrollr-animation-name : kanonen_10; }
 @-skrollr-keyframes kanonen_10 {
-    <?=($middle-400); ?> { right: 0%; opacity: 1;}
-    <?=($middle-1);   ?> { right:50%; opacity: 1;}
-    <?=($middle);   ?> { right:50%; opacity: 0;}
-    <?=($middle+400);   ?> { right:100%; opacity: 0;}
+    <?=($middle-400); ?> { right: 0%; opacity: 1; transform: translateY( 0%);}
+    <?=($middle-1);   ?> { right:50%; opacity: 1; transform: translateY( +80%);}
+    <?=($middle);   ?> { right:50%; opacity: 0; transform: translateY( +80%);}
+    <?=($middle+400);   ?> { right:100%; opacity: 0; transform: translateY( -80%);}
 }
 
 
 
+<?php
+## Story 20
+
+$currentStory = 20; 
+$middle = offsetTo($currentStory);
+?>
+
+#i100jahre_20{ -skrollr-animation-name : i100jahre_20; }
+@-skrollr-keyframes i100jahre_20 {
+    <?=($middle-400); ?> { transform: translateY( -50%);}
+    <?=($middle);   ?> { transform: translateY( 0%);}
+   
 }
 
+#iliembaa_20{ -skrollr-animation-name : iliembaa_20; }
+@-skrollr-keyframes iliembaa_20 {
+    <?=($middle-400); ?> { transform: translateX( +50%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+    
+}
 
+#iboot_20{ -skrollr-animation-name : iboot_20; }
+@-skrollr-keyframes iboot_20 {
+    <?=($middle-400); ?> { transform: translateX( +50%);}
+    <?=($middle);   ?> { transform: translateX( 0%);}
+    
+}
 

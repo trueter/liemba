@@ -334,24 +334,23 @@
 
 <div id="story-18" class="story">
 	<div id="wrapper18">
-			<img id="ischif_18" src="img/18/schif_18.png">
-			<img id="icarstensen1_18" src="img/18/carstensen1_18.png">
-			<img id="icarstensen2_18" src="img/18/carstensen2_18.png">
-			<img id="idampfmaschine_18" src="img/18/dampfmaschine_18.png">
-			<img id="idieselmotor_18" src="img/18/dieselmotor_18.png">
-			<img id="idieselmotoren_18" src="img/18/dieselmotoren_18.png">
-			<img id="ix_18" src="img/18/x_18.png">
-			<img id="izyliner_18" src="img/18/zyliner_18.png">
-			<img id="iheadline_18" src="img/18/headline_18.png">
-			
-		</div>
+		<img id="ischif_18" src="img/18/schif_18.png">
+		<img id="icarstensen1_18" src="img/18/carstensen1_18.png">
+		<img id="idampfmaschine_18" src="img/18/dampfmaschine_18.png">
+		<img id="idieselmotor_18" src="img/18/dieselmotor_18.png">
+		<img id="idieselmotoren_18" src="img/18/dieselmotoren_18.png">
+		<img id="ix_18" src="img/18/x_18.png">
+		<img id="izyliner_18" src="img/18/zyliner_18.png">
+		<img id="iheadline_18" src="img/18/headline_18.png">
+		
 	</div>
+</div>
 
 <!-- #19 -->
 
-<div id="story-19" class="story">
-	<div id="wrapper19">
-			
+	<div id="story-19" class="story">
+		<div id="wrapper19">
+				
 			<img id="i75tsd_19" src="img/19/75tsd_19.png">
 			<img id="i1997_19" src="img/19/1997_19.png">
 			<img id="iheadline_19" src="img/19/headline_19.png">
@@ -368,16 +367,15 @@
 
 <!-- #20 -->
 
-<div id="story-20" class="story">
+	<div id="story-20" class="story">
 	
 		
 		<div id="wrapper20">	
 			<img id="i100jahre_20" src="img/20/100jahre_20.png">
-			<img id="iboot_20" src="img/20/boot_20.png">
+			
 			<img id="isee_20" src="img/20/see_20.png">
 			<img id="iliembaa_20" src="img/20/liembaa_20.png">
-			<img id="iwelle1_20" src="img/20/welle1_20.png">
-			<img id="iwelle2_20" src="img/20/welle2_20.png">
+			<img id="iboot_20" src="img/20/boot_20.png">
 			<img id="iwichtigste_20" src="img/20/wichtigste_20.png">
 			<img id="izeicheng_20" src="img/20/zeicheng_20.png">
 			<img id="izeichenk_20" src="img/20/zeichenk_20.png">
