@@ -1,6 +1,6 @@
 body{
 	font-family: Helvetica, Times;
-	background-color: black;
+	background-color: white;
 }
 
 #head{
@@ -28,14 +28,35 @@ body{
 	}
 }
 
-#scroll-instruction{
-	top: 50%;
-	left: 50%;
-	width: 367px;
-	height: 216px;
-	margin-top: -108px;
-	margin-left: -183px;
+#navigation{
 	position: fixed;
+	bottom:0px;
+	left: 50%;
+	margin-left: -117px;
+	border: 3px;
+
+	&:hover{ transform: translateY(-20px); }
+}
+#scroll{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -183px;
+	margin-top: -108px;
+	&:hover{ transform: translateY(-20px); }
+}
+#info{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	&:hover{ transform: translateY(-20px); }
+}
+
+#startseite{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	&:hover{ transform: translateY(-20px); }
 }
 
 #sections-wrapper{
@@ -46,6 +67,134 @@ body{
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+#timeline-wrapper{
+	position: fixed;
+	width: 1080px;
+	height: 60px;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -540px;
+	background: black;
+	border-radius: 30px;
+	opacity: 0.75;
+}
+
+#line{
+	position: absolute;
+	top: 29px;
+	left: 25px;
+	width: 1030px;
+	height: 3px;
+	background: white;
+}
+
+
+.circle{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	color:#fff;
+	line-height:10px;
+	text-align:center;
+	background: white;
+	overflow: hidden;
+	top: -9px;
+
+	&:hover{
+		background: red !important;
+		overflow: visible !important;
+	}
+
+
+}
+.circle span{
+	position: relative;
+	font-size: 15px;
+	top: 25px;
+	left: -5px;
+	color: white;	
+}
+
+#circle1{
+	left: 0px;	
+	
+}
+
+#circle2{
+	left: 20px;	
+}
+
+#circle3{
+	left: 60px;	
+}
+
+#circle4{
+	left: 80px;	
+}
+
+#circle4{
+	left: 100px;	
+}
+
+#circle5{
+	left: 120px;	
+}
+
+#circle6{
+	left: 140px;	
+}
+
+#circle7{
+	left: 160px;	
+}
+
+#circle8{
+	left: 180px;	
+}
+
+#circle9{
+	left: 200px;	
+}
+
+#circle10{
+	left: 220px;	
+}
+
+#circle11{
+	left: 240px;	
+}
+
+#circle12{
+	left: 300px;	
+}
+
+#circle13{
+	left: 340px;	
+}
+
+#circle14{
+	left: 370px;	
+}
+#circle15{
+	left: 505px;	
+}
+#circle16{
+	left: 600px;	
+}
+#circle17{
+	left: 1010px;	
+}
+#circle18{
+	left: 800px;	
+}
+#circle19{
+	left: 930px;	
+}
+#circle20{
+	left: 1010px;	
 }
 
 #skollr-menu-wrapper{

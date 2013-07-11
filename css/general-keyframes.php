@@ -9,23 +9,33 @@ function offsetTo($currentStory){
 
 for($i=1; $i<21; $i++){
 
-    $start = ($i-1)*1000;
-    $end   = $i*1000;
-    $range = 200;
+    $full = ($i *1000); 
 ?>
+    #circle<?=$i;?>{
+        -skrollr-animation-name:circle<?=$i;?>;
+    }
+     @-skrollr-keyframes circle<?=$i;?> {
+
+    <?= ($full-2);            ?> { background: white; overflow: hidden;}
+    <?= ($full);            ?> { background: red; overflow: visible;}
+    <?= ($full+998);            ?> { background: red; overflow: visible;}
+    <?= ($full+999);              ?> { background: white; overflow: hidden;}
+    
+    }
+
+
+
     #story-<?=$i;?>{
         -skrollr-animation-name:story-<?=$i;?>;
     }
 
     @-skrollr-keyframes story-<?=$i;?> {
-    <?= ($start-2*$range-1); ?> { opacity:    0; display:  none; }
-    <?= ($start-2*$range);   ?> { opacity:    0; display: block; }
-    <?= ($start-$range);     ?> { opacity: 0.25; display: block; }
-    <?= ($start);            ?> { opacity:    1; display: block; }
-    <?= ($end);              ?> { opacity:    1; display: block; }
-    <?= ($end+$range);       ?> { opacity: 0.75; display: block; }
-    <?= ($end+2*$range);     ?> { opacity:    0; display: block; }
-    <?= ($end+2*$range);     ?> { opacity:    0; display:  none; }
+    <?= ($full-701);            ?> { opacity:    0; display: none; transform: translateX(   100%);}
+    <?= ($full-700);            ?> { opacity:    1; display: block; transform: translateX(   100%);}
+    <?= ($full-300);            ?> { opacity:    1; display: block; transform: translateX(   0%);}
+    <?= ($full+300);              ?> { opacity:    1; display: block; transform: translateX(   0%);}
+    <?= ($full+700);              ?> { opacity:    1; display: block; transform: translateX(   -100%);}
+    <?= ($full+701);              ?> { opacity:    0; display: none; transform: translateX(   -100%);}
     }
     
 <?php
@@ -37,7 +47,10 @@ for($i=1; $i<21; $i++){
     -skrollr-animation-name:section-1;
 }
 @-skrollr-keyframes section-1 {
-       0{ display: block; transform: translateX(   0%); }
+    
+    0{ display: none; transform: translateX(   100%); }
+    1{ display: block; transform: translateX(   100%); }
+    1000{ display: block; transform: translateX(   0%); }
     4000{ display: block; transform: translateX(   0%); }
     5000{ display:  none; transform: translateX(-100%); }   
 }
@@ -47,19 +60,19 @@ for($i=1; $i<21; $i++){
 <?php
 
 for($i = 2; $i<6; $i++){
-    $start = ($i-1)*5000;
-    $end  =  $i*5000;
+    $start = ($i-1)*4000;
+    $end  =  $i*4000;
     ?>
         #section-<?=$i;?>{
             -skrollr-animation-name:section-<?=$i;?>;
         }
         @-skrollr-keyframes section-<?=$i;?> {
-           <?=($start-1001);?> { display:  none; transform: translateX( 100%); }
-           <?=($start-1000);?> { display: block; transform: translateX( 100%); }
-           <?=$start;?>        { display: block; transform: translateX(   0%); } 
-           <?=($end-1000);?>    { display: block; transform: translateX(   0%); }
-           <?=$end;?>          { display: block; transform: translateX(-100%); } 
-           <?=($end+1);?>      { display:  none; transform: translateX(-100%); } 
+           <?=($start-1);?> { display:  none; transform: translateX( 100%); }
+           <?=$start;?> { display: block; transform: translateX( 100%); }
+           <?=($start + 1000);?>        { display: block; transform: translateX(   0%); } 
+           <?=$end;?>    { display: block; transform: translateX(   0%); }
+           <?=($end + 1000);?>          { display: block; transform: translateX(-100%); } 
+           <?=($end + 1001);?>      { display:  none; transform: translateX(-100%); } 
         }
     <?php
 }?>
