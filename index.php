@@ -10,6 +10,13 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/story-styles.less" rel="stylesheet/less" type="text/css">
 	<link href="css/story-keyframes.php" rel="stylesheet/css" type="text/css" data-skrollr-stylesheet>
+
+	<link href="favicon_32.png" sizes="32x32" type="image/png" rel="shortcut icon">
+	<link href="favicon_16.png" sizes="16x16" type="image/png" rel="icon">
+	<link href="favicon_57.png" sizes="57x57" type="image/png" rel="icon">
+	<link href="favicon_72.png" sizes="72x72" type="image/png" rel="icon">
+	<link href="favicon_114.png" sizes="114x114" type="image/png" rel="apple-touch-icon-precomposed">
+
 </head>
 
 
