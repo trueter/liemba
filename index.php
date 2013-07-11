@@ -24,9 +24,7 @@
 	<div id="offsetHelper" class="always-on-top">0</div>
 
     <img src="img/scroll.png" id="scroll">
-	<img src="img/navigation.png" id="navigation">
-	<img src="img/startseite.png" id="startseite">
-	<img src="img/info.png" id="info">
+	
 
 	<img src="img/Home_Icon.png" id="home_icon">
 	<img src="img/Infobox_Icon.png" id="infobox_icon">

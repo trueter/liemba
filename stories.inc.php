@@ -13,12 +13,12 @@
 				<img src="img/1/name1.png">
 			</div>
 
-			<div id="figur-2" class="figur">
-				<img src="img/1/name2.png">
-			</div>
-
 			<div id="figur-3" class="figur">
 				<img src="img/1/name3.png">
+			</div>
+
+			<div id="figur-2" class="figur">
+				<img src="img/1/name2.png">
 			</div>
 			
 			<div id="welle"></div>
@@ -134,6 +134,7 @@
 		
 		<img id="title_7" src="img/7/text.png">
 		<div id="content_7">
+			<img id="kugel_7" src="img/7/kugel.png">
 			<img id="kanone_7" src="img/7/kanone.png">
 			<img id="soldaten_7" src="img/7/soldaten.png">
 			<img id="sprechblase_7" src="img/7/sprechblase.png">
