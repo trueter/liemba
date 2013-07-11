@@ -46,3 +46,39 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* IE */
+@font-face {
+ font-family:Din;
+ src:url("../font/DINReg.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../font/DINBol.eot");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../font/DINLig.eot");
+}
+
+/* Modern Browsers */
+@font-face {
+ font-family:Din;
+ src:url("../font/DINReg.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:bold;
+ src:url("../font/DINBol.ttf");
+}
+@font-face {
+ font-family:Din;
+ font-weight:lighter;
+ src:url("../font/DINLig.ttf");
+}
+
+body{
+	font:300 11px/1.4 Din, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
