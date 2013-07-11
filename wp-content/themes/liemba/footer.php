@@ -3,11 +3,11 @@
 
 				<!-- footer widgets -->
 				<div class="footer-widget-wrapper clear">
-					<a href="<?= get_bloginfo('url'); ?>/map/" target="_blank" class="footer-widget blue-item">
+					<a href="<?= get_bloginfo('url'); ?>/map/" class="footer-widget blue-item">
 						Die Route<br>der Liemba
 					</a>
 					
-					<a href="<?= get_bloginfo('url'); ?>/history/" target="_blank" class="footer-widget blue-item">
+					<a href="<?= get_bloginfo('url'); ?>/history/" class="footer-widget blue-item">
 						Die Geschichte<br>
 						der Liemba
 					</a>
