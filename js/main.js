@@ -108,20 +108,17 @@ $(function() {
  
 //// Live-bind .hotspots Hover Effect
 
-  var hotspotHoverTimer;
   $("#map-wrapper").on( "mouseenter", ".hotspots", function(){
       var that = $(this).stop().addClass("extended");
-      clearTimeout(hotspotHoverTimer);
 
-      hotspotHoverTimer = setTimeout(function(){
+      setTimeout(function(){
         that.children("h1, p").css("opacity", "1");
       },400);
    }).on("mouseleave", ".hotspots", function(){
     var that = $(this).stop();
       that.children("h1, p").css("opacity", "0");
 
-      clearTimeout(hotspotHoverTimer);
-      hotspotHoverTimer = setTimeout(function(){
+      setTimeout(function(){
         that.removeClass("extended");
       },150);
 

@@ -1,12 +1,10 @@
+.preload * { transition: none !important; }
+
 body{
 	font-family: Din, Helvetica, Arial;
 	color: #FFF;
-	background-color: #ecf0f1;
+	background-color: #9ad2d8;
 	position: relative;
-}
-
-.preload * {
-  transition: none !important;
 }
 
 .green-box{
@@ -14,7 +12,6 @@ body{
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
-	box-shadow: 0px 0px 10px 4px #444;
 	color: #FFF;
 
 	button, input, select{
@@ -24,7 +21,6 @@ body{
 		outline: 1px solid #FFF;
 		background: #FFFFFF;	
 	}
-	
 }
 
 #page-wrapper{
@@ -53,7 +49,6 @@ body{
 	}
 
 	select{
-		text-indent: 61px;
 		border-radius: 0;
 		appearance: none;
 		-webkit-appearance: none;
@@ -233,13 +228,15 @@ body{
 @hotspotWidthExtended : 320px;
 .hotspots{
 	position: absolute;
-	width: 28px;
-	height: 28px;
+	width: 30px;
+	height: 30px;
 	border: 1px solid #FFF;
 	outline: 1px solid #FFF;
 	outline-offset: 1px;
-	box-shadow: 0px 0px 5px 3px #444;
 	z-index: 1500;
+	background-color: #00809E;
+	background-repeat: no-repeat;
+	overflow: hidden;
 
 	transition: all 0.4s ease-in-out;
 
@@ -305,16 +302,36 @@ body{
 	background-color: red;
 }
 
-.hotspots.placeholder{
-	background: #ecf0f1 url(../img/hotspot_icons/placeholder.png) no-repeat;
+.hotspots.stops{
+	background-image: url(../img/hotspot_icons/stops_30.png);
+}
+
+.hotspots.activities{
+	background-image: url(../img/hotspot_icons/activities_30.png);
+}
+
+.hotspots.histories{
+	background-image: url(../img/hotspot_icons/histories_30.png);
+}
+
+.hotspots.transports{
+	background-image: url(../img/hotspot_icons/transports_30.png);
+}
+
+.hotspots.stops{
+	background-image: url(../img/hotspot_icons/stops_30.png);
+}
+
+.hotspots.sightseeings{
+	background-image: url(../img/hotspot_icons/sightseeing_30.png);
+}
+
+.hotspots.hotels{
+	background-image: url(../img/hotspot_icons/hotels_30.png);
 }
 
 .hotspots.airports{
-	background: #0b6e8e url(../img/hotspot_icons/airport.png) no-repeat;
-}
-
-.hotspots.pois{
-	background: #111 url(../img/hotspot_icons/poi.png) no-repeat;
+	background-image: url(../img/hotspot_icons/airports_30.png);
 }
 
 /*

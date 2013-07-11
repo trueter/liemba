@@ -25,8 +25,13 @@
                 <textarea required id="hotspot-form-description" name="hotspot-form-description" placeholder="Lorem Ipsum dolor sit amet"></textarea>
                 <select required id="hotspot-form-category" name="hotspot-form-category">
                     <option value="" disabled selected>Kategorie wählen</option>
-                    <option value="airports">Flughäfen</option>
-                    <option value="pois">Sehenswürdigkeiten</option>
+                    <option value="stops">Liemba Anlegestelle</option>
+                    <option value="activities">Aktivität</option>
+                    <option value="airports">Flughafen</option>
+                    <option value="histories">Geschichte</option>
+                    <option value="transports">Verkehr</option>
+                    <option value="sightseeings">Sehenswürdigkeit</option>
+                    <option value="hotels">Hotel</option>
                 </select>
                 <input id="hotspot-form-special_icon_path" name="hotspot-form-special_icon_path" value="" type="hidden">
                 <input id="hotspot-form-x" name="hotspot-form-x" type="hidden">
