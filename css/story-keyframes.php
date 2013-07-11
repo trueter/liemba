@@ -186,10 +186,10 @@ $middle = offsetTo($currentStory);
 }
 #kugel_7{ -skrollr-animation-name : kugel_7; }
 @-skrollr-keyframes kugel_7 {
-    <?=($middle -1); ?> { transform: translateX( -500%); display: none;}
-    <?=($middle); ?> { transform: translateX( -500%); display: block;}
-    <?=($middle+400);   ?> { transform: translateX( +4000%); display: block;}
-    <?=($middle+401);   ?> { transform: translateX( +4000%); display: none;}
+    <?=($middle -1); ?> { transform: translateX( 0%); display: none;}
+    <?=($middle); ?> { transform: translateX( 0%); display: block;}
+    <?=($middle+400);   ?> { transform: translateX( 5000%); display: block;}
+    <?=($middle+401);   ?> { transform: translateX( 5000%); display: none;}
 }
 
 
@@ -241,6 +241,8 @@ $middle = offsetTo($currentStory);
 }
 
 
+
+
 <?php
 ## Story 10
 
@@ -278,8 +280,23 @@ $middle = offsetTo($currentStory);
     <?=($middle+400);   ?> { right:100%; opacity: 0; transform: translateY( -80%);}
 }
 
+
 <?php
-## Story 20
+## Story 18
+
+$currentStory = 18; 
+$middle = offsetTo($currentStory);
+?>
+
+#idampfmaschine_18{ -skrollr-animation-name : idampfmaschine_18; }
+@-skrollr-keyframes idampfmaschine_18 {
+    <?=($middle-400); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle-300);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+
+<?php
+## Story 19
 
 $currentStory = 19; 
 $middle = offsetTo($currentStory);
