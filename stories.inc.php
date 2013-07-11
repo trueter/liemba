@@ -220,24 +220,24 @@
 	<div id="story-12" class="story">
 		<div id="erste_bergung-wrapper_12">
 			<img id="sign_1" src="img/12/sign.png">
-			<img id="1_1" src="img/12/1.png">
-			<img id="9_1" src="img/12/9.png">
-			<img id="1_2" src="img/12/1.png">
-			<img id="6" src="img/12/6.png">
+			<img id="no_1_1" src="img/12/1.png">
+			<img id="no_9_1" src="img/12/9.png">
+			<img id="no_1_2" src="img/12/1.png">
+			<img id="no_6" src="img/12/6.png">
 			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="ship_pickup" src="img/shared_fotos/ship.png">
 			<img id="waves" src="img/12/waves.png">
-			<img id="wire" src="img/shared_fotos/wire.png">
+			<img id="wire_12" src="img/shared_fotos/wire.png">
 
 
 		</div>
 
 		<div id="zweite_untergang-wrapper_12">
 			<img id="sign_2" src="img/12/sign.png">
-			<img id="1_3" src="img/12/1.png">
-			<img id="9_2" src="img/12/9.png">
-			<img id="2" src="img/12/2.png">
-			<img id="0" src="img/12/0.png">
+			<img id="no_1_3" src="img/12/1.png">
+			<img id="no_9_2" src="img/12/9.png">
+			<img id="no_2" src="img/12/2.png">
+			<img id="no_0" src="img/12/0.png">
 			<img id="rainy_cloud" src="img/12/rainy_cloud.png">
 			<img id="arrows_down" src="img/12/arrows_down.png">
 			<img id="ship_sink" src="img/12/ship_sink.png">
@@ -252,13 +252,13 @@
 <section id="section-4">
 <!-- #13 -->
 	<div id="story-13" class="story">
-		<img id="man" src="img/13/man.png">
 		<img id="crane_left" src="img/13/crane_left.png">
+		<img id="man" src="img/13/man.png">
+		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
+		<img id="wire_13" src="img/shared_fotos/wire.png">
 		<img id="the16mars" src="img/13/16mars.png">
 		<img id="arrows_up" src="img/13/arrows_up.png">
 		<img id="flags" src="img/13/flags.png">
-		<img id="wire" src="img/shared_fotos/wire.png">
-		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
 		<img id="great_britania" src="img/13/great_britania.png">
 
 
@@ -292,19 +292,6 @@
 	</div>
 
 <!-- #16 -->
-<div id="story-16" class="story">
-		
-		<div id="wrapper17">
-			<img id="ieigentum_16" src="img/16/eigentum_16.png">
-			<img id="iflagkontur_16" src="img/16/flagkontur_16.png">
-			<img id="igruendung_16" src="img/16/gruendung_16.png">
-			<img id="ikarte_16" src="img/16/karte_16.png">
-			<img id="i1964_16" src="img/16/1964_16.png">
-			<img id="iafrobestatung_16" src="img/16/afrobestatung_16.png">
-			<img id="iafroman_16" src="img/16/afroman_16.png">
-			<img id="ishif_16" src="img/16/shif_16.png">
-		</div>
-	</div>
 
 </section>
 
@@ -312,75 +299,28 @@
 
 <!-- #17 -->
 
-<div id="story-17" class="story">
-	
-		<div id="wrapper17">
-			<img id="imarinero_17" src="img/17/marinero_17.png">
-			<img id="imotor_17" src="img/17/motor_17.png">
-			<img id="ipfeilrechts_17" src="img/17/pfeilrechts_17.png">
-			<img id="ipfeilunten_17" src="img/17/pfeilunten_17.png">
-			<img id="iradmachine_17" src="img/17/radmachine_17.png">
-			<img id="ishiff_17" src="img/17/shiff_17.png">
-			<img id="iwolke_17" src="img/17/wolke_17.png">
-			<img id="ix_17" src="img/17/x_17.png">
-		</div>
-	</div>
-
-
 <!-- #18 -->
-
-<div id="story-18" class="story">
-	<div id="wrapper18">
-			<img id="ischif_18" src="img/18/schif_18.png">
-			<img id="icarstensen1_18" src="img/18/carstensen1_18.png">
-			<img id="icarstensen2_18" src="img/18/carstensen2_18.png">
-			<img id="idampfmaschine_18" src="img/18/dampfmaschine_18.png">
-			<img id="idieselmotor_18" src="img/18/dieselmotor_18.png">
-			<img id="idieselmotoren_18" src="img/18/dieselmotoren_18.png">
-			<img id="ix_18" src="img/18/x_18.png">
-			<img id="izyliner_18" src="img/18/zyliner_18.png">
-			<img id="iheadline_18" src="img/18/headline_18.png">
-			
-		</div>
-	</div>
 
 <!-- #19 -->
 
-<div id="story-19" class="story">
-	<div id="wrapper19">
-			
-			<img id="i75tsd_19" src="img/19/75tsd_19.png">
-			<img id="i1997_19" src="img/19/1997_19.png">
-			<img id="iheadline_19" src="img/19/headline_19.png">
-			<img id="ikartee_19" src="img/19/kartee_19.png">
-			<img id="iliemba_19" src="img/19/liemba_19.png">
-			<img id="istrahlen1_19" src="img/19/strahlen1_19.png">
-			<img id="istrahlen2_19" src="img/19/strahlen2_19.png">
-			<img id="iuvirakigoma_19" src="img/19/uvirakigoma_19.png">
-			<img id="iwellen_19" src="img/19/wellen_19.png">
-			<img id="imenschen_19" src="img/19/menschen_19.png">
-		
-		</div>
-	</div>
+<div id="fahrten_19" class="element"></div>
+<div id="tsd_19" class="element"></div>
+<div id="fluechtlinge_19" class="element"></div>
+<div id="karte_19" class="element"></div>
+<div id="liemba_19" class="element"></div>
+<div id="menschen_19" class="element"></div>
+<div id="staedte_19" class="element"></div>
+<div id="wellen_19" class="element"></div>
 
 <!-- #20 -->
 
-<div id="story-20" class="story">
-	
-		
-		<div id="wrapper20">	
-			<img id="i100jahre_20" src="img/20/100jahre_20.png">
-			<img id="iboot_20" src="img/20/boot_20.png">
-			<img id="isee_20" src="img/20/see_20.png">
-			<img id="iliembaa_20" src="img/20/liembaa_20.png">
-			<img id="iwelle1_20" src="img/20/welle1_20.png">
-			<img id="iwelle2_20" src="img/20/welle2_20.png">
-			<img id="iwichtigste_20" src="img/20/wichtigste_20.png">
-			<img id="izeicheng_20" src="img/20/zeicheng_20.png">
-			<img id="izeichenk_20" src="img/20/zeichenk_20.png">
-		
-		</div>
-	</div>
+<div id="ausrufezeichen_20" class="element"></div>
+<div id="banner_20" class="element"></div>
+<div id="boote_20" class="element"></div>
+<div id="liemba_20" class="element"></div>
+<div id="see_20" class="element"></div>
+<div id="typo_20" class="element"></div>
+<div id="wellen_20" class="element"></div>
 
 
 </section>
