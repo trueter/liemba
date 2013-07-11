@@ -2,12 +2,13 @@
 # GET /hotspots
 function getAllHotspots(){
 
+
 	$status = 200;
 	try{
 		$db = getConnection();
 
-	    $statement = $db->query('SELECT * FROM hotspots');
-		$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+	    $statement = $db->query('SELECT * FROM '.$_ENV['DATABASE_TABLE']);
+		$results = $statement->fetchAll(PDO::FETCH_ASSOC);	
 
 	} catch(PDOException $e) {
  		echo($e->getMessage());
@@ -17,7 +18,6 @@ function getAllHotspots(){
     if(empty($results)){
     	$status = 204;
     }
-
 	return array($status, $results);
 }
 
@@ -28,7 +28,7 @@ function getHotspot($id){
 	try{
 		$db = getConnection();
 
-	    $statement = $db->query('SELECT * FROM  `'. $_ENV['DATABASE_HOTSPOT_TABLE'] .'` WHERE ID='.$id);
+	    $statement = $db->query('SELECT * FROM  `'. $_ENV['DATABASE_TABLE'] .'` WHERE ID='.$id);
 
 		$result = $statement->fetchAll(PDO::FETCH_OBJ);
 	} catch(PDOException $e) {
@@ -60,7 +60,6 @@ function createHotspot($formData) {
 				  ':xOff'=>$formData[$pre.'x'], 
 				  ':yOff'=>$formData[$pre.'y'], 
 				  ':description'=>$formData[$pre.'description'], 
-				  ':special_icon_path'=>$formData[$pre.'special_icon_path'],
 				  ':category'=>$formData[$pre.'category'],
 				  ':map'=>$formData[$pre.'map'],
 				  );
@@ -81,8 +80,8 @@ function createHotspot($formData) {
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
 
-			$query = "INSERT INTO ".$_ENV['DATABASE_HOTSPOT_TABLE']." (name,xOff,yOff,description,special_icon_path,category,map) VALUES 
-	(:name,:xOff,:yOff,:description,:special_icon_path,:category,:map)";
+			$query = "INSERT INTO ".$_ENV['DATABASE_TABLE']." (name,xOff,yOff,description,category,map) VALUES 
+	(:name,:xOff,:yOff,:description,:category,:map)";
 						
 			$statement = $db->prepare($query);			
 			$statement->execute($values);
@@ -113,7 +112,6 @@ function updateHotspot($id, $formData){
 				  ':xOff'=>$formData[$pre.'x'], 
 				  ':yOff'=>$formData[$pre.'y'], 
 				  ':description'=>$formData[$pre.'description'], 
-				  ':special_icon_path'=>$formData[$pre.'special_icon_path'],
 				  ':map'=>$formData[$pre.'map'],
 				  ':category'=>$formData[$pre.'category']);
 
@@ -133,7 +131,7 @@ function updateHotspot($id, $formData){
 			$db = getConnection();
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
-		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_HOTSPOT_TABLE'] .' SET name=:name,description=:description,xOff=:xOff,yOff=:yOff,special_icon_path=:special_icon_path,category=:category,map=:map WHERE id='.$id);
+		    $statement = $db->prepare('UPDATE '. $_ENV['DATABASE_TABLE'] .' SET name=:name,description=:description,xOff=:xOff,yOff=:yOff,category=:category,map=:map WHERE id='.$id);
 			$statement->execute($values);
 
 			if( $statement->rowCount() != 1 ){
@@ -159,7 +157,7 @@ function deleteHotspot($id) {
 	try{
 	    $db = getConnection();
 
-	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_HOTSPOT_TABLE'] .' WHERE ID='.$id);
+	    $statement = $db->query('DELETE FROM '. $_ENV['DATABASE_TABLE'] .' WHERE ID='.$id);
 		
 		if($statement->rowCount() != 1){
 			$status = 500;
