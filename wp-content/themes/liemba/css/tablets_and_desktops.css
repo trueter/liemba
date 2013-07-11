@@ -210,7 +210,6 @@
 @media all and (max-width: 750px) {
 	#content-wrapper{
 		overflow: visible;
-		margin-left: 21px;
 	}
 	.sidebar{
 		float: none;
