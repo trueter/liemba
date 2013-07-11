@@ -10,15 +10,16 @@ function offsetTo($currentStory){
 ## Story 1
 
 $currentStory = 1; 
-$start = offsetTo($currentStory);
-$end = offsetTo($currentStory+1);
-$middle = ($start + 500);
+$middle = offsetTo($currentStory);
 ?>
 
 #ship-wrapper{ -skrollr-animation-name : ship-wrapper; }
 @-skrollr-keyframes ship-wrapper {
-    <?=($start); ?> { left: 10%; }
-    <?=($middle);   ?> { left: 50%; }
+    <?=($middle-500); ?> { left: 60%; }
+    <?=($middle);   ?> { left: 15%; }
+    <?=($middle+100);   ?> { left: 20%; }
+    <?=($middle+200);   ?> { left: 15%; }
+    <?=($middle+300);   ?> { left: 20%; }
 }
 
 #name1{ -skrollr-animation-name : name1; }

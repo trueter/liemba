@@ -53,7 +53,7 @@ for($i=1; $i<21; $i++){
     0{ display: none; transform: translateX(   100%); }
     1{ display: block; transform: translateX(   100%); }
     1000{ display: block; transform: translateX(   0%); }
-    4000{ display: block; transform: translateX(   0%); }
+    4300{ display: block; transform: translateX(   0%); }
     5000{ display:  none; transform: translateX(-100%); }   
 }
 
@@ -69,10 +69,10 @@ for($i = 2; $i<6; $i++){
             -skrollr-animation-name:section-<?=$i;?>;
         }
         @-skrollr-keyframes section-<?=$i;?> {
-           <?=($start-1);?> { display:  none; transform: translateX( 100%); }
-           <?=$start;?> { display: block; transform: translateX( 100%); }
+           <?=($start+299);?> { display:  none; transform: translateX( 100%); }
+           <?=($start+300);?> { display: block; transform: translateX( 100%); }
            <?=($start + 1000);?>        { display: block; transform: translateX(   0%); } 
-           <?=$end;?>    { display: block; transform: translateX(   0%); }
+           <?=($end + 300);?>    { display: block; transform: translateX(   0%); }
            <?=($end + 1000);?>          { display: block; transform: translateX(-100%); } 
            <?=($end + 1001);?>      { display:  none; transform: translateX(-100%); } 
         }

@@ -8,16 +8,24 @@
 		
 		<div id="ship-wrapper">
 			<img src="img/1/schiffchen.png" id="schiffchen">
-			<img src="img/1/figur1.png" class="figur" id="figur-1">
-			<img src="img/1/figur2.png" class="figur" id="figur-2">
-			<img src="img/1/figur3.png" class="figur" id="figur-3">
+
+			<div id="figur-1" class="figur">
+				<img src="img/1/name1.png">
+			</div>
+
+			<div id="figur-2" class="figur">
+				<img src="img/1/name2.png">
+			</div>
+
+			<div id="figur-3" class="figur">
+				<img src="img/1/name3.png">
+			</div>
+			
 			<div id="welle"></div>
 		</div>
 
 		<img src="img/1/erstePlaene.png" id="erstePlaene">
-		<img src="img/1/name1.png" id="name1">
-		<img src="img/1/name1.png" id="name2">
-		<img src="img/1/name2.png" id="name3">
+		
 
 	</div>
 <!-- #2 -->
@@ -212,24 +220,24 @@
 	<div id="story-12" class="story">
 		<div id="erste_bergung-wrapper_12">
 			<img id="sign_1" src="img/12/sign.png">
-			<img id="1_1" src="img/12/1.png">
-			<img id="9_1" src="img/12/9.png">
-			<img id="1_2" src="img/12/1.png">
-			<img id="6" src="img/12/6.png">
+			<img id="no_1_1" src="img/12/1.png">
+			<img id="no_9_1" src="img/12/9.png">
+			<img id="no_1_2" src="img/12/1.png">
+			<img id="no_6" src="img/12/6.png">
 			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="ship_pickup" src="img/shared_fotos/ship.png">
 			<img id="waves" src="img/12/waves.png">
-			<img id="wire" src="img/shared_fotos/wire.png">
+			<img id="wire_12" src="img/shared_fotos/wire.png">
 
 
 		</div>
 
 		<div id="zweite_untergang-wrapper_12">
 			<img id="sign_2" src="img/12/sign.png">
-			<img id="1_3" src="img/12/1.png">
-			<img id="9_2" src="img/12/9.png">
-			<img id="2" src="img/12/2.png">
-			<img id="0" src="img/12/0.png">
+			<img id="no_1_3" src="img/12/1.png">
+			<img id="no_9_2" src="img/12/9.png">
+			<img id="no_2" src="img/12/2.png">
+			<img id="no_0" src="img/12/0.png">
 			<img id="rainy_cloud" src="img/12/rainy_cloud.png">
 			<img id="arrows_down" src="img/12/arrows_down.png">
 			<img id="ship_sink" src="img/12/ship_sink.png">
@@ -244,13 +252,13 @@
 <section id="section-4">
 <!-- #13 -->
 	<div id="story-13" class="story">
-		<img id="man" src="img/13/man.png">
 		<img id="crane_left" src="img/13/crane_left.png">
+		<img id="man" src="img/13/man.png">
+		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
+		<img id="wire_13" src="img/shared_fotos/wire.png">
 		<img id="the16mars" src="img/13/16mars.png">
 		<img id="arrows_up" src="img/13/arrows_up.png">
 		<img id="flags" src="img/13/flags.png">
-		<img id="wire" src="img/shared_fotos/wire.png">
-		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
 		<img id="great_britania" src="img/13/great_britania.png">
 
 
@@ -373,6 +381,7 @@
 		
 		</div>
 	</div>
+
 
 
 </section>
