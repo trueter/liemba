@@ -11,8 +11,11 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		
 		<!-- icons -->
-		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_32.png" rel="shortcut icon">
-		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_140.png" rel="apple-touch-icon-precomposed">
+		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_32.png" sizes="32x32" type="image/png" rel="shortcut icon">
+		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_16.png" sizes="16x16" type="image/png" rel="icon">
+		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_57.png" sizes="57x57" type="image/png" rel="icon">
+		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_72.png" sizes="72x72" type="image/png" rel="icon">
+		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon_114.png" sizes="114x114" type="image/png" rel="apple-touch-icon-precomposed">
 			
 		<!-- css + javascript -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
