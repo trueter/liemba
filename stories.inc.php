@@ -286,7 +286,7 @@
 <!-- #16 -->
 <div id="story-16" class="story">
 		
-		<div id="wrapper17">
+		<div id="wrapper16">
 			<img id="ieigentum_16" src="img/16/eigentum_16.png">
 			<img id="iflagkontur_16" src="img/16/flagkontur_16.png">
 			<img id="igruendung_16" src="img/16/gruendung_16.png">
