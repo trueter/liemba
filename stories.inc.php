@@ -295,14 +295,14 @@
 <div id="story-16" class="story">
 		
 		<div id="wrapper16">
-			<img id="ieigentum_16" src="img/16/eigentum_16.png">
+			<img id="iafroman_16" src="img/16/afroman_16.png">
 			<img id="iflagkontur_16" src="img/16/flagkontur_16.png">
 			<img id="igruendung_16" src="img/16/gruendung_16.png">
-			<img id="ikarte_16" src="img/16/karte_16.png">
 			<img id="i1964_16" src="img/16/1964_16.png">
-			<img id="iafrobestatung_16" src="img/16/afrobestatung_16.png">
-			<img id="iafroman_16" src="img/16/afroman_16.png">
 			<img id="ishif_16" src="img/16/shif_16.png">
+			<img id="iafrobestatung_16" src="img/16/afrobestatung_16.png">
+			<img id="ikarte_16" src="img/16/karte_16.png">
+			<img id="ieigentum_16" src="img/16/eigentum_16.png">
 		</div>
 	</div>
 
@@ -354,12 +354,12 @@
 			<img id="iheadline_19" src="img/19/headline_19.png">
 			<img id="ikartee_19" src="img/19/kartee_19.png">
 			<img id="iliemba_19" src="img/19/liemba_19.png">
-			<img id="istrahlen1_19" src="img/19/strahlen1_19.png">
-			<img id="istrahlen2_19" src="img/19/strahlen2_19.png">
+			//<img id="istrahlen1_19" src="img/19/strahlen1_19.png">
+			//<img id="istrahlen2_19" src="img/19/strahlen2_19.png">
 			<img id="iuvirakigoma_19" src="img/19/uvirakigoma_19.png">
 			<img id="iwellen_19" src="img/19/wellen_19.png">
 			<img id="imenschen_19" src="img/19/menschen_19.png">
-		
+			<div id="strahlen_19"></div>
 		</div>
 	</div>
 
