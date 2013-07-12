@@ -381,6 +381,40 @@ $middle = offsetTo($currentStory);
     <?=($middle+200);   ?> { top: -100px;}
 }
 
+<?php
+## Story 16
+
+$currentStory = 16; 
+$middle = offsetTo($currentStory);
+?>
+
+#iafrobestatung_16{ -skrollr-animation-name : iafrobestatung_16; }
+@-skrollr-keyframes iafrobestatung_16 {
+    <?=($middle); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle+100);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+#igruendung_16{ -skrollr-animation-name : igruendung_16; }
+@-skrollr-keyframes igruendung_16 {
+    <?=($middle-200); ?> { transform: translateY( -20%); }
+    <?=($middle+100);   ?> { transform: translateY( 0%); }
+    
+}
+
+#iafroman_16{ -skrollr-animation-name : iafroman_16; }
+@-skrollr-keyframes iafroman_16 {
+    <?=($middle-400); ?> { transform: translateX( -150%); }
+    <?=($middle);   ?> { transform: translateX( 0%); }
+    
+}
+
+#iflagkontur_16{ -skrollr-animation-name : iflagkontur_16; }
+@-skrollr-keyframes iflagkontur_16 {
+    <?=($middle-400); ?> { transform: translateY( +50%); }
+    <?=($middle);   ?> { transform: translateY( 0%); }
+    
+}
+
 
 <?php
 ## Story 17
