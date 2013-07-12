@@ -186,10 +186,10 @@ $middle = offsetTo($currentStory);
 }
 #kugel_7{ -skrollr-animation-name : kugel_7; }
 @-skrollr-keyframes kugel_7 {
-    <?=($middle -1); ?> { transform: translateX( -500%); display: none;}
-    <?=($middle); ?> { transform: translateX( -500%); display: block;}
-    <?=($middle+400);   ?> { transform: translateX( +4000%); display: block;}
-    <?=($middle+401);   ?> { transform: translateX( +4000%); display: none;}
+    <?=($middle -1); ?> { transform: translateX( 0%); display: none;}
+    <?=($middle); ?> { transform: translateX( 0%); display: block;}
+    <?=($middle+400);   ?> { transform: translateX( 5000%); display: block;}
+    <?=($middle+401);   ?> { transform: translateX( 5000%); display: none;}
 }
 
 
@@ -241,6 +241,8 @@ $middle = offsetTo($currentStory);
 }
 
 
+
+
 <?php
 ## Story 10
 
@@ -279,7 +281,46 @@ $middle = offsetTo($currentStory);
 }
 
 <?php
-## Story 20
+## Story 13
+
+$currentStory = 13; 
+$middle = offsetTo($currentStory);
+?>
+
+#flags{ -skrollr-animation-name : flags; }
+@-skrollr-keyframes flags {
+    <?=($middle-200); ?> { transform: translateY( 0%);}
+    <?=($middle+200);   ?> { transform: translateY( +10%);}
+}
+#wire_13{ -skrollr-animation-name : wire_13; }
+@-skrollr-keyframes wire_13 {
+    <?=($middle-200); ?> { height: 390px;}
+    <?=($middle+200);   ?> { height: 177px;}
+}
+
+#ship_pickup_schief{ -skrollr-animation-name : ship_pickup_schief; }
+@-skrollr-keyframes ship_pickup_schief{
+    <?=($middle-200); ?> { top: 100px;}
+    <?=($middle+200);   ?> { top: -100px;}
+}
+
+
+<?php
+## Story 18
+
+$currentStory = 18; 
+$middle = offsetTo($currentStory);
+?>
+
+#idampfmaschine_18{ -skrollr-animation-name : idampfmaschine_18; }
+@-skrollr-keyframes idampfmaschine_18 {
+    <?=($middle-400); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle-300);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+
+<?php
+## Story 19
 
 $currentStory = 19; 
 $middle = offsetTo($currentStory);
