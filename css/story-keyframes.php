@@ -395,6 +395,38 @@ $middle = offsetTo($currentStory);
     <?=($middle-300);   ?> { transform: translateY( 0%); opacity: 1;}
     
 }
+#ix_18{ -skrollr-animation-name : ix_18; }
+@-skrollr-keyframes ix_18 {
+    <?=($middle-400); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle-300);   ?> { transform: translateY( 0%); opacity: 1;}  
+}
+
+#idieselmotoren_18{ -skrollr-animation-name : idieselmotoren_18; }
+@-skrollr-keyframes idieselmotoren_18 {
+    <?=($middle-300); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle-200);   ?> { transform: translateY( 0%); opacity: 1;}  
+}
+#idieselmotor_18{ -skrollr-animation-name : idieselmotor_18; }
+@-skrollr-keyframes idieselmotor_18 {
+    <?=($middle-200); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle-100);   ?> { transform: translateY( 0%); opacity: 1;}  
+}
+#izyliner_18{ -skrollr-animation-name :izyliner_18; }
+@-skrollr-keyframes izyliner_18 {
+    <?=($middle-100); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle);   ?> { transform: translateY( 0%); opacity: 1;}  
+}
+#icarstensen1_18{ -skrollr-animation-name :icarstensen1_18; }
+@-skrollr-keyframes icarstensen1_18 {
+    <?=($middle-400); ?> { transform: translateY( 0%); }
+    <?=($middle+400);   ?> { transform: translateY( +150%); }  
+}
+#iheadline_18{ -skrollr-animation-name :iheadline_18; }
+@-skrollr-keyframes iheadline_18 {
+    <?=($middle-400); ?> { transform: translateX( 0%); }
+    <?=($middle+400);   ?> { transform: translateX( +150%); }  
+}
+
 
 <?php
 ## Story 19
