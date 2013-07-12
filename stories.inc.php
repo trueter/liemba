@@ -103,7 +103,7 @@
 	<div id="story-6" class="story">
 		
 		<div id="ship-wrapper_6">
-			<img id="schiff_6" src="img/shared/ship.png">
+			<img id="schiff_6" src="img/6/schiff.png">
 			<img id="sprechblase_6" src="img/6/sprechblase.png">
 		</div>
 
