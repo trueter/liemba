@@ -103,7 +103,7 @@
 	<div id="story-6" class="story">
 		
 		<div id="ship-wrapper_6">
-			<img id="schiff_6" src="img/6/schiff.png">
+			<img id="schiff_6" src="img/shared/ship.png">
 			<img id="sprechblase_6" src="img/6/sprechblase.png">
 		</div>
 
@@ -194,7 +194,7 @@
 <div id= "story-11" class="story">
 	<div id="wrapper11">
 		<div id="ship-wrapper_11">
-			<img id="ship_11" src="img/shared_fotos/ship.png">
+			<img id="ship_11" src="img/shared/ship.png">
 			<img id="sandbag1" src="img/11/sandbag1.png">
 			<img id="sandbag2" src="img/11/sandbag1.png">
 			<img id="sandbag3" src="img/11/sandbag1.png">
@@ -220,10 +220,10 @@
 			<img id="no_9_1" src="img/12/9.png">
 			<img id="no_1_2" src="img/12/1.png">
 			<img id="no_6" src="img/12/6.png">
-			<img id="ship_pickup" src="img/shared_fotos/ship.png">
+			<img id="ship_pickup" src="img/shared/ship.png">
 			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="waves" src="img/12/waves.png">
-			<img id="wire_12" src="img/shared_fotos/wire.png">
+			<img id="wire_12" src="img/shared/wire.png">
 		</div>
 
 	<!--<div id="zweite_untergang-wrapper_12">
