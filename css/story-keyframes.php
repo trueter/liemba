@@ -281,6 +281,25 @@ $middle = offsetTo($currentStory);
 }
 
 <?php
+## Story 11
+
+$currentStory = 11; 
+$middle = offsetTo($currentStory);
+?>
+
+#oilman{ -skrollr-animation-name : oilman; }
+@-skrollr-keyframes oilman{
+    <?=($middle-400); ?> { transform: translateX( 0%);}
+    <?=($middle+400);   ?> { transform: translateX( -100%);}
+}
+
+#ship-wrapper_11{ -skrollr-animation-name : ship-wrapper_11; }
+@-skrollr-keyframes ship-wrapper_11{
+    <?=($middle-400); ?> { transform: translateY( 0%);}
+    <?=($middle+400);   ?> { transform: translateY( +50%);}
+}
+
+<?php
 ## Story 13
 
 $currentStory = 13; 

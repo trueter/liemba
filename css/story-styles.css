@@ -670,169 +670,184 @@
   position: absolute;
 }
 /* line 598, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #ship_11 {
-  top: 40px;
-  left: 150px;
+#story-11 #wrapper11 {
+  position: relative;
+  width: 800px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -500px;
 }
-/* line 604, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #flag {
+/* line 607, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 {
+  width: 625px;
+  height: 600px;
+}
+/* line 611, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #ship_11 {
+  top: 0px;
+  left: 0px;
+}
+/* line 616, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #flag {
   top: 61px;
-  left: 307px;
+  left: 170px;
 }
-/* line 608, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #bubble_11 {
-  top: 45px;
-  left: 150px;
+/* line 621, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #bubble_11 {
+  top: 0px;
+  left: 20px;
 }
-/* line 613, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #the26juli {
-  top: 52px;
-  left: 169px;
+/* line 626, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #the26juli {
+  top: 15px;
+  left: 30px;
 }
-/* line 618, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #arrow_down_11 {
+/* line 631, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #arrow_down_11 {
   top: 272px;
-  left: 126px;
+  left: 0px;
 }
-/* line 623, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #oil_big {
+/* line 636, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #sandbag1 {
+  top: 321px;
+  left: 156px;
+}
+/* line 641, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #sandbag2 {
+  top: 262px;
+  left: 117px;
+}
+/* line 646, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #sandbag3 {
+  top: 360px;
+  left: 80px;
+}
+/* line 651, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #sandbag4 {
+  top: 422px;
+  left: 200px;
+}
+/* line 656, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #ship-wrapper_11 #bagropes {
+  top: 190px;
+  left: 110px;
+}
+/* line 663, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #oil_big {
   top: 260px;
-  left: 169px;
+  right: 0px;
 }
-/* line 627, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #oilman {
+/* line 668, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #oilman {
   top: 163px;
   left: 582px;
 }
-/* line 631, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #fish {
+/* line 673, /Users/torsten/liemba/css/story-styles.less */
+#story-11 #wrapper11 #fish {
   top: 550px;
   left: 350px;
 }
-/* line 635, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #sandbag1 {
-  top: 567px;
-  left: 283px;
-}
-/* line 639, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #sandbag2 {
-  top: 466px;
-  left: 240px;
-}
-/* line 643, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #sandbag3 {
-  top: 508px;
-  left: 162px;
-}
-/* line 647, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #sandbag4 {
-  top: 407px;
-  left: 193px;
-}
-/* line 651, /Users/torsten/liemba/css/story-styles.less */
-#story-11 #bagropes {
-  top: 337px;
-  left: 192px;
-}
-/* line 658, /Users/torsten/liemba/css/story-styles.less */
+/* line 681, /Users/torsten/liemba/css/story-styles.less */
 #story-12 * {
   position: absolute;
 }
-/* line 660, /Users/torsten/liemba/css/story-styles.less */
+/* line 683, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #sign_1 {
   top: 5px;
   left: 300px;
 }
-/* line 664, /Users/torsten/liemba/css/story-styles.less */
+/* line 687, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_1_1 {
   top: 80px;
   left: 340px;
 }
-/* line 668, /Users/torsten/liemba/css/story-styles.less */
+/* line 691, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_9_1 {
   top: 80px;
   left: 420px;
 }
-/* line 672, /Users/torsten/liemba/css/story-styles.less */
+/* line 695, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_1_2 {
   top: 80px;
   left: 500px;
 }
-/* line 676, /Users/torsten/liemba/css/story-styles.less */
+/* line 699, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_6 {
   top: 80px;
   left: 580px;
 }
-/* line 680, /Users/torsten/liemba/css/story-styles.less */
+/* line 703, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #ship_pickup {
   top: 200px;
   left: 200px;
 }
-/* line 684, /Users/torsten/liemba/css/story-styles.less */
+/* line 707, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #waves {
   top: 480px;
   left: 150px;
 }
-/* line 688, /Users/torsten/liemba/css/story-styles.less */
+/* line 711, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #wire_12 {
   top: 87px;
   left: 508px;
 }
-/* line 692, /Users/torsten/liemba/css/story-styles.less */
+/* line 715, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #crane_right {
   top: 80px;
   left: 500px;
 }
-/* line 697, /Users/torsten/liemba/css/story-styles.less */
+/* line 720, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #sign_2 {
   top: 1px;
   left: 1px;
 }
-/* line 701, /Users/torsten/liemba/css/story-styles.less */
+/* line 724, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_1_3 {
   top: 1px;
   left: 1px;
 }
-/* line 705, /Users/torsten/liemba/css/story-styles.less */
+/* line 728, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_9_2 {
   top: 1px;
   left: 1px;
 }
-/* line 709, /Users/torsten/liemba/css/story-styles.less */
+/* line 732, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_2 {
   top: 1px;
   left: 1px;
 }
-/* line 713, /Users/torsten/liemba/css/story-styles.less */
+/* line 736, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #no_0 {
   top: 1px;
   left: 1px;
 }
-/* line 717, /Users/torsten/liemba/css/story-styles.less */
+/* line 740, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #rainy_cloud {
   top: 1px;
   left: 1px;
 }
-/* line 721, /Users/torsten/liemba/css/story-styles.less */
+/* line 744, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #arrows_down {
   top: 1px;
   left: 1px;
 }
-/* line 725, /Users/torsten/liemba/css/story-styles.less */
+/* line 748, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #ship_sink {
   top: 40px;
   left: 1px;
 }
-/* line 729, /Users/torsten/liemba/css/story-styles.less */
+/* line 752, /Users/torsten/liemba/css/story-styles.less */
 #story-12 #angery_waves {
   top: 1px;
   left: 1px;
 }
-/* line 737, /Users/torsten/liemba/css/story-styles.less */
+/* line 760, /Users/torsten/liemba/css/story-styles.less */
 #story-13 * {
   position: absolute;
 }
-/* line 739, /Users/torsten/liemba/css/story-styles.less */
+/* line 762, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 {
   position: relative;
   width: 662px;
@@ -842,32 +857,32 @@
   margin-left: -331px;
   margin-top: -225px;
 }
-/* line 748, /Users/torsten/liemba/css/story-styles.less */
+/* line 771, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #man {
   top: 0px;
   left: 0px;
 }
-/* line 753, /Users/torsten/liemba/css/story-styles.less */
+/* line 776, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #crane_left {
   top: -150px;
   left: 0px;
 }
-/* line 759, /Users/torsten/liemba/css/story-styles.less */
+/* line 782, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #the16mars {
   top: 57px;
   left: 612px;
 }
-/* line 764, /Users/torsten/liemba/css/story-styles.less */
+/* line 787, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #arrows_up {
   top: 46px;
   left: 558px;
 }
-/* line 769, /Users/torsten/liemba/css/story-styles.less */
+/* line 792, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #flags {
   bottom: 0px;
   left: 0px;
 }
-/* line 774, /Users/torsten/liemba/css/story-styles.less */
+/* line 797, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #wire_13 {
   background: url(../img/shared_fotos/wire.png);
   top: -140px;
@@ -875,85 +890,85 @@
   width: 45px;
   height: 390px;
 }
-/* line 782, /Users/torsten/liemba/css/story-styles.less */
+/* line 805, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #ship_pickup_schief {
   top: 100px;
   left: 200px;
 }
-/* line 787, /Users/torsten/liemba/css/story-styles.less */
+/* line 810, /Users/torsten/liemba/css/story-styles.less */
 #story-13 #wrapper13 #great_britania {
   bottom: 0px;
   left: 50%;
   margin-left: -122px;
 }
-/* line 796, /Users/torsten/liemba/css/story-styles.less */
+/* line 819, /Users/torsten/liemba/css/story-styles.less */
 #story-14 * {
   position: absolute;
 }
-/* line 798, /Users/torsten/liemba/css/story-styles.less */
+/* line 821, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #flasche_1 {
   top: 1px;
   left: 1px;
 }
-/* line 803, /Users/torsten/liemba/css/story-styles.less */
+/* line 826, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #flasche_2 {
   top: 1px;
   left: 1px;
 }
-/* line 808, /Users/torsten/liemba/css/story-styles.less */
+/* line 831, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #goetzen {
   top: 1px;
   left: 1px;
 }
-/* line 813, /Users/torsten/liemba/css/story-styles.less */
+/* line 836, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #liemba_typo {
   top: 1px;
   left: 1px;
 }
-/* line 818, /Users/torsten/liemba/css/story-styles.less */
+/* line 841, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #schiff {
   top: 1px;
   left: 1px;
 }
-/* line 823, /Users/torsten/liemba/css/story-styles.less */
+/* line 846, /Users/torsten/liemba/css/story-styles.less */
 #story-14 #ueberschrift {
   top: 1px;
   left: 1px;
 }
-/* line 831, /Users/torsten/liemba/css/story-styles.less */
+/* line 854, /Users/torsten/liemba/css/story-styles.less */
 #story-15 * {
   position: absolute;
 }
-/* line 833, /Users/torsten/liemba/css/story-styles.less */
+/* line 856, /Users/torsten/liemba/css/story-styles.less */
 #story-15 #ship_board {
   top: 273px;
   left: 386px;
 }
-/* line 837, /Users/torsten/liemba/css/story-styles.less */
+/* line 860, /Users/torsten/liemba/css/story-styles.less */
 #story-15 #passingers {
   top: 226px;
   left: 198px;
 }
-/* line 841, /Users/torsten/liemba/css/story-styles.less */
+/* line 864, /Users/torsten/liemba/css/story-styles.less */
 #story-15 #police {
   top: 108px;
   left: 450px;
 }
-/* line 845, /Users/torsten/liemba/css/story-styles.less */
+/* line 868, /Users/torsten/liemba/css/story-styles.less */
 #story-15 #ship_15 {
   top: 300px;
   left: 200px;
 }
-/* line 849, /Users/torsten/liemba/css/story-styles.less */
+/* line 872, /Users/torsten/liemba/css/story-styles.less */
 #story-15 #fluchtlingstransport {
   top: 37px;
   left: 65px;
 }
-/* line 856, /Users/torsten/liemba/css/story-styles.less */
+/* line 879, /Users/torsten/liemba/css/story-styles.less */
 #story-16 * {
   position: absolute;
 }
-/* line 858, /Users/torsten/liemba/css/story-styles.less */
+/* line 881, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 {
   position: relative;
   width: 1024px;
@@ -963,51 +978,51 @@
   margin-left: -512px;
   margin-top: -384px;
 }
-/* line 867, /Users/torsten/liemba/css/story-styles.less */
+/* line 890, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #i1964_16 {
   top: 250px;
   left: 770px;
 }
-/* line 872, /Users/torsten/liemba/css/story-styles.less */
+/* line 895, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #iafroman_16 {
   top: 192px;
   left: 100px;
 }
-/* line 877, /Users/torsten/liemba/css/story-styles.less */
+/* line 900, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #ikarte_16 {
   top: 126px;
   left: 336px;
 }
-/* line 882, /Users/torsten/liemba/css/story-styles.less */
+/* line 905, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #iflagkontur_16 {
   top: 428px;
   left: 56px;
 }
-/* line 887, /Users/torsten/liemba/css/story-styles.less */
+/* line 910, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #ishif_16 {
   top: 328px;
   left: 262px;
 }
-/* line 892, /Users/torsten/liemba/css/story-styles.less */
+/* line 915, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #iafrobestatung_16 {
   top: 386px;
   left: 700px;
 }
-/* line 897, /Users/torsten/liemba/css/story-styles.less */
+/* line 920, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #igruendung_16 {
   top: 28px;
   left: 566px;
 }
-/* line 902, /Users/torsten/liemba/css/story-styles.less */
+/* line 925, /Users/torsten/liemba/css/story-styles.less */
 #story-16 #wrapper16 #ieigentum_16 {
   top: 600px;
   left: 612px;
 }
-/* line 910, /Users/torsten/liemba/css/story-styles.less */
+/* line 933, /Users/torsten/liemba/css/story-styles.less */
 #story-17 * {
   position: absolute;
 }
-/* line 912, /Users/torsten/liemba/css/story-styles.less */
+/* line 935, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 {
   position: relative;
   width: 1024px;
@@ -1017,51 +1032,51 @@
   margin-left: -512px;
   margin-top: -384px;
 }
-/* line 921, /Users/torsten/liemba/css/story-styles.less */
+/* line 944, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #imarinero_17 {
   top: 486px;
   left: 60px;
 }
-/* line 926, /Users/torsten/liemba/css/story-styles.less */
+/* line 949, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #imotor_17 {
   top: 50px;
   left: 562px;
 }
-/* line 931, /Users/torsten/liemba/css/story-styles.less */
+/* line 954, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #ipfeilrechts_17 {
   top: 126px;
   left: 398px;
 }
-/* line 936, /Users/torsten/liemba/css/story-styles.less */
+/* line 959, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #ipfeilunten_17 {
   top: 300px;
   left: 848px;
 }
-/* line 941, /Users/torsten/liemba/css/story-styles.less */
+/* line 964, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #iradmachine_17 {
   top: 82px;
   left: 86px;
 }
-/* line 946, /Users/torsten/liemba/css/story-styles.less */
+/* line 969, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #ix_17 {
   top: 36px;
   left: 74px;
 }
-/* line 952, /Users/torsten/liemba/css/story-styles.less */
+/* line 975, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #iwolke_17 {
   top: 282px;
   left: 114px;
 }
-/* line 957, /Users/torsten/liemba/css/story-styles.less */
+/* line 980, /Users/torsten/liemba/css/story-styles.less */
 #story-17 #wrapper17 #ishiff_17 {
   top: 366px;
   left: 400px;
 }
-/* line 965, /Users/torsten/liemba/css/story-styles.less */
+/* line 988, /Users/torsten/liemba/css/story-styles.less */
 #story-18 * {
   position: absolute;
 }
-/* line 967, /Users/torsten/liemba/css/story-styles.less */
+/* line 990, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 {
   position: relative;
   width: 1024px;
@@ -1071,51 +1086,51 @@
   margin-left: -512px;
   margin-top: -384px;
 }
-/* line 976, /Users/torsten/liemba/css/story-styles.less */
+/* line 999, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #ischif_18 {
   left: 552px;
   top: 132px;
 }
-/* line 981, /Users/torsten/liemba/css/story-styles.less */
+/* line 1004, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #iheadline_18 {
   left: 58px;
   top: 38px;
 }
-/* line 985, /Users/torsten/liemba/css/story-styles.less */
+/* line 1008, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #idampfmaschine_18 {
   left: 28px;
   top: 398px;
 }
-/* line 990, /Users/torsten/liemba/css/story-styles.less */
+/* line 1013, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #idieselmotor_18 {
   left: 306px;
   top: 334px;
 }
-/* line 995, /Users/torsten/liemba/css/story-styles.less */
+/* line 1018, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #izyliner_18 {
   left: 370px;
   top: 268px;
 }
-/* line 1000, /Users/torsten/liemba/css/story-styles.less */
+/* line 1023, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #ix_18 {
   left: 28px;
   top: 398px;
 }
-/* line 1005, /Users/torsten/liemba/css/story-styles.less */
+/* line 1028, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #icarstensen1_18 {
   left: 670px;
   top: 192px;
 }
-/* line 1010, /Users/torsten/liemba/css/story-styles.less */
+/* line 1033, /Users/torsten/liemba/css/story-styles.less */
 #story-18 #wrapper18 #idieselmotoren_18 {
   left: 160px;
   top: 284px;
 }
-/* line 1018, /Users/torsten/liemba/css/story-styles.less */
+/* line 1041, /Users/torsten/liemba/css/story-styles.less */
 #story-19 * {
   position: absolute;
 }
-/* line 1020, /Users/torsten/liemba/css/story-styles.less */
+/* line 1043, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 {
   position: relative;
   width: 1024px;
@@ -1125,7 +1140,7 @@
   margin-left: -512px;
   margin-top: -384px;
 }
-/* line 1029, /Users/torsten/liemba/css/story-styles.less */
+/* line 1052, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #karte-wrapper_19 {
   position: relative;
   width: 426px;
@@ -1133,61 +1148,61 @@
   left: 117px;
   top: 267px;
 }
-/* line 1036, /Users/torsten/liemba/css/story-styles.less */
+/* line 1059, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #karte-wrapper_19 #ikartee_19 {
   left: 0px;
   top: 0px;
 }
-/* line 1041, /Users/torsten/liemba/css/story-styles.less */
+/* line 1064, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #karte-wrapper_19 #iuvirakigoma_19 {
   left: 0px;
   top: 0px;
 }
-/* line 1047, /Users/torsten/liemba/css/story-styles.less */
+/* line 1070, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #istrahlen1_19 {
   left: 118px;
   top: 0px;
 }
-/* line 1052, /Users/torsten/liemba/css/story-styles.less */
+/* line 1075, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #istrahlen2_19 {
   left: 118px;
   top: 0px;
 }
-/* line 1056, /Users/torsten/liemba/css/story-styles.less */
+/* line 1079, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #i1997_19 {
   left: 178px;
   top: 44px;
 }
-/* line 1061, /Users/torsten/liemba/css/story-styles.less */
+/* line 1084, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #iliemba_19 {
   left: 572px;
   top: 188px;
 }
-/* line 1066, /Users/torsten/liemba/css/story-styles.less */
+/* line 1089, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #imenschen_19 {
   left: 318px;
   top: 330px;
 }
-/* line 1071, /Users/torsten/liemba/css/story-styles.less */
+/* line 1094, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #i75tsd_19 {
   left: 363px;
   top: 216px;
 }
-/* line 1076, /Users/torsten/liemba/css/story-styles.less */
+/* line 1099, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #iheadline_19 {
   left: 642px;
   top: 512px;
 }
-/* line 1081, /Users/torsten/liemba/css/story-styles.less */
+/* line 1104, /Users/torsten/liemba/css/story-styles.less */
 #story-19 #wrapper19 #iwellen_19 {
   left: 555px;
   top: 453px;
 }
-/* line 1089, /Users/torsten/liemba/css/story-styles.less */
+/* line 1112, /Users/torsten/liemba/css/story-styles.less */
 #story-20 * {
   position: absolute;
 }
-/* line 1091, /Users/torsten/liemba/css/story-styles.less */
+/* line 1114, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 {
   position: relative;
   width: 1024px;
@@ -1197,37 +1212,37 @@
   margin-left: -512px;
   margin-top: -384px;
 }
-/* line 1100, /Users/torsten/liemba/css/story-styles.less */
+/* line 1123, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #i100jahre_20 {
   left: 188px;
   top: 46px;
 }
-/* line 1105, /Users/torsten/liemba/css/story-styles.less */
+/* line 1128, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #iwichtigste_20 {
   left: 688px;
   top: 308px;
 }
-/* line 1110, /Users/torsten/liemba/css/story-styles.less */
+/* line 1133, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #isee_20 {
   left: 178px;
   top: 534px;
 }
-/* line 1114, /Users/torsten/liemba/css/story-styles.less */
+/* line 1137, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #iboot_20 {
   left: 552px;
   top: 506px;
 }
-/* line 1119, /Users/torsten/liemba/css/story-styles.less */
+/* line 1142, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #iliembaa_20 {
   left: 154px;
   top: 238px;
 }
-/* line 1124, /Users/torsten/liemba/css/story-styles.less */
+/* line 1147, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #izeicheng_20 {
   left: 940px;
   top: 326px;
 }
-/* line 1129, /Users/torsten/liemba/css/story-styles.less */
+/* line 1152, /Users/torsten/liemba/css/story-styles.less */
 #story-20 #wrapper20 #izeichenk_20 {
   left: 806px;
   top: 296px;
