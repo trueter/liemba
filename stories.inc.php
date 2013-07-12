@@ -2,9 +2,6 @@
 <section id="section-1">
 <!-- #1 -->
 	<div id="story-1" class="story">
-
-		
-
 		
 		<div id="ship-wrapper">
 			<img src="img/1/schiffchen.png" id="schiffchen">
@@ -25,7 +22,6 @@
 		</div>
 
 		<img src="img/1/erstePlaene.png" id="erstePlaene">
-		
 
 	</div>
 <!-- #2 -->
@@ -55,19 +51,16 @@
 		</div>
 
 		<div id ="construction-wrapper_3">
-			<img src="img/3/wappen.png" class="element" id="wappen_3">
-			<img src="img/3/uhr.png" class="element" id="uhr_3">
-			<img src="img/3/rad.png" class="element" id="rad_3">
-			<img src="img/3/torpedo.png" class="element" id="torpedo_3">
-			<img src="img/3/maschine.png" class="element" id="maschine_3">	
-			<img src="img/3/fisch.png" class="element" id="fisch_3">
-			<img src="img/3/anker.png" class="element" id="anker_3">
-			<img src="img/3/schraube.png" class="element" id="schraube_3">	
-			<img src="img/3/schraube2.png" class="element" id="schraube2_3">
-			
-								
+			<img src="img/3/wappen.png" id="wappen_3">
+			<img src="img/3/uhr.png" id="uhr_3">
+			<img src="img/3/rad.png" id="rad_3">
+			<img src="img/3/torpedo.png" id="torpedo_3">
+			<img src="img/3/maschine.png" id="maschine_3">	
+			<img src="img/3/fisch.png" id="fisch_3">
+			<img src="img/3/anker.png" id="anker_3">
+			<img src="img/3/schraube.png" id="schraube_3">	
+			<img src="img/3/schraube2.png" id="schraube2_3">
 		</div>
-
 	</div>
 
 <!-- #4 -->
@@ -84,9 +77,6 @@
 		<img src="img/4/text.png" id="text_4">
 		<img src="img/4/text1.png" id="text1_4">
 		
-
-		
-
 	</div>
 
 </section>
@@ -155,12 +145,13 @@
 			<img id="karte_8" src="img/8/karte.png">
 			
 		</div>
+
 		<img id="welle_8" src="img/8/wellen.png">	
+
 		<div id="schiff-wrapper_8">
 			<img id="schiff_8" src="img/8/schiff.png">
 			<img id="sprechblase_8" src="img/8/sprechblase.png">
 		</div>
-		
 		
 		<img id="typo_8" src="img/8/typo.png">
 	</div>
@@ -176,16 +167,17 @@
 			<img id="schiff_9" src="img/9/schiff.png">
 			<img id="wellen_9" src="img/9/wellen.png">
 		</div>
+
 		<img id="kampfeinsatz_9" src="img/9/kampfeinsatz.png">
 		<img id="soldaten_9" src="img/9/soldaten.png">
 		<img id="text_9" src="img/9/text.png">
-
 		
 	</div>
 
 <!-- #10 -->
 	<div id="story-10" class="story">
 		<img id="dorf_10" src="img/10/Dorf.png">
+
 		<div id="content-wrapper_10">
 			<img id="flieger_10" src="img/10/Flieger.png">
 			<img id="kanonen_10" src="img/10/Kanonen.png">
@@ -194,14 +186,11 @@
 					<img id="schiff_10" src="img/10/Schiff.png">
 					<img id="explosion_10" src="img/10/Explosion.png">
 				</div>
-			
-
 		</div>
 		
-
 	</div>
 <!-- #11 -->
-<div id= "story-11" class="story">
+	<div id= "story-11" class="story">
 		<img id="ship_11" src="img/shared_fotos/ship.png">
 		<img id="bubble_11" src="img/11/bubble.png">
 		<img id="the26juli" src="img/11/26juli.png">
@@ -215,7 +204,6 @@
 		<img id="sandbag3" src="img/11/sandbag1.png">
 		<img id="sandbag4" src="img/11/sandbag1.png">
 		<img id="bagropes" src="img/11/bagropes.png">
-		
 	</div>
 
 
@@ -231,11 +219,9 @@
 			<img id="crane_right" src="img/12/crane_right.png">
 			<img id="waves" src="img/12/waves.png">
 			<img id="wire_12" src="img/shared_fotos/wire.png">
-
-
 		</div>
 
-	<!--	<div id="zweite_untergang-wrapper_12">
+	<!--<div id="zweite_untergang-wrapper_12">
 			<img id="sign_2" src="img/12/sign.png">
 			<img id="no_1_3" src="img/12/1.png">
 			<img id="no_9_2" src="img/12/9.png">
@@ -245,11 +231,9 @@
 			<img id="arrows_down" src="img/12/arrows_down.png">
 			<img id="ship_sink" src="img/12/ship_sink.png">
 			<img id="angery_waves" src="img/12/angery_waves.png">
-
-			
 		</div>	
 	-->
-
+	</div><!-- end story 12 -->
 </section>
 
 <section id="section-4">
@@ -263,12 +247,7 @@
 		<img id="arrows_up" src="img/13/arrows_up.png">
 		<img id="flags" src="img/13/flags.png">
 		<img id="great_britania" src="img/13/great_britania.png">
-
-
-
 	</div>
-
-
 
 <!-- #14 -->
 	<div id="story-14" class="story">
@@ -278,9 +257,6 @@
 		<img id="liemba_typo" src="img/14/liemba_typo.png">
 		<img id="schiff" src="img/14/schiff.png">
 		<img id="ueberschrift" src="img/14/ueberschrift.png">
-
-
-
 	</div>
 
 <!-- #15 -->
@@ -295,8 +271,7 @@
 	</div>
 
 <!-- #16 -->
-<div id="story-16" class="story">
-		
+	<div id="story-16" class="story">
 		<div id="wrapper16">
 			<img id="iafroman_16" src="img/16/afroman_16.png">
 			<img id="iflagkontur_16" src="img/16/flagkontur_16.png">
@@ -314,9 +289,7 @@
 <section id="section-5">
 
 <!-- #17 -->
-
-<div id="story-17" class="story">
-	
+	<div id="story-17" class="story">
 		<div id="wrapper17">
 			<img id="imarinero_17" src="img/17/marinero_17.png">
 			<img id="imotor_17" src="img/17/motor_17.png">
@@ -329,22 +302,21 @@
 		</div>
 	</div>
 
-
 <!-- #18 -->
 
-<div id="story-18" class="story">
-	<div id="wrapper18">
-		<img id="ischif_18" src="img/18/schif_18.png">
-		<img id="icarstensen1_18" src="img/18/carstensen1_18.png">
-		<img id="idampfmaschine_18" src="img/18/dampfmaschine_18.png">
-		<img id="idieselmotor_18" src="img/18/dieselmotor_18.png">
-		<img id="idieselmotoren_18" src="img/18/dieselmotoren_18.png">
-		<img id="ix_18" src="img/18/x_18.png">
-		<img id="izyliner_18" src="img/18/zyliner_18.png">
-		<img id="iheadline_18" src="img/18/headline_18.png">
-		
+	<div id="story-18" class="story">
+		<div id="wrapper18">
+			<img id="ischif_18" src="img/18/schif_18.png">
+			<img id="icarstensen1_18" src="img/18/carstensen1_18.png">
+			<img id="idampfmaschine_18" src="img/18/dampfmaschine_18.png">
+			<img id="idieselmotor_18" src="img/18/dieselmotor_18.png">
+			<img id="idieselmotoren_18" src="img/18/dieselmotoren_18.png">
+			<img id="ix_18" src="img/18/x_18.png">
+			<img id="izyliner_18" src="img/18/zyliner_18.png">
+			<img id="iheadline_18" src="img/18/headline_18.png">
+			
+		</div>
 	</div>
-</div>
 
 <!-- #19 -->
 
@@ -359,11 +331,9 @@
 			<img id="i75tsd_19" src="img/19/75tsd_19.png">
 			<img id="i1997_19" src="img/19/1997_19.png">
 			<img id="iheadline_19" src="img/19/headline_19.png">
-			
 			<img id="iliemba_19" src="img/19/liemba_19.png">
 			<img id="istrahlen1_19" src="img/19/strahlen1_19.png">
 			<img id="istrahlen2_19" src="img/19/strahlen2_19.png">
-			
 			<img id="iwellen_19" src="img/19/wellen_19.png">
 			<img id="imenschen_19" src="img/19/menschen_19.png">
 			
@@ -373,18 +343,14 @@
 <!-- #20 -->
 
 	<div id="story-20" class="story">
-	
-		
 		<div id="wrapper20">	
 			<img id="i100jahre_20" src="img/20/100jahre_20.png">
-			
 			<img id="isee_20" src="img/20/see_20.png">
 			<img id="iliembaa_20" src="img/20/liembaa_20.png">
 			<img id="iboot_20" src="img/20/boot_20.png">
 			<img id="iwichtigste_20" src="img/20/wichtigste_20.png">
 			<img id="izeicheng_20" src="img/20/zeicheng_20.png">
 			<img id="izeichenk_20" src="img/20/zeichenk_20.png">
-		
 		</div>
 	</div>
 
@@ -394,8 +360,7 @@
 
 <!-- railroad scene -->
 
-<div class="historyText not-yet-implemented">
-
+<div class="historyText" id="historyText-1">
 	<!-- #1 -->
 	<h1>Erste Pl&auml;ne</h1>
 	<h2>Juni 1910</h2>
@@ -417,7 +382,7 @@
 
 <!-- ocean scene -->
 
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-2">
 	<!-- #2 -->
 	<h1>Vormontage</h1>
 	<h2>Feb. 1913</h2>
@@ -447,7 +412,7 @@
 </div>
 
 <!-- template scene --> 
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-3">
 	<!-- #3 -->
 	<h1>Start des Transports</h1>
 	<h2>Nov. 1913</h2>
@@ -469,7 +434,7 @@
 		der Innenr&auml;ume und Kabinen sowie Installations- und Ersatzteile liefert. 
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-4">
 	<!-- #4 -->
 	<h1>Ankunft</h1>
 	<h2>Jan 1914</h2>
@@ -483,7 +448,7 @@
 		Instandhaltung ben&ouml;igt werden.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-5">
 	<!-- #5 -->
 	<h1>Berichte der Werftmitarbeiter </h1>
 	<h2>Feb. 1914</h2>
@@ -512,7 +477,7 @@
 		&ldquo;Wir arbeiten nun schon seit drei Wochen an dem Schiff und hoffen auf den Stapellauf im August&hellip;&rdquo; <br>
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-6">
 	<!-- #6 -->
 	<h1>Erster Termin f&uuml;r Stapellauf </h1>
 	<h2>Jan. 1915</h2>
@@ -531,7 +496,7 @@
 		Werftmitarbeiter ist es dennoch gelungen. 
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-7">
 	<!-- #7 -->
 	<h1>&Uuml;bergabe an Schutztruppe und Waffenausr&uuml;stung</h1>
 	<h2>Mai 1915</h2>
@@ -542,7 +507,7 @@
 		8.8-cm-Gesch&uuml;tze sowie drei 3.7-cm-Revolver-Kanonen auf dem Deck des Schiffes montiert.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-8">
 	<!-- #8 -->
 	<h1>Fertige Aussttatung und die erste Fahrt</h1>
 	<h2>Juni 1915</h2>
@@ -552,7 +517,7 @@
 		Angeh&ouml;igen der Schutztruppe an Bord. Das Schiff kommt zun&auml;chst &uuml;berhaupt nicht voran.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-9">
 	<!-- #9 -->
 	<h1>Erste offizielle Probefahrt</h1>
 	<h2>Juni 1915</h2>
@@ -562,7 +527,7 @@
 		trockenes und entrindetes Holz verwendet wird, liegt die Durchschnittsgeschwindigkeit bei 8,25 Knoten.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-10">
 	<!-- #10 -->
 	<h1>Erster Kampfeinsatz</h1>
 	<h2>Juni 1915</h2>
@@ -574,7 +539,7 @@
 		der Schutztruppen von Deutsch-Ostafrika, den sp&auml;teren General von Lettow-Vorbeck.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-11">
 	<!-- #11 -->
 	<h1>Aufgabe von Bismarckburg</h1>
 	<h2>Juni 1916</h2>
@@ -595,7 +560,7 @@
 		sie es erneut.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-12">
 	<!-- #12 -->
 	<h1>Versenkung</h1>
 	<h2>Juli 1916</h2>
@@ -626,7 +591,7 @@
 
 
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-13">
 	<!-- #13 -->
 	<h1>Erneuter Untergang</h1>
 	<h2>1924</h2>
@@ -647,7 +612,7 @@
 	</p>
 
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-14">
 	<!-- #14 -->
 	<h1>Schiffserneuerung und Leuchtfeuer</h1>
 	<h2>1924</h2>
@@ -664,10 +629,9 @@
 		Briten sind somit Gesamtkosten in Hlhe von 49.696 &pound; entstanden. Hinzu kommen laut eines Schreibens des 
 		Generalmanagers vom 6. August 1926 noch weitere Betr&auml;ge f&uuml;r die Erneuerung der Werft 
 		(15.000 &pound;), der Hellinganlage (10.000 &pound;) und den Bau eines Krans (3.000 &pound;). Darüber hinaus 
-		werden Seezeichen und Leuchtfeuer an den &ouml;stlichen und s&uuml;dlichen Ufern des Sees installiert.
-	</p>
+		werden Seezeichen und Leuchtfeuer an den &ouml;stlichen und s&uuml;dlichen Ufern des Sees installiert.</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-15">
 	<!-- #15 -->
 	<h1>Taufe "Liemba"</h1>
 	<h2>Mai 1927</h2>
@@ -678,7 +642,7 @@
 		16. Mai 1927&rdquo; einlädt.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-16">
 	<!-- #16 -->
 	<h1>Fl&uuml;chtlingstransport</h1>
 	<h2>1947</h2>
@@ -694,7 +658,7 @@
 		etablieren konnte, ist von Mbala aus &uuml;ber eine geteerte Stra&szlig;e mittlerweile relativ gut zu erreichen.)
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-17">
 	<!-- #17 -->
 	<h1>Gr&uuml;ndung Tansania</h1>
 	<h2>1964</h2>
@@ -705,7 +669,7 @@
 		strikten Vorgaben der britischen Mandatsregierung diesem Schritt im Wege.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-18">
 	<!-- #18 -->
 	<h1>Dieselmotoren</h1>
 	<h2>Nov 1976</h2>
@@ -736,7 +700,7 @@
 	</p>
 
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-19">
 	<!-- #19 -->
 	<h1>Fl&uuml;chtlingstransport Kongo</h1>
 	<h2>1997</h2>
@@ -747,7 +711,7 @@
 		Kigoma und Uvira.
 	</p>
 </div>
-<div class="historyText not-yet-implemented">
+<div class="historyText" id="historyText-20">
 	<!-- #20 -->
 	<h1>Zwei offizielle deutsche Delegationen</h1>
 	<h2>2010-2012</h2>

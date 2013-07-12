@@ -1,22 +1,17 @@
+var currentOffset;
 // Executed on document.ready event
 $(function() {
 
-	$(document).scroll(function(){	
+	$(document).scroll(function(){
 		var doc = document.documentElement, body = document.body;
-		var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0);
-		$('#offsetHelper').html(top);
+		currentOffset = (doc && doc.scrollTop  || body && body.scrollTop  || 0);
+		$('#offsetHelper').html(currentOffset);
 	});
 
-	// Used to center elements
-/*
-	var nav = $('#skollr-menu-wrapper');
-	var x = -1*(nav.outerWidth() / 2);
-	nav.css("margin-left", x);
-*/
-	var circle = $('#instruction-circle');
-	var x = -1*(circle.outerWidth() / 2);
-	circle.css("margin-left", x);
-	
+	$('#infobox_icon').click(function(){
+		displayInfobox( parseInt(Math.round(currentOffset/1000)) );
+	});
+
 });
 
 $(window).resize(function() {
@@ -35,12 +30,29 @@ var s = skrollr.init({
 }); 
 // & menu
 skrollr.menu.init(s, {
-    animate: true, //skrollr will smoothly animate to the new position using `animateTo`.
-    duration: 500, //How long the animation should take in ms.
-    easing: 'sqrt' //The easing function to use.
+    animate: true,//skrollr will smoothly animate to the new position using `animateTo`.
+    duration: 500,//How long the animation should take in ms.
+    easing: 'sqrt'//The easing function to use.
 });
 
 // used in skrollr.stylesheets.js to keep skrollr data attributes clean
 String.prototype.killWhiteSpace = function() {
     return this.replace(/\s/g, '');
 };
+
+
+function displayInfobox(n){
+	console.log("display infobox");
+	var infobox = $('#infobox');
+	var overlay = $('#overlay');
+	var closebutton = $('<div id="infobox_close">zurück</div>').click(function(){hideInfobox();});
+
+	infobox.html($('#historyText-'+n).html()).append(closebutton);
+	overlay.show();
+}
+
+function hideInfobox(n){
+	console.log("hide infobox");
+	var overlay = $('#overlay');
+	overlay.hide();
+}

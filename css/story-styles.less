@@ -1,10 +1,6 @@
 #story-1{
 	
-	*{
-		position: absolute;
-	}
-
-	
+	*{ position: absolute; }
 
 	#ship-wrapper{
 		position: relative;
@@ -13,10 +9,8 @@
 		top: 15%;
 		left: 15%;
 
+		#schiffchen{ z-index: 10; }
 
-		#schiffchen{
-			z-index: 10;
-		}
 		.figur{
 			transition: all 0.1s ease-in-out;
 			position: absolute;
@@ -24,24 +18,24 @@
 		}
 
 		#figur-1{
-			background: url(../img/1/figur1.png);
-			top: 0px;
-			left: 29px;
 			width: 201px;
 			height: 410px;
+			top: 0px;
+			left: 29px;
 			overflow: hidden;
+			background: url(../img/1/figur1.png);
+
+			img{
+				position: relative;
+				top: 200px;
+				left: -180px;
+			}
 
 			&:hover{ 
 				transform: translateY(-20px); 
 				overflow: visible;
 			}
 			
-		}
-
-		#figur-1 img{
-			position: relative;
-			top: 200px;
-			left: -180px;
 		}
 
 		#figur-2{
@@ -52,19 +46,17 @@
 			height: 438px;
 			overflow: hidden;
 
+			img{
+				position: relative;
+				font-size: 15px;
+				top:-75px;
+				left: 0px;
+			}
+
 			&:hover{ 
 				transform: translateY(-20px); 
 				overflow: visible;
 			}
-			
-		}
-
-		#figur-2 img{
-			position: relative;
-			font-size: 15px;
-			top:-75px;
-			left: 0px;
-
 		}
 
 		#figur-3{
@@ -75,20 +67,19 @@
 			width: 195px;
 			height: 408px;
 			overflow: hidden;
+			
+			img{
+				position: relative;
+				font-size: 15px;
+				top: 100px;
+				left: 250px;
+			}
 
 			&:hover{ 
 				transform: translateY(-20px);
 				overflow: visible;
 			}
 			
-		}
-
-		#figur-3 img{
-			position: relative;
-			font-size: 15px;
-			top: 100px;
-			left: 250px;
-
 		}
 
 		#welle{
@@ -103,7 +94,6 @@
 		}
 	} /* ship-wrapper */
 
-
 	#erstePlaene{
 		top: 10%;
 		right: 10%;
@@ -112,9 +102,8 @@
 
 #story-2{
 
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#loesung1{
 		position: relative;
@@ -163,9 +152,8 @@
 }
 
 #story-3{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#banner-wrapper_3{
 		position: relative;
@@ -206,7 +194,7 @@
 		margin-left: -325px;
 		margin-top: -225px;
 
-		.element{
+		* {
 			transition: all 0.1s ease-in-out;
 			position: absolute;
 			z-index: 11;
@@ -262,9 +250,8 @@
 }
 
 #story-4{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#karte-wrapper_4{
 		position: relative;
@@ -308,9 +295,8 @@
 }
 
 #story-5{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#content_5{
 		position: relative;
@@ -347,9 +333,8 @@
 }
 
 #story-6{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#content-wrapper_6{
 
@@ -360,7 +345,6 @@
 		left: 50%;
 		margin-left: -425px;
 		margin-top: -280px;
-
 
 		#aktie_6{
 			top: 120px;
@@ -383,8 +367,6 @@
 			left: 0px;
 			width: 236px;
 			height: 193px;
-
-			
 		}
 		#briefmarke_6{
 			top: 70px;
@@ -419,9 +401,8 @@
 	}
 }	
 #story-7{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#content_7{
 		position: relative;
 		width: 830px;
@@ -455,7 +436,6 @@
 			&:hover{ transform: translateY(-20px); }
 		}
 
-
 	}
 	#title_7{
 		top: 15%;
@@ -465,9 +445,8 @@
 }
 
 #story-8{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 
 	#karte-wrapper_8{
 		position: relative;
@@ -493,14 +472,12 @@
 			top: 0px;
 			left: 20px;
 		}
-		
-		
 	}
 
 	#welle_8{
-			bottom: 20%;
-			right: 0%;
-		}
+		bottom: 20%;
+		right: 0%;
+	}
 
 	#schiff-wrapper_8{
 		width: 500px;
@@ -526,9 +503,8 @@
 }
 
 #story-9{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#schiff-wrapper_9{
 		position: relative;
 		width: 710px;
@@ -562,9 +538,8 @@
 }
 
 #story-10{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#content-wrapper_10{
 		position: relative;
 		width: 800px;
@@ -587,7 +562,6 @@
 			left: 0%;
 			top: 0%;
 		}
-
 	}
 
 	#schiff-wrapper_10{
@@ -605,6 +579,7 @@
 			left: 150px;
 		}
 	}
+	
 	#dorf_10{
 		top: 50%;
 		left: 50%;
@@ -615,305 +590,249 @@
 	#schrift_10{
 
 	}
-
 }
 #story-11{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#ship_11{
 		top: 40px;
 		left: 150px;
 
 	}
+
 	#flag{
 		top: 61px;
 		left: 307px;
-
 	}
 	#bubble_11{
-	top: 45px;
-	left: 150px;
+		top: 45px;
+		left: 150px;
 	}
 
 	#the26juli{
-	top: 52px;
-	left: 169px;
+		top: 52px;
+		left: 169px;
 	}
 
 	#arrow_down_11{
-	top: 272px;
-	left: 126px;
+		top: 272px;
+		left: 126px;
 
 	}
 	#oil_big{
-	top:260px;
-	left: 169px;
-
+		top: 260px;
+		left: 169px;
 	}
 	#oilman{
-	top:163px;
-	left:582px;
+		top: 163px;
+		left: 582px;
 	}
 	#fish{
-	top:550px;
-	left:350px;
+		top: 550px;
+		left: 350px;
 	}
 	#sandbag1{
-	top:567px;
-	left:283px;
+		top: 567px;
+		left: 283px;
 	}
 	#sandbag2{
-	top:466px;
-	left:240px;
+		top: 466px;
+		left: 240px;
 	}
 	#sandbag3{
-	top:508px;
-	left:162px;
+		top: 508px;
+		left: 162px;
 	}
 	#sandbag4{
-	top:407px;
-	left:193px;
+		top: 407px;
+		left: 193px;
 	}
 	#bagropes{
-	top:337px;
-	left:192px;
+		top: 337px;
+		left: 192px;
 	}
-	
-
 }
 
 #story-12{
-*{
-		position: absolute;
-	}
+	*{ position: absolute; }
 
 	#sign_1{
-	top: 5px;
-	left: 300px;
-
-
+		top: 5px;
+		left: 300px;
 	}
 	#no_1_1{
-	top:80px;
-	left:340px;
-
+		top: 80px;
+		left: 340px;
 	}
 	#no_9_1{
-	top:80px;
-	left:420px;
-
+		top: 80px;
+		left: 420px;
 	}
 	#no_1_2{
-	top:80px;
-	left:500px;
-
+		top: 80px;
+		left: 500px;
 	}
 	#no_6{
-	top:80px;
-	left:580px;
-
+		top: 80px;
+		left: 580px;
 	}
 	#ship_pickup{
-	top:200px;
-	left:200px;
-
+		top: 200px;
+		left: 200px;
 	}
 	#waves{
-	top:480px;
-	left:150px;
-
+		top: 480px;
+		left: 150px;
 	}
 	#wire_12{
-	top:87px;
-	left:508px;
-
+		top: 87px;
+		left: 508px;
 	}
 	#crane_right{
-	top:80px;
-	left:500px;
-
+		top: 80px;
+		left: 500px;
 	}
-
-
-
 
 	#sign_2{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#no_1_3{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#no_9_2{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#no_2{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#no_0{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#rainy_cloud{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#arrows_down{
-	top:1px;
-	left:1px;
-
+		top: 1px;
+		left: 1px;
 	}
 	#ship_sink{
-	top:40px;
-	left:1px;
-
+		top: 40px;
+		left: 1px;
 	}
 	#angery_waves{
-	top:1px;
-	left:1px;
-
-	}
-
-
-
-	
+		top: 1px;
+		left: 1px;
+	}	
 }
 
 #story-13{
 
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+	
 	#man{
-	top:30px;
-	left:230px;
-
+		top:30px;
+		left:230px;
 	}
 	#crane_left{
 
-	top:30px;
-	left:220px;
-
+		top:30px;
+		left:220px;
 	}
 	#the16mars{
-	top:57px;
-	left:612px;
-
+		top:57px;
+		left:612px;
 	}
 	#arrows_up{
-	top:46px;
-	left:558px;
-
+		top:46px;
+		left:558px;
 	}
 	#flags{
-	top:178px;
-	left:205px;
-
+		top:178px;
+		left:205px;
 	}
 	#wire_13{
-	top:35px;
-	left:582px;
-
+		top:35px;
+		left:582px;
 	}
 	#ship_pickup_schief{
-	top:105px;
-	left:415px;
-
+		top:105px;
+		left:415px;
 	}
 	#great_britania{
-	top:567px;
-	left:385px;
-
+		top:567px;
+		left:385px;
 	}
-
 
 }
 
 #story-14{
-	*{
-		position: absolute;
-	}
-	#flasche_1{
-	top:1px;
-	left:1px;
+	*{ position: absolute; }
 
+	#flasche_1{
+		top:1px;
+		left:1px;
 	}
 	#flasche_2{
-	top:1px;
-	left:1px;
-
+		top:1px;
+		left:1px;
 	}
 	#goetzen{
-	top:1px;
-	left:1px;
-
+		top:1px;
+		left:1px;
 	}
 	#liemba_typo{
-	top:1px;
-	left:1px;
-
+		top:1px;
+		left:1px;
 	}
 	#schiff{
-	top:1px;
-	left:1px;
+		top:1px;
+		left:1px;
 	}
 	#ueberschrift{
-	top:1px;
-	left:1px;
-
+		top:1px;
+		left:1px;
 	}
 
-	
 }
 
 #story-15{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#no_15{
-	top:15px;
-	left:790px;
-
-
+		top:15px;
+		left:790px;
 	}
 	#ship_board{
-	top:273px;
-	left:386px;
+		top:273px;
+		left:386px;
 	}
 	#passingers{
-	top:226px;
-	left:198px;
+		top:226px;
+		left:198px;
 	}
 	#police{
-	top:108px;
-	left:450px;
-	
+		top:108px;
+		left:450px;
 	}
 	#ship_15{
-	top:300px;
-	left:200px;
-	
+		top:300px;
+		left:200px;
 	}
 	#fluchtlingstransport{
-	top:37px;
-	left:65px;
+		top:37px;
+		left:65px;
 	}
-
 }
+
 #story-16{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+	
 	#wrapper16{
 		position: relative;
 		width: 1024px;
@@ -924,53 +843,50 @@
 		margin-top: -384px;
 
 		#i1964_16{
-			left: 770px;
 			top: 250px;
+			left: 770px;
 		}
 
 		#iafroman_16{
-			left: 100px;
 			top: 192px;
+			left: 100px;
 		}
 
 		#ikarte_16{
-			left: 336px;
 			top: 126px;
+			left: 336px;
 		}
 
 		#iflagkontur_16{
-			left: 56px;
 			top: 428px;
+			left: 56px;
 		}
 
 		#ishif_16{
-			left: 262px;
 			top: 328px;
+			left: 262px;
 		}
 
 		#iafrobestatung_16{
-			left: 700px;
 			top: 386px;
+			left: 700px;
 		}
 
-
 		#igruendung_16{
-			left: 566px;
 			top: 28px;
+			left: 566px;
 		}
 
 		#ieigentum_16{
-			left: 612px;
 			top: 600px;
+			left: 612px;
 		}
-
 	}
 }
 
 #story-17{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#wrapper17{
 		position: relative;
 		width: 1024px;
@@ -981,53 +897,51 @@
 		margin-top: -384px;
 
 		#imarinero_17{
-			left: 60px;
 			top: 486px;
+			left: 60px;
 		}
 
 		#imotor_17{
-			left: 562px;
 			top: 50px;
+			left: 562px;
 		}
 
 		#ipfeilrechts_17{
-			left: 398px;
 			top: 126px;
+			left: 398px;
 		}
 
 		#ipfeilunten_17{
-			left: 848px;
 			top: 300px;
+			left: 848px;
 		}
 
 		#iradmachine_17{
-			left: 86px;
 			top: 82px;
+			left: 86px;
 		}
 
 		#ix_17{
-			left: 74px;
 			top: 36px;
+			left: 74px;
 		}
 
 
 		#iwolke_17{
-			left: 114px;
 			top: 282px;
+			left: 114px;
 		}
 
 		#ishiff_17{
-			left: 400px;
 			top: 366px;
+			left: 400px;
 		}
-
 	}
 }
 
 #story-18{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#wrapper18{
 		position: relative;
 		width: 1024px;
@@ -1075,16 +989,12 @@
 			left: 160px;
 			top: 284px;
 		}
-
-
-
 	}
 }
 
 #story-19{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#wrapper19{
 		position: relative;
 		width: 1024px;
@@ -1126,14 +1036,10 @@
 			top: 44px;
 		}
 
-		
-
 		#iliemba_19{
 			left: 572px;
 			top: 188px;
 		}
-
-		
 
 		#imenschen_19{
 			left: 318px;
@@ -1158,9 +1064,8 @@
 }
 
 #story-20{
-	*{
-		position: absolute;
-	}
+	*{ position: absolute; }
+
 	#wrapper20{
 		position: relative;
 		width: 1024px;
@@ -1193,8 +1098,6 @@
 			left: 154px;
 			top: 238px;
 		}
-
-
 
 		#izeicheng_20{
 			left: 940px;
