@@ -79,7 +79,11 @@ for($i = 2; $i<6; $i++){
     <?php
 }?>
 
-
+#infobox_icon{ -skrollr-animation-name:infobox_icon; }
+@-skrollr-keyframes infobox_icon {
+    999 { display: none; }
+    1000{ display: block; }
+}
 
 #scroll-instruction{ -skrollr-animation-name:scroll-instruction; }
 @-skrollr-keyframes scroll-instruction {

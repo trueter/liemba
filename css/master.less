@@ -3,22 +3,11 @@ body{
 	background-color: white;
 }
 
-#head{
-	height: 107px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;	
-}
-
 #offsetHelper{
-
 	position:fixed;
 	top: 20px;
 	left: 500px;
-	z-index:999;
+	z-index: 10000;
 	color: white;
 	font-size: 16px;
 	
@@ -35,23 +24,72 @@ body{
 	opacity: 0.4;
 	z-index: 999;
 
-	&:hover{
-		opacity: 0.6;
-	}
+	&:hover{ opacity: 0.6; }
 }
 
 #infobox_icon{
+	display: none;
 	position: fixed;
 	top: 100px;
 	right: -50px;
 	opacity: 0.4;
 	z-index: 999;
 
-	&:hover{
-		opacity: 0.6;
-	}
+	&:hover{ opacity: 0.6;	}
 }
 
+#overlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%; width: 100%;
+	background: rgba(0,0,0,0.75);
+	display: none;
+	z-index: 9999;
+
+	#infobox{
+		position: relative;
+		height: auto;
+		max-height: 750px;
+		width: 700px;
+		margin: 75px auto auto;
+		color: #FFF;
+		overflow: auto;
+
+		h1{
+			font-size: 2.1em;
+			margin: 20px auto;
+
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+
+		h2{
+			font-size: 1.7em;
+			margin: 5px auto;
+		}
+	
+		p {
+			font-size: 1.45em;
+			margin: 5px auto;
+		}
+
+		#infobox_close{
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: #FFF;
+			font-size: 2.1em;
+			cursor: pointer;
+
+			&:hover{
+				color: rgb(0, 128, 158);
+			}
+		}
+
+	}
+}
 
 #navigation{
 	position: fixed;
@@ -61,26 +99,19 @@ body{
 	border: 3px;
 
 }
+
 #scroll{
 	position: fixed;
-	top:50%;
+	top: 50%;
 	left: 50%;
 	margin-left: -183px;
 	margin-top: -108px;
-
 }
+
 #info{
 	position: fixed;
-	top:0px;
-	right: 0px;
-
-}
-
-#startseite{
-	position: fixed;
-	top:0px;
-	left: 0px;
-
+	top: 0;
+	right: 0;
 }
 
 #sections-wrapper{
@@ -100,126 +131,12 @@ body{
 	bottom: 5px;
 	left: 50%;
 	margin-left: -540px;
-	background: black;
+	background: #000;
 	border-radius: 30px;
 	opacity: 0.75;
+	z-index: 999;
 }
 
-#line{
-	position: absolute;
-	top: 40px;
-	left: 25px;
-	width: 1030px;
-	height: 3px;
-	background: white;
-}
-
-
-.circle{
-	position: absolute;
-	width:20px;
-	height:20px;
-	border-radius:10px;
-	color:#fff;
-	line-height:10px;
-	text-align:center;
-	background: white;
-	overflow: hidden;
-	top: -9px;
-
-	&:hover{
-		background: rgb(0, 128, 158) !important;
-		overflow: visible !important;
-	}
-
-
-}
-.circle span{
-	position: relative;
-	font-size: 15px;
-	top: -20px;
-	left: -5px;
-	color: white;	
-}
-
-#circle1{
-	left: 0px;	
-	
-}
-
-#circle2{
-	left: 20px;	
-}
-
-#circle3{
-	left: 60px;	
-}
-
-#circle4{
-	left: 80px;	
-}
-
-#circle4{
-	left: 100px;	
-}
-
-#circle5{
-	left: 120px;	
-}
-
-#circle6{
-	left: 140px;	
-}
-
-#circle7{
-	left: 160px;	
-}
-
-#circle8{
-	left: 180px;	
-}
-
-#circle9{
-	left: 200px;	
-}
-
-#circle10{
-	left: 220px;	
-}
-
-#circle11{
-	left: 240px;	
-}
-
-#circle12{
-	left: 300px;	
-}
-
-#circle13{
-	left: 340px;	
-}
-
-#circle14{
-	left: 370px;	
-}
-#circle15{
-	left: 505px;	
-}
-#circle16{
-	left: 600px;	
-}
-#circle17{
-	left: 680px;	
-}
-#circle18{
-	left: 800px;	
-}
-#circle19{
-	left: 930px;	
-}
-#circle20{
-	left: 1010px;	
-}
 
 #skollr-menu-wrapper{
 
@@ -255,25 +172,9 @@ body{
 	}	
 }
 
-.always-on-top{
-	z-index: 1000;
-}
 
 .historyText{
-	top: 130px;
-	width: 400px;
-	height: auto;
-	color: black;
-	h1{
-		margin-bottom: 5px;
-	}
-	h2{
-		margin-bottom: 5px;
-	}
-
-	&.not-yet-implemented{
-		display: none;
-	}
+	display: none;
 }
 
 section{	
@@ -282,6 +183,8 @@ section{
 	position: fixed;
 	z-index: 1;
 	display: none;
+	top: 0;
+	left: 0;
 }
 
 .story{
@@ -292,39 +195,66 @@ section{
 	min-width: 1024px;
 }
 
-#section-1{
-	display: block;
-
-	
+#line{
+	position: absolute;
+	top: 40px;
+	left: 25px;
+	width: 1030px;
+	height: 3px;
+	background: #FFF;
 }
 
-.element{
-	position: relative;
-	z-index: 500;
+
+.circle{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	color:#fff;
+	line-height:10px;
+	text-align:center;
+	background: white;
+	overflow: hidden;
+	top: -9px;
+
+	span{
+		position: relative;
+		font-size: 15px;
+		top: -20px;
+		left: -5px;
+		color: white;	
+	}
+
+	&:hover{
+		background: rgb(0, 128, 158) !important;
+		overflow: visible !important;
+	}
 }
 
-#content{
-	top: 50%;
-	left: 100%;
-	width: 20480px;
-	height: 768px;
-	z-index: 500;
-	margin-top: -384px;
-	position: fixed;
-}
+#circle1{ left: 0px; }
+#circle2{ left: 20px; }
+#circle3{ left: 60px; }
+#circle4{ left: 80px; }
+#circle4{ left: 100px; }
+#circle5{ left: 120px; }
+#circle6{ left: 140px; }
+#circle7{ left: 160px; }
+#circle8{ left: 180px; }
+#circle9{ left: 200px; }
+#circle10{ left: 220px; }
+#circle11{ left: 240px; }
+#circle12{ left: 300px; }
+#circle13{ left: 340px; }
+#circle14{ left: 370px; }
+#circle15{ left: 505px; }
+#circle16{ left: 600px; }
+#circle17{ left: 680px; }
+#circle18{ left: 800px; }
+#circle19{ left: 930px; }
+#circle20{ left: 1010px; }
 
-#section-1{
-	background: url(../img/background_green.jpg);
-}
-#section-2{
-	background: url(../img/background_orange.jpg);
-}
-#section-3{
-	background: url(../img/background_blue.jpg);
-}
-#section-4{
-	background: url(../img/background_red.jpg);
-}
-#section-5{
-	background: url(../img/background_yellow.jpg);
-}
+#section-1{ background: url(../img/background_green.jpg); display: block; }
+#section-2{ background: url(../img/background_orange.jpg); }
+#section-3{ background: url(../img/background_blue.jpg); }
+#section-4{ background: url(../img/background_red.jpg); }
+#section-5{ background: url(../img/background_yellow.jpg); }

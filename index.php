@@ -21,15 +21,20 @@
 
 
 <body>
+	<div id="overlay">
+		<div id="infobox"></div>
+	</div>
+	
 	<div id="offsetHelper" class="always-on-top">0</div>
 
     <img src="img/scroll.png" id="scroll">
 	
+	
+	<a href="../.">
+		<img src="img/home.png" id="home_icon">
+	</a>
 
-	<img src="img/Home_Icon.png" id="home_icon">
-	<img src="img/Infobox_Icon.png" id="infobox_icon">
-
-
+	<img src="img/infobox.png" id="infobox_icon">
 
 	<div id="timeline-wrapper" class="always-on-top">
 		<div id="line">
@@ -111,7 +116,7 @@
 
 			<a href="#2013" data-menu-top="20000"><div id="circle20" class="circle">
 				<span>2013</span>
-			</div></a>
+		</div></a>
 		</div>
 	</div>
 
