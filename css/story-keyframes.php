@@ -300,6 +300,64 @@ $middle = offsetTo($currentStory);
 }
 
 <?php
+## Story 12
+
+$currentStory = 12; 
+$middle = offsetTo($currentStory);
+?>
+
+#ship_pickup{ -skrollr-animation-name : ship_pickup; }
+@-skrollr-keyframes ship_pickup{
+    <?=($middle-400); ?> { top: 250px;}
+    <?=($middle);   ?> { top: 50px;}
+}
+#wire_12{ -skrollr-animation-name : wire_12; }
+@-skrollr-keyframes wire_12{
+    <?=($middle-400); ?> { height: 378px;}
+    <?=($middle);   ?> { height: 170px;}
+}
+
+#waves{ -skrollr-animation-name : waves; }
+@-skrollr-keyframes waves{
+    <?=($middle-500); ?> { transform: translateX( 0%);}
+    <?=($middle-450); ?> { transform: translateX( +10%);}
+    <?=($middle-400); ?> { transform: translateX( 0%);}
+    <?=($middle-350); ?> { transform: translateX( -10%);}
+    <?=($middle-300); ?> { transform: translateX( 0%);}
+    <?=($middle-250); ?> { transform: translateX( +10%);}
+    <?=($middle-200); ?> { transform: translateX( 0%);}
+    <?=($middle-150); ?> { transform: translateX( -10%);}
+    <?=($middle-100); ?> { transform: translateX( 0%);}
+    <?=($middle-50); ?> { transform: translateX( +10%);}
+    <?=($middle); ?> { transform: translateX( 0%);}
+    
+}
+#erste_bergung-wrapper_12{ -skrollr-animation-name : erste_bergung-wrapper_12; }
+@-skrollr-keyframes erste_bergung-wrapper_12{
+    <?=($middle-50); ?> { opacity: 1;}
+    <?=($middle+50);   ?> { opacity: 0;}
+}
+
+#sign_2{ -skrollr-animation-name : sign_2; }
+@-skrollr-keyframes sign_2{
+    <?=($middle-200); ?> { left: 20%; margin-left: 0px;}
+    <?=($middle+200);   ?> { left: 80%; margin-left: -230px;}
+}
+
+#zweite_untergang-wrapper_12{ -skrollr-animation-name : zweite_untergang-wrapper_12; }
+@-skrollr-keyframes zweite_untergang-wrapper_12{
+    <?=($middle-50); ?> { opacity: 0;}
+    <?=($middle+50);   ?> { opacity: 1;}
+}
+
+#ship_sink{ -skrollr-animation-name : ship_sink; }
+@-skrollr-keyframes ship_sink{
+    <?=($middle+50); ?> { transform: translateY( 0%);}
+    <?=($middle+300);   ?> { transform: translateY( +50%);}
+}
+
+
+<?php
 ## Story 13
 
 $currentStory = 13; 

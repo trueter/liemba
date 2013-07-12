@@ -229,22 +229,27 @@
 
 <!-- #12 -->
 	<div id="story-12" class="story">
+
+		<img id="sign_2" src="img/12/sign.png">
+
 		<div id="erste_bergung-wrapper_12">
-			<img id="sign_1" src="img/12/sign.png">
+			
 			<img id="no_1_1" src="img/12/1.png">
 			<img id="no_9_1" src="img/12/9.png">
 			<img id="no_1_2" src="img/12/1.png">
 			<img id="no_6" src="img/12/6.png">
 			<img id="ship_pickup" src="img/shared_fotos/ship.png">
 			<img id="crane_right" src="img/12/crane_right.png">
-			<img id="waves" src="img/12/waves.png">
-			<img id="wire_12" src="img/shared_fotos/wire.png">
+			<img id="waves" src="img/12/waves.png" class="always-on-top">
+
+			<div id="wire_12"></div>
+			
 
 
 		</div>
 
-	<!--	<div id="zweite_untergang-wrapper_12">
-			<img id="sign_2" src="img/12/sign.png">
+		<div id="zweite_untergang-wrapper_12">
+	
 			<img id="no_1_3" src="img/12/1.png">
 			<img id="no_9_2" src="img/12/9.png">
 			<img id="no_2" src="img/12/2.png">
@@ -252,11 +257,11 @@
 			<img id="rainy_cloud" src="img/12/rainy_cloud.png">
 			<img id="arrows_down" src="img/12/arrows_down.png">
 			<img id="ship_sink" src="img/12/ship_sink.png">
-			<img id="angery_waves" src="img/12/angery_waves.png">
+			<img id="angery_waves" src="img/12/angery_waves.png" class="always-on-top">
 
 			
 		</div>	
-	-->
+	</div>
 
 </section>
 
