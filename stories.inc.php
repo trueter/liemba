@@ -202,22 +202,30 @@
 	</div>
 <!-- #11 -->
 <div id= "story-11" class="story">
-		<img id="ship_11" src="img/shared_fotos/ship.png">
-		<img id="bubble_11" src="img/11/bubble.png">
-		<img id="the26juli" src="img/11/26juli.png">
-		<img id="flag" src="img/11/flag.png">
+	<div id="wrapper11">
+		<div id="ship-wrapper_11">
+			<img id="ship_11" src="img/shared_fotos/ship.png">
+			<img id="sandbag1" src="img/11/sandbag1.png">
+			<img id="sandbag2" src="img/11/sandbag1.png">
+			<img id="sandbag3" src="img/11/sandbag1.png">
+			<img id="sandbag4" src="img/11/sandbag1.png">
+			<img id="arrow_down_11" src="img/11/arrow_down.png">
+			<img id="flag" src="img/11/flag.png">
+			<img id="bubble_11" src="img/11/bubble.png">
+			<img id="the26juli" src="img/11/26juli.png">
+			<img id="bagropes" src="img/11/bagropes.png">
+		</div>
+		
+		
 		<img id="fish" src="img/11/fish.png">
-		<img id="oil_big" src="img/11/oil_big.png">
-		<img id="oilman" src="img/11/oilman.png">
-		<img id="arrow_down_11" src="img/11/arrow_down.png">
-		<img id="sandbag1" src="img/11/sandbag1.png">
-		<img id="sandbag2" src="img/11/sandbag1.png">
-		<img id="sandbag3" src="img/11/sandbag1.png">
-		<img id="sandbag4" src="img/11/sandbag1.png">
-		<img id="bagropes" src="img/11/bagropes.png">
+		<img id="oil_big" src="img/11/oil_big.png" class="always-on-top">
+		<img id="oilman" src="img/11/oilman.png" class="always-on-top">
+		
+		
+		
 		
 	</div>
-
+</div>
 
 <!-- #12 -->
 	<div id="story-12" class="story">
