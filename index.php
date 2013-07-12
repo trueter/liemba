@@ -6,10 +6,13 @@
 	<title>Geschichte der Liemba</title>
 	<link href="css/skrollr-fixed-setup.css" rel="stylesheet" type="text/css">
 	<link href="css/general-keyframes.php" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
-	<link href="css/master.less" rel="stylesheet/less" type="text/css">
+	<!--<link href="css/master.less" rel="stylesheet/less" type="text/css">
+	<link href="css/story-styles.less" rel="stylesheet/less" type="text/css">-->
+	<link href="css/master.css" rel="stylesheet" type="text/css">
+	<link href="css/story-styles.css" rel="stylesheet" type="text/css">
+
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/story-styles.less" rel="stylesheet/less" type="text/css">
-	<link href="css/story-keyframes.php" rel="stylesheet/css" type="text/css" data-skrollr-stylesheet>
+	<link href="css/story-keyframes.php" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
 
 	<link href="favicon_32.png" sizes="32x32" type="image/png" rel="shortcut icon">
 	<link href="favicon_16.png" sizes="16x16" type="image/png" rel="icon">
@@ -19,22 +22,15 @@
 
 </head>
 
-
 <body>
 	<div id="overlay">
 		<div id="infobox"></div>
 	</div>
 	
-	
-
     <img src="img/scroll.png" id="scroll">
-    <img src="img/ende.png" id="ende">
+    <img src="img/ende.png" id="ende">	
 	
-	
-	
-	<a href="../.">
-		<img src="img/home.png" id="home_icon">
-	</a>
+	<a href="../."><img src="img/home.png" id="home_icon"></a>
 
 	<img src="img/infobox.png" id="infobox_icon">
 
@@ -122,13 +118,13 @@
 		</div>
 	</div>
 
-
     <div id="section-wrapper">
 	   <?php require("stories.inc.php"); ?>
     </div>
 	
 	<script type="text/javascript" src="js/vendor/less-1.3.3.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js">\x3C/script>')</script>
 	<script type="text/javascript" src="js/vendor/skrollr.stylesheets.js"></script>
 	<script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/vendor/skrollr.menu.js"></script>
