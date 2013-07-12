@@ -42,6 +42,7 @@ String.prototype.killWhiteSpace = function() {
 
 
 function displayInfobox(n){
+	if( n<1 || n > 20 || isNaN(n) ) return false;
 	console.log("display infobox");
 	var infobox = $('#infobox');
 	var overlay = $('#overlay');
@@ -49,10 +50,12 @@ function displayInfobox(n){
 
 	infobox.html($('#historyText-'+n).html()).append(closebutton);
 	overlay.show();
+	return true;
 }
 
 function hideInfobox(n){
 	console.log("hide infobox");
 	var overlay = $('#overlay');
 	overlay.hide();
+	return true;
 }
