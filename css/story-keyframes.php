@@ -382,6 +382,34 @@ $middle = offsetTo($currentStory);
 }
 
 <?php
+## Story 14
+
+$currentStory = 14; 
+$middle = offsetTo($currentStory);
+?>
+
+#flasche_1{ -skrollr-animation-name : flasche_1; }
+@-skrollr-keyframes flasche_1 {
+    <?=($middle-100); ?> { transform: translateX (-50%) translateY (+100%) rotate( -90deg); opacity: 0;}
+    <?=($middle)+200;   ?> { transform: translateX (0%) translateY (0%) rotate( 0deg); opacity: 1;}
+     <?=($middle)+201;   ?> { transform: translateX (0%) translateY (0%) rotate( 0deg); opacity: 0;}
+}
+
+#flasche_2{ -skrollr-animation-name : flasche_2; }
+@-skrollr-keyframes flasche_2 {
+    <?=($middle+200); ?> {  opacity: 0;}
+    <?=($middle+201);   ?> {  opacity: 1;}
+    
+}
+
+#liemba_typo{ -skrollr-animation-name : liemba_typo; }
+@-skrollr-keyframes liemba_typo {
+    <?=($middle+100); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle+200);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+
+<?php
 ## Story 16
 
 $currentStory = 16; 

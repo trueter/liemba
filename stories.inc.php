@@ -268,12 +268,15 @@
 
 <!-- #14 -->
 	<div id="story-14" class="story">
-		<img id="flasche_1" src="img/14/flasche_1.png">
-		<img id="flasche_2" src="img/14/flasche_2.png">
-		<img id="goetzen" src="img/14/goetzen.png">
-		<img id="liemba_typo" src="img/14/liemba_typo.png">
-		<img id="schiff" src="img/14/schiff.png">
-		<img id="ueberschrift" src="img/14/ueberschrift.png">
+		<div id="content14">
+		
+			<img id="schiff" src="img/14/schiff.png">
+			<img id="goetzen" src="img/14/goetzen.png">
+			<img id="liemba_typo" src="img/14/liemba_typo.png">
+			<img id="ueberschrift" src="img/14/ueberschrift.png">
+			<img id="flasche_1" src="img/14/flasche_1.png">
+			<img id="flasche_2" src="img/14/flasche_2.png">
+		</div>
 	</div>
 
 <!-- #15 -->
