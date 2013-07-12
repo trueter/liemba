@@ -255,15 +255,18 @@
 <section id="section-4">
 <!-- #13 -->
 	<div id="story-13" class="story">
-		<img id="crane_left" src="img/13/crane_left.png">
-		<img id="man" src="img/13/man.png">
-		<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
-		<img id="wire_13" src="img/shared_fotos/wire.png">
-		<img id="the16mars" src="img/13/16mars.png">
-		<img id="arrows_up" src="img/13/arrows_up.png">
-		<img id="flags" src="img/13/flags.png">
-		<img id="great_britania" src="img/13/great_britania.png">
 
+		<div id="wrapper13">
+			<img id="crane_left" src="img/13/crane_left.png">
+			<img id="man" src="img/13/man.png">
+			<img id="ship_pickup_schief" src="img/13/ship_pickup_schief.png">
+			<div id="wire_13"></div>
+			
+			<img id="the16mars" src="img/13/16mars.png">
+			<img id="arrows_up" src="img/13/arrows_up.png">
+			<img id="flags" src="img/13/flags.png">
+			<img id="great_britania" src="img/13/great_britania.png">
+		</div>
 
 
 	</div>
@@ -285,7 +288,7 @@
 
 <!-- #15 -->
 	<div id="story-15" class="story">
-		<img id="no_15" src="img/15/15.png">
+
 		<img id="ship_board" src="img/15/ship_board.png">
 		<img id="passingers" src="img/15/passingers.png">
 		<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">

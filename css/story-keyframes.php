@@ -280,6 +280,30 @@ $middle = offsetTo($currentStory);
     <?=($middle+400);   ?> { right:100%; opacity: 0; transform: translateY( -80%);}
 }
 
+<?php
+## Story 13
+
+$currentStory = 13; 
+$middle = offsetTo($currentStory);
+?>
+
+#flags{ -skrollr-animation-name : flags; }
+@-skrollr-keyframes flags {
+    <?=($middle-200); ?> { transform: translateY( 0%);}
+    <?=($middle+200);   ?> { transform: translateY( +10%);}
+}
+#wire_13{ -skrollr-animation-name : wire_13; }
+@-skrollr-keyframes wire_13 {
+    <?=($middle-200); ?> { height: 390px;}
+    <?=($middle+200);   ?> { height: 177px;}
+}
+
+#ship_pickup_schief{ -skrollr-animation-name : ship_pickup_schief; }
+@-skrollr-keyframes ship_pickup_schief{
+    <?=($middle-200); ?> { top: 100px;}
+    <?=($middle+200);   ?> { top: -100px;}
+}
+
 
 <?php
 ## Story 18
