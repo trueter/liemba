@@ -25,7 +25,7 @@
 		<div id="infobox"></div>
 	</div>
 	
-	<div id="offsetHelper" class="always-on-top">0</div>
+	
 
     <img src="img/scroll.png" id="scroll">
     <img src="img/ende.png" id="ende">

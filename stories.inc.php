@@ -228,7 +228,7 @@
 
 			<img id="waves" src="img/12/waves.png" class="always-on-top">
 
-			<div id="wire_12"></div>
+			<div id="wire_12" class="always-on-top"></div>
 			
 
 
