@@ -9,6 +9,10 @@
 </head>
 <body class="preload">
 
+    <a href="../.">
+        <img src="img/home.png" alt="Zurück" id="home-link">
+    </a>
+    
     <div id="offsetHelper">0</div>
     
     <div id="hotspot-confirm-dialog" class="green-box">
