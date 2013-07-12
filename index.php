@@ -85,7 +85,7 @@
 			</div></a>
 
 			<a href="#1920" data-menu-top="12000"><div id="circle12" class="circle">
-				<span>1920</span>
+				<span>1916-1920</span>
 			</div></a>
 
 			<a href="#1924" data-menu-top="13000"><div id="circle13" class="circle">

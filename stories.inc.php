@@ -404,18 +404,7 @@
 
 <div class="historyText" id="historyText-2">
 	<!-- #2 -->
-	<h1>Vormontage</h1>
-	<h2>Feb. 1913</h2>
-	<p> Das Schiff wird auf der Meyer-Werft in Papenburg zum ersten Mal provisorisch zusammengesetzt, 
-		um sicherzugehen, dass alles passt. Die Teile des ersten Schiffes werden bei der Meyer-Werft 
-		in Papenburg gefertigt und erfolgreich vormontiert. Dies geschieht unter der Anleitung und 
-		&Uuml;berwachung der Germanischen Lloyd. 
-		Bei der Vormontage werden die Schiffsteile jedoch nicht zusammengenietet, sondern 
-		lediglich lose zusammengeschraubt. Auf der Helling wird die Konstruktion des provisorisch 
-		zusammengef&uuml;gten Schiffes gepr&uuml;ft, wobei sogar die Dampfkessel befeuert und die 
-		Dampfmaschine einem Testlauf unterzogen werden. Die Vorarbeiten sind nach 10 Monaten im 
-		November 1913 abgeschlossen.
-	</p>
+	
 
 	<h1>Technische Daten des Schiffes</h1>
 	<h2>Apr. 1913</h2>
@@ -434,6 +423,21 @@
 <!-- template scene --> 
 <div class="historyText" id="historyText-3">
 	<!-- #3 -->
+	<h1>Vormontage</h1>
+	<h2>Feb. 1913</h2>
+	<p> Das Schiff wird auf der Meyer-Werft in Papenburg zum ersten Mal provisorisch zusammengesetzt, 
+		um sicherzugehen, dass alles passt. Die Teile des ersten Schiffes werden bei der Meyer-Werft 
+		in Papenburg gefertigt und erfolgreich vormontiert. Dies geschieht unter der Anleitung und 
+		&Uuml;berwachung der Germanischen Lloyd. 
+		Bei der Vormontage werden die Schiffsteile jedoch nicht zusammengenietet, sondern 
+		lediglich lose zusammengeschraubt. Auf der Helling wird die Konstruktion des provisorisch 
+		zusammengef&uuml;gten Schiffes gepr&uuml;ft, wobei sogar die Dampfkessel befeuert und die 
+		Dampfmaschine einem Testlauf unterzogen werden. Die Vorarbeiten sind nach 10 Monaten im 
+		November 1913 abgeschlossen.
+	</p>
+</div>
+<div class="historyText" id="historyText-4">
+	<!-- #4 -->
 	<h1>Start des Transports</h1>
 	<h2>Nov. 1913</h2>
 	<p> Nach dem Testlauf wird das Schiff unter der Aufsicht eines Chefingenieurs der Werft wieder in seine 
@@ -453,9 +457,6 @@
 		Zubeh&ouml;rteile, w&auml;hrend die &ldquo;Adolf Woermann&rdquo; die Decksh&auml;user, die Ausstattung 
 		der Innenr&auml;ume und Kabinen sowie Installations- und Ersatzteile liefert. 
 	</p>
-</div>
-<div class="historyText" id="historyText-4">
-	<!-- #4 -->
 	<h1>Ankunft</h1>
 	<h2>Jan 1914</h2>
 	<p> In Dar es Salaam angekommen, werden die Kisten der &ldquo;Goetzen&rdquo; auf Waggons der 
@@ -536,9 +537,7 @@
 		Bei rauhem Wellengang und einem starken Wind in der Buch von Kungwe befinden sich etwa 700 
 		Angeh&ouml;igen der Schutztruppe an Bord. Das Schiff kommt zun&auml;chst &uuml;berhaupt nicht voran.
 	</p>
-</div>
-<div class="historyText" id="historyText-9">
-	<!-- #9 -->
+
 	<h1>Erste offizielle Probefahrt</h1>
 	<h2>Juni 1915</h2>
 	<p>Am 8. und 9. Juni 1915 werden im ruhigen Wasser zwischen Kigoma und Lugufu auf einer Strecke von insgesamt 
@@ -546,9 +545,9 @@
 		unentrindetem Holz eine Durchschnittsgeschwindigkeit von lediglich 7 Knoten erzielt. Als am zweiten Tag 
 		trockenes und entrindetes Holz verwendet wird, liegt die Durchschnittsgeschwindigkeit bei 8,25 Knoten.
 	</p>
-</div>
-<div class="historyText" id="historyText-10">
-	<!-- #10 -->
+	</div>
+<div class="historyText" id="historyText-9">
+	<!-- #9 -->
 	<h1>Erster Kampfeinsatz</h1>
 	<h2>Juni 1915</h2>
 	<p>Unter dem Kommano von Korvettenkapit&auml;n Zimmer bricht das das DS &ldquo;Goetzen&rdquo; zu seiner 
@@ -558,9 +557,10 @@
 		weitere Patrouillen- und Versorgungsfahrten verwendet und unterst&uuml;tzt damit den Oberbefehlshaber 
 		der Schutztruppen von Deutsch-Ostafrika, den sp&auml;teren General von Lettow-Vorbeck.
 	</p>
+	
 </div>
-<div class="historyText" id="historyText-11">
-	<!-- #11 -->
+<div class="historyText" id="historyText-10">
+	<!-- #10 -->
 	<h1>Aufgabe von Bismarckburg</h1>
 	<h2>Juni 1916</h2>
 	<p>Die Belgier die Festung Bismarckburg von der See, bis die Deutschen diese am 6. Juni 1916 aufgeben 
@@ -579,9 +579,10 @@
 		sie erkennen, dass das Schiff dort auf der Helling liegt und von den Deutschen repariert wird, bombardieren 
 		sie es erneut.
 	</p>
+	
 </div>
-<div class="historyText" id="historyText-12">
-	<!-- #12 -->
+<div class="historyText" id="historyText-11">
+	<!-- #11 -->
 	<h1>Versenkung</h1>
 	<h2>Juli 1916</h2>
 	<p>Als die Gefahr zunimmt abgeschnitten zu werden, da der Gegner die Trasse der Mittellandbahn erreichen 
@@ -600,6 +601,11 @@
 		und versenken es in kontrollierter Weise nachts in der seichten M&uuml;ndung des Malagarasiflusses.
 		Auf der Helling wurde stattdessen ein kleineres Boot, die &ldquo;Adjutant&rdquo;, gesprengt.
 	</p>
+	
+</div>
+<div class="historyText" id="historyText-12">
+	<!-- #12 -->
+	
 
 	<h1>Bergung durch Belgien</h1>
 	<h2>1916</h2>
@@ -630,10 +636,6 @@
 		&ldquo;Goetzen&rdquo; am 16. M&auml;rz 1924 wieder auf und pr&auml;sentiert sich nach einer ersten 
 		Untersuchung zur allgemeinen &uuml;berraschung in einem unerwartet guten Zustand.
 	</p>
-
-</div>
-<div class="historyText" id="historyText-14">
-	<!-- #14 -->
 	<h1>Schiffserneuerung und Leuchtfeuer</h1>
 	<h2>1924</h2>
 	<p>Am 17. September 1924 erkl&auml;rt sich das britische Au&szlig;enministerium in einem Schreiben an den 
@@ -650,9 +652,10 @@
 		Generalmanagers vom 6. August 1926 noch weitere Betr&auml;ge f&uuml;r die Erneuerung der Werft 
 		(15.000 &pound;), der Hellinganlage (10.000 &pound;) und den Bau eines Krans (3.000 &pound;). Darüber hinaus 
 		werden Seezeichen und Leuchtfeuer an den &ouml;stlichen und s&uuml;dlichen Ufern des Sees installiert.</p>
+
 </div>
-<div class="historyText" id="historyText-15">
-	<!-- #15 -->
+<div class="historyText" id="historyText-14">
+	<!-- #14 -->
 	<h1>Taufe "Liemba"</h1>
 	<h2>Mai 1927</h2>
 	<p>Endlich sind alle Arbeiten beendet. Spezielle Einladungskarten werden gedruckt, auf denen die 
@@ -661,9 +664,10 @@
 		&ldquo;Liemba&rdquo; und der Taufe des Schiffes durch Mrs. John Scott in Kigoma am am 
 		16. Mai 1927&rdquo; einlädt.
 	</p>
+	
 </div>
-<div class="historyText" id="historyText-16">
-	<!-- #16 -->
+<div class="historyText" id="historyText-15">
+	<!-- #15 -->
 	<h1>Fl&uuml;chtlingstransport</h1>
 	<h2>1947</h2>
 	<p>W&auml;hrend des Zweiten Weltkrieges transportiert das DS &ldquo;Liemba&rdquo; auf zahlreichen Sonderfahrten 
@@ -678,8 +682,8 @@
 		etablieren konnte, ist von Mbala aus &uuml;ber eine geteerte Stra&szlig;e mittlerweile relativ gut zu erreichen.)
 	</p>
 </div>
-<div class="historyText" id="historyText-17">
-	<!-- #17 -->
+<div class="historyText" id="historyText-16">
+	<!-- #16 -->
 	<h1>Gr&uuml;ndung Tansania</h1>
 	<h2>1964</h2>
 	<p>Nach der 1961 erfolgten Unabh&auml;ngigkeit Tanganjikas tritt Sansibar dem neuen Staat bei, woraufhin 
@@ -688,9 +692,10 @@
 		Mannschaft die &Uuml;bernahme des Kommandos gestattet wird. Vor der Unabh&auml;ngigkeit standen die 
 		strikten Vorgaben der britischen Mandatsregierung diesem Schritt im Wege.
 	</p>
+	
 </div>
-<div class="historyText" id="historyText-18">
-	<!-- #18 -->
+<div class="historyText" id="historyText-17">
+	<!-- #17 -->
 	<h1>Dieselmotoren</h1>
 	<h2>Nov 1976</h2>
 	<p>Zu jener Zeit gelangt mit Patrick Dougherty ein pensionierter irischer Schiffsingenieur an den 
@@ -707,6 +712,11 @@
 		&ldquo;Liemba&rdquo; von nun an als MS (Motorschiff) bzw. MV (motor-vessel) bezeichnet, kann wieder 
 		in Dienst gestellt werden. Patrick Dougherty wird im Jahre 1978 Leiter der Schiffseinsatzstelle Kigoma. 
 	</p>
+	
+</div>
+<div class="historyText" id="historyText-18">
+	<!-- #18 -->
+	
 
 	<h1>Modernisierung</h1>
 	<h2>1993</h2>
