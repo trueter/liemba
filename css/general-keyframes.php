@@ -85,9 +85,18 @@ for($i = 2; $i<6; $i++){
     1000{ display: block; }
 }
 
-#scroll-instruction{ -skrollr-animation-name:scroll-instruction; }
-@-skrollr-keyframes scroll-instruction {
-    0{opacity: 1;}
-    100{opacity: 1;}
-    200{opacity: 0;}
+#scroll{ -skrollr-animation-name:scroll; }
+@-skrollr-keyframes scroll {
+    0{opacity: 1;display: block;}
+    100{opacity: 1;display: block;}
+    1000{opacity: 0;display: block;}
+    1001{opacity: 0; display: none;}
+}
+
+#ende{ -skrollr-animation-name:ende; }
+@-skrollr-keyframes ende {
+    0{opacity: 0;display: none;}
+    20000{opacity: 0;display: block;}
+    21000{opacity: 1;display: block;}
+
 }

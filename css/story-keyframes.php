@@ -383,6 +383,44 @@ $middle = offsetTo($currentStory);
 
 
 <?php
+## Story 17
+
+$currentStory = 17; 
+$middle = offsetTo($currentStory);
+?>
+
+#iradmachine_17{ -skrollr-animation-name : iradmachine_17; }
+@-skrollr-keyframes iradmachine_17 {
+    <?=($middle-100); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+#ix_17{ -skrollr-animation-name : ix_17; }
+@-skrollr-keyframes ix_17 {
+    <?=($middle-100); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+#ipfeilrechts_17{ -skrollr-animation-name : ipfeilrechts_17; }
+@-skrollr-keyframes ipfeilrechts_17 {
+    <?=($middle-100); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+
+#imotor_17{ -skrollr-animation-name : imotor_17; }
+@-skrollr-keyframes imotor_17 {
+    <?=($middle); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle+100);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+#ipfeilunten_17{ -skrollr-animation-name : ipfeilunten_17; }
+@-skrollr-keyframes ipfeilunten_17 {
+    <?=($middle); ?> { transform: translateY( -20%); opacity: 0;}
+    <?=($middle+100);   ?> { transform: translateY( 0%); opacity: 1;}
+    
+}
+<?php
 ## Story 18
 
 $currentStory = 18; 
