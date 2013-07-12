@@ -81,6 +81,7 @@ body{
 }
 
 #offsetHelper{
+	display: none;
 	position: fixed;
 	top: 50px;
 	left: 50px;
@@ -138,20 +139,26 @@ body{
 }
 
 #categories, #navigation{
+	width: 110px;
+	padding: 10px 12px;
 	position: fixed;
 	z-index: 5000;
-	font-size: 0.8em;
+	font-size: 0.95em;
 	
-	@media all and (max-width : 1280px) 						 { left: 0px; margin-left: 5px;} 
-	@media all and (min-width : 1281px) and (max-width : 1440px) { left: 4%;  margin-left: 12px;}  
-	@media all and (min-width : 1441px) and (max-width : 1680px) { left: 11%; margin-left: 15px;}   
-	@media all and (min-width : 1681px) and (max-width : 1919px) { left: 16%; margin-left: 20px;}   
-	@media all and (min-width : 1920px) 						 { left: 20%; margin-left: 25px;}  
+	@media all and (max-width : 1280px) 						 { left: 0; } 
+	@media all and (min-width : 1281px) and (max-width : 1440px) { left: 7%;  }  
+	@media all and (min-width : 1441px) and (max-width : 1680px) { left: 15%; }   
+	@media all and (min-width : 1681px) and (max-width : 1919px) { left: 20%; }   
+	@media all and (min-width : 1920px) 						 { left: 25%; }  
 
 
 	ul{
 		margin: 0; padding: 0;
 		list-style: none;
+
+		li{
+			margin-bottom: 1px;
+		}
 	}
 }
 
@@ -160,16 +167,21 @@ body{
 */
 
 #categories{
-	width: 80px;
 	top: 30px;
-	padding: 6px 8px;
 	text-align: center;
 
 	#category-selection{
 		li{
 			cursor: pointer;
+			text-align: left;
+			padding-left: 18px;
+			padding-top: 2px;
+			background-image: url("../img/category_active.png");
+			background-repeat: no-repeat;
+
 			&.itemsHidden{
 				opacity: 0.2;
+				background-image: url("../img/category_inactive.png");
 			}
 		}
 	}
@@ -180,19 +192,16 @@ body{
 */
 
 #navigation{
-	width: 80x;
-	top: 200px;
-	padding: 14px 16px;
+	top: 240px;
 
-	#navigation-anchor-down{
-		transform: rotate(180deg);
+	h2{
+		font-size: 1.3em;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 5px;
 	}
-	
-	
 
 	#navigation-stops{
-		font-size: 10px;
-		text-transform: uppercase;
 		text-align: center;
 
 		a{
