@@ -281,13 +281,13 @@
 
 <!-- #15 -->
 	<div id="story-15" class="story">
-
-		<img id="ship_board" src="img/15/ship_board.png">
-		<img id="passingers" src="img/15/passingers.png">
-		<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">
-		<img id="police" src="img/15/police.png">
-		<img id="ship_15" src="img/15/ship_15.png">
-
+		<div id="wrapper15">
+			<img id="ship_board" src="img/15/ship_board.png">
+			<img id="passingers" src="img/15/passingers.png">
+			<img id="fluchtlingstransport" src="img/15/fluchtlingstransport.png">
+			<img id="police" src="img/15/police.png">
+			<img id="ship_15" src="img/15/ship_15.png">
+		</div>
 	</div>
 
 <!-- #16 -->

@@ -410,6 +410,38 @@ $middle = offsetTo($currentStory);
 }
 
 <?php
+## Story 15
+
+$currentStory = 15; 
+$middle = offsetTo($currentStory);
+?>
+
+#ship_15{ -skrollr-animation-name : ship_15; }
+@-skrollr-keyframes ship_15 {
+    <?=($middle-500); ?> {  transform: translateX (+50%);}
+    <?=($middle+500);   ?> {  transform: translateX (-50%);}
+    
+}
+#police{ -skrollr-animation-name : police; }
+@-skrollr-keyframes police {
+    <?=($middle-500); ?> {  transform: translateX (-10%);}
+    <?=($middle+500);   ?> {  transform: translateX (+10%);}
+    
+}
+#passingers{ -skrollr-animation-name : passingers; }
+@-skrollr-keyframes passingers {
+    <?=($middle-500); ?> {  transform: translateX (+10%);}
+    <?=($middle+500);   ?> {  transform: translateX (-10%);}
+    
+}
+#ship_board{ -skrollr-animation-name : ship_board; }
+@-skrollr-keyframes ship_board {
+    <?=($middle-500); ?> {  transform: translateX (+10%);}
+    <?=($middle+500);   ?> {  transform: translateX (-10%);}
+    
+}
+
+<?php
 ## Story 16
 
 $currentStory = 16; 
