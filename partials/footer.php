@@ -9,3 +9,6 @@
 <script type="text/javascript" src="js/vendor/handlebars.js"></script>
 <script type="text/javascript" src="js/interactiveMap.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<?php if( $admin ) { ?>
+	<script type="text/javascript" src="js/admin.js"></script>
+<?php } ?>
