@@ -15,7 +15,7 @@ body {
   top: -40px;
   left: -40px;
   opacity: 0.4;
-  z-index: 999;
+  z-index: 999999;
 }
 /* line 17, /Users/torsten/liemba/css/master.less */
 #home-link:hover {
