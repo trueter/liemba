@@ -63,9 +63,8 @@
             <h1>{{name}}</h1>
             <p>{{description}}</p>
             <div class="hotspot-arrows"></div>
-            <div class="hotspot-edit" data-id="{{id}}">
-            </div>
-            <div class="hotspot-destroy" data-id="{{id}}"></div>
+            <div class="hotspot-edit hotspot-admin-button" data-id="{{id}}"></div>
+            <div class="hotspot-destroy hotspot-admin-button" data-id="{{id}}"></div>
         </div>
     </script>
 </body>
