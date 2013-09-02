@@ -221,7 +221,6 @@ body {
 	border-bottom: 1px solid #000;
 	max-height: 350px;
 	overflow: hidden;
-
 }
 
 .project-entry:last-child{
@@ -229,7 +228,7 @@ body {
 }
 
 .project-content, .project-image{
-	display: block;
+	display: inline-block;
 }
 
 .project-image{
