@@ -38,7 +38,7 @@ htw.liemba = {
 		});
 
 	// init backstretch
-	var baseURL = "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/backstretch/";
+	var baseURL = "../../wp-content/themes/liemba/img/backgrounds/backstretch/";
 	var imageSources = [baseURL + "background_boat.jpg", 
 						baseURL + "background_damage.jpg", 
 						baseURL + "background_deck.jpg", 
