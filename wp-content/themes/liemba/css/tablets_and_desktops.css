@@ -1,6 +1,10 @@
 @media all and (min-width: 481px) {
+
+	.logo, #bomb{
+		margin-top: 30px;
+	}
+
 	.logo{
-		margin-top: 40px;
 		width: 144px;
 		height: 76px;
 	}
@@ -8,7 +12,6 @@
 	#bomb{
 		float: right;
 		width: 323px;
-		margin-top: 40px;
 	}
 
 	.logo, .sidebar{
@@ -17,26 +20,22 @@
 
 	.sidebar {
 		float: left;
-		width: 285px;
+		width: 165px;
 		margin-bottom: 21px;
 	}
 
-	nav{
-		
-	}
-
-	#donation-wrapper{
-		width: 282px;
+	nav{ 
+		margin-left: 18px;
 	}
 
 	.page_item:first-child{
 		margin-top: 0px;
 	}
 
-	.page_item, .donation-item{
+	.page_item{
 		height: 41px;
 		width: 124px;
-		margin: 7px 0;
+		margin: 2px 0;
 		font-size: 1.5em;
 		
 	}
@@ -50,97 +49,86 @@
 		background: url(../../liemba/img/backgrounds/button_darkBlue.png);		
 	}
 
-	.current-page-item, .current-page-ancestor{
+	.current_page_item, .current_page_ancestor{
 		background: url(../../liemba/img/backgrounds/button_zacke_lightBlue.png);
 	}
 
-	.current-page-item:hover, .current-page-ancestor:hover{
+	.current_page_item:hover, .current_page_ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png);
 	}
-	/*.blue-item:hover {
-		background-color: #00809e;
-		outline: 1px solid #00809e;
-		opacity: 1;
-	}*/
 
 	.page_item a{
 		display: block;
 		float: right;
+		font-weight: bold;
 	}
 
 	.blue-item {
 		background-color: #00b0e3;
 		outline: 1px solid #00b0e3;	
 		outline-offset: 1px;
-		opacity: 0.925;
+		opacity: 0.97;
 	}
 
-	.green-item{
-		background-color: #40ab4d !important;
-		outline: 1px solid #40ab4d;
-		outline-offset: 1px;
-		opacity: 0.925;
+	.blue-item:hover {
+		outline: 1px solid #00b0e3 !important;
+		opacity: 0.99;
 	}
+
 
 	.children{
 		position: absolute;
-		top: -25px;
-		right: -165px;
+		top: -17px;
+		right: -126px;
+		z-index: 15;
 	}
 
 	.children .page_item{
 		font-size: 1em;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
-	.current-page-item:hover, .current-page-ancestor:hover{
+	.current_page_item:hover, .current_page_ancestor:hover{
 		background: url(../../liemba/img/backgrounds/button_zacke_darkBlue.png) !important;
 	}
 
-	#donation-status-wrapper{
-		float: left;
-		width: 370px;
-		margin: 30px 0;
+	.page-item-327{
+		background: url(../../liemba/img/backgrounds/button_lightGreen.png) !important;
 	}
 
-	.donation-item{
-		width: 137px;
-		text-align: right;
-		float: left;
-		background: url(../../liemba/img/backgrounds/button_lightGreen.png);
-	}
-
-	.donation-item:hover{
-		background: url(../../liemba/img/backgrounds/button_darkGreen.png);
-	}
-
-	.donation-item:last-child{
-
-		background-image: none;
-		margin-left: 4px;
-
-	}
-	.donation-item a{
-		display: block;
-		padding-right: 20px;
+	.page-item-327:hover{
+		background: url(../../liemba/img/backgrounds/button_darkGreen.png) !important;
 	}
 
 	#news-ticker-wrapper{
-		margin-top: 24px;
 		float: left;
 		width: 282px;
+		height: 150;
+		padding: 5px 10px;
+		margin-top: 24px;
+		oerflow: hidden;
+	}
+
+	#news-ticker-wrapper h1{
+		font-size: 1.9em;
 	}
 
 	#sidebar-and-content{
 		padding: 2px;
+		margin-top: 15px;
 		margin-bottom: 110px;
-		overflow: hidden;
+		min-height: 400px;
 	}
 
 	#content-wrapper{
 		width: auto;
 		padding: 5px 10px 5px;
 		overflow: hidden;
-		margin-right: 50px;
+		margin-right: 65px;
+		margin-top: 2px;
+		background-color: rgba(255,255,255,0.97);
 	}
 
 	#content-wrapper h1{
@@ -160,10 +148,17 @@
 		z-index: 10;
 	}
 
-	#search-and-info{
+	#info{
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		padding: 5px;
+		font-size: 1.2em;
+		text-align: right;
+	}
+
+	#info a{
+		color: #FFF;
 	}
 
 	.footer {
@@ -189,20 +184,18 @@
 		width: 590px;
 
 	}
-
 	
 	.footer-widget{
-		cursor: not-allowed;
-		padding: 5px 35px;
-		font-weight: bold;
-		display: inline-block;
-		height: 101px;
 		width: 282px;
-		text-align: right;
-		font-size: 24px;
-		vertical-align: top;
-		text-transform: uppercase;
+		height: 101px;
+		display: inline-block;
+		padding: 18px 22px;
 		margin: 0 4px;
+		vertical-align: top;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: bold;
 	}
 }
 
@@ -210,6 +203,7 @@
 @media all and (max-width: 750px) {
 	#content-wrapper{
 		overflow: visible;
+		margin-left: 21px;
 	}
 	.sidebar{
 		float: none;

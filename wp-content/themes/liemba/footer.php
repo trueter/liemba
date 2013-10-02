@@ -3,24 +3,20 @@
 
 				<!-- footer widgets -->
 				<div class="footer-widget-wrapper clear">
-					<a class="footer-widget blue-item">
+					<a href="<?= get_bloginfo('url'); ?>/map/" class="footer-widget blue-item">
 						Die Route<br>der Liemba
 					</a>
 					
-					<a class="footer-widget blue-item">
+					<a href="<?= get_bloginfo('url'); ?>/history/" class="footer-widget blue-item">
 						Die Geschichte<br>
 						der Liemba
 					</a>
 				</div>
 				<!-- /footer widgets -->
 				
-				<div id="search-and-info">
-					<?php  get_template_part('searchform'); ?>
-					<!-- copyright -->
-					<span class="copyright blue-item">
-						&copy; <?php echo date("Y"); ?> Run Liemba | Impressum | Kontakt
-					</span>
-					<!-- /copyright -->
+				<div id="info" class="blue-item">
+					<?php # get_template_part('searchform'); ?>
+					<a href="<?php echo get_page_link(334); ?>">Impressum</a> | <a href="<?php echo get_page_link(84); ?>">Kontakt</a><br>
 				</div>
 
 			</footer>
@@ -34,7 +30,7 @@
 		<!-- scripts -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/main.js'?>"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/jquery.backstretch.min.js'?>"></script>
-		<!-- /scripts>
+		<!-- /scripts -->
 	
 	</body>
 </html>

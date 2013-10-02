@@ -1,7 +1,11 @@
-<?php get_header(); ?>
+<?php get_header(); ?>	
 	
+	<div id="sidebar-and-content" class="clear">
+<?php get_sidebar(); ?>
+
 	<!-- section -->
-	<section role="main">
+	<section id="content-wrapper" class="black-item" role="main">
+	
 	
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	
@@ -59,7 +63,7 @@
 	
 	</section>
 	<!-- /section -->
-	
-<?php get_sidebar(); ?>
+
+	</div>
 
 <?php get_footer(); ?>

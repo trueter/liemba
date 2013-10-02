@@ -9,8 +9,6 @@
 	}
 
 	#bomb{
-		/*width: 100%;
-		padding: 5px;*/
 		display:none;
 	}
 
@@ -36,27 +34,7 @@
 		margin: 10px 0;
 	}
 
-	.nav-mobile-anchor{
-		position: absolute;
-		top: 12px;
-		right: 20px;
-		width: 20px;
-		height: 20px;
-		background: url(../../liemba/img/icons/expand_collapse_sprite.png);
-		background-position: -1px -2px;
-	}
-
-	.page_item.expanded .nav-mobile-anchor{
-		background-position: -1px 18px;	
-	}
-
-	.page_item.expanded ul.children{
-		display: block;
-	}
-
-	.page_item, .donation-item{
-		height: 35px;
-	}
+	.page_item.expanded ul.children{ display: block; }
 
 	.page_item{
 		position: relative;
@@ -67,45 +45,24 @@
 		margin-bottom: 5px;
 	}
 
-	.page_item a{
-		display: table;
-		text-align: center;
-		line-height: inherit;
-		padding: 5px 0;
-
-	}
-
 	.children .page_item{
 		font-size: 17px;
 		border-top: 1px dotted #FFF;
 		font-weight: lighter;
 	}
 
-	.page_item, .blue-item {
-		background-color: #00b0e3;
+	.page_item a{
+		display: table;
+		text-align: center;
+		line-height: inherit;
+		padding-top: 6px;
 	}
 
-	.white-item {
-		background-color: #FFFFFF;
-	}
-
-	
-	#donation-wrapper{
-		padding-bottom: 12px;
-		margin-bottom: 12px;
-		border-bottom: 2px solid #FFF;		
-	}
-
-	.donation-item{
-		display: inline-block;
-		vertical-align: top;
-		width: 48.5%;
-		background-color: #40ab4d;
-	}
-
-	.donation-item:last-child{
-		float: right;
-	}
+	.children { margin-bottom: 17px; }
+	.children .page_item a { margin: 5px auto -7px ; }
+	.page_item, .blue-item { background-color: #00b0e3; }
+	.white-item { background-color: #FFFFFF; }	
+	.page-item-327 { background-color: #40ab4d !important; }/* donation page */
 
 	#news-ticker-wrapper{
 		margin: 12px auto;
@@ -118,6 +75,7 @@
 		padding: 5px;
 		word-wrap:break-word;
 		margin-bottom: 50px;
+		margin-left: 0px !important;
 	}
 
 	#content-wrapper h1{
@@ -142,24 +100,13 @@
 		padding: 5px;
 	}
 
-	#search-and-info{
+	#info{
 		width: 100%;
 		padding: 5px;
 	}
 
-	.search{
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.search label{
-		margin: 0 5px;
-		position: relative;
-		top: 2px;
-	}
-
-	.search input{
-		width: 285px;
+	#info a{
+		color: #FFF;
 	}
 
 	.footer-widget-wrapper{

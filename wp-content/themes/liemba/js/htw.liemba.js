@@ -1,83 +1,92 @@
 var htw = {};
 
 htw.liemba = {
-	organisationID : 125,
+	organisationID : 14570,
 	production : true,
+	percentDonated : null,
 
 	init : function(){
 
 		// init main navigation hover effect
-		var mainNavItems = $('nav').find('.menu  > ul > li.page-item');
-		$.each(mainNavItems, function(){
-		  $(this).click(function(e){
-		   	
-		   	if(!$(this).hasClass("hover")) return false;
-		   	
-		  	mainNavItems.removeClass("hover");
-		   	$(this).addClass("hover");
+		var mainNavItems = $('nav').find('.menu  > ul > li.page_item');
+		var donationButtonClass = "page-item-327";
+		var donationButtonOldValue = $('.'+donationButtonClass).find("a").html();
 
-		  })
+		$.each(mainNavItems, function(){
+		  $(this)
 		  .mouseenter(function(){
 
 		  	mainNavItems.removeClass("hover");
-		   	$(this).addClass("hover");})
+		   	$(this).addClass("hover");
+
+
+		   	if( $(this).hasClass(donationButtonClass) && htw.liemba.percentDonated !== null )
+		   		$(this).find("a").html(htw.liemba.percentDonated +" % !");
+		   	
+
+		   })
 
 		  .mouseleave(function(){
 
 		    $(this).removeClass("hover");
 
+		    if( $(this).hasClass(donationButtonClass) && htw.liemba.percentDonated !== null )
+		   		$(this).find("a").html(donationButtonOldValue);
+		   	
 		   });
+
 		});
-	if( htw.liemba.production ){
 
 	// init backstretch
-	var imageSources = ["http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-002.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-052.jpg", "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/Tansania-Liemba-063.jpg"];
-	$.backstretch(htw.liemba.helpers.randomizeArray(imageSources), {duration: 5000, fade: 1000});		
+	var baseURL = "http://studi.f4.htw-berlin.de/~s0535063/liemba/wp-content/themes/liemba/img/backgrounds/backstretch/";
+	var imageSources = [baseURL + "background_boat.jpg", 
+						baseURL + "background_damage.jpg", 
+						baseURL + "background_deck.jpg", 
+						baseURL + "background_full.jpg", 
+						baseURL + "background_panoramic.jpg", 
+						baseURL + "background_passengers.jpg", 
+						baseURL + "background_passengers2.jpg" ];
+	$.backstretch(htw.liemba.helpers.randomizeArray(imageSources), {duration: 7500, fade: 750});		
 
+		
 	// init donation sum
-	var d = $("#donation-sum");
-	var totalRequested = 0;
-	var totalDonated = 0;
-	var totalOpen = 0;
-	
-	$.get("https://api.betterplace.org/en/api_v4/organisations/125/projects.json", function(feedback){
-		// console.log("calling:");
+		var d = $("#donation-sum");
+		var totalRequested = 0;
+		var totalDonated = 0;
+		var totalOpen = 0;
+		
+		$.get("https://api.betterplace.org/en/api_v4/organisations/"+htw.liemba.organisationID+"/projects.json", function(feedback){
+			// console.log("calling:");
 
-		var projects = feedback.data;
+			var projects = feedback.data;
 
 
-		$(projects).each(function(){
+			$(projects).each(function(){
 
-			// console.log("Parsing project " + this.title);
-			var projectID = this.id;
+				// console.log("Parsing project " + this.title);
+				var projectID = this.id;
 
-			$.get("https://api.betterplace.org/en/api_v4/projects/"+projectID+"/needs.json" ,function(feedback){
-				var needs = feedback.data;
+				$.get("https://api.betterplace.org/en/api_v4/projects/"+projectID+"/needs.json" ,function(feedback){
+					var needs = feedback.data;
 
-				$(needs).each(function(){
-					var need = this;
-					// console.log("Parsed need "+need.title);
-					totalRequested += need.requested_amount_in_cents;
-					totalDonated += need.donated_amount_in_cents;
-					totalOpen += need.open_amount_in_cents;
+					$(needs).each(function(){
+						var need = this;
+						// console.log("Parsed need "+need.title);
+						totalRequested += need.requested_amount_in_cents;
+						totalDonated += need.donated_amount_in_cents;
+						totalOpen += need.open_amount_in_cents;
+					});
 				});
 			});
+			
 		});
 		
+
+	$(document).ajaxStop(function() {
+	  htw.liemba.percentDonated = totalDonated/totalRequested*100;
 	});
-	}
 
-	setTimeout(function(){
-		console.log("Done parsing needs.")
-		console.log("Total Req: " + totalRequested/100 + " €");
-		console.log("Total Don: " + totalDonated/100 + " €");
-		console.log("Total   O: " + totalOpen/100 + " €");
 
-	}, 5000);
-	
-	
-
-	
 
 	},
 	helpers : {
